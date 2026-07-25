@@ -1,7 +1,11 @@
 # Plan d’étude de faisabilité
 
-- **Statut :** proposé
-- **Version :** 0.1
+- **Statut :** validé — phase active
+- **Version :** 0.2
+- **Début :** 25 juillet 2026
+- **Ticket directeur :** #2
+- **Tableau de bord :** [PHASE_1_STATUS.md](PHASE_1_STATUS.md)
+- **Rapport consolidé :** [FEASIBILITY_REPORT.md](FEASIBILITY_REPORT.md)
 - **Objectif :** réduire les risques avant la création du code de production
 
 Les prototypes décrits ici sont jetables. Ils doivent répondre à une question précise, produire des mesures et éviter de transformer prématurément une hypothèse en architecture définitive.
@@ -18,7 +22,13 @@ Chaque expérience doit documenter :
 - les limites connues ;
 - la conclusion : `validée`, `validée avec réserves`, `à modifier` ou `non viable`.
 
+Le modèle commun se trouve dans [EXPERIMENT_TEMPLATE.md](EXPERIMENT_TEMPLATE.md).
+
 ## Expérience A — Extraction Automation
+
+- **Ticket :** #3
+- **Protocole :** [experiments/A-AUTOMATION-EXTRACTION.md](experiments/A-AUTOMATION-EXTRACTION.md)
+- **État :** prête à démarrer
 
 ### Question
 
@@ -46,6 +56,9 @@ Pouvons-nous extraire de manière stable les données nécessaires à trois voit
 
 ## Expérience B — Dynamique d’une voiture
 
+- **Ticket :** #4
+- **État :** bloquée par A
+
 ### Question
 
 Un modèle 2D simple peut-il reproduire des différences plausibles d’accélération, freinage, vitesse maximale et virage ?
@@ -66,6 +79,9 @@ Un modèle 2D simple peut-il reproduire des différences plausibles d’accélé
 
 ## Expérience C — Tour autonome
 
+- **Ticket :** #5
+- **État :** bloquée par B
+
 ### Question
 
 Une IA de conduite peut-elle suivre une trajectoire et adapter sa vitesse sans script par virage ?
@@ -78,6 +94,9 @@ Une IA de conduite peut-elle suivre une trajectoire et adapter sa vitesse sans s
 - comportement différent selon compétence et marge de risque.
 
 ## Expérience D — Trafic et dépassement
+
+- **Ticket :** #6
+- **État :** bloquée par C et E
 
 ### Question
 
@@ -101,6 +120,9 @@ Plusieurs voitures peuvent-elles partager la piste et produire des dépassements
 
 ## Expérience E — Replay
 
+- **Ticket :** #7
+- **État :** bloquée par B, à mener avant D
+
 ### Question
 
 Une course enregistrée peut-elle être chargée, parcourue dans les deux sens et affichée sans recalculer toutes les décisions ?
@@ -116,6 +138,9 @@ Une course enregistrée peut-elle être chargée, parcourue dans les deux sens e
 - taille du fichier mesurée pour plusieurs durées et fréquences.
 
 ## Expérience F — Charge et accélération
+
+- **Ticket :** #8
+- **État :** bloquée par la boucle représentative B à E
 
 ### Question
 
@@ -142,7 +167,7 @@ Le modèle envisagé permet-il de simuler le nombre cible de voitures en temps r
 - le mode sans rendu dépasse significativement le temps réel ;
 - les goulets d’étranglement sont identifiés par mesure.
 
-## Ordre recommandé
+## Ordre retenu
 
 1. A — Extraction Automation ;
 2. B — Dynamique d’une voiture ;
@@ -154,3 +179,5 @@ Le modèle envisagé permet-il de simuler le nombre cible de voitures en temps r
 ## Livrable final
 
 L’étude se termine par un rapport synthétique contenant la décision pour chaque expérience, les paramètres retenus, les risques résiduels et les changements requis dans le plan ou l’architecture.
+
+Le document de sortie est [FEASIBILITY_REPORT.md](FEASIBILITY_REPORT.md).
