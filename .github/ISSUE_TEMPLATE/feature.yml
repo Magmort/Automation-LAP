@@ -1,0 +1,31 @@
+name: Fonctionnalité
+description: Proposer une fonctionnalité alignée avec le plan général
+title: "[Fonctionnalité] "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Besoin
+      description: Quel problème utilisateur ou de simulation doit être résolu ?
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Comportement attendu
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critères d’acceptation
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Périmètre et exclusions
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dépendances, risques ou ADR concernés

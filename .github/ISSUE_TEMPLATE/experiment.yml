@@ -1,0 +1,34 @@
+name: Expérience de faisabilité
+description: Proposer et documenter un prototype expérimental
+title: "[Expérience] "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question testée
+      description: Formuler une seule question vérifiable.
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothèse
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: Protocole
+      description: Décrire les entrées, étapes et outils nécessaires pour reproduire l’expérience.
+    validations:
+      required: true
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Métriques et critères de réussite
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Limites et risques connus

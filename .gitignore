@@ -1,0 +1,75 @@
+# Unity generated
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+Recordings/
+
+# Unity asset metadata generated outside Assets
+/[Aa]ssets/AssetStoreTools*
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity crash and diagnostic files
+sysinfo.txt
+*.stackdump
+
+# Builds and packages
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.zip
+
+# Test and coverage output
+TestResults/
+coverage/
+coverage-results/
+*.coverage
+*.coveragexml
+
+# .NET
+bin/
+obj/
+artifacts/
+.nuget/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+secrets.json
+
+# Replay and telemetry generated locally
+*.lapreplay
+*.laptelemetry
+/replays/
+/telemetry/
