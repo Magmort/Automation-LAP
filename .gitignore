@@ -68,6 +68,15 @@ Desktop.ini
 *.local
 secrets.json
 
+# Feasibility prototypes: local SDKs, binaries and non-redistributable inputs
+/prototypes/**/local/
+/prototypes/**/external/
+/prototypes/**/results/raw/
+/prototypes/automation-exporter/**/*.dll
+/prototypes/automation-exporter/**/*.lib
+/prototypes/automation-exporter/**/*.exp
+/prototypes/automation-exporter/**/*.car
+
 # Replay and telemetry generated locally
 *.lapreplay
 *.laptelemetry
