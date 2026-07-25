@@ -6,9 +6,16 @@ Les caractéristiques des voitures seront alimentées par des données exportée
 
 ## État du projet
 
-Le projet est en phase de **préproduction et d’étude de faisabilité**. Aucun code de production ne doit être engagé avant la validation des briques critiques : import Automation, modèle physique, conduite IA, trafic, performances et replay.
+La **Phase 1 — Étude de faisabilité** est active. Aucun code de production ne doit être engagé avant la validation des briques critiques : import Automation, modèle physique, conduite IA, trafic, performances et replay.
 
-La source de vérité du projet est le document [Plan général du projet](docs/PROJECT_PLAN.md).
+Le travail courant est l’**Expérience A — Extraction Automation**. Elle doit prouver que trois voitures contrastées peuvent être exportées vers un format brut, versionné et reproductible.
+
+- [Ticket directeur de la Phase 1](https://github.com/Magmort/Automation-LAP/issues/2)
+- [Tableau de bord de la Phase 1](docs/feasibility/PHASE_1_STATUS.md)
+- [Protocole de l’expérience A](docs/feasibility/experiments/A-AUTOMATION-EXTRACTION.md)
+- [Rapport consolidé](docs/feasibility/FEASIBILITY_REPORT.md)
+
+La source de vérité du projet reste le document [Plan général du projet](docs/PROJECT_PLAN.md).
 
 ## Objectifs principaux
 
@@ -37,6 +44,7 @@ La source de vérité du projet est le document [Plan général du projet](docs/
 - [Plan général du projet](docs/PROJECT_PLAN.md)
 - [Architecture cible](docs/architecture/OVERVIEW.md)
 - [Plan d’étude de faisabilité](docs/feasibility/FEASIBILITY_PLAN.md)
+- [Tableau de bord de la Phase 1](docs/feasibility/PHASE_1_STATUS.md)
 - [Décisions d’architecture](docs/decisions/README.md)
 - [Guide de contribution](CONTRIBUTING.md)
 
@@ -62,6 +70,7 @@ src/
   AutomationLAP.Editor/
 tests/
 docs/
+prototypes/
 ```
 
-Cette arborescence est une cible d’architecture. Les projets seront créés progressivement après validation de la faisabilité.
+Cette arborescence est une cible d’architecture. Les projets de production seront créés progressivement après validation de la faisabilité ; les expériences jetables appartiennent à `prototypes/`.
