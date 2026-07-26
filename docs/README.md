@@ -8,6 +8,18 @@ Cette documentation constitue la mémoire durable d’Automation LAP. Les décis
 
 - [Plan général du projet](PROJECT_PLAN.md) — vision, périmètre, phases, jalons et critères de réussite.
 - [Plan d’étude de faisabilité](feasibility/FEASIBILITY_PLAN.md) — prototypes expérimentaux à réaliser avant le code de production.
+- [Tableau de bord de la Phase 1](feasibility/PHASE_1_STATUS.md) — état des expériences, dépendances et critères de sortie.
+- [Rapport consolidé de faisabilité](feasibility/FEASIBILITY_REPORT.md) — décisions, paramètres candidats, risques résiduels et décision de passage au vertical slice.
+- [Modèle de rapport expérimental](feasibility/EXPERIMENT_TEMPLATE.md) — structure commune des protocoles et conclusions.
+
+### Expériences documentées
+
+- [Expérience A — Extraction des données Automation](feasibility/experiments/A-AUTOMATION-EXTRACTION.md)
+- [Expérience G — Import du modèle minimal de circuit depuis UR2D2](feasibility/experiments/G-UR2D2-TRACK-IMPORT.md)
+- [Répertoire des prototypes](../prototypes/README.md)
+- [Prototype Automation Exporter](../prototypes/automation-exporter/README.md)
+
+Les expériences B à F recevront leur protocole détaillé avant leur démarrage. L’expérience C définira le modèle minimal de circuit ; l’expérience G testera ensuite sa reconstruction depuis UR2D2.
 
 ### Architecture
 
