@@ -1,0 +1,295 @@
+{
+  "schemaVersion": "0.1.0",
+  "kind": "AutomationRawVehicleData",
+  "generatedAtUtc": "2026-07-26T18:00:00Z",
+  "generator": "automation-lap-a8-builder-0.1.0",
+  "source": {
+    "kind": "Automation",
+    "exporterVersion": "0.1.12-a7-json-values-fix",
+    "exportedAtUtc": "2026-07-26T17:06:01Z",
+    "automationVersion": null,
+    "lastAccessTime": 46.619,
+    "inputFiles": [
+      {
+        "name": "automation-lap-vehicle.json",
+        "schemaVersion": "0.1.1",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "name": "automation-lap-field-inventory.json",
+        "schemaVersion": "0.1.0",
+        "sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+      },
+      {
+        "name": "automation-lap-graph-inventory.json",
+        "schemaVersion": "0.1.0",
+        "sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+      },
+      {
+        "name": "automation-lap-raw-graphs.json",
+        "schemaVersion": "0.1.0",
+        "sha256": "3333333333333333333333333333333333333333333333333333333333333333"
+      }
+    ]
+  },
+  "identity": {
+    "modelName": "LAP Test Model",
+    "trimName": "Coupe GTI"
+  },
+  "unitPolicy": {
+    "rawValuesPreserved": true,
+    "conversionsApplied": false,
+    "internalUnitSystem": "SI-candidate",
+    "unknownUnitsPreserved": true
+  },
+  "controlledFields": [
+    {
+      "key": "mass.frontDistribution",
+      "family": "mass",
+      "candidatePaths": [
+        "CarInfo.TrimInfo.Results.cg.WeightDistribution"
+      ],
+      "resolvedPath": "CarInfo.TrimInfo.Results.cg.WeightDistribution",
+      "present": true,
+      "luaType": "number",
+      "valuePreview": 55,
+      "origin": "automation",
+      "presence": "observed",
+      "nature": "raw-result",
+      "unitSource": "percent",
+      "unitInternalCandidate": "fraction",
+      "stability": "untested",
+      "redistribution": "unknown"
+    }
+  ],
+  "graphInventory": {
+    "rootPath": "CarInfo.TrimInfo.Results.GraphData",
+    "graphDataPresent": true,
+    "availableGraphs": [
+      {
+        "key": "AccelerationToTopSpeed",
+        "path": "CarInfo.TrimInfo.Results.GraphData.AccelerationToTopSpeed",
+        "luaType": "table",
+        "entryCount": 17,
+        "seriesLikeChildren": [
+          "Speed",
+          "Time",
+          "Distance"
+        ]
+      }
+    ],
+    "diagnostics": []
+  },
+  "rawGraphs": [
+    {
+      "key": "AccelerationToTopSpeed",
+      "path": "CarInfo.TrimInfo.Results.GraphData.AccelerationToTopSpeed",
+      "present": true,
+      "luaType": "table",
+      "seriesCount": 3,
+      "expectedSeriesLength": 3,
+      "lengthMismatch": false,
+      "series": [
+        {
+          "key": "Speed",
+          "path": "CarInfo.TrimInfo.Results.GraphData.AccelerationToTopSpeed.Speed",
+          "luaType": "table",
+          "role": "axis-candidate",
+          "count": 3,
+          "numericMin": 0,
+          "numericMax": 100,
+          "values": [
+            0,
+            50,
+            100
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "Time",
+          "path": "CarInfo.TrimInfo.Results.GraphData.AccelerationToTopSpeed.Time",
+          "luaType": "table",
+          "role": "axis-candidate",
+          "count": 3,
+          "numericMin": 0,
+          "numericMax": 8.2,
+          "values": [
+            0,
+            3.7,
+            8.2
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "enginePower",
+          "path": "CarInfo.TrimInfo.Results.GraphData.AccelerationToTopSpeed.enginePower",
+          "luaType": "table",
+          "role": "value",
+          "count": 3,
+          "numericMin": 0,
+          "numericMax": 95,
+          "values": [
+            0,
+            80,
+            95
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "key": "Braking",
+      "path": "CarInfo.TrimInfo.Results.GraphData.Braking",
+      "present": true,
+      "luaType": "table",
+      "seriesCount": 2,
+      "expectedSeriesLength": 3,
+      "lengthMismatch": false,
+      "series": [
+        {
+          "key": "Speed",
+          "path": "CarInfo.TrimInfo.Results.GraphData.Braking.Speed",
+          "luaType": "table",
+          "role": "axis-candidate",
+          "count": 3,
+          "numericMin": 0,
+          "numericMax": 100,
+          "values": [
+            100,
+            50,
+            0
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "Time",
+          "path": "CarInfo.TrimInfo.Results.GraphData.Braking.Time",
+          "luaType": "table",
+          "role": "axis-candidate",
+          "count": 3,
+          "numericMin": 0.12,
+          "numericMax": 3.2,
+          "values": [
+            0.12,
+            1.6,
+            3.2
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "key": "BrakingVGrip",
+      "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip",
+      "present": true,
+      "luaType": "table",
+      "seriesCount": 5,
+      "expectedSeriesLength": 3,
+      "lengthMismatch": false,
+      "series": [
+        {
+          "key": "FrontBrakeForce",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.FrontBrakeForce",
+          "luaType": "table",
+          "role": "value",
+          "count": 3,
+          "numericMin": 3000,
+          "numericMax": 3000,
+          "values": [
+            3000,
+            3000,
+            3000
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "FrontBrakeGrip",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.FrontBrakeGrip",
+          "luaType": "table",
+          "role": "value",
+          "count": 3,
+          "numericMin": 2800,
+          "numericMax": 2850,
+          "values": [
+            2850,
+            2825,
+            2800
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "RearBrakeForce",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.RearBrakeForce",
+          "luaType": "table",
+          "role": "value",
+          "count": 3,
+          "numericMin": 950,
+          "numericMax": 950,
+          "values": [
+            950,
+            950,
+            950
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "RearBrakeGrip",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.RearBrakeGrip",
+          "luaType": "table",
+          "role": "value",
+          "count": 3,
+          "numericMin": 850,
+          "numericMax": 860,
+          "values": [
+            850,
+            855,
+            860
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "Speed",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.Speed",
+          "luaType": "table",
+          "role": "axis-candidate",
+          "count": 3,
+          "numericMin": 0,
+          "numericMax": 100,
+          "values": [
+            100,
+            50,
+            0
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        }
+      ],
+      "diagnostics": []
+    }
+  ],
+  "diagnostics": [
+    "automation_version_not_exposed",
+    "documented_functions_not_called_without_protected_lua_calls"
+  ]
+}

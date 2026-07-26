@@ -1,7 +1,7 @@
 {
   "schemaVersion": "0.1.0",
-  "exporterVersion": "0.1.4-a3-final-drive",
-  "exportedAtUtc": "2026-07-26T13:30:00Z",
+  "exporterVersion": "0.1.10-a6-graph-axis-hints",
+  "exportedAtUtc": "2026-07-26T16:30:00Z",
   "scope": "controlled-field-inventory",
   "fields": [
     {
@@ -25,23 +25,38 @@
       "redistribution": "unknown"
     },
     {
-      "key": "mass.total",
+      "key": "mass.frontDistribution",
       "family": "mass",
       "candidatePaths": [
-        "CarInfo.TrimInfo.Results.Weight",
-        "CarInfo.TrimInfo.Results.TotalWeight",
-        "CarInfo.TrimInfo.Weight",
-        "CarInfo.TrimInfo.Mass"
+        "CarInfo.TrimInfo.Results.cg.WeightDistribution"
       ],
-      "resolvedPath": null,
-      "present": false,
-      "luaType": "missing",
+      "resolvedPath": "CarInfo.TrimInfo.Results.cg.WeightDistribution",
+      "present": true,
+      "luaType": "number",
+      "valuePreview": 55,
+      "origin": "automation",
+      "presence": "observed",
+      "nature": "raw-result",
+      "unitSource": "percent",
+      "unitInternalCandidate": "fraction",
+      "stability": "untested",
+      "redistribution": "unknown"
+    },
+    {
+      "key": "brakes.brakingVGrip.speedCurve",
+      "family": "brakes",
+      "candidatePaths": [
+        "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.Speed"
+      ],
+      "resolvedPath": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.Speed",
+      "present": true,
+      "luaType": "table",
       "valuePreview": null,
       "origin": "automation",
-      "presence": "missing",
-      "nature": "raw-result",
-      "unitSource": "unknown",
-      "unitInternalCandidate": "kg",
+      "presence": "observed",
+      "nature": "sampled-curve",
+      "unitSource": "automation-curve-axis",
+      "unitInternalCandidate": "unknown",
       "stability": "untested",
       "redistribution": "unknown"
     }
