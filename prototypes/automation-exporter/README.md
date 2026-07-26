@@ -2,7 +2,7 @@
 
 - **Expérience :** A — Extraction des données Automation
 - **Ticket :** #3
-- **Statut :** préparation
+- **Statut :** test de fumée prêt à exécuter localement
 - **Nature :** prototype jetable
 
 ## But
@@ -11,9 +11,17 @@ Prouver que la version installée d’Automation peut charger un exporteur perso
 
 Le protocole de référence se trouve dans `docs/feasibility/experiments/A-AUTOMATION-EXTRACTION.md`.
 
-## Résultat minimal attendu
+## Incrément actuel
 
-Le premier incrément du prototype doit produire un fichier JSON valide contenant uniquement :
+Le dépôt contient maintenant le payload Lua et les outils nécessaires au premier test de fumée. Cet incrément ne cherche pas encore à extraire la masse, le moteur, les pneus ou l’aérodynamique.
+
+Le fichier minimal produit est :
+
+```text
+automation-lap-vehicle.json
+```
+
+Il contient uniquement :
 
 - version du schéma ;
 - version de l’exporteur ;
@@ -21,27 +29,35 @@ Le premier incrément du prototype doit produire un fichier JSON valide contenan
 - nom du modèle ;
 - nom du trim ;
 - horodatage UTC ;
+- chemins Lua ayant fourni les noms ;
 - diagnostics éventuels.
 
-Aucune donnée physique détaillée ne doit être ajoutée avant que ce test de fumée fonctionne.
+Les chemins de données sont enregistrés temporairement afin de vérifier quelles propriétés restent réellement valides dans la version installée d’Automation.
 
-## Organisation prévue
+## Organisation
 
 ```text
 prototypes/automation-exporter/
   README.md
-  src/                  # code original du prototype
-  schemas/              # schémas JSON propres au projet
-  samples/              # exemples redistribuables uniquement
-  results/              # synthèses et mesures légères
-  local/                # fichiers locaux ignorés, à créer si nécessaire
+  SETUP_WINDOWS.md
+  src/
+    automation_lap_export.lua
+  schemas/
+    automation-raw-vehicle-smoke-v0.1.schema.json
+  samples/
+    smoke-test.example.json
+  tools/
+    validate_smoke_export.py
+  results/
+    SMOKE_TEST_RESULT.md
+  local/                     # fichiers locaux ignorés
 ```
 
 ## Dépendances externes
 
 Le SDK officiel d’Automation ne doit pas être copié dans ce dépôt sans vérification explicite de sa licence et de ses conditions de redistribution.
 
-Le développeur doit utiliser une copie locale identifiée par URL et commit. Le rapport doit relever :
+Le développeur utilise une copie locale identifiée par URL et commit. Le rapport doit relever :
 
 - le commit du SDK ;
 - la version d’Automation ;
@@ -49,9 +65,32 @@ Le développeur doit utiliser une copie locale identifiée par URL et commit. Le
 - l’architecture des binaires ;
 - toute modification locale apportée à l’exemple officiel.
 
-## Entrées attendues
+La documentation officielle indique que :
 
-Trois voitures conçues pour maximiser les contrastes :
+- le plugin est une DLL placée sous `Content/ExportPlugins` ;
+- le SDK fournit les interfaces C++ de l’exporteur ;
+- le DLL charge un ou plusieurs fichiers Lua ;
+- Automation appelle `DoExport(CarCalculator, CarFile)` ;
+- cette fonction retourne une table de fichiers et une table de données scalaires.
+
+Ces informations restent à confirmer sur la version installée.
+
+## Exécuter le test
+
+Suivre [SETUP_WINDOWS.md](SETUP_WINDOWS.md).
+
+Après l’export, valider le document avec :
+
+```powershell
+python prototypes\automation-exporter\tools\validate_smoke_export.py `
+  "C:\chemin\vers\automation-lap-vehicle.json"
+```
+
+Le script n’utilise aucune dépendance Python externe.
+
+## Entrées attendues après le test de fumée
+
+Lorsque l’intégration minimale sera validée, trois voitures seront conçues pour maximiser les contrastes :
 
 1. légère et peu puissante ;
 2. puissante et orientée performance ;
@@ -59,28 +98,23 @@ Trois voitures conçues pour maximiser les contrastes :
 
 Les fichiers `.car`, données, captures, textures ou autres contenus issus d’Automation ne doivent être committés qu’après vérification des droits de redistribution. À défaut, conserver une empreinte, les métadonnées et une procédure de reproduction.
 
-## Première séquence de travail
-
-1. Renseigner la fiche d’environnement du protocole.
-2. Récupérer une copie locale du dépôt officiel `AutomationStaff/ExporterSDK`.
-3. Compiler l’exemple officiel sans modification fonctionnelle.
-4. Installer le plugin dans l’emplacement requis par Automation.
-5. Vérifier que l’exporteur apparaît et termine un export.
-6. Créer une variante minimale portant le nom Automation LAP.
-7. Produire et valider le premier JSON.
-8. Documenter le résultat dans le ticket #3.
-
-## Définition de terminé pour le test de fumée
+## Définition de terminé du test de fumée
 
 - [ ] la version d’Automation est enregistrée ;
 - [ ] le commit du SDK est enregistré ;
 - [ ] les outils de compilation sont enregistrés ;
-- [ ] le plugin est visible dans Automation ;
+- [ ] l’exemple officiel compile et s’exécute ;
+- [ ] la variante Automation LAP est visible ;
 - [ ] un export se termine sans erreur ;
-- [ ] le JSON est analysable par un outil indépendant ;
+- [ ] le JSON est analysable par le validateur indépendant ;
 - [ ] les noms avec accents sont correctement encodés ;
+- [ ] deux exports sont sémantiquement équivalents hors horodatage ;
 - [ ] aucune donnée personnelle ou chemin absolu n’apparaît dans la sortie ;
-- [ ] les limites rencontrées sont consignées.
+- [ ] les limites rencontrées sont consignées dans `results/SMOKE_TEST_RESULT.md`.
+
+## Décision suivante
+
+Après réussite du test de fumée, l’expérience A pourra ouvrir le second incrément : inventaire des champs disponibles et définition complète de `AutomationRawVehicleData` v0.1.
 
 ## Règle de promotion
 
