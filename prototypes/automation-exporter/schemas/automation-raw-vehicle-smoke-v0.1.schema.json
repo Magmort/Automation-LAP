@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://automation-lap.invalid/schemas/automation-raw-vehicle-smoke-v0.1.schema.json",
+  "title": "Automation LAP raw vehicle smoke-test export",
+  "description": "Metadata-only output used to validate the Automation exporter integration before extracting physical vehicle data.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "exporterVersion",
+    "exportedAtUtc",
+    "source",
+    "vehicle",
+    "diagnostics"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "0.1.1"
+    },
+    "exporterVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "exportedAtUtc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "automationVersion",
+        "automationVersionPath",
+        "lastAccessTime",
+        "lastAccessTimePath"
+      ],
+      "properties": {
+        "kind": {
+          "const": "Automation"
+        },
+        "automationVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "automationVersionPath": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lastAccessTime": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "lastAccessTimePath": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "vehicle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "modelName",
+        "modelNamePath",
+        "trimName",
+        "trimNamePath"
+      ],
+      "properties": {
+        "modelName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "modelNamePath": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "trimName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "trimNamePath": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    }
+  }
+}

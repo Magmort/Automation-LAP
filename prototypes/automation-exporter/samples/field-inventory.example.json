@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "0.1.0",
+  "exporterVersion": "0.1.4-a3-final-drive",
+  "exportedAtUtc": "2026-07-26T13:30:00Z",
+  "scope": "controlled-field-inventory",
+  "fields": [
+    {
+      "key": "identity.modelName",
+      "family": "identity",
+      "candidatePaths": [
+        "CarInfo.PlatformInfo.Name",
+        "CarInfo.ModelName",
+        "ModelName"
+      ],
+      "resolvedPath": "CarInfo.PlatformInfo.Name",
+      "present": true,
+      "luaType": "string",
+      "valuePreview": "LAP Test Model",
+      "origin": "automation",
+      "presence": "observed",
+      "nature": "raw-choice",
+      "unitSource": "text",
+      "unitInternalCandidate": "not-applicable",
+      "stability": "untested",
+      "redistribution": "unknown"
+    },
+    {
+      "key": "mass.total",
+      "family": "mass",
+      "candidatePaths": [
+        "CarInfo.TrimInfo.Results.Weight",
+        "CarInfo.TrimInfo.Results.TotalWeight",
+        "CarInfo.TrimInfo.Weight",
+        "CarInfo.TrimInfo.Mass"
+      ],
+      "resolvedPath": null,
+      "present": false,
+      "luaType": "missing",
+      "valuePreview": null,
+      "origin": "automation",
+      "presence": "missing",
+      "nature": "raw-result",
+      "unitSource": "unknown",
+      "unitInternalCandidate": "kg",
+      "stability": "untested",
+      "redistribution": "unknown"
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetCarParameters",
+      "path": "GetCarParameters",
+      "present": true,
+      "luaType": "function",
+      "called": false,
+      "reason": "not_called_because_lua_protected_call_is_unavailable"
+    }
+  ],
+  "diagnostics": [
+    "documented_functions_not_called_without_protected_lua_calls"
+  ]
+}
