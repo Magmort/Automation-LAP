@@ -1,7 +1,7 @@
 # Rapport consolidé de faisabilité
 
 - **Statut :** en cours
-- **Version :** 0.1
+- **Version :** 0.2
 - **Phase :** Phase 1
 - **Ticket directeur :** #2
 - **Date d’ouverture :** 25 juillet 2026
@@ -16,7 +16,7 @@ Ce document est le livrable final de la Phase 1. Il doit rester synthétique : l
 
 - **Décision :** non prise
 - **Niveau de confiance :** non évalué
-- **Recommandation :** terminer au minimum les expériences A, B, C et E avant toute décision sur le code de production.
+- **Recommandation :** terminer au minimum les expériences A, B, C et E avant toute décision sur le code de production. L’expérience G doit être conclue avant de retenir UR2D2 comme outil officiel de création de circuits.
 
 ## 2. Tableau des décisions
 
@@ -24,10 +24,11 @@ Ce document est le livrable final de la Phase 1. Il doit rester synthétique : l
 |---|---|---|---|---|
 | A — Extraction Automation | Les données nécessaires sont-elles exportables et stables ? | En attente | — | Compatibilité réelle du SDK avec la version installée |
 | B — Dynamique d’une voiture | Un modèle 2D commun produit-il des différences plausibles ? | En attente | — | Paramètres physiques absents ou difficiles à calibrer |
-| C — Tour autonome | Le contrôleur peut-il rouler sans script par virage ? | En attente | — | Instabilité du contrôle aux limites d’adhérence |
+| C — Tour autonome et circuit minimal | Le contrôleur peut-il rouler sans script par virage avec un contrat de circuit minimal ? | En attente | — | Modèle de circuit surdimensionné ou insuffisant pour le contrôle |
 | D — Trafic et dépassement | Les interactions peuvent-elles être crédibles et réglables ? | En attente | — | Collisions, immobilisme ou comportement trop déterministe |
 | E — Replay minimal | Le replay hybride est-il autonome et navigable ? | En attente | — | Taille des fichiers et compatibilité de version |
 | F — Charge et accélération | La cible de voitures et l’exécution accélérée sont-elles viables ? | En attente | — | Coût combiné physique, perception, IA et enregistrement |
+| G — Import UR2D2 | Les fichiers UR2D2 peuvent-ils reconstruire le modèle minimal validé en C ? | En attente | — | Format opaque, échelle ambiguë ou informations insuffisantes |
 
 Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, `non viable`.
 
@@ -36,6 +37,9 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 | Domaine | Paramètre | Valeur candidate | Origine | Statut |
 |---|---|---:|---|---|
 | Simulation | Pas de temps physique | À mesurer | Expérience B | En attente |
+| Circuit | Schéma minimal `TrackDefinition` | À définir | Expérience C | En attente |
+| Circuit | Tolérances de fermeture et continuité | À mesurer | Expérience C | En attente |
+| Circuit | Transformation UR2D2 vers unités SI | À déterminer | Expérience G | En attente |
 | Contrôle IA | Fréquence de commande | À mesurer | Expérience C | En attente |
 | Perception | Fréquence de mise à jour | À mesurer | Expérience D | En attente |
 | Replay | Fréquence des images-clés | À mesurer | Expérience E | En attente |
@@ -60,13 +64,16 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 - **Écarts mesurés :** à compléter
 - **Paramètres dérivés nécessaires :** à compléter
 
-### C — Tour autonome
+### C — Tour autonome et modèle minimal de circuit
 
 - **Ticket :** #5
 - **Conclusion :** en attente
 - **Contrôleur testé :** à compléter
+- **Schéma minimal retenu :** à compléter
+- **Invariants et tolérances :** à compléter
 - **Régularité :** à compléter
 - **Différenciation des pilotes :** à compléter
+- **Données obligatoires pour un importeur :** à compléter
 
 ### D — Trafic et dépassement
 
@@ -93,31 +100,47 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 - **Mode sans rendu :** à compléter
 - **Goulets d’étranglement :** à compléter
 
+### G — Import du modèle minimal depuis UR2D2
+
+- **Ticket :** #10
+- **Conclusion :** en attente
+- **Versions UR2D2 testées :** à compléter
+- **Fichiers et structures identifiés :** à compléter
+- **Champs du contrat reconstruits :** à compléter
+- **Transformation de coordonnées :** à compléter
+- **Interventions manuelles nécessaires :** à compléter
+- **Décision d’adoption d’UR2D2 :** à compléter
+
 ## 5. Risques résiduels
 
 | Risque | Probabilité | Impact | Preuve disponible | Réponse proposée |
 |---|---|---|---|---|
 | Données Automation insuffisantes | À évaluer | Élevé | Expérience A | Paramètres dérivés et calibration documentée |
 | Modèle physique trop coûteux | À évaluer | Élevé | Expériences B et F | Simplification guidée par mesure |
+| Modèle de circuit inadapté au contrôle | À évaluer | Élevé | Expérience C | Définition pilotée par les usages et invariants testés |
 | IA peu crédible en trafic | À évaluer | Élevé | Expériences C et D | Architecture en couches et scénarios statistiques |
 | Replay trop volumineux | À évaluer | Moyen | Expérience E | Fréquences et compression adaptées |
+| Import UR2D2 incomplet ou fragile | À évaluer | Moyen à élevé | Expérience G | Adaptateur versionné et solution de repli indépendante |
 | Dépendance excessive à Unity | Faible par conception | Élevé | ADR-0001 | Tests sans rendu et frontières de dépendance |
 
 ## 6. Changements requis
 
 ### Plan général
 
-- Aucun changement identifié à ce jour.
+- Aucun changement de périmètre produit identifié à ce jour.
+- La Phase 1 contient désormais une expérience supplémentaire dédiée à l’import UR2D2.
 
 ### Architecture
 
-- Aucun changement identifié à ce jour.
+- Confirmer après C la séparation `TrackDefinition` / données runtime dérivées.
+- Prévoir après G une frontière `UR2D2RawTrackData` → convertisseur → `TrackDefinition` si l’import est viable.
 
 ### ADR
 
 - ADR-0001 : à confirmer après B et F.
 - ADR-0002 : à confirmer après E.
 - ADR-0003 : à confirmer après A.
+- ADR relatif au format de circuit et aux importeurs externes : à envisager après C et G.
 
 ## 7. Décision de sortie
 
@@ -127,6 +150,8 @@ La décision finale doit sélectionner une option :
 - **Go avec réserves** : développement autorisé avec contraintes et travaux de réduction de risque intégrés ;
 - **Rework** : une ou plusieurs expériences doivent être reprises avant le code de production ;
 - **No-Go** : le concept ou l’architecture doit être profondément revu.
+
+La décision générale de passage au vertical slice peut être distincte de la décision d’utiliser UR2D2. Un résultat négatif de G peut conduire à un `Go` pour le projet avec une autre chaîne de création de circuits.
 
 ### Décision
 
