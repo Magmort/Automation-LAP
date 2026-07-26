@@ -1,0 +1,46 @@
+name: Automation exporter smoke contract
+
+on:
+  pull_request:
+    paths:
+      - "prototypes/automation-exporter/**"
+      - ".github/workflows/automation-exporter-smoke.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "prototypes/automation-exporter/**"
+      - ".github/workflows/automation-exporter-smoke.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-smoke-contract:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Compile Python tools
+        run: |
+          python -m py_compile \
+            prototypes/automation-exporter/tools/validate_smoke_export.py \
+            prototypes/automation-exporter/tools/compare_smoke_exports.py
+
+      - name: Validate example export
+        run: |
+          python prototypes/automation-exporter/tools/validate_smoke_export.py \
+            prototypes/automation-exporter/samples/smoke-test.example.json
+
+      - name: Verify semantic comparison
+        run: |
+          python prototypes/automation-exporter/tools/compare_smoke_exports.py \
+            prototypes/automation-exporter/samples/smoke-test.example.json \
+            prototypes/automation-exporter/samples/smoke-test.example.json
