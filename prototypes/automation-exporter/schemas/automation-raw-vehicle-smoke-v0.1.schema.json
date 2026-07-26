@@ -15,22 +15,15 @@
   ],
   "properties": {
     "schemaVersion": {
-      "const": "0.1.0"
+      "const": "0.1.1"
     },
     "exporterVersion": {
       "type": "string",
       "minLength": 1
     },
     "exportedAtUtc": {
-      "oneOf": [
-        {
-          "type": "string",
-          "format": "date-time"
-        },
-        {
-          "type": "null"
-        }
-      ]
+      "type": "string",
+      "format": "date-time"
     },
     "source": {
       "type": "object",
@@ -38,7 +31,9 @@
       "required": [
         "kind",
         "automationVersion",
-        "automationVersionPath"
+        "automationVersionPath",
+        "lastAccessTime",
+        "lastAccessTimePath"
       ],
       "properties": {
         "kind": {
@@ -51,6 +46,18 @@
           ]
         },
         "automationVersionPath": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lastAccessTime": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "lastAccessTimePath": {
           "type": [
             "string",
             "null"

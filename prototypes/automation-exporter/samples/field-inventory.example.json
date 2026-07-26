@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "0.1.0",
+  "exporterVersion": "0.1.10-a6-graph-axis-hints",
+  "exportedAtUtc": "2026-07-26T16:30:00Z",
+  "scope": "controlled-field-inventory",
+  "fields": [
+    {
+      "key": "identity.modelName",
+      "family": "identity",
+      "candidatePaths": [
+        "CarInfo.PlatformInfo.Name",
+        "CarInfo.ModelName",
+        "ModelName"
+      ],
+      "resolvedPath": "CarInfo.PlatformInfo.Name",
+      "present": true,
+      "luaType": "string",
+      "valuePreview": "LAP Test Model",
+      "origin": "automation",
+      "presence": "observed",
+      "nature": "raw-choice",
+      "unitSource": "text",
+      "unitInternalCandidate": "not-applicable",
+      "stability": "untested",
+      "redistribution": "unknown"
+    },
+    {
+      "key": "mass.frontDistribution",
+      "family": "mass",
+      "candidatePaths": [
+        "CarInfo.TrimInfo.Results.cg.WeightDistribution"
+      ],
+      "resolvedPath": "CarInfo.TrimInfo.Results.cg.WeightDistribution",
+      "present": true,
+      "luaType": "number",
+      "valuePreview": 55,
+      "origin": "automation",
+      "presence": "observed",
+      "nature": "raw-result",
+      "unitSource": "percent",
+      "unitInternalCandidate": "fraction",
+      "stability": "untested",
+      "redistribution": "unknown"
+    },
+    {
+      "key": "brakes.brakingVGrip.speedCurve",
+      "family": "brakes",
+      "candidatePaths": [
+        "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.Speed"
+      ],
+      "resolvedPath": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.Speed",
+      "present": true,
+      "luaType": "table",
+      "valuePreview": null,
+      "origin": "automation",
+      "presence": "observed",
+      "nature": "sampled-curve",
+      "unitSource": "automation-curve-axis",
+      "unitInternalCandidate": "unknown",
+      "stability": "untested",
+      "redistribution": "unknown"
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetCarParameters",
+      "path": "GetCarParameters",
+      "present": true,
+      "luaType": "function",
+      "called": false,
+      "reason": "not_called_because_lua_protected_call_is_unavailable"
+    }
+  ],
+  "diagnostics": [
+    "documented_functions_not_called_without_protected_lua_calls"
+  ]
+}

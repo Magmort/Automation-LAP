@@ -3,12 +3,14 @@
     "automation_version_not_exposed"
   ],
   "exportedAtUtc": "2026-07-26T10:30:00Z",
-  "exporterVersion": "0.1.0-smoke",
-  "schemaVersion": "0.1.0",
+  "exporterVersion": "0.1.2-a3",
+  "schemaVersion": "0.1.1",
   "source": {
     "automationVersion": null,
     "automationVersionPath": null,
-    "kind": "Automation"
+    "kind": "Automation",
+    "lastAccessTime": 33.071,
+    "lastAccessTimePath": "lastAccessTime"
   },
   "vehicle": {
     "modelName": "LAP Test Model",

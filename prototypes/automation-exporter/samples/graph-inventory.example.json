@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "0.1.0",
+  "exporterVersion": "0.1.10-a6-graph-axis-hints",
+  "exportedAtUtc": "2026-07-26T16:30:00Z",
+  "scope": "results-graph-inventory",
+  "rootPath": "CarInfo.TrimInfo.Results.GraphData",
+  "graphDataPresent": true,
+  "rootLuaType": "table",
+  "rootEntryCount": 1,
+  "entries": [
+    {
+      "key": "BrakingVGrip",
+      "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip",
+      "luaType": "table",
+      "entryCount": 5,
+      "sequentialNumericCount": 0,
+      "numericValueCount": 0,
+      "tableValueCount": 5,
+      "stringValueCount": 0,
+      "booleanValueCount": 0,
+      "otherValueCount": 0,
+      "numericMin": null,
+      "numericMax": null,
+      "firstNumericValues": [],
+      "lastNumericValues": [],
+      "children": [
+        {
+          "key": "Speed",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.Speed",
+          "luaType": "table",
+          "entryCount": 4,
+          "sequentialNumericCount": 4,
+          "numericValueCount": 4,
+          "tableValueCount": 0,
+          "stringValueCount": 0,
+          "booleanValueCount": 0,
+          "otherValueCount": 0,
+          "numericMin": 0,
+          "numericMax": 120,
+          "firstNumericValues": [
+            120,
+            80,
+            40,
+            0
+          ],
+          "lastNumericValues": [
+            120,
+            80,
+            40,
+            0
+          ],
+          "children": [],
+          "truncatedChildren": false
+        },
+        {
+          "key": "FrontBrakeForce",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.FrontBrakeForce",
+          "luaType": "table",
+          "entryCount": 4,
+          "sequentialNumericCount": 4,
+          "numericValueCount": 4,
+          "tableValueCount": 0,
+          "stringValueCount": 0,
+          "booleanValueCount": 0,
+          "otherValueCount": 0,
+          "numericMin": 3000,
+          "numericMax": 3000,
+          "firstNumericValues": [
+            3000,
+            3000,
+            3000,
+            3000
+          ],
+          "lastNumericValues": [
+            3000,
+            3000,
+            3000,
+            3000
+          ],
+          "children": [],
+          "truncatedChildren": false
+        },
+        {
+          "key": "FrontBrakeGrip",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.FrontBrakeGrip",
+          "luaType": "table",
+          "entryCount": 4,
+          "sequentialNumericCount": 4,
+          "numericValueCount": 4,
+          "tableValueCount": 0,
+          "stringValueCount": 0,
+          "booleanValueCount": 0,
+          "otherValueCount": 0,
+          "numericMin": 2800,
+          "numericMax": 2850,
+          "firstNumericValues": [
+            2850,
+            2835,
+            2815,
+            2800
+          ],
+          "lastNumericValues": [
+            2850,
+            2835,
+            2815,
+            2800
+          ],
+          "children": [],
+          "truncatedChildren": false
+        },
+        {
+          "key": "RearBrakeForce",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.RearBrakeForce",
+          "luaType": "table",
+          "entryCount": 4,
+          "sequentialNumericCount": 4,
+          "numericValueCount": 4,
+          "tableValueCount": 0,
+          "stringValueCount": 0,
+          "booleanValueCount": 0,
+          "otherValueCount": 0,
+          "numericMin": 950,
+          "numericMax": 950,
+          "firstNumericValues": [
+            950,
+            950,
+            950,
+            950
+          ],
+          "lastNumericValues": [
+            950,
+            950,
+            950,
+            950
+          ],
+          "children": [],
+          "truncatedChildren": false
+        },
+        {
+          "key": "RearBrakeGrip",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.RearBrakeGrip",
+          "luaType": "table",
+          "entryCount": 4,
+          "sequentialNumericCount": 4,
+          "numericValueCount": 4,
+          "tableValueCount": 0,
+          "stringValueCount": 0,
+          "booleanValueCount": 0,
+          "otherValueCount": 0,
+          "numericMin": 850,
+          "numericMax": 860,
+          "firstNumericValues": [
+            850,
+            854,
+            858,
+            860
+          ],
+          "lastNumericValues": [
+            850,
+            854,
+            858,
+            860
+          ],
+          "children": [],
+          "truncatedChildren": false
+        }
+      ],
+      "truncatedChildren": false
+    }
+  ],
+  "diagnostics": []
+}

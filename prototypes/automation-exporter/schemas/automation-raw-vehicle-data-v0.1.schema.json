@@ -1,0 +1,445 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://automation-lap.invalid/schemas/automation-raw-vehicle-data-v0.1.schema.json",
+  "title": "Automation LAP raw vehicle data",
+  "description": "Unified raw Automation vehicle payload assembled from the smoke, field-inventory, graph-inventory, and selected raw graph exports.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "kind",
+    "generatedAtUtc",
+    "generator",
+    "source",
+    "identity",
+    "unitPolicy",
+    "controlledFields",
+    "graphInventory",
+    "rawGraphs",
+    "diagnostics"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "0.1.0"
+    },
+    "kind": {
+      "const": "AutomationRawVehicleData"
+    },
+    "generatedAtUtc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "generator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "exporterVersion",
+        "exportedAtUtc",
+        "automationVersion",
+        "lastAccessTime",
+        "inputFiles"
+      ],
+      "properties": {
+        "kind": {
+          "const": "Automation"
+        },
+        "exporterVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exportedAtUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "automationVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lastAccessTime": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "inputFiles": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "$ref": "#/$defs/inputFile"
+          }
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "modelName",
+        "trimName"
+      ],
+      "properties": {
+        "modelName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trimName": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "unitPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rawValuesPreserved",
+        "conversionsApplied",
+        "internalUnitSystem",
+        "unknownUnitsPreserved"
+      ],
+      "properties": {
+        "rawValuesPreserved": {
+          "const": true
+        },
+        "conversionsApplied": {
+          "const": false
+        },
+        "internalUnitSystem": {
+          "const": "SI-candidate"
+        },
+        "unknownUnitsPreserved": {
+          "const": true
+        }
+      }
+    },
+    "controlledFields": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/controlledField"
+      }
+    },
+    "graphInventory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rootPath",
+        "graphDataPresent",
+        "availableGraphs",
+        "diagnostics"
+      ],
+      "properties": {
+        "rootPath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "graphDataPresent": {
+          "type": "boolean"
+        },
+        "availableGraphs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/availableGraph"
+          }
+        },
+        "diagnostics": {
+          "$ref": "#/$defs/diagnostics"
+        }
+      }
+    },
+    "rawGraphs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/rawGraph"
+      }
+    },
+    "diagnostics": {
+      "$ref": "#/$defs/diagnostics"
+    }
+  },
+  "$defs": {
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "inputFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "schemaVersion",
+        "sha256"
+      ],
+      "properties": {
+        "name": {
+          "enum": [
+            "automation-lap-vehicle.json",
+            "automation-lap-field-inventory.json",
+            "automation-lap-graph-inventory.json",
+            "automation-lap-raw-graphs.json"
+          ]
+        },
+        "schemaVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{64}$"
+        }
+      }
+    },
+    "controlledField": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "key",
+        "family",
+        "candidatePaths",
+        "resolvedPath",
+        "present",
+        "luaType",
+        "valuePreview",
+        "origin",
+        "presence",
+        "nature",
+        "unitSource",
+        "unitInternalCandidate",
+        "stability",
+        "redistribution"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "candidatePaths": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "resolvedPath": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "present": {
+          "type": "boolean"
+        },
+        "luaType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "valuePreview": {},
+        "origin": {
+          "type": "string",
+          "minLength": 1
+        },
+        "presence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "nature": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unitSource": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unitInternalCandidate": {
+          "type": "string",
+          "minLength": 1
+        },
+        "stability": {
+          "type": "string",
+          "minLength": 1
+        },
+        "redistribution": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "availableGraph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "path",
+        "luaType",
+        "entryCount",
+        "seriesLikeChildren"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "luaType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "entryCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "seriesLikeChildren": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "rawGraph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "path",
+        "present",
+        "luaType",
+        "seriesCount",
+        "expectedSeriesLength",
+        "lengthMismatch",
+        "series",
+        "diagnostics"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "present": {
+          "type": "boolean"
+        },
+        "luaType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "seriesCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "expectedSeriesLength": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "lengthMismatch": {
+          "type": "boolean"
+        },
+        "series": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rawSeries"
+          }
+        },
+        "diagnostics": {
+          "$ref": "#/$defs/diagnostics"
+        }
+      }
+    },
+    "rawSeries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "path",
+        "luaType",
+        "role",
+        "count",
+        "numericMin",
+        "numericMax",
+        "values",
+        "truncated",
+        "unitSource",
+        "unitInternalCandidate"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "luaType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "enum": [
+            "axis-candidate",
+            "value"
+          ]
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "numericMin": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "numericMax": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "truncated": {
+          "type": "boolean"
+        },
+        "unitSource": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unitInternalCandidate": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

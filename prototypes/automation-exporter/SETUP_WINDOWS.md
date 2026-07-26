@@ -39,6 +39,18 @@ Le README officiel indique qu’un plugin est une DLL placée dans :
 %AUTOMATION_HOME%\Content\ExportPlugins
 ```
 
+Sur l’installation Steam UE427 testée localement, `%AUTOMATION_HOME%` correspond au sous-dossier du jeu :
+
+```text
+E:\SteamLibrary\steamapps\common\Automation\UE427\AutomationGame
+```
+
+Le dossier effectif des DLL exporteur est donc :
+
+```text
+%AUTOMATION_HOME%\Content\ExportPlugins
+```
+
 Il indique également que l’exporteur doit idéalement fournir les architectures 64 bits et 32 bits. La version réellement acceptée par l’installation courante doit être consignée comme résultat expérimental, pas supposée.
 
 ### Preuve minimale
@@ -77,7 +89,31 @@ Le test Automation LAP doit produire :
 automation-lap-vehicle.json
 ```
 
-Aucune extraction physique détaillée ne doit être ajoutée avant validation de ce fichier minimal.
+À partir d'A3, il doit aussi produire :
+
+```text
+automation-lap-field-inventory.json
+```
+
+`automation-lap-vehicle.json` reste le contrat minimal de provenance. `automation-lap-field-inventory.json` est une matrice de sondes contrôlées pour préparer l'extraction physique détaillée.
+
+À partir d'A6, il doit aussi produire :
+
+```text
+automation-lap-graph-inventory.json
+```
+
+Ce fichier inventorie `CarInfo.TrimInfo.Results.GraphData` de façon bornée. Il ne remplace pas encore un export complet des courbes ; il sert à identifier les graphes disponibles, leur forme et leurs aperçus numériques.
+
+À partir d'A7, il doit aussi produire :
+
+```text
+automation-lap-raw-graphs.json
+```
+
+Ce fichier exporte les séries numériques complètes des graphes ciblés `AccelerationToTopSpeed`, `Braking` et `BrakingVGrip`.
+
+Note de compatibilité observée : le runtime Lua d’Automation peut être restreint par rapport à Lua standard. Ne pas supposer la présence de fonctions comme `pcall`.
 
 ## 5. Compiler la variante Automation LAP
 
@@ -113,6 +149,37 @@ Depuis la racine d’Automation LAP :
 ```powershell
 python prototypes\automation-exporter\tools\validate_smoke_export.py `
   "C:\chemin\vers\automation-lap-vehicle.json"
+```
+
+Pour A3 :
+
+```powershell
+python prototypes\automation-exporter\tools\validate_field_inventory.py `
+  "C:\chemin\vers\automation-lap-field-inventory.json"
+```
+
+Pour A6 :
+
+```powershell
+python prototypes\automation-exporter\tools\validate_graph_inventory.py `
+  "C:\chemin\vers\automation-lap-graph-inventory.json"
+```
+
+Pour A7 :
+
+```powershell
+python prototypes\automation-exporter\tools\validate_raw_graphs.py `
+  "C:\chemin\vers\automation-lap-raw-graphs.json"
+```
+
+Pour A8, assembler puis valider le contrat brut unifié :
+
+```powershell
+python prototypes\automation-exporter\tools\build_raw_vehicle_data.py `
+  "C:\chemin\vers\un\dossier\voiture"
+
+python prototypes\automation-exporter\tools\validate_raw_vehicle_data.py `
+  "C:\chemin\vers\un\dossier\voiture\automation-lap-raw-vehicle-data.json"
 ```
 
 Le validateur utilise uniquement la bibliothèque standard Python. Il vérifie notamment :

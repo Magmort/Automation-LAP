@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
-"""Validate an Automation LAP metadata-only smoke-test export.
-
-This validator intentionally uses only the Python standard library so it can be
-run on a clean Windows development machine without installing dependencies.
-It validates the experiment's required contract rather than implementing the
-entire JSON Schema specification.
-"""
+"""Validate an Automation LAP metadata-only smoke-test export."""
 
 from __future__ import annotations
 
@@ -17,7 +11,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-EXPECTED_SCHEMA_VERSION = "0.1.0"
+EXPECTED_SCHEMA_VERSION = "0.1.1"
 EXPECTED_SOURCE_KIND = "Automation"
 WINDOWS_ABSOLUTE_PATH = re.compile(r"^[A-Za-z]:[\\/]")
 
@@ -36,32 +30,34 @@ def require_exact_keys(value: dict[str, Any], expected: set[str], path: str) -> 
     unexpected = sorted(actual - expected)
 
     if missing:
-        fail(f"{path}: champs manquants: {', '.join(missing)}")
+        fail(f"{path}: missing fields: {', '.join(missing)}")
 
     if unexpected:
-        fail(f"{path}: champs inattendus: {', '.join(unexpected)}")
+        fail(f"{path}: unexpected fields: {', '.join(unexpected)}")
 
 
 def require_nullable_string(value: Any, path: str) -> None:
     if value is not None and not isinstance(value, str):
-        fail(f"{path}: chaîne ou null attendu")
+        fail(f"{path}: expected string or null")
+
+
+def require_nullable_number(value: Any, path: str) -> None:
+    if value is not None and not isinstance(value, (int, float)):
+        fail(f"{path}: expected number or null")
 
 
 def require_non_empty_string(value: Any, path: str) -> None:
     if not isinstance(value, str) or not value:
-        fail(f"{path}: chaîne non vide attendue")
+        fail(f"{path}: expected non-empty string")
 
 
 def validate_datetime(value: Any) -> None:
-    if value is None:
-        return
-
     require_non_empty_string(value, "$.exportedAtUtc")
 
     try:
         datetime.fromisoformat(value.replace("Z", "+00:00"))
     except ValueError as error:
-        fail(f"$.exportedAtUtc: date ISO 8601 invalide: {error}")
+        fail(f"$.exportedAtUtc: invalid ISO 8601 datetime: {error}")
 
 
 def looks_like_absolute_path(value: str) -> bool:
@@ -75,7 +71,7 @@ def looks_like_absolute_path(value: str) -> bool:
 def reject_absolute_paths(value: Any, path: str = "$") -> None:
     if isinstance(value, str):
         if looks_like_absolute_path(value):
-            fail(f"{path}: chemin absolu interdit dans l'export: {value!r}")
+            fail(f"{path}: absolute path is forbidden in export: {value!r}")
         return
 
     if isinstance(value, list):
@@ -90,7 +86,7 @@ def reject_absolute_paths(value: Any, path: str = "$") -> None:
 
 def validate_document(document: Any) -> list[str]:
     if not isinstance(document, dict):
-        fail("$: objet JSON attendu")
+        fail("$: expected JSON object")
 
     require_exact_keys(
         document,
@@ -108,7 +104,7 @@ def validate_document(document: Any) -> list[str]:
     if document["schemaVersion"] != EXPECTED_SCHEMA_VERSION:
         fail(
             "$.schemaVersion: "
-            f"{EXPECTED_SCHEMA_VERSION!r} attendu, reçu {document['schemaVersion']!r}"
+            f"expected {EXPECTED_SCHEMA_VERSION!r}, got {document['schemaVersion']!r}"
         )
 
     require_non_empty_string(document["exporterVersion"], "$.exporterVersion")
@@ -116,28 +112,33 @@ def validate_document(document: Any) -> list[str]:
 
     source = document["source"]
     if not isinstance(source, dict):
-        fail("$.source: objet attendu")
+        fail("$.source: expected object")
 
     require_exact_keys(
         source,
-        {"kind", "automationVersion", "automationVersionPath"},
+        {
+            "kind",
+            "automationVersion",
+            "automationVersionPath",
+            "lastAccessTime",
+            "lastAccessTimePath",
+        },
         "$.source",
     )
 
     if source["kind"] != EXPECTED_SOURCE_KIND:
-        fail(
-            f"$.source.kind: {EXPECTED_SOURCE_KIND!r} attendu, "
-            f"reçu {source['kind']!r}"
-        )
+        fail(f"$.source.kind: expected {EXPECTED_SOURCE_KIND!r}, got {source['kind']!r}")
 
     require_nullable_string(source["automationVersion"], "$.source.automationVersion")
     require_nullable_string(
         source["automationVersionPath"], "$.source.automationVersionPath"
     )
+    require_nullable_number(source["lastAccessTime"], "$.source.lastAccessTime")
+    require_nullable_string(source["lastAccessTimePath"], "$.source.lastAccessTimePath")
 
     vehicle = document["vehicle"]
     if not isinstance(vehicle, dict):
-        fail("$.vehicle: objet attendu")
+        fail("$.vehicle: expected object")
 
     require_exact_keys(
         vehicle,
@@ -150,10 +151,10 @@ def validate_document(document: Any) -> list[str]:
 
     diagnostics = document["diagnostics"]
     if not isinstance(diagnostics, list):
-        fail("$.diagnostics: tableau attendu")
+        fail("$.diagnostics: expected array")
 
     if len(diagnostics) != len(set(diagnostics)):
-        fail("$.diagnostics: diagnostics dupliqués")
+        fail("$.diagnostics: duplicate diagnostics")
 
     for index, diagnostic in enumerate(diagnostics):
         require_non_empty_string(diagnostic, f"$.diagnostics[{index}]")
@@ -163,25 +164,25 @@ def validate_document(document: Any) -> list[str]:
     warnings: list[str] = []
 
     if vehicle["modelName"] is None:
-        warnings.append("nom du modèle non récupéré")
+        warnings.append("vehicle model name was not recovered")
 
     if vehicle["trimName"] is None:
-        warnings.append("nom du trim non récupéré")
+        warnings.append("vehicle trim name was not recovered")
 
     if source["automationVersion"] is None:
-        warnings.append("version d'Automation non exposée par les données Lua")
+        warnings.append("Automation version was not exposed by Lua data")
 
-    if document["exportedAtUtc"] is None:
-        warnings.append("horloge UTC indisponible dans l'environnement Lua")
+    if source["lastAccessTime"] is None:
+        warnings.append("lastAccessTime was not exposed by Lua data")
 
     return warnings
 
 
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Valide un export JSON du test de fumée Automation LAP."
+        description="Validate an Automation LAP smoke-test JSON export."
     )
-    parser.add_argument("export", type=Path, help="Fichier automation-lap-vehicle.json")
+    parser.add_argument("export", type=Path, help="automation-lap-vehicle.json file")
     return parser.parse_args()
 
 
@@ -194,26 +195,26 @@ def main() -> int:
 
         warnings = validate_document(document)
     except FileNotFoundError:
-        print(f"ERREUR: fichier introuvable: {arguments.export}", file=sys.stderr)
+        print(f"ERROR: file not found: {arguments.export}", file=sys.stderr)
         return 2
     except UnicodeDecodeError as error:
-        print(f"ERREUR: le fichier n'est pas un UTF-8 valide: {error}", file=sys.stderr)
+        print(f"ERROR: file is not valid UTF-8: {error}", file=sys.stderr)
         return 2
     except json.JSONDecodeError as error:
         print(
-            f"ERREUR: JSON invalide à la ligne {error.lineno}, colonne {error.colno}: "
+            f"ERROR: invalid JSON at line {error.lineno}, column {error.colno}: "
             f"{error.msg}",
             file=sys.stderr,
         )
         return 2
     except ValidationError as error:
-        print(f"ÉCHEC: {error}", file=sys.stderr)
+        print(f"FAILURE: {error}", file=sys.stderr)
         return 1
 
-    print("SUCCÈS: l'export respecte le contrat du test de fumée v0.1.0.")
+    print("SUCCESS: export satisfies smoke-test contract v0.1.1.")
 
     for warning in warnings:
-        print(f"AVERTISSEMENT: {warning}")
+        print(f"WARNING: {warning}")
 
     return 0
 

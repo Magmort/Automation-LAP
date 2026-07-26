@@ -1,0 +1,233 @@
+{
+  "schemaVersion": "0.1.0",
+  "exporterVersion": "0.1.12-a7-json-values-fix",
+  "exportedAtUtc": "2026-07-26T17:30:00Z",
+  "scope": "selected-raw-graphs",
+  "rootPath": "CarInfo.TrimInfo.Results.GraphData",
+  "graphDataPresent": true,
+  "selectedGraphs": [
+    "AccelerationToTopSpeed",
+    "Braking",
+    "BrakingVGrip"
+  ],
+  "valueLimitPerSeries": 5000,
+  "graphs": [
+    {
+      "key": "BrakingVGrip",
+      "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip",
+      "present": true,
+      "luaType": "table",
+      "seriesCount": 5,
+      "expectedSeriesLength": 4,
+      "lengthMismatch": false,
+      "series": [
+        {
+          "key": "FrontBrakeForce",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.FrontBrakeForce",
+          "luaType": "table",
+          "role": "value",
+          "count": 4,
+          "numericMin": 3000,
+          "numericMax": 3000,
+          "values": [
+            3000,
+            3000,
+            3000,
+            3000
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "FrontBrakeGrip",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.FrontBrakeGrip",
+          "luaType": "table",
+          "role": "value",
+          "count": 4,
+          "numericMin": 2800,
+          "numericMax": 2850,
+          "values": [
+            2850,
+            2835,
+            2815,
+            2800
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "RearBrakeForce",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.RearBrakeForce",
+          "luaType": "table",
+          "role": "value",
+          "count": 4,
+          "numericMin": 950,
+          "numericMax": 950,
+          "values": [
+            950,
+            950,
+            950,
+            950
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "RearBrakeGrip",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.RearBrakeGrip",
+          "luaType": "table",
+          "role": "value",
+          "count": 4,
+          "numericMin": 850,
+          "numericMax": 860,
+          "values": [
+            850,
+            854,
+            858,
+            860
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "Speed",
+          "path": "CarInfo.TrimInfo.Results.GraphData.BrakingVGrip.Speed",
+          "luaType": "table",
+          "role": "axis-candidate",
+          "count": 4,
+          "numericMin": 0,
+          "numericMax": 120,
+          "values": [
+            120,
+            80,
+            40,
+            0
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "key": "Braking",
+      "path": "CarInfo.TrimInfo.Results.GraphData.Braking",
+      "present": true,
+      "luaType": "table",
+      "seriesCount": 2,
+      "expectedSeriesLength": 4,
+      "lengthMismatch": false,
+      "series": [
+        {
+          "key": "Speed",
+          "path": "CarInfo.TrimInfo.Results.GraphData.Braking.Speed",
+          "luaType": "table",
+          "role": "axis-candidate",
+          "count": 4,
+          "numericMin": 0,
+          "numericMax": 120,
+          "values": [
+            120,
+            80,
+            40,
+            0
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "Time",
+          "path": "CarInfo.TrimInfo.Results.GraphData.Braking.Time",
+          "luaType": "table",
+          "role": "axis-candidate",
+          "count": 4,
+          "numericMin": 0,
+          "numericMax": 3.2,
+          "values": [
+            0,
+            1.05,
+            2.1,
+            3.2
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "key": "AccelerationToTopSpeed",
+      "path": "CarInfo.TrimInfo.Results.GraphData.AccelerationToTopSpeed",
+      "present": true,
+      "luaType": "table",
+      "seriesCount": 3,
+      "expectedSeriesLength": 4,
+      "lengthMismatch": false,
+      "series": [
+        {
+          "key": "Speed",
+          "path": "CarInfo.TrimInfo.Results.GraphData.AccelerationToTopSpeed.Speed",
+          "luaType": "table",
+          "role": "axis-candidate",
+          "count": 4,
+          "numericMin": 0,
+          "numericMax": 120,
+          "values": [
+            0,
+            40,
+            80,
+            120
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "Time",
+          "path": "CarInfo.TrimInfo.Results.GraphData.AccelerationToTopSpeed.Time",
+          "luaType": "table",
+          "role": "axis-candidate",
+          "count": 4,
+          "numericMin": 0,
+          "numericMax": 12,
+          "values": [
+            0,
+            3.1,
+            7.4,
+            12
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        },
+        {
+          "key": "enginePower",
+          "path": "CarInfo.TrimInfo.Results.GraphData.AccelerationToTopSpeed.enginePower",
+          "luaType": "table",
+          "role": "value",
+          "count": 4,
+          "numericMin": 0,
+          "numericMax": 95,
+          "values": [
+            0,
+            70,
+            92,
+            95
+          ],
+          "truncated": false,
+          "unitSource": "automation-graph",
+          "unitInternalCandidate": "unknown"
+        }
+      ],
+      "diagnostics": []
+    }
+  ],
+  "diagnostics": []
+}
