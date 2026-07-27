@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900" role="img" aria-labelledby="title desc">
+<title id="title">D-S03 overtake candidate decisions</title>
+<desc id="desc">Four static traffic cases showing current lane, candidate lane, blockers and overtake decision.</desc>
+<rect width="100%" height="100%" fill="#f7f7f3" />
+<g font-family="Arial, sans-serif" fill="#222">
+<text x="40" y="48" font-size="22" font-weight="700">D-S03 - declenchement de depassement candidat</text>
+<text x="40" y="72" font-size="13" fill="#555">La decision ne deplace pas encore la voiture : elle choisit seulement si la ligne candidate est libre.</text>
+<rect x="40.00" y="92.00" width="580.00" height="182.00" rx="6" fill="#ffffff" stroke="#c9c9c2" />
+<text x="58.00" y="120.00" font-size="15" font-weight="700">Clear Overtake</text>
+<text x="542.00" y="120.00" font-size="13" font-weight="700" fill="#2f9d68">GO</text>
+<line x1="62.00" y1="158.64" x2="598.00" y2="158.64" stroke="#76766f" stroke-width="2" />
+<line x1="62.00" y1="228.64" x2="598.00" y2="228.64" stroke="#2f9d68" stroke-width="2" stroke-dasharray="8 7" />
+<text x="62.00" y="146.64" font-size="11" fill="#555">ligne actuelle</text>
+<text x="62.00" y="216.64" font-size="11" fill="#555">ligne candidate</text>
+<rect x="221.00" y="150.64" width="20" height="16" rx="3" fill="#2f7ed8" stroke="#202020" />
+<text x="244.00" y="162.64" font-size="11">Ego</text>
+<rect x="392.60" y="150.64" width="20" height="16" rx="3" fill="#d84a3a" stroke="#202020" />
+<text x="415.60" y="162.64" font-size="11">Leader</text>
+<text x="58.00" y="226.00" font-size="12">front leader / TTC 2.78s</text>
+<text x="58.00" y="244.00" font-size="12">candidate: clear</text>
+<text x="58.00" y="262.00" font-size="12" fill="#555">candidate_clear</text>
+<rect x="658.00" y="92.00" width="580.00" height="182.00" rx="6" fill="#ffffff" stroke="#c9c9c2" />
+<text x="676.00" y="120.00" font-size="15" font-weight="700">Blocked Front</text>
+<text x="1160.00" y="120.00" font-size="13" font-weight="700" fill="#b23b3b">NO GO</text>
+<line x1="680.00" y1="158.64" x2="1216.00" y2="158.64" stroke="#76766f" stroke-width="2" />
+<line x1="680.00" y1="228.64" x2="1216.00" y2="228.64" stroke="#2f9d68" stroke-width="2" stroke-dasharray="8 7" />
+<text x="680.00" y="146.64" font-size="11" fill="#555">ligne actuelle</text>
+<text x="680.00" y="216.64" font-size="11" fill="#555">ligne candidate</text>
+<rect x="839.00" y="150.64" width="20" height="16" rx="3" fill="#2f7ed8" stroke="#202020" />
+<text x="862.00" y="162.64" font-size="11">Ego</text>
+<rect x="1010.60" y="150.64" width="20" height="16" rx="3" fill="#d84a3a" stroke="#202020" />
+<text x="1033.60" y="162.64" font-size="11">Leader</text>
+<rect x="984.20" y="220.64" width="20" height="16" rx="3" fill="#6f4bb2" stroke="#202020" />
+<text x="1007.20" y="232.64" font-size="11">Front Blocker</text>
+<text x="676.00" y="226.00" font-size="12">front leader / TTC 2.78s</text>
+<text x="676.00" y="244.00" font-size="12">candidate: front:front_blocker</text>
+<text x="676.00" y="262.00" font-size="12" fill="#555">candidate_blocked_front_front_blocker</text>
+<rect x="40.00" y="318.00" width="580.00" height="182.00" rx="6" fill="#ffffff" stroke="#c9c9c2" />
+<text x="58.00" y="346.00" font-size="15" font-weight="700">Blocked Rear</text>
+<text x="542.00" y="346.00" font-size="13" font-weight="700" fill="#b23b3b">NO GO</text>
+<line x1="62.00" y1="384.64" x2="598.00" y2="384.64" stroke="#76766f" stroke-width="2" />
+<line x1="62.00" y1="454.64" x2="598.00" y2="454.64" stroke="#2f9d68" stroke-width="2" stroke-dasharray="8 7" />
+<text x="62.00" y="372.64" font-size="11" fill="#555">ligne actuelle</text>
+<text x="62.00" y="442.64" font-size="11" fill="#555">ligne candidate</text>
+<rect x="221.00" y="376.64" width="20" height="16" rx="3" fill="#2f7ed8" stroke="#202020" />
+<text x="244.00" y="388.64" font-size="11">Ego</text>
+<rect x="392.60" y="376.64" width="20" height="16" rx="3" fill="#d84a3a" stroke="#202020" />
+<text x="415.60" y="388.64" font-size="11">Leader</text>
+<rect x="122.00" y="446.64" width="20" height="16" rx="3" fill="#6f4bb2" stroke="#202020" />
+<text x="145.00" y="458.64" font-size="11">Rear Blocker</text>
+<text x="58.00" y="452.00" font-size="12">front leader / TTC 2.78s</text>
+<text x="58.00" y="470.00" font-size="12">candidate: rear:rear_blocker</text>
+<text x="58.00" y="488.00" font-size="12" fill="#555">candidate_blocked_rear_rear_blocker</text>
+<rect x="658.00" y="318.00" width="580.00" height="182.00" rx="6" fill="#ffffff" stroke="#c9c9c2" />
+<text x="676.00" y="346.00" font-size="15" font-weight="700">No Need</text>
+<text x="1160.00" y="346.00" font-size="13" font-weight="700" fill="#b23b3b">NO GO</text>
+<line x1="680.00" y1="384.64" x2="1216.00" y2="384.64" stroke="#76766f" stroke-width="2" />
+<line x1="680.00" y1="454.64" x2="1216.00" y2="454.64" stroke="#2f9d68" stroke-width="2" stroke-dasharray="8 7" />
+<text x="680.00" y="372.64" font-size="11" fill="#555">ligne actuelle</text>
+<text x="680.00" y="442.64" font-size="11" fill="#555">ligne candidate</text>
+<rect x="839.00" y="376.64" width="20" height="16" rx="3" fill="#2f7ed8" stroke="#202020" />
+<text x="862.00" y="388.64" font-size="11">Ego</text>
+<rect x="1010.60" y="376.64" width="20" height="16" rx="3" fill="#d84a3a" stroke="#202020" />
+<text x="1033.60" y="388.64" font-size="11">Leader</text>
+<text x="676.00" y="452.00" font-size="12">front leader / TTC 19.44s</text>
+<text x="676.00" y="470.00" font-size="12">candidate: clear</text>
+<text x="676.00" y="488.00" font-size="12" fill="#555">no_slow_front_trigger</text>
+<rect x="40" y="570" width="1200" height="120" rx="6" fill="#ffffff" stroke="#c9c9c2" />
+<text x="66" y="604" font-size="15" font-weight="700">Synthese</text>
+<text x="66" y="632" font-size="13">cas conformes : 4 / 4</text>
+<text x="310" y="632" font-size="13">decisions positives : 1</text>
+<text x="560" y="632" font-size="13">decisions negatives : 3</text>
+<text x="810" y="632" font-size="13">cas bloques par ligne candidate : 2</text>
+<circle cx="66" cy="666" r="5" fill="#2f7ed8" /><text x="80" y="670" font-size="12">Ego</text>
+<circle cx="150" cy="666" r="5" fill="#d84a3a" /><text x="164" y="670" font-size="12">Leader lent</text>
+<circle cx="270" cy="666" r="5" fill="#6f4bb2" /><text x="284" y="670" font-size="12">Trafic adjacent</text>
+<line x1="420" y1="666" x2="452" y2="666" stroke="#2f9d68" stroke-width="2" stroke-dasharray="8 7" /><text x="462" y="670" font-size="12">Ligne candidate</text>
+</g>
+</svg>

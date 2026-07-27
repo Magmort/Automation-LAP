@@ -25,7 +25,7 @@ D — Trafic et dépassement
 F — Charge et accélération
 ```
 
-Le replay est volontairement introduit avant le trafic afin de rendre les interactions complexes observables et analysables.
+Le replay reste recommandé avant les scénarios de trafic longs afin de rendre les interactions complexes observables et analysables. Le socle statique D-S01 peut toutefois être exécuté sans attendre E.
 
 L’import UR2D2 est séparé du tour autonome : C définit le contrat interne à partir des besoins du contrôleur ; G vérifie ensuite qu’UR2D2 peut alimenter ce contrat. G peut être exécutée en parallèle d’E, D ou F.
 
@@ -35,11 +35,11 @@ L’import UR2D2 est séparé du tour autonome : C définit le contrat interne �
 |---|---:|---|---|---|
 | A — Extraction Automation | #3 | Validée avec réserves | Installation locale d’Automation et du SDK | Contrat A8 `AutomationRawVehicleData` v0.1 disponible |
 | B — Dynamique d’une voiture | #4 | Validée avec réserves | Données A9 des trois voitures | Modèle dynamique candidat disponible pour C |
-| C — Tour autonome et circuit minimal | #5 | À préparer | Modèle dynamique candidat de B | `TrackDefinition` minimal et tours consécutifs mesurés |
-| D — Trafic et dépassement | #6 | Bloquée | C et replay minimal E | Scénarios de trafic statistiques |
-| E — Replay minimal | #7 | Bloquée | États dynamiques de B | Fichier autonome navigable |
+| C — Tour autonome et circuit minimal | #5 | Validée avec réserves | Modèle dynamique candidat de B | `TrackDefinition` v0.1 consolidé |
+| D — Trafic et dépassement | #6 | Validée avec réserves | B et C, replay E utile mais non bloquant | Synthèse D-S06 disponible |
+| E — Replay minimal | #7 | Prête | États dynamiques de B et contrat C | Fichier autonome navigable |
 | F — Charge et accélération | #8 | Bloquée | Boucle représentative B à E | Profils 1, 12, 20 et 40 voitures |
-| G — Import UR2D2 | #10 | Bloquée | Contrat de circuit issu de C | Circuit UR2D2 converti et validé |
+| G — Import UR2D2 | #10 | Prête | Contrat `TrackDefinition` v0.1 issu de C | Circuit UR2D2 converti et validé |
 
 ## Portée de l’expérience G
 

@@ -1,0 +1,139 @@
+{
+  "scenario": "D-S06",
+  "success": true,
+  "decision": "validated_with_reserves",
+  "generatedAtUtc": "2026-07-27T20:21:29Z",
+  "sourceFiles": {
+    "D-S01": "prototypes/traffic/results/d_s01_neighbor_perception_summary.json",
+    "D-S02": "prototypes/traffic/results/d_s02_longitudinal_follow_summary.json",
+    "D-S03": "prototypes/traffic/results/d_s03_overtake_candidate_summary.json",
+    "D-S04": "prototypes/traffic/results/d_s04_side_by_side_summary.json",
+    "D-S05": "prototypes/traffic/results/d_s05_rejoin_summary.json"
+  },
+  "globalMetrics": {
+    "scenarioCount": 5,
+    "successfulScenarioCount": 5,
+    "dynamicScenarioCount": 3,
+    "totalSimulatedDynamicTimeS": 190.0,
+    "totalContactTicks": 0,
+    "totalOffTrackTicks": 0,
+    "decisionCaseCount": 4,
+    "matchedDecisionCaseCount": 4,
+    "rejoinDurationS": 2.9833333333333227,
+    "sideBySideTickPercent": 100.0,
+    "minFollowGapM": 17.49999999999543,
+    "minRejoinFrontGapM": 32.15191077187782,
+    "minRejoinRearGapM": 29.241618424627983
+  },
+  "scenarios": [
+    {
+      "id": "D-S01",
+      "label": "Perception voisins",
+      "success": true,
+      "status": "valide",
+      "evidence": "6 voitures, 6 liens voisins, wrap depart valide",
+      "keyMetrics": {
+        "vehicleCount": 6,
+        "neighborLinkCount": 6,
+        "offTrackCount": 0,
+        "maxProjectionProgressErrorM": 0.0
+      }
+    },
+    {
+      "id": "D-S02",
+      "label": "Suivi longitudinal",
+      "success": true,
+      "status": "valide avec reserves",
+      "evidence": "90 s derriere leader lent, gap stabilise, aucun contact",
+      "keyMetrics": {
+        "durationS": 90.0,
+        "contactTicks": 0,
+        "stalledTicks": 0,
+        "minGapM": 17.49999999999543,
+        "frontDetectedTickPercent": 100.0,
+        "meanGapLast20S": 17.499999999995477
+      }
+    },
+    {
+      "id": "D-S03",
+      "label": "Decision depassement",
+      "success": true,
+      "status": "valide avec reserves",
+      "evidence": "4 cas conformes, declenchement seulement si corridor candidat libre",
+      "keyMetrics": {
+        "caseCount": 4,
+        "matchedCases": 4,
+        "positiveDecisions": 1,
+        "negativeDecisions": 3,
+        "blockedCandidateCases": 2
+      }
+    },
+    {
+      "id": "D-S04",
+      "label": "Cote a cote",
+      "success": true,
+      "status": "valide avec reserves",
+      "evidence": "45 s cote a cote, clearance stabilisee, aucun contact",
+      "keyMetrics": {
+        "durationS": 45.0,
+        "contactTicks": 0,
+        "offTrackTicks": 0,
+        "sideBySideTickPercent": 100.0,
+        "minSideClearanceM": 0.5,
+        "meanSideClearanceLast15S": 1.6999999999988917,
+        "minEdgeClearanceM": 2.250000000000016
+      }
+    },
+    {
+      "id": "D-S05",
+      "label": "Reinsertion",
+      "success": true,
+      "status": "valide avec reserves",
+      "evidence": "retour corridor cible entre deux voitures, gaps surs, aucun contact",
+      "keyMetrics": {
+        "durationS": 55.0,
+        "contactTicks": 0,
+        "offTrackTicks": 0,
+        "rejoinDurationS": 2.9833333333333227,
+        "minFrontGapDuringRejoinM": 32.15191077187782,
+        "minRearGapDuringRejoinM": 29.241618424627983,
+        "stableTargetLaneTickPercent": 100.0,
+        "finalLateralOffsetM": 1.3807971369723908e-17
+      }
+    }
+  ],
+  "capabilities": [
+    {
+      "capability": "Projection multi-voitures et perception voisins",
+      "status": "validee",
+      "evidence": "6 voitures, 6 liens, erreur max 0.00 m"
+    },
+    {
+      "capability": "Suivi longitudinal derriere voiture lente",
+      "status": "validee avec reserves",
+      "evidence": "gap min 17.50 m, detection front 100.00 %"
+    },
+    {
+      "capability": "Decision de depassement candidat",
+      "status": "validee avec reserves",
+      "evidence": "4 / 4 cas conformes, 2 blockers detectes"
+    },
+    {
+      "capability": "Maintien cote a cote",
+      "status": "validee avec reserves",
+      "evidence": "100.00 % du temps, clearance stable 1.70 m"
+    },
+    {
+      "capability": "Reinsertion nominale apres ecart",
+      "status": "validee avec reserves",
+      "evidence": "reinsertion 2.98 s, gaps min 32.15 m / 29.24 m"
+    }
+  ],
+  "residualRisks": [
+    "Les scenarios D restent deterministes et peu nombreux.",
+    "La reinsertion contestee, la defense active et les gaps qui se referment ne sont pas encore testes.",
+    "Les collisions restent detectees par enveloppes simples, sans physique de contact detaillee.",
+    "La densite de grille et la performance appartiennent encore a F.",
+    "Le replay E reste utile pour analyser les interactions longues et diagnostiquer les cas limites."
+  ]
+}

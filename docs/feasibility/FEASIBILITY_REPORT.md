@@ -24,8 +24,8 @@ Ce document est le livrable final de la Phase 1. Il doit rester synthétique : l
 |---|---|---|---|---|
 | A — Extraction Automation | Les données nécessaires sont-elles exportables et stables ? | Validée avec réserves | Moyen | Unités Automation encore partielles |
 | B — Dynamique d’une voiture | Un modèle 2D commun produit-il des différences plausibles ? | Validée avec réserves | Moyen | Direction encore calibrable, unités latérales inconnues |
-| C — Tour autonome et circuit minimal | Le contrôleur peut-il rouler sans script par virage avec un contrat de circuit minimal ? | En attente | — | Modèle de circuit surdimensionné ou insuffisant pour le contrôle |
-| D — Trafic et dépassement | Les interactions peuvent-elles être crédibles et réglables ? | En attente | — | Collisions, immobilisme ou comportement trop déterministe |
+| C — Tour autonome et circuit minimal | Le contrôleur peut-il rouler sans script par virage avec un contrat de circuit minimal ? | Validée avec réserves | Moyen à bon | Contrat validé sur piste canonique, import réel et surfaces détaillées non prouvés |
+| D — Trafic et dépassement | Les interactions peuvent-elles être crédibles et réglables ? | Validée avec réserves | Moyen | Interactions longues, denses ou contestées non prouvées |
 | E — Replay minimal | Le replay hybride est-il autonome et navigable ? | En attente | — | Taille des fichiers et compatibilité de version |
 | F — Charge et accélération | La cible de voitures et l’exécution accélérée sont-elles viables ? | En attente | — | Coût combiné physique, perception, IA et enregistrement |
 | G — Import UR2D2 | Les fichiers UR2D2 peuvent-ils reconstruire le modèle minimal validé en C ? | En attente | — | Format opaque, échelle ambiguë ou informations insuffisantes |
@@ -37,10 +37,14 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 | Domaine | Paramètre | Valeur candidate | Origine | Statut |
 |---|---|---:|---|---|
 | Simulation | Pas de temps physique | `1/60 s` candidat, `1/120 s` référence de mesure | Expérience B-S05 | Candidat |
-| Circuit | Schéma minimal `TrackDefinition` | À définir | Expérience C | En attente |
-| Circuit | Tolérances de fermeture et continuité | À mesurer | Expérience C | En attente |
+| Circuit | Schéma minimal `TrackDefinition` | v0.1 candidat | Expérience C-S01 | Candidat |
+| Circuit | Tolérances de fermeture et continuité | boucle fermée implicite, polyligne validée | Expérience C-S01 | Candidat |
 | Circuit | Transformation UR2D2 vers unités SI | À déterminer | Expérience G | En attente |
-| Contrôle IA | Fréquence de commande | À mesurer | Expérience C | En attente |
+| Contrôle IA | Fréquence de commande | `1/60 s` candidate, `1/120 s` référence | Expérience C-S02/C-S03 | Candidat |
+| Contrôle IA | Adaptation de vitesse | cible par courbure anticipée, QFC55 A9 | Expérience C-S03 | Candidat avec réserves |
+| Contrôle IA | Récupération latérale | retour sous 0,75 m en moins de 7 s après perturbation | Expérience C-S04 | Candidat avec réserves |
+| Contrôle IA | Profils pilote | prudent, équilibré, agressif | Expérience C-S05 | Candidat avec réserves |
+| Contrôle IA | Saturation du grip | yaw demandé plafonné par limite latérale véhicule | Expérience C-S05 | Garde-fou candidat |
 | Perception | Fréquence de mise à jour | À mesurer | Expérience D | En attente |
 | Replay | Fréquence des images-clés | À mesurer | Expérience E | En attente |
 | Replay | Fréquence de télémétrie | À mesurer | Expérience E | En attente |
@@ -67,21 +71,31 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 ### C — Tour autonome et modèle minimal de circuit
 
 - **Ticket :** #5
-- **Conclusion :** en attente
-- **Contrôleur testé :** à compléter
-- **Schéma minimal retenu :** à compléter
-- **Invariants et tolérances :** à compléter
-- **Régularité :** à compléter
-- **Différenciation des pilotes :** à compléter
-- **Données obligatoires pour un importeur :** à compléter
+- **Conclusion :** validée avec réserves
+- **Contrôleur testé :** pure pursuit à vitesse contrainte en C-S02, adaptation de vitesse par courbure avec QFC55 en C-S03, récupération d'écarts latéraux en C-S04, puis profils pilote différenciés en C-S05
+- **Schéma minimal retenu :** `TrackDefinition` v0.1 candidat, indépendant de Unity et d'UR2D2
+- **Invariants et tolérances :** C-S01 valide une boucle fermée implicite de 381,92 m, 24 segments, largeur minimale 10 m, courbure finie
+- **Régularité :** C-S02 référence `1/120 s` : tours d'environ 30,45 s, erreur latérale moyenne 0,173 m, max 0,693 m
+- **Adaptation de vitesse :** C-S03 référence `1/120 s` : trois tours en 83,33 s, vitesse moyenne 49,31 km/h, vitesse max 62,79 km/h, erreur latérale moyenne 0,231 m, max 0,807 m, aucune sortie
+- **Récupération latérale :** C-S04 référence `1/120 s` : offsets `+2,75 m`, `-3,25 m` et `+3,00 m` récupérés en 1,433 s, 1,800 s et 2,467 s, aucune sortie
+- **Différenciation des pilotes :** C-S05 référence `1/120 s` : prudent 115,28 s, équilibré 83,33 s, agressif 56,84 s sur trois tours, aucune sortie ; erreur latérale moyenne `0,126 m`, `0,231 m`, `0,302 m`
+- **Témoin négatif C-S05 :** sur-vitesse volontaire : saturation grip `84,11 %`, ratio maximal `5,87x`, erreur latérale maximale `24,197 m`, sortie de piste attendue
+- **Contrat C-S06 pour G :** `TrackDefinition` v0.1 consolidé ; champs source, invariants et valeurs dérivées listés dans `C_S06_CONTRACT_CONSOLIDATION_RESULT.md`
+- **Réserve C-S03 à C-S05 :** la limite latérale utilise encore le proxy B-S04 `FrontGripG + RearGripG`, la perturbation C-S04 reste cinématique, les profils C-S05 sont heuristiques, et la saturation latérale ne distingue pas encore sous-virage et survirage
+- **Données obligatoires pour un importeur :** identité, version, unités SI, axes et orientation, boucle et sens, surface principale, ligne centrale ordonnée, largeurs gauche/droite, départ, checkpoints
 
 ### D — Trafic et dépassement
 
 - **Ticket :** #6
-- **Conclusion :** en attente
-- **Taux de contact :** à compléter
-- **Taux de dépassement :** à compléter
-- **Cas d’immobilisme :** à compléter
+- **Conclusion :** validée avec réserves
+- **Protocole :** `docs/feasibility/experiments/D-TRAFFIC-OVERTAKING.md`
+- **Socle D-S01 :** 6 voitures projetées sur `TrackDefinition`, 6 liens de voisinage détectés, aucun hors-piste, wrap de départ validé
+- **Suivi D-S02 :** 90 s derrière voiture lente, aucun contact, aucun immobilisme, gap minimal `17,50 m`, stabilisation au gap cible
+- **Décision D-S03 :** 4 cas conformes / 4, dépassement candidat déclenché uniquement quand la ligne candidate est libre
+- **Côte à côte D-S04 :** 45 s, aucun contact, aucun hors-piste, clearance latérale stabilisée `1,70 m`
+- **Réinsertion D-S05 :** 55 s, retour dans le corridor cible en `2,98 s`, aucun contact, aucun hors-piste, gaps minimaux `32,15 m` devant et `29,24 m` derrière
+- **Synthèse D-S06 :** 5 scénarios conformes / 5, 190 s dynamiques simulées, 0 contact consolidé, 0 hors-piste consolidé, 4 décisions conformes / 4
+- **Réserve :** scénarios déterministes et peu nombreux ; interactions longues, denses, contestées et performance restent à couvrir
 
 ### E — Replay minimal
 

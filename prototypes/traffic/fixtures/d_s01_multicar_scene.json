@@ -1,0 +1,84 @@
+{
+  "kind": "TrafficScene",
+  "schemaVersion": "0.1.0",
+  "sceneId": "d-s01-neighbor-perception",
+  "name": "D-S01 Neighbor Perception",
+  "trackRef": "prototypes/autonomous-lap/fixtures/canonical_track.json",
+  "perception": {
+    "forwardLookaheadM": 80.0,
+    "rearLookaheadM": 55.0,
+    "sameCorridorLateralM": 2.2
+  },
+  "vehicles": [
+    {
+      "id": "red",
+      "label": "Red",
+      "progressM": 25.0,
+      "lateralOffsetM": 0.0,
+      "speedKmh": 48.0,
+      "lengthM": 4.4,
+      "widthM": 1.9
+    },
+    {
+      "id": "blue",
+      "label": "Blue",
+      "progressM": 62.0,
+      "lateralOffsetM": 0.2,
+      "speedKmh": 42.0,
+      "lengthM": 4.4,
+      "widthM": 1.9
+    },
+    {
+      "id": "green",
+      "label": "Green",
+      "progressM": 90.0,
+      "lateralOffsetM": -3.0,
+      "speedKmh": 50.0,
+      "lengthM": 4.4,
+      "widthM": 1.9
+    },
+    {
+      "id": "purple",
+      "label": "Purple",
+      "progressM": 155.0,
+      "lateralOffsetM": 2.2,
+      "speedKmh": 35.0,
+      "lengthM": 4.4,
+      "widthM": 1.9
+    },
+    {
+      "id": "orange",
+      "label": "Orange",
+      "progressM": 170.0,
+      "lateralOffsetM": 2.4,
+      "speedKmh": 50.0,
+      "lengthM": 4.4,
+      "widthM": 1.9
+    },
+    {
+      "id": "yellow",
+      "label": "Yellow",
+      "progressM": 360.0,
+      "lateralOffsetM": -0.1,
+      "speedKmh": 55.0,
+      "lengthM": 4.4,
+      "widthM": 1.9
+    }
+  ],
+  "expectedNearestFront": {
+    "red": "blue",
+    "blue": null,
+    "green": null,
+    "purple": "orange",
+    "orange": null,
+    "yellow": "red"
+  },
+  "expectedNearestRear": {
+    "red": "yellow",
+    "blue": "red",
+    "green": null,
+    "purple": null,
+    "orange": "purple",
+    "yellow": null
+  }
+}

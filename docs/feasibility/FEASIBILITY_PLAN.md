@@ -66,8 +66,8 @@ Pouvons-nous extraire de manière stable les données nécessaires à trois voit
 
 - **Ticket :** #4
 - **Protocole :** [experiments/B-VEHICLE-DYNAMICS.md](experiments/B-VEHICLE-DYNAMICS.md)
-- **État :** en cours
-- **Entrée :** `AutomationRawVehicleData` v0.1 produit par A8
+- **État :** validée avec réserves
+- **Entrée :** `AutomationRawVehicleData` v0.1 produit par A8/A9
 
 ### Question
 
@@ -93,7 +93,8 @@ Un modèle 2D simple peut-il reproduire des différences plausibles d’accélé
 ## Expérience C — Tour autonome et modèle minimal de circuit
 
 - **Ticket :** #5
-- **État :** bloquée par B
+- **Protocole :** [experiments/C-AUTONOMOUS-LAP.md](experiments/C-AUTONOMOUS-LAP.md)
+- **État :** validée avec réserves
 - **Dépendance produite :** contrat d’entrée de G
 
 ### Question
@@ -133,7 +134,8 @@ Les stands, secteurs multiples, dénivelé, dévers, murs détaillés, terrains 
 ## Expérience D — Trafic et dépassement
 
 - **Ticket :** #6
-- **État :** bloquée par C et E
+- **Protocole :** [experiments/D-TRAFFIC-OVERTAKING.md](experiments/D-TRAFFIC-OVERTAKING.md)
+- **État :** validée avec réserves
 
 ### Question
 
@@ -158,7 +160,7 @@ Plusieurs voitures peuvent-elles partager la piste et produire des dépassements
 ## Expérience E — Replay
 
 - **Ticket :** #7
-- **État :** bloquée par B, à mener avant D
+- **État :** prête, recommandée avant les scénarios D longs
 
 ### Question
 

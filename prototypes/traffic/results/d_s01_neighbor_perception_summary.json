@@ -1,0 +1,247 @@
+{
+  "scenario": "D-S01",
+  "success": true,
+  "generatedAtUtc": "2026-07-27T20:21:23Z",
+  "trackInputPath": "prototypes/autonomous-lap/fixtures/canonical_track.json",
+  "sceneInputPath": "prototypes/traffic/fixtures/d_s01_multicar_scene.json",
+  "trackLengthM": 381.9152381450591,
+  "perceptionSettings": {
+    "forwardLookaheadM": 80.0,
+    "rearLookaheadM": 55.0,
+    "sameCorridorLateralM": 2.2
+  },
+  "vehicleStates": [
+    {
+      "id": "red",
+      "label": "Red",
+      "sourceProgressM": 25.0,
+      "projectedProgressM": 25.0,
+      "projectionProgressErrorM": 0.0,
+      "lateralOffsetM": 0.0,
+      "projectedLateralM": 0.0,
+      "x": 24.778366948922038,
+      "y": -42.162836946400596,
+      "heading": 0.2436782737428211,
+      "speedKmh": 48.0,
+      "speedMps": 13.333333333333334,
+      "lengthM": 4.4,
+      "widthM": 1.9,
+      "offTrack": false
+    },
+    {
+      "id": "blue",
+      "label": "Blue",
+      "sourceProgressM": 62.0,
+      "projectedProgressM": 62.0,
+      "projectionProgressErrorM": 0.0,
+      "lateralOffsetM": 0.2,
+      "projectedLateralM": 0.20000000000000356,
+      "x": 58.25266424041891,
+      "y": -27.476153595097745,
+      "heading": 0.6593100683328579,
+      "speedKmh": 42.0,
+      "speedMps": 11.666666666666668,
+      "lengthM": 4.4,
+      "widthM": 1.9,
+      "offTrack": false
+    },
+    {
+      "id": "green",
+      "label": "Green",
+      "sourceProgressM": 90.0,
+      "projectedProgressM": 90.0,
+      "projectionProgressErrorM": 0.0,
+      "lateralOffsetM": -3.0,
+      "projectedLateralM": -3.0000000000000027,
+      "x": 76.77838980109823,
+      "y": -5.987878059046926,
+      "heading": 1.3585258310788055,
+      "speedKmh": 50.0,
+      "speedMps": 13.88888888888889,
+      "lengthM": 4.4,
+      "widthM": 1.9,
+      "offTrack": false
+    },
+    {
+      "id": "purple",
+      "label": "Purple",
+      "sourceProgressM": 155.0,
+      "projectedProgressM": 155.0,
+      "projectionProgressErrorM": 0.0,
+      "lateralOffsetM": 2.2,
+      "projectedLateralM": 2.200000000000003,
+      "x": 34.88146336811907,
+      "y": 37.38404437054308,
+      "heading": 2.897914379846972,
+      "speedKmh": 35.0,
+      "speedMps": 9.722222222222223,
+      "lengthM": 4.4,
+      "widthM": 1.9,
+      "offTrack": false
+    },
+    {
+      "id": "orange",
+      "label": "Orange",
+      "sourceProgressM": 170.0,
+      "projectedProgressM": 170.0,
+      "projectionProgressErrorM": 0.0,
+      "lateralOffsetM": 2.4,
+      "projectedLateralM": 2.399999999999997,
+      "x": 20.27635253844985,
+      "y": 40.809060816208536,
+      "heading": 2.897914379846972,
+      "speedKmh": 50.0,
+      "speedMps": 13.88888888888889,
+      "lengthM": 4.4,
+      "widthM": 1.9,
+      "offTrack": false
+    },
+    {
+      "id": "yellow",
+      "label": "Yellow",
+      "sourceProgressM": 360.0,
+      "projectedProgressM": 360.0,
+      "projectionProgressErrorM": 0.0,
+      "lateralOffsetM": -0.1,
+      "projectedLateralM": -0.10000000000000082,
+      "x": -21.80886538157269,
+      "y": -43.00415504510532,
+      "heading": -0.2436782737428211,
+      "speedKmh": 55.0,
+      "speedMps": 15.277777777777779,
+      "lengthM": 4.4,
+      "widthM": 1.9,
+      "offTrack": false
+    }
+  ],
+  "perception": {
+    "red": {
+      "front": {
+        "id": "blue",
+        "gapM": 37.0,
+        "lateralSeparationM": 0.20000000000000356,
+        "closingSpeedMps": 1.666666666666666,
+        "timeToCatchS": 22.200000000000006
+      },
+      "rear": {
+        "id": "yellow",
+        "gapM": 46.91523814505911,
+        "lateralSeparationM": 0.10000000000000082,
+        "closingSpeedMps": 1.9444444444444446,
+        "timeToCatchS": 24.12783676031611
+      },
+      "frontCandidates": [
+        {
+          "id": "blue",
+          "gapM": 37.0,
+          "lateralSeparationM": 0.20000000000000356,
+          "closingSpeedMps": 1.666666666666666,
+          "timeToCatchS": 22.200000000000006
+        }
+      ],
+      "rearCandidates": [
+        {
+          "id": "yellow",
+          "gapM": 46.91523814505911,
+          "lateralSeparationM": 0.10000000000000082,
+          "closingSpeedMps": 1.9444444444444446,
+          "timeToCatchS": 24.12783676031611
+        }
+      ]
+    },
+    "blue": {
+      "front": null,
+      "rear": {
+        "id": "red",
+        "gapM": 37.0,
+        "lateralSeparationM": 0.20000000000000356,
+        "closingSpeedMps": 1.666666666666666,
+        "timeToCatchS": 22.200000000000006
+      },
+      "frontCandidates": [],
+      "rearCandidates": [
+        {
+          "id": "red",
+          "gapM": 37.0,
+          "lateralSeparationM": 0.20000000000000356,
+          "closingSpeedMps": 1.666666666666666,
+          "timeToCatchS": 22.200000000000006
+        }
+      ]
+    },
+    "green": {
+      "front": null,
+      "rear": null,
+      "frontCandidates": [],
+      "rearCandidates": []
+    },
+    "purple": {
+      "front": {
+        "id": "orange",
+        "gapM": 15.0,
+        "lateralSeparationM": 0.19999999999999396,
+        "closingSpeedMps": -4.166666666666666,
+        "timeToCatchS": null
+      },
+      "rear": null,
+      "frontCandidates": [
+        {
+          "id": "orange",
+          "gapM": 15.0,
+          "lateralSeparationM": 0.19999999999999396,
+          "closingSpeedMps": -4.166666666666666,
+          "timeToCatchS": null
+        }
+      ],
+      "rearCandidates": []
+    },
+    "orange": {
+      "front": null,
+      "rear": {
+        "id": "purple",
+        "gapM": 15.0,
+        "lateralSeparationM": 0.19999999999999396,
+        "closingSpeedMps": -4.166666666666666,
+        "timeToCatchS": null
+      },
+      "frontCandidates": [],
+      "rearCandidates": [
+        {
+          "id": "purple",
+          "gapM": 15.0,
+          "lateralSeparationM": 0.19999999999999396,
+          "closingSpeedMps": -4.166666666666666,
+          "timeToCatchS": null
+        }
+      ]
+    },
+    "yellow": {
+      "front": {
+        "id": "red",
+        "gapM": 46.91523814505911,
+        "lateralSeparationM": 0.10000000000000082,
+        "closingSpeedMps": 1.9444444444444446,
+        "timeToCatchS": 24.12783676031611
+      },
+      "rear": null,
+      "frontCandidates": [
+        {
+          "id": "red",
+          "gapM": 46.91523814505911,
+          "lateralSeparationM": 0.10000000000000082,
+          "closingSpeedMps": 1.9444444444444446,
+          "timeToCatchS": 24.12783676031611
+        }
+      ],
+      "rearCandidates": []
+    }
+  },
+  "expectationErrors": [],
+  "metrics": {
+    "vehicleCount": 6,
+    "offTrackCount": 0,
+    "maxProjectionProgressErrorM": 0.0,
+    "neighborLinkCount": 6,
+    "minDetectedGapM": 15.0
+  }
+}

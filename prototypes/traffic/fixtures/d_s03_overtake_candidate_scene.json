@@ -1,0 +1,57 @@
+{
+  "kind": "TrafficOvertakeDecisionSuite",
+  "schemaVersion": "0.1.0",
+  "sceneId": "d-s03-overtake-candidate",
+  "name": "D-S03 Overtake Candidate",
+  "trackRef": "prototypes/autonomous-lap/fixtures/canonical_track.json",
+  "decision": {
+    "sameCorridorLateralM": 2.2,
+    "frontLookaheadM": 90.0,
+    "triggerTimeToCatchS": 18.0,
+    "minSpeedDeltaKmh": 8.0,
+    "candidateOffsetM": -3.0,
+    "frontSafetyGapM": 35.0,
+    "rearSafetyGapM": 20.0,
+    "trackEdgeClearanceM": 0.5
+  },
+  "cases": [
+    {
+      "id": "clear_overtake",
+      "label": "Clear Overtake",
+      "expectedDecision": true,
+      "vehicles": [
+        {"id": "ego", "label": "Ego", "role": "ego", "progressM": 40.0, "lateralOffsetM": 0.0, "speedKmh": 70.0, "lengthM": 4.4, "widthM": 1.9},
+        {"id": "leader", "label": "Leader", "role": "leader", "progressM": 66.0, "lateralOffsetM": 0.1, "speedKmh": 42.0, "lengthM": 4.4, "widthM": 1.9}
+      ]
+    },
+    {
+      "id": "blocked_front",
+      "label": "Blocked Front",
+      "expectedDecision": false,
+      "vehicles": [
+        {"id": "ego", "label": "Ego", "role": "ego", "progressM": 40.0, "lateralOffsetM": 0.0, "speedKmh": 70.0, "lengthM": 4.4, "widthM": 1.9},
+        {"id": "leader", "label": "Leader", "role": "leader", "progressM": 66.0, "lateralOffsetM": 0.1, "speedKmh": 42.0, "lengthM": 4.4, "widthM": 1.9},
+        {"id": "front_blocker", "label": "Front Blocker", "role": "traffic", "progressM": 62.0, "lateralOffsetM": -3.0, "speedKmh": 55.0, "lengthM": 4.4, "widthM": 1.9}
+      ]
+    },
+    {
+      "id": "blocked_rear",
+      "label": "Blocked Rear",
+      "expectedDecision": false,
+      "vehicles": [
+        {"id": "ego", "label": "Ego", "role": "ego", "progressM": 40.0, "lateralOffsetM": 0.0, "speedKmh": 70.0, "lengthM": 4.4, "widthM": 1.9},
+        {"id": "leader", "label": "Leader", "role": "leader", "progressM": 66.0, "lateralOffsetM": 0.1, "speedKmh": 42.0, "lengthM": 4.4, "widthM": 1.9},
+        {"id": "rear_blocker", "label": "Rear Blocker", "role": "traffic", "progressM": 25.0, "lateralOffsetM": -3.0, "speedKmh": 82.0, "lengthM": 4.4, "widthM": 1.9}
+      ]
+    },
+    {
+      "id": "no_need",
+      "label": "No Need",
+      "expectedDecision": false,
+      "vehicles": [
+        {"id": "ego", "label": "Ego", "role": "ego", "progressM": 40.0, "lateralOffsetM": 0.0, "speedKmh": 46.0, "lengthM": 4.4, "widthM": 1.9},
+        {"id": "leader", "label": "Leader", "role": "leader", "progressM": 66.0, "lateralOffsetM": 0.1, "speedKmh": 42.0, "lengthM": 4.4, "widthM": 1.9}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="760" viewBox="0 0 1240 760" role="img" aria-labelledby="title desc">
+<title id="title">D-S06 traffic synthesis</title>
+<desc id="desc">Consolidated validation status for traffic and overtaking experiment D.</desc>
+<rect width="100%" height="100%" fill="#f7f7f3" />
+<g font-family="Arial, sans-serif" fill="#222">
+<text x="54" y="70" font-size="26" font-weight="700">D-S06 - Synthese trafic</text>
+<text x="54" y="102" font-size="15" fill="#5f625d">Decision : validated_with_reserves - temps dynamique 190 s</text>
+<rect x="54" y="136" width="198" height="132" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<circle cx="78" cy="166" r="10" fill="#2f9d68" />
+<text x="96" y="170" font-size="16" font-weight="700">D-S01</text>
+<text x="72" y="202" font-size="13">Perception voisins</text>
+<text x="72" y="228" font-size="12" fill="#5f625d">valide</text>
+<text x="72" y="252" font-size="12" fill="#5f625d">preuve conservee</text>
+<rect x="278" y="136" width="198" height="132" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<circle cx="302" cy="166" r="10" fill="#2f9d68" />
+<text x="320" y="170" font-size="16" font-weight="700">D-S02</text>
+<text x="296" y="202" font-size="13">Suivi longitudinal</text>
+<text x="296" y="228" font-size="12" fill="#5f625d">valide avec reserves</text>
+<text x="296" y="252" font-size="12" fill="#5f625d">preuve conservee</text>
+<rect x="502" y="136" width="198" height="132" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<circle cx="526" cy="166" r="10" fill="#2f9d68" />
+<text x="544" y="170" font-size="16" font-weight="700">D-S03</text>
+<text x="520" y="202" font-size="13">Decision depassement</text>
+<text x="520" y="228" font-size="12" fill="#5f625d">valide avec reserves</text>
+<text x="520" y="252" font-size="12" fill="#5f625d">preuve conservee</text>
+<rect x="726" y="136" width="198" height="132" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<circle cx="750" cy="166" r="10" fill="#2f9d68" />
+<text x="768" y="170" font-size="16" font-weight="700">D-S04</text>
+<text x="744" y="202" font-size="13">Cote a cote</text>
+<text x="744" y="228" font-size="12" fill="#5f625d">valide avec reserves</text>
+<text x="744" y="252" font-size="12" fill="#5f625d">preuve conservee</text>
+<rect x="950" y="136" width="198" height="132" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<circle cx="974" cy="166" r="10" fill="#2f9d68" />
+<text x="992" y="170" font-size="16" font-weight="700">D-S05</text>
+<text x="968" y="202" font-size="13">Reinsertion</text>
+<text x="968" y="228" font-size="12" fill="#5f625d">valide avec reserves</text>
+<text x="968" y="252" font-size="12" fill="#5f625d">preuve conservee</text>
+<rect x="54" y="306" width="500" height="248" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="74" y="332" font-size="16" font-weight="700">Indicateurs consolides</text>
+<rect x="74.00" y="344.00" width="390.00" height="24.00" rx="4" fill="#ecece7" />
+<rect x="74.00" y="344.00" width="390.00" height="24.00" rx="4" fill="#2f9d68" />
+<text x="478.00" y="364.00" font-size="13">5/5 scenarios conformes</text>
+<rect x="74.00" y="392.00" width="390.00" height="24.00" rx="4" fill="#ecece7" />
+<rect x="74.00" y="392.00" width="390.00" height="24.00" rx="4" fill="#2f7ed8" />
+<text x="478.00" y="412.00" font-size="13">4/4 decisions conformes</text>
+<rect x="74.00" y="440.00" width="390.00" height="24.00" rx="4" fill="#ecece7" />
+<rect x="74.00" y="440.00" width="390.00" height="24.00" rx="4" fill="#2f9d68" />
+<text x="478.00" y="460.00" font-size="13">0 contact ticks</text>
+<rect x="74.00" y="488.00" width="390.00" height="24.00" rx="4" fill="#ecece7" />
+<rect x="74.00" y="488.00" width="390.00" height="24.00" rx="4" fill="#2f9d68" />
+<text x="478.00" y="508.00" font-size="13">0 hors-piste</text>
+<rect x="598" y="306" width="586" height="294" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="622" y="332" font-size="16" font-weight="700">Capacites couvertes</text>
+<circle cx="630" cy="336" r="6" fill="#2f9d68" />
+<text x="646" y="341" font-size="13" font-weight="700">Projection multi-voitures et perception voisins</text>
+<text x="646" y="361" font-size="12" fill="#5f625d">6 voitures, 6 liens, erreur max 0.00 m</text>
+<circle cx="630" cy="382" r="6" fill="#d5a12b" />
+<text x="646" y="387" font-size="13" font-weight="700">Suivi longitudinal derriere voiture lente</text>
+<text x="646" y="407" font-size="12" fill="#5f625d">gap min 17.50 m, detection front 100.00 %</text>
+<circle cx="630" cy="428" r="6" fill="#d5a12b" />
+<text x="646" y="433" font-size="13" font-weight="700">Decision de depassement candidat</text>
+<text x="646" y="453" font-size="12" fill="#5f625d">4 / 4 cas conformes, 2 blockers detectes</text>
+<circle cx="630" cy="474" r="6" fill="#d5a12b" />
+<text x="646" y="479" font-size="13" font-weight="700">Maintien cote a cote</text>
+<text x="646" y="499" font-size="12" fill="#5f625d">100.00 % du temps, clearance stable 1.70 m</text>
+<circle cx="630" cy="520" r="6" fill="#d5a12b" />
+<text x="646" y="525" font-size="13" font-weight="700">Reinsertion nominale apres ecart</text>
+<text x="646" y="545" font-size="12" fill="#5f625d">reinsertion 2.98 s, gaps min 32.15 m / 29.24 m</text>
+<rect x="54" y="622" width="1130" height="76" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="74" y="650" font-size="15" font-weight="700">Reserve de conclusion</text>
+<text x="74" y="676" font-size="13" fill="#5f625d">Validation nominale et deterministe : interactions longues, denses, contestees et performance restent a couvrir par E/F ou par de futurs cas D et production.</text>
+</g>
+</svg>

@@ -1,0 +1,66 @@
+{
+  "kind": "TrafficRejoinScene",
+  "schemaVersion": "0.1.0",
+  "sceneId": "d-s05-rejoin-after-offset",
+  "name": "D-S05 Rejoin After Offset",
+  "trackRef": "prototypes/autonomous-lap/fixtures/canonical_track.json",
+  "simulation": {
+    "durationS": 55.0,
+    "dt": 0.008333333333333333,
+    "sampleIntervalS": 0.25
+  },
+  "rejoin": {
+    "targetOffsetM": 0.0,
+    "sameCorridorLateralM": 1.25,
+    "frontSafetyGapM": 18.0,
+    "rearSafetyGapM": 16.0,
+    "gapDwellS": 0.5,
+    "completeLateralToleranceM": 0.15,
+    "trackEdgeClearanceM": 0.5
+  },
+  "controller": {
+    "speedResponseTimeS": 0.9,
+    "lateralResponseTimeS": 1.4,
+    "maxAccelMps2": 2.0,
+    "maxDecelMps2": 3.2,
+    "maxLateralSpeedMps": 1.4
+  },
+  "vehicles": [
+    {
+      "id": "ego",
+      "label": "Ego",
+      "role": "ego",
+      "progressM": 86.0,
+      "lateralOffsetM": 1.8,
+      "targetLateralOffsetM": 0.0,
+      "initialSpeedKmh": 64.0,
+      "targetSpeedKmh": 60.0,
+      "lengthM": 4.4,
+      "widthM": 1.9
+    },
+    {
+      "id": "target_front",
+      "label": "Target Front",
+      "role": "target_front",
+      "progressM": 123.0,
+      "lateralOffsetM": 0.0,
+      "targetLateralOffsetM": 0.0,
+      "initialSpeedKmh": 61.0,
+      "targetSpeedKmh": 61.0,
+      "lengthM": 4.5,
+      "widthM": 1.9
+    },
+    {
+      "id": "target_rear",
+      "label": "Target Rear",
+      "role": "target_rear",
+      "progressM": 53.0,
+      "lateralOffsetM": 0.0,
+      "targetLateralOffsetM": 0.0,
+      "initialSpeedKmh": 58.0,
+      "targetSpeedKmh": 58.0,
+      "lengthM": 4.5,
+      "widthM": 1.9
+    }
+  ]
+}

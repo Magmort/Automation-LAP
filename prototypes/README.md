@@ -38,4 +38,4 @@ prototypes/
   performance/           # Expérience F
 ```
 
-Seul le répertoire de l’expérience active doit être créé en détail.
+Seul le répertoire de l’expérience active doit être créé en détail. L'expérience D est conclue avec réserves ; la prochaine expérience prévue est E.
