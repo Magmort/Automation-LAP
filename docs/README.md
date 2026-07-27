@@ -15,11 +15,13 @@ Cette documentation constitue la mémoire durable d’Automation LAP. Les décis
 ### Expériences documentées
 
 - [Expérience A — Extraction des données Automation](feasibility/experiments/A-AUTOMATION-EXTRACTION.md)
+- [Expérience B — Dynamique d'une voiture](feasibility/experiments/B-VEHICLE-DYNAMICS.md)
 - [Expérience G — Import du modèle minimal de circuit depuis UR2D2](feasibility/experiments/G-UR2D2-TRACK-IMPORT.md)
 - [Répertoire des prototypes](../prototypes/README.md)
 - [Prototype Automation Exporter](../prototypes/automation-exporter/README.md)
+- [Prototype Vehicle Dynamics](../prototypes/vehicle-dynamics/README.md)
 
-Les expériences B à F recevront leur protocole détaillé avant leur démarrage. L’expérience C définira le modèle minimal de circuit ; l’expérience G testera ensuite sa reconstruction depuis UR2D2.
+Les expériences C à F recevront leur protocole détaillé avant leur démarrage. L’expérience C définira le modèle minimal de circuit ; l’expérience G testera ensuite sa reconstruction depuis UR2D2.
 
 ### Architecture
 

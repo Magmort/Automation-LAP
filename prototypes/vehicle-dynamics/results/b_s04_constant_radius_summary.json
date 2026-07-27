@@ -1,0 +1,185 @@
+{
+  "scenario": "B-S04",
+  "success": true,
+  "generatedAtUtc": "2026-07-26T19:36:33Z",
+  "inputDirectory": "outputs/a8-raw-vehicle-data",
+  "documentsProcessed": 3,
+  "vehiclesValid": 3,
+  "vehiclesFailed": 0,
+  "radiiMeters": [
+    25.0,
+    50.0,
+    100.0
+  ],
+  "gripProxy": "AccelerationToTopSpeed.FrontGripG + AccelerationToTopSpeed.RearGripG",
+  "speedUnitAssumption": "km/h inferred from performance top speed",
+  "missingRawLateralGraphs": [
+    "HighSpeedSteering",
+    "LowSpeedSteering"
+  ],
+  "vehicles": [
+    {
+      "path": "outputs/a8-raw-vehicle-data/AIXAM Coupe GTI/automation-lap-raw-vehicle-data.json",
+      "modelName": "AIXAM",
+      "trimName": "Coupe GTI",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.12-a7-json-values-fix",
+      "sampleCount": 113,
+      "finiteValues": true,
+      "topSpeedKmhInferred": 115.17921700986,
+      "massKg": 858.39514197568,
+      "frontDistributionPercent": 55.0136973565,
+      "frontGripGMax": 0.481321667541,
+      "rearGripGMax": 0.0,
+      "gripProxyGMax": 0.481321667541,
+      "gripProxyGMin": 0.0,
+      "downforceMin": 0.0,
+      "downforceMax": 6.5362605909432,
+      "weightDistributionMin": 0.53028931975714,
+      "weightDistributionMax": 0.53940202149465,
+      "lateralGraphCandidates": [
+        "HighSpeedSteering",
+        "LowSpeedSteering"
+      ],
+      "missingRawLateralGraphs": [
+        "HighSpeedSteering",
+        "LowSpeedSteering"
+      ],
+      "scenarios": [
+        {
+          "radiusM": 25.0,
+          "reachable": true,
+          "speedKmh": 38.98046825589556,
+          "gripG": 0.47822075176907797,
+          "demandG": 0.47822075176906026,
+          "marginG": 1.7708057242771247e-14
+        },
+        {
+          "radiusM": 50.0,
+          "reachable": true,
+          "speedKmh": 54.946013957679654,
+          "gripG": 0.47509089005011,
+          "demandG": 0.475090890050095,
+          "marginG": 1.4988010832439613e-14
+        },
+        {
+          "radiusM": 100.0,
+          "reachable": true,
+          "speedKmh": 77.29277269751054,
+          "gripG": 0.47005870160581986,
+          "demandG": 0.47005870160581315,
+          "marginG": 6.716849298982197e-15
+        }
+      ]
+    },
+    {
+      "path": "outputs/a8-raw-vehicle-data/PCM - Magmort Carcharhini Recif/automation-lap-raw-vehicle-data.json",
+      "modelName": "PCM - Magmort",
+      "trimName": "Carcharhini Recif",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.12-a7-json-values-fix",
+      "sampleCount": 215,
+      "finiteValues": true,
+      "topSpeedKmhInferred": 223.00794746926,
+      "massKg": 1093.2347318742,
+      "frontDistributionPercent": 60.004575543551,
+      "frontGripGMax": 0.0,
+      "rearGripGMax": 0.54804072562477,
+      "gripProxyGMax": 0.54804072562477,
+      "gripProxyGMin": 0.0,
+      "downforceMin": -115.73019185424,
+      "downforceMax": 0.0,
+      "weightDistributionMin": 0.4914330805868,
+      "weightDistributionMax": 0.6111455737816,
+      "lateralGraphCandidates": [
+        "HighSpeedSteering",
+        "LowSpeedSteering"
+      ],
+      "missingRawLateralGraphs": [
+        "HighSpeedSteering",
+        "LowSpeedSteering"
+      ],
+      "scenarios": [
+        {
+          "radiusM": 25.0,
+          "reachable": true,
+          "speedKmh": 41.46414568639689,
+          "gripG": 0.5411027706831216,
+          "demandG": 0.5411027706831166,
+          "marginG": 4.9960036108132044e-15
+        },
+        {
+          "radiusM": 50.0,
+          "reachable": true,
+          "speedKmh": 58.26840058344234,
+          "gripG": 0.5342819631388638,
+          "demandG": 0.5342819631388488,
+          "marginG": 1.4988010832439613e-14
+        },
+        {
+          "radiusM": 100.0,
+          "reachable": true,
+          "speedKmh": 80.57183507279706,
+          "gripG": 0.5107881732021788,
+          "demandG": 0.5107881732021672,
+          "marginG": 1.1657341758564144e-14
+        }
+      ]
+    },
+    {
+      "path": "outputs/a8-raw-vehicle-data/QFC55 - Magmort Carcharhini RCZ/automation-lap-raw-vehicle-data.json",
+      "modelName": "QFC55 - Magmort",
+      "trimName": "Carcharhini RCZ",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.12-a7-json-values-fix",
+      "sampleCount": 273,
+      "finiteValues": true,
+      "topSpeedKmhInferred": 287.79457951094,
+      "massKg": 1278.5554914336,
+      "frontDistributionPercent": 57.604525884836,
+      "frontGripGMax": 0.60121488676467,
+      "rearGripGMax": 0.63978238404532,
+      "gripProxyGMax": 1.1853561900751401,
+      "gripProxyGMin": 0.0,
+      "downforceMin": -46.867672033241,
+      "downforceMax": 0.0,
+      "weightDistributionMin": 0.45872279765746,
+      "weightDistributionMax": 0.57958698590058,
+      "lateralGraphCandidates": [
+        "HighSpeedSteering",
+        "LowSpeedSteering"
+      ],
+      "missingRawLateralGraphs": [
+        "HighSpeedSteering",
+        "LowSpeedSteering"
+      ],
+      "scenarios": [
+        {
+          "radiusM": 25.0,
+          "reachable": true,
+          "speedKmh": 61.1712144574637,
+          "gripG": 1.1776833086873895,
+          "demandG": 1.177683308687364,
+          "marginG": 2.55351295663786e-14
+        },
+        {
+          "radiusM": 50.0,
+          "reachable": true,
+          "speedKmh": 86.23460023926049,
+          "gripG": 1.1702197605557128,
+          "demandG": 1.170219760555694,
+          "marginG": 1.865174681370263e-14
+        },
+        {
+          "radiusM": 100.0,
+          "reachable": true,
+          "speedKmh": 121.16205919544808,
+          "gripG": 1.1550681649194332,
+          "demandG": 1.155068164919432,
+          "marginG": 1.1102230246251565e-15
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

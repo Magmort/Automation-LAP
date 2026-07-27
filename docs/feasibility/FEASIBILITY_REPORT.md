@@ -22,8 +22,8 @@ Ce document est le livrable final de la Phase 1. Il doit rester synthétique : l
 
 | Expérience | Question | Conclusion | Niveau de confiance | Risque résiduel principal |
 |---|---|---|---|---|
-| A — Extraction Automation | Les données nécessaires sont-elles exportables et stables ? | En attente | — | Compatibilité réelle du SDK avec la version installée |
-| B — Dynamique d’une voiture | Un modèle 2D commun produit-il des différences plausibles ? | En attente | — | Paramètres physiques absents ou difficiles à calibrer |
+| A — Extraction Automation | Les données nécessaires sont-elles exportables et stables ? | Validée avec réserves | Moyen | Unités Automation encore partielles |
+| B — Dynamique d’une voiture | Un modèle 2D commun produit-il des différences plausibles ? | Validée avec réserves | Moyen | Direction encore calibrable, unités latérales inconnues |
 | C — Tour autonome et circuit minimal | Le contrôleur peut-il rouler sans script par virage avec un contrat de circuit minimal ? | En attente | — | Modèle de circuit surdimensionné ou insuffisant pour le contrôle |
 | D — Trafic et dépassement | Les interactions peuvent-elles être crédibles et réglables ? | En attente | — | Collisions, immobilisme ou comportement trop déterministe |
 | E — Replay minimal | Le replay hybride est-il autonome et navigable ? | En attente | — | Taille des fichiers et compatibilité de version |
@@ -36,7 +36,7 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 
 | Domaine | Paramètre | Valeur candidate | Origine | Statut |
 |---|---|---:|---|---|
-| Simulation | Pas de temps physique | À mesurer | Expérience B | En attente |
+| Simulation | Pas de temps physique | `1/60 s` candidat, `1/120 s` référence de mesure | Expérience B-S05 | Candidat |
 | Circuit | Schéma minimal `TrackDefinition` | À définir | Expérience C | En attente |
 | Circuit | Tolérances de fermeture et continuité | À mesurer | Expérience C | En attente |
 | Circuit | Transformation UR2D2 vers unités SI | À déterminer | Expérience G | En attente |
@@ -51,18 +51,18 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 ### A — Extraction Automation
 
 - **Ticket :** #3
-- **Conclusion :** en attente
-- **Preuves principales :** à compléter
-- **Données manquantes :** à compléter
-- **Impact sur ADR-0003 :** à compléter
+- **Conclusion :** validée avec réserves pour l'entrée de B
+- **Preuves principales :** exports trois voitures, validation de répétabilité, inventaire des graphes, séries brutes A7, contrat unifié A8 `AutomationRawVehicleData` v0.1
+- **Données manquantes :** unités exactes de certaines courbes Automation, usage physique final des graphes de freinage et de grip
+- **Impact sur ADR-0003 :** le format brut versionné devient l'entrée candidate de l'adaptateur Automation
 
 ### B — Dynamique d’une voiture
 
 - **Ticket :** #4
-- **Conclusion :** en attente
-- **Modèle testé :** à compléter
-- **Écarts mesurés :** à compléter
-- **Paramètres dérivés nécessaires :** à compléter
+- **Conclusion :** validée avec réserves
+- **Modèle testé :** état 2D minimal vitesse / position / cap, alimenté par les courbes Automation A9
+- **Écarts mesurés :** B-S05 stable aux pas `1/30 s`, `1/60 s` et `1/120 s` ; B-S06 conserve les différences inter-voitures sur toutes les métriques consolidées
+- **Paramètres dérivés nécessaires :** normalisation de direction, loi latérale calibrable, unités finales des graphes `LowSpeedSteering` et `HighSpeedSteering`
 
 ### C — Tour autonome et modèle minimal de circuit
 
@@ -115,7 +115,7 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 
 | Risque | Probabilité | Impact | Preuve disponible | Réponse proposée |
 |---|---|---|---|---|
-| Données Automation insuffisantes | À évaluer | Élevé | Expérience A | Paramètres dérivés et calibration documentée |
+| Données Automation insuffisantes | Moyenne | Élevé | Expérience A8 | Paramètres dérivés, usage des courbes Automation et calibration documentée pendant B |
 | Modèle physique trop coûteux | À évaluer | Élevé | Expériences B et F | Simplification guidée par mesure |
 | Modèle de circuit inadapté au contrôle | À évaluer | Élevé | Expérience C | Définition pilotée par les usages et invariants testés |
 | IA peu crédible en trafic | À évaluer | Élevé | Expériences C et D | Architecture en couches et scénarios statistiques |

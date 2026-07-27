@@ -1,0 +1,683 @@
+{
+  "scenario": "B-S05",
+  "success": true,
+  "generatedAtUtc": "2026-07-26T20:14:33Z",
+  "inputDirectory": "outputs/a9-raw-vehicle-data",
+  "documentsProcessed": 3,
+  "vehiclesValid": 3,
+  "vehiclesFailed": 0,
+  "timeSteps": [
+    0.03333333333333333,
+    0.016666666666666666,
+    0.008333333333333333
+  ],
+  "referenceDt": 0.008333333333333333,
+  "stabilityLimits": {
+    "positionM": 0.75,
+    "positionRelative": 0.02,
+    "headingRad": 0.025,
+    "speedKmh": 0.35,
+    "speedRelative": 0.015
+  },
+  "modelAssumptions": {
+    "speedUnit": "km/h",
+    "timeUnit": "s",
+    "positionUnit": "m",
+    "maxSteerAngleRad": 0.22,
+    "steeringGraphs": "normalized automation-graph values, unit unknown"
+  },
+  "vehicles": [
+    {
+      "path": "outputs/a9-raw-vehicle-data/AIXAM Coupe GTI/automation-lap-raw-vehicle-data.json",
+      "modelName": "AIXAM",
+      "trimName": "Coupe GTI",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.13-a9-steering-raw-graphs",
+      "wheelbaseM": 2.0,
+      "referenceDistanceM": 17.49307153992649,
+      "positionStabilityLimitM": 0.75,
+      "speedStabilityLimitKmh": 0.35,
+      "runs": [
+        {
+          "dt": 0.03333333333333333,
+          "steps": 360,
+          "final": {
+            "time": 11.999999999999968,
+            "x": 17.49352330502199,
+            "y": 0.23741488849344275,
+            "heading": 0.02111585628872405,
+            "speed": 7.6976888319733385
+          },
+          "maxSpeed": 11.949249898790853,
+          "maxAbsHeading": 0.024038564225888955,
+          "maxLateralGModel": 0.006492799483730671,
+          "maxAccelerationKmhPerS": 2.546292936445547,
+          "maxDecelerationKmhPerS": 12.951189369708736,
+          "steeringGraphUsage": {
+            "LowSpeedSteering": 360,
+            "HighSpeedSteering": 0
+          },
+          "snapshots": [
+            {
+              "time": 0.033333,
+              "x": 0.00039294644080949804,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 0.08487643121485157
+            },
+            {
+              "time": 2.5,
+              "x": 2.209854918820561,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 6.362982265549677
+            },
+            {
+              "time": 5.0,
+              "x": 8.62204173994591,
+              "y": 0.04587885610230423,
+              "heading": 0.018165468160758248,
+              "speed": 11.949249898790853
+            },
+            {
+              "time": 7.5,
+              "x": 10.455658463063557,
+              "y": 0.08634377587952384,
+              "heading": 0.02385150167160192,
+              "speed": 2.1642559707033926
+            },
+            {
+              "time": 10.0,
+              "x": 13.64155858134514,
+              "y": 0.15606526389272135,
+              "heading": 0.02111585628872405,
+              "speed": 6.1723042580523995
+            }
+          ],
+          "finiteValues": true
+        },
+        {
+          "dt": 0.016666666666666666,
+          "steps": 720,
+          "final": {
+            "time": 12.0,
+            "x": 17.491915812404535,
+            "y": 0.23722488523586518,
+            "heading": 0.02109757180935454,
+            "speed": 7.697661911699661
+          },
+          "maxSpeed": 11.949341525472832,
+          "maxAbsHeading": 0.024020358281324653,
+          "maxLateralGModel": 0.006463808487558472,
+          "maxAccelerationKmhPerS": 2.546292936445547,
+          "maxDecelerationKmhPerS": 12.951189369708736,
+          "steeringGraphUsage": {
+            "LowSpeedSteering": 720,
+            "HighSpeedSteering": 0
+          },
+          "snapshots": [
+            {
+              "time": 0.016667,
+              "x": 9.823661020237451e-05,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 0.042438215607425785
+            },
+            {
+              "time": 2.5,
+              "x": 2.209855115305203,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 6.362985021368875
+            },
+            {
+              "time": 5.0,
+              "x": 8.62202515736821,
+              "y": 0.045877692128033394,
+              "heading": 0.018165491225622842,
+              "speed": 11.949341525472832
+            },
+            {
+              "time": 7.5,
+              "x": 10.454296179186578,
+              "y": 0.08628756671703823,
+              "heading": 0.02383325235232383,
+              "speed": 2.164251323233591
+            },
+            {
+              "time": 10.0,
+              "x": 13.639966375149342,
+              "y": 0.1559460457448463,
+              "heading": 0.02109757180935454,
+              "speed": 6.172271552666553
+            }
+          ],
+          "finiteValues": true
+        },
+        {
+          "dt": 0.008333333333333333,
+          "steps": 1440,
+          "final": {
+            "time": 11.99999999999996,
+            "x": 17.49146383018381,
+            "y": 0.23716023772462014,
+            "heading": 0.021091124471044696,
+            "speed": 7.697666567339789
+          },
+          "maxSpeed": 11.949311478546003,
+          "maxAbsHeading": 0.02401394109397844,
+          "maxLateralGModel": 0.006347934758928419,
+          "maxAccelerationKmhPerS": 2.546292936445547,
+          "maxDecelerationKmhPerS": 12.94997703790499,
+          "steeringGraphUsage": {
+            "LowSpeedSteering": 1440,
+            "HighSpeedSteering": 0
+          },
+          "snapshots": [
+            {
+              "time": 0.008333,
+              "x": 2.4559152550593627e-05,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 0.021219107803712892
+            },
+            {
+              "time": 2.5,
+              "x": 2.2098556794077973,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 6.362989159318627
+            },
+            {
+              "time": 5.0,
+              "x": 8.622007226921495,
+              "y": 0.0458770646479643,
+              "heading": 0.018165396847522226,
+              "speed": 11.949311478546003
+            },
+            {
+              "time": 7.5,
+              "x": 10.453837854311894,
+              "y": 0.086268134407418,
+              "heading": 0.0238268249327247,
+              "speed": 2.1642524839154342
+            },
+            {
+              "time": 10.0,
+              "x": 13.63951129312613,
+              "y": 0.15590617872082632,
+              "heading": 0.021091124471044696,
+              "speed": 6.172276208306501
+            }
+          ],
+          "finiteValues": true
+        }
+      ],
+      "comparisons": [
+        {
+          "dt": 0.03333333333333333,
+          "positionDeltaVsReference": 0.0020751586983071882,
+          "headingDeltaVsReference": 2.473181767935484e-05,
+          "speedDeltaVsReference": 2.226463354926267e-05,
+          "positionLimit": 0.75,
+          "speedLimit": 0.35,
+          "stableVsReference": true
+        },
+        {
+          "dt": 0.016666666666666666,
+          "positionDeltaVsReference": 0.00045658211590144326,
+          "headingDeltaVsReference": 6.447338309845119e-06,
+          "speedDeltaVsReference": 4.6556401285258175e-06,
+          "positionLimit": 0.75,
+          "speedLimit": 0.35,
+          "stableVsReference": true
+        },
+        {
+          "dt": 0.008333333333333333,
+          "positionDeltaVsReference": 0.0,
+          "headingDeltaVsReference": 0.0,
+          "speedDeltaVsReference": 0.0,
+          "positionLimit": 0.75,
+          "speedLimit": 0.35,
+          "stableVsReference": true
+        }
+      ],
+      "stable": true
+    },
+    {
+      "path": "outputs/a9-raw-vehicle-data/PCM - Magmort Carcharhini Recif/automation-lap-raw-vehicle-data.json",
+      "modelName": "PCM - Magmort",
+      "trimName": "Carcharhini Recif",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.13-a9-steering-raw-graphs",
+      "wheelbaseM": 2.425,
+      "referenceDistanceM": 202.00151870059761,
+      "positionStabilityLimitM": 4.040030374011953,
+      "speedStabilityLimitKmh": 1.6104122014288766,
+      "runs": [
+        {
+          "dt": 0.03333333333333333,
+          "steps": 360,
+          "final": {
+            "time": 11.999999999999968,
+            "x": 179.24770192962134,
+            "y": 92.9004653439095,
+            "heading": 0.08914903366402857,
+            "speed": 107.40044752208838
+          },
+          "maxSpeed": 107.40044752208838,
+          "maxAbsHeading": 1.7795800275255826,
+          "maxLateralGModel": 2.574313833569788,
+          "maxAccelerationKmhPerS": 18.898656220467924,
+          "maxDecelerationKmhPerS": 15.278635425251133,
+          "steeringGraphUsage": {
+            "LowSpeedSteering": 172,
+            "HighSpeedSteering": 188
+          },
+          "snapshots": [
+            {
+              "time": 0.033333,
+              "x": 0.0029050378376760406,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 0.6274881729380247
+            },
+            {
+              "time": 2.5,
+              "x": 16.36971989084164,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 47.05715399270048
+            },
+            {
+              "time": 5.0,
+              "x": 59.31743580393209,
+              "y": 14.612160225006457,
+              "heading": 0.8281610919385911,
+              "speed": 85.95564742709539
+            },
+            {
+              "time": 7.5,
+              "x": 67.24855005383533,
+              "y": 63.04967311098293,
+              "heading": 1.268441692807409,
+              "speed": 78.0366482226083
+            },
+            {
+              "time": 10.0,
+              "x": 121.3337653517082,
+              "y": 87.7237725820826,
+              "heading": 0.08914903366402857,
+              "speed": 101.27263737894259
+            }
+          ],
+          "finiteValues": true
+        },
+        {
+          "dt": 0.016666666666666666,
+          "steps": 720,
+          "final": {
+            "time": 12.0,
+            "x": 179.90869392065483,
+            "y": 91.87466252258338,
+            "heading": 0.08069828093347638,
+            "speed": 107.36755955062715
+          },
+          "maxSpeed": 107.36755955062715,
+          "maxAbsHeading": 1.7696538023726711,
+          "maxLateralGModel": 2.5808054198123944,
+          "maxAccelerationKmhPerS": 18.898656220467924,
+          "maxDecelerationKmhPerS": 15.278635425251133,
+          "steeringGraphUsage": {
+            "LowSpeedSteering": 344,
+            "HighSpeedSteering": 376
+          },
+          "snapshots": [
+            {
+              "time": 0.016667,
+              "x": 0.0007262594594190101,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 0.31374408646901236
+            },
+            {
+              "time": 2.5,
+              "x": 16.370469880483903,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 47.05797297515086
+            },
+            {
+              "time": 5.0,
+              "x": 59.351075717143516,
+              "y": 14.5662445600552,
+              "heading": 0.8250273323398915,
+              "speed": 85.95707098577832
+            },
+            {
+              "time": 7.5,
+              "x": 67.65886855488925,
+              "y": 62.9735269165423,
+              "heading": 1.259890713832174,
+              "speed": 78.03250612376746
+            },
+            {
+              "time": 10.0,
+              "x": 121.95001134962327,
+              "y": 87.18731705709239,
+              "heading": 0.08069828093347638,
+              "speed": 101.27933789738694
+            }
+          ],
+          "finiteValues": true
+        },
+        {
+          "dt": 0.008333333333333333,
+          "steps": 1440,
+          "final": {
+            "time": 11.99999999999996,
+            "x": 179.449518032369,
+            "y": 92.74957700873011,
+            "heading": 0.08846258653741128,
+            "speed": 107.36081342859178
+          },
+          "maxSpeed": 107.36081342859178,
+          "maxAbsHeading": 1.7762095580130082,
+          "maxLateralGModel": 2.583646003802435,
+          "maxAccelerationKmhPerS": 18.898656220467924,
+          "maxDecelerationKmhPerS": 15.278635425251133,
+          "steeringGraphUsage": {
+            "LowSpeedSteering": 687,
+            "HighSpeedSteering": 753
+          },
+          "snapshots": [
+            {
+              "time": 0.008333,
+              "x": 0.00018156486485475254,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 0.15687204323450618
+            },
+            {
+              "time": 2.5,
+              "x": 16.37050748346987,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 47.058137685948466
+            },
+            {
+              "time": 5.0,
+              "x": 59.35168013027442,
+              "y": 14.56612620520074,
+              "heading": 0.8250011062503118,
+              "speed": 85.95788494248647
+            },
+            {
+              "time": 7.5,
+              "x": 67.43302909780037,
+              "y": 62.979854745968126,
+              "heading": 1.267593277040523,
+              "speed": 78.03179518505051
+            },
+            {
+              "time": 10.0,
+              "x": 121.5327092634731,
+              "y": 87.61269953891613,
+              "heading": 0.08846258653741128,
+              "speed": 101.27259177535159
+            }
+          ],
+          "finiteValues": true
+        }
+      ],
+      "comparisons": [
+        {
+          "dt": 0.03333333333333333,
+          "positionDeltaVsReference": 0.25198616831379034,
+          "headingDeltaVsReference": 0.0006864471266172928,
+          "speedDeltaVsReference": 0.03963409349660196,
+          "positionLimit": 4.040030374011953,
+          "speedLimit": 1.6104122014288766,
+          "stableVsReference": true
+        },
+        {
+          "dt": 0.016666666666666666,
+          "positionDeltaVsReference": 0.9880879791053386,
+          "headingDeltaVsReference": 0.007764305603934901,
+          "speedDeltaVsReference": 0.0067461220353663975,
+          "positionLimit": 4.040030374011953,
+          "speedLimit": 1.6104122014288766,
+          "stableVsReference": true
+        },
+        {
+          "dt": 0.008333333333333333,
+          "positionDeltaVsReference": 0.0,
+          "headingDeltaVsReference": 0.0,
+          "speedDeltaVsReference": 0.0,
+          "positionLimit": 4.040030374011953,
+          "speedLimit": 1.6104122014288766,
+          "stableVsReference": true
+        }
+      ],
+      "stable": true
+    },
+    {
+      "path": "outputs/a9-raw-vehicle-data/QFC55 - Magmort Carcharhini RCZ/automation-lap-raw-vehicle-data.json",
+      "modelName": "QFC55 - Magmort",
+      "trimName": "Carcharhini RCZ",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.13-a9-steering-raw-graphs",
+      "wheelbaseM": 2.5,
+      "referenceDistanceM": 221.28624969348277,
+      "positionStabilityLimitM": 4.425724993869656,
+      "speedStabilityLimitKmh": 1.609154819332124,
+      "runs": [
+        {
+          "dt": 0.03333333333333333,
+          "steps": 360,
+          "final": {
+            "time": 11.999999999999968,
+            "x": 194.65169295449778,
+            "y": 106.97765218377306,
+            "heading": 0.2473178381071323,
+            "speed": 108.40563264379065
+          },
+          "maxSpeed": 108.40563264379065,
+          "maxAbsHeading": 1.522369445602996,
+          "maxLateralGModel": 1.940954460797267,
+          "maxAccelerationKmhPerS": 22.477243588377895,
+          "maxDecelerationKmhPerS": 17.161786811587504,
+          "steeringGraphUsage": {
+            "LowSpeedSteering": 219,
+            "HighSpeedSteering": 141
+          },
+          "snapshots": [
+            {
+              "time": 0.033333,
+              "x": 0.003392261361729737,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 0.7327284541336232
+            },
+            {
+              "time": 2.5,
+              "x": 19.06718973169005,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 55.01741716533008
+            },
+            {
+              "time": 5.0,
+              "x": 67.96169209808927,
+              "y": 15.063932966895745,
+              "heading": 0.7499185324801825,
+              "speed": 90.37541184380645
+            },
+            {
+              "time": 7.5,
+              "x": 85.5361247603138,
+              "y": 63.63052584645355,
+              "heading": 1.1116501631945221,
+              "speed": 80.55714507787395
+            },
+            {
+              "time": 10.0,
+              "x": 138.49590045802148,
+              "y": 92.79905402462212,
+              "heading": 0.2473178381071323,
+              "speed": 99.9288035277669
+            }
+          ],
+          "finiteValues": true
+        },
+        {
+          "dt": 0.016666666666666666,
+          "steps": 720,
+          "final": {
+            "time": 12.0,
+            "x": 196.26307292351424,
+            "y": 102.44621865105886,
+            "heading": 0.22783167839006122,
+            "speed": 107.64953855284938
+          },
+          "maxSpeed": 107.64953855284938,
+          "maxAbsHeading": 1.4716161659825666,
+          "maxLateralGModel": 1.8960069154304466,
+          "maxAccelerationKmhPerS": 22.477243588377895,
+          "maxDecelerationKmhPerS": 17.156716701378713,
+          "steeringGraphUsage": {
+            "LowSpeedSteering": 455,
+            "HighSpeedSteering": 265
+          },
+          "snapshots": [
+            {
+              "time": 0.016667,
+              "x": 0.0008480653404324343,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 0.3663642270668116
+            },
+            {
+              "time": 2.5,
+              "x": 19.067010514295855,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 55.0154446211362
+            },
+            {
+              "time": 5.0,
+              "x": 67.79513595498013,
+              "y": 14.774923986041046,
+              "heading": 0.7318308749143487,
+              "speed": 88.86304387770554
+            },
+            {
+              "time": 7.5,
+              "x": 86.93431120342173,
+              "y": 61.78431688616497,
+              "heading": 1.0738289690363834,
+              "speed": 80.4276941501106
+            },
+            {
+              "time": 10.0,
+              "x": 140.2772764951623,
+              "y": 89.46550172970389,
+              "heading": 0.22783167839006122,
+              "speed": 99.08505799490781
+            }
+          ],
+          "finiteValues": true
+        },
+        {
+          "dt": 0.008333333333333333,
+          "steps": 1440,
+          "final": {
+            "time": 11.99999999999996,
+            "x": 194.50250453898656,
+            "y": 105.52904828277342,
+            "heading": 0.2510873182266299,
+            "speed": 107.27698795547494
+          },
+          "maxSpeed": 107.27698795547494,
+          "maxAbsHeading": 1.4924912312541043,
+          "maxLateralGModel": 1.8741065585066137,
+          "maxAccelerationKmhPerS": 22.477243588377895,
+          "maxDecelerationKmhPerS": 17.161786811587504,
+          "steeringGraphUsage": {
+            "LowSpeedSteering": 902,
+            "HighSpeedSteering": 538
+          },
+          "snapshots": [
+            {
+              "time": 0.008333,
+              "x": 0.00021201633510810856,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 0.1831821135334058
+            },
+            {
+              "time": 2.5,
+              "x": 19.06704864091856,
+              "y": 0.0,
+              "heading": 0.0,
+              "speed": 55.01597860539552
+            },
+            {
+              "time": 5.0,
+              "x": 67.87899978567798,
+              "y": 14.894122447169046,
+              "heading": 0.7391779424201977,
+              "speed": 89.60168078772583
+            },
+            {
+              "time": 7.5,
+              "x": 86.44018277511641,
+              "y": 62.613907593608104,
+              "heading": 1.0881751825720258,
+              "speed": 80.36960218901075
+            },
+            {
+              "time": 10.0,
+              "x": 139.04804623570365,
+              "y": 91.3049545428913,
+              "heading": 0.2510873182266299,
+              "speed": 98.66770363273622
+            }
+          ],
+          "finiteValues": true
+        }
+      ],
+      "comparisons": [
+        {
+          "dt": 0.03333333333333333,
+          "positionDeltaVsReference": 1.4562659253426664,
+          "headingDeltaVsReference": 0.003769480119497598,
+          "speedDeltaVsReference": 1.1286446883157168,
+          "positionLimit": 4.425724993869656,
+          "speedLimit": 1.609154819332124,
+          "stableVsReference": true
+        },
+        {
+          "dt": 0.016666666666666666,
+          "positionDeltaVsReference": 3.550132332009014,
+          "headingDeltaVsReference": 0.02325563983656867,
+          "speedDeltaVsReference": 0.37255059737444185,
+          "positionLimit": 4.425724993869656,
+          "speedLimit": 1.609154819332124,
+          "stableVsReference": true
+        },
+        {
+          "dt": 0.008333333333333333,
+          "positionDeltaVsReference": 0.0,
+          "headingDeltaVsReference": 0.0,
+          "speedDeltaVsReference": 0.0,
+          "positionLimit": 4.425724993869656,
+          "speedLimit": 1.609154819332124,
+          "stableVsReference": true
+        }
+      ],
+      "stable": true
+    }
+  ],
+  "failures": []
+}

@@ -26,6 +26,10 @@ EXPECTED_RAW_GRAPHS = {
     "Braking",
     "BrakingVGrip",
 }
+EXPECTED_STEERING_RAW_GRAPHS = {
+    "HighSpeedSteering",
+    "LowSpeedSteering",
+}
 
 
 class ValidationError(Exception):
@@ -482,8 +486,18 @@ def validate_document(document: Any) -> list[str]:
         for index, graph in enumerate(raw_graphs)
     ]
 
-    if set(graph_keys) != EXPECTED_RAW_GRAPHS:
-        fail("$.rawGraphs: expected A7 selected raw graphs")
+    graph_key_set = set(graph_keys)
+    missing_base_graphs = sorted(EXPECTED_RAW_GRAPHS - graph_key_set)
+    if missing_base_graphs:
+        fail("$.rawGraphs: missing expected raw graphs: " + ", ".join(missing_base_graphs))
+
+    steering_graphs_present = EXPECTED_STEERING_RAW_GRAPHS & graph_key_set
+    missing_steering_graphs = sorted(EXPECTED_STEERING_RAW_GRAPHS - graph_key_set)
+    if steering_graphs_present and missing_steering_graphs:
+        fail(
+            "$.rawGraphs: incomplete A9 steering raw graphs, missing: "
+            + ", ".join(missing_steering_graphs)
+        )
 
     if len(graph_keys) != len(set(graph_keys)):
         fail("$.rawGraphs: duplicate graph key")

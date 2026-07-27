@@ -127,6 +127,8 @@ Ce fichier exporte complètement les séries numériques directes de `Accelerati
 
 Note A7 : les exports `0.1.12-a7-json-values-fix` valident l'accès aux séries complètes. Le détour `0.1.11-a7-raw-graphs` avait confirmé les chemins, mais le champ `values` était supprimé par l'encodeur JSON Lua.
 
+L'incrément A9 prépare la version source `0.1.13-a9-steering-raw-graphs`. Il ajoute les graphes bruts `LowSpeedSteering` et `HighSpeedSteering`, chacun avec les séries `Speed`, `Steering`, `UnderSteer` et `OverSteer`. La limite par série passe à `10000` valeurs pour éviter la troncature de `LowSpeedSteering`.
+
 L'incrément A8 définit le premier contrat unifié :
 
 ```text
