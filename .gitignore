@@ -78,6 +78,8 @@ coverage/
 coverage-results/
 *.coverage
 *.coveragexml
+__pycache__/
+*.py[cod]
 
 # Addressables generated files
 /ServerData

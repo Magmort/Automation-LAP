@@ -36,7 +36,7 @@ L’expérience G teste ensuite si les fichiers produits par le Track Editor d�
 
 - **Ticket :** #3
 - **Protocole :** [experiments/A-AUTOMATION-EXTRACTION.md](experiments/A-AUTOMATION-EXTRACTION.md)
-- **État :** prête à démarrer
+- **État :** validée avec réserves pour l'entrée de B
 
 ### Question
 
@@ -65,7 +65,9 @@ Pouvons-nous extraire de manière stable les données nécessaires à trois voit
 ## Expérience B — Dynamique d’une voiture
 
 - **Ticket :** #4
-- **État :** bloquée par A
+- **Protocole :** [experiments/B-VEHICLE-DYNAMICS.md](experiments/B-VEHICLE-DYNAMICS.md)
+- **État :** en cours
+- **Entrée :** `AutomationRawVehicleData` v0.1 produit par A8
 
 ### Question
 
@@ -73,17 +75,20 @@ Un modèle 2D simple peut-il reproduire des différences plausibles d’accélé
 
 ### Scénarios
 
+- chargement des trois voitures A8 ;
 - accélération en ligne droite ;
 - freinage depuis plusieurs vitesses ;
 - virage à rayon constant ;
 - changement d’appui ;
-- tour simple sans trafic.
+- comparaison inter-voitures.
 
 ### Critères de réussite
 
 - aucune instabilité numérique dans la plage normale ;
 - les résultats évoluent dans le bon sens lorsque masse, puissance, pneus ou aérodynamique changent ;
-- les paramètres peuvent être calibrés sans règles spécifiques à une voiture.
+- les courbes Automation disponibles sont réutilisées sans recalcul inutile ;
+- les paramètres peuvent être calibrés sans règles spécifiques à une voiture ;
+- les unités inconnues et les données manquantes sont listées explicitement.
 
 ## Expérience C — Tour autonome et modèle minimal de circuit
 

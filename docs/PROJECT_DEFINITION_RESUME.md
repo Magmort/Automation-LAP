@@ -106,17 +106,17 @@ Décision licence A4 : `CC BY-NC-SA 4.0` est compatible avec la portée actuelle
 
 ## Prochaine étape proposée
 
-### Revue de clôture A
+### Expérience B
 
-La prochaine étape utile est une revue de clôture de l'expérience A avant de passer à B :
+La prochaine étape utile est le démarrage de l'expérience B :
 
-- confirmer que `AutomationRawVehicleData` v0.1 est le bon format d'entrée pour B ;
-- décider quelles conversions SI sont suffisamment sûres ;
-- lister les unités encore inconnues ;
-- choisir si l'assembleur Python reste un outil de fixtures ou devient un composant temporaire de pipeline ;
-- ne promouvoir aucun prototype vers du code production sans décision explicite.
+- utiliser `AutomationRawVehicleData` v0.1 comme format d'entrée ;
+- créer le prototype `prototypes/vehicle-dynamics/` ;
+- relire et interpoler les courbes Automation déjà disponibles pour l'accélération et le freinage ;
+- limiter le modèle 2D aux états nécessaires pour tester vitesse, freinage, orientation et virage ;
+- identifier les données ou unités manquantes avant de passer à C et E.
 
-Le contrat A8 ne choisit pas encore le modèle physique final. Il fournit une base stable, traçable et validable pour l'expérience B.
+Le contrat A8 ne choisit pas encore le modèle physique final. Il fournit une base stable, traçable et validable pour l'expérience B. Le protocole B est maintenant préparé dans `docs/feasibility/experiments/B-VEHICLE-DYNAMICS.md`.
 
 Critères de sortie :
 

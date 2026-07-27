@@ -1,0 +1,268 @@
+{
+  "scenario": "B-S04-steering-graphs",
+  "success": true,
+  "generatedAtUtc": "2026-07-26T20:04:07Z",
+  "inputDirectory": "outputs/a9-raw-vehicle-data",
+  "documentsProcessed": 3,
+  "vehiclesValid": 3,
+  "vehiclesFailed": 0,
+  "vehicles": [
+    {
+      "path": "outputs/a9-raw-vehicle-data/AIXAM Coupe GTI/automation-lap-raw-vehicle-data.json",
+      "modelName": "AIXAM",
+      "trimName": "Coupe GTI",
+      "exporterVersion": "0.1.13-a9-steering-raw-graphs",
+      "graphs": [
+        {
+          "key": "LowSpeedSteering",
+          "sampleCount": 3764,
+          "speedMin": 0.0,
+          "speedMax": 70.287636566162,
+          "speedMonotonic": true,
+          "finiteValues": true,
+          "steeringMax": 9.1788193943332,
+          "steeringMaxSpeed": 69.284804534912,
+          "steeringEnd": 0.22249607106611,
+          "underMax": 9.2740631580353,
+          "overMax": 9.9574151802063,
+          "insideCount": 3681,
+          "insidePercent": 97.79489904357067,
+          "outsideRanges": [
+            {
+              "startIndex": 3682,
+              "endIndex": 3764,
+              "startSpeed": 69.527547454834,
+              "endSpeed": 70.287636566162
+            }
+          ],
+          "steeringOverCrossings": [
+            0.0
+          ],
+          "steeringUnderCrossings": [
+            0.0,
+            69.52269965200895
+          ],
+          "minSteeringMinusUnder": -9.05156708696919,
+          "maxSteeringMinusUnder": 0.30262059267180064,
+          "minOverMinusSteering": 0.0,
+          "maxOverMinusSteering": 9.73491910914019,
+          "truncatedSeries": 0
+        },
+        {
+          "key": "HighSpeedSteering",
+          "sampleCount": 1525,
+          "speedMin": 0.0,
+          "speedMax": 158.10313568115,
+          "speedMonotonic": true,
+          "finiteValues": true,
+          "steeringMax": 15.933629649691,
+          "steeringMaxSpeed": 138.31918945313,
+          "steeringEnd": 0.21763055721592,
+          "underMax": 19.762891960144,
+          "overMax": 21.958768844604,
+          "insideCount": 906,
+          "insidePercent": 59.40983606557377,
+          "outsideRanges": [
+            {
+              "startIndex": 907,
+              "endIndex": 1525,
+              "startSpeed": 122.41323852539,
+              "endSpeed": 158.10313568115
+            }
+          ],
+          "steeringOverCrossings": [
+            0.0
+          ],
+          "steeringUnderCrossings": [
+            0.0,
+            122.38420644591423
+          ],
+          "minSteeringMinusUnder": -19.54526140292808,
+          "maxSteeringMinusUnder": 0.8591101804899992,
+          "minOverMinusSteering": 0.0,
+          "maxOverMinusSteering": 21.74113828738808,
+          "truncatedSeries": 0
+        }
+      ]
+    },
+    {
+      "path": "outputs/a9-raw-vehicle-data/PCM - Magmort Carcharhini Recif/automation-lap-raw-vehicle-data.json",
+      "modelName": "PCM - Magmort",
+      "trimName": "Carcharhini Recif",
+      "exporterVersion": "0.1.13-a9-steering-raw-graphs",
+      "graphs": [
+        {
+          "key": "LowSpeedSteering",
+          "sampleCount": 4259,
+          "speedMin": 0.0,
+          "speedMax": 74.711927032471,
+          "speedMonotonic": true,
+          "finiteValues": true,
+          "steeringMax": 7.4824317228079,
+          "steeringMaxSpeed": 73.478814697266,
+          "steeringEnd": 0.20370936165285,
+          "underMax": 7.7022605188114,
+          "overMax": 8.1301638809676,
+          "insideCount": 1272,
+          "insidePercent": 29.866165766611882,
+          "outsideRanges": [
+            {
+              "startIndex": 2,
+              "endIndex": 2718,
+              "startSpeed": 8.0498448371887,
+              "endSpeed": 59.872666168213
+            },
+            {
+              "startIndex": 3990,
+              "endIndex": 4259,
+              "startSpeed": 72.341187286377,
+              "endSpeed": 74.711927032471
+            }
+          ],
+          "steeringOverCrossings": [
+            0.0,
+            59.8809411118875
+          ],
+          "steeringUnderCrossings": [
+            0.0,
+            72.3367110692507
+          ],
+          "minSteeringMinusUnder": -7.49855115715855,
+          "maxSteeringMinusUnder": 0.39438489090500006,
+          "minOverMinusSteering": -0.14512060775799984,
+          "maxOverMinusSteering": 7.926454519314751,
+          "truncatedSeries": 0
+        },
+        {
+          "key": "HighSpeedSteering",
+          "sampleCount": 1657,
+          "speedMin": 0.0,
+          "speedMax": 164.7270401001,
+          "speedMonotonic": true,
+          "finiteValues": true,
+          "steeringMax": 11.730697478796,
+          "steeringMaxSpeed": 139.48548431396,
+          "steeringEnd": 0.20875914440869,
+          "underMax": 16.982169082484,
+          "overMax": 18.869076758316,
+          "insideCount": 509,
+          "insidePercent": 30.71816535908268,
+          "outsideRanges": [
+            {
+              "startIndex": 510,
+              "endIndex": 1657,
+              "startSpeed": 92.485677337646,
+              "endSpeed": 164.7270401001
+            }
+          ],
+          "steeringOverCrossings": [
+            0.0
+          ],
+          "steeringUnderCrossings": [
+            0.0,
+            92.43287410931626
+          ],
+          "minSteeringMinusUnder": -16.77340993807531,
+          "maxSteeringMinusUnder": 0.4187587776046007,
+          "minOverMinusSteering": 0.0,
+          "maxOverMinusSteering": 18.660317613907313,
+          "truncatedSeries": 0
+        }
+      ]
+    },
+    {
+      "path": "outputs/a9-raw-vehicle-data/QFC55 - Magmort Carcharhini RCZ/automation-lap-raw-vehicle-data.json",
+      "modelName": "QFC55 - Magmort",
+      "trimName": "Carcharhini RCZ",
+      "exporterVersion": "0.1.13-a9-steering-raw-graphs",
+      "graphs": [
+        {
+          "key": "LowSpeedSteering",
+          "sampleCount": 5438,
+          "speedMin": 0.0,
+          "speedMax": 84.319958496094,
+          "speedMonotonic": true,
+          "finiteValues": true,
+          "steeringMax": 8.5985570428563,
+          "steeringMaxSpeed": 82.7138671875,
+          "steeringEnd": 0.29139607594934,
+          "underMax": 8.6943246104919,
+          "overMax": 9.267700328712,
+          "insideCount": 1483,
+          "insidePercent": 27.271055535123207,
+          "outsideRanges": [
+            {
+              "startIndex": 2,
+              "endIndex": 3825,
+              "startSpeed": 8.0498448371887,
+              "endSpeed": 70.84778137207
+            },
+            {
+              "startIndex": 5308,
+              "endIndex": 5438,
+              "startSpeed": 83.314915466309,
+              "endSpeed": 84.319958496094
+            }
+          ],
+          "steeringOverCrossings": [
+            0.0,
+            70.85639155594579
+          ],
+          "steeringUnderCrossings": [
+            0.0,
+            83.30961104377546
+          ],
+          "minSteeringMinusUnder": -8.40292853454256,
+          "maxSteeringMinusUnder": 0.5065651636582,
+          "minOverMinusSteering": -0.09746352623100041,
+          "maxOverMinusSteering": 8.97630425276266,
+          "truncatedSeries": 0
+        },
+        {
+          "key": "HighSpeedSteering",
+          "sampleCount": 2157,
+          "speedMin": 0.0,
+          "speedMax": 187.70988922119,
+          "speedMonotonic": true,
+          "finiteValues": true,
+          "steeringMax": 15.829881451301,
+          "steeringMaxSpeed": 160.13931427002,
+          "steeringEnd": 0.28531468211589,
+          "underMax": 18.770988922119,
+          "overMax": 20.85665435791,
+          "insideCount": 548,
+          "insidePercent": 25.405656003708856,
+          "outsideRanges": [
+            {
+              "startIndex": 8,
+              "endIndex": 986,
+              "startSpeed": 20.52315788269,
+              "endSpeed": 127.53352661133
+            },
+            {
+              "startIndex": 1528,
+              "endIndex": 2157,
+              "startSpeed": 158.25675201416,
+              "endSpeed": 187.70988922119
+            }
+          ],
+          "steeringOverCrossings": [
+            0.0,
+            20.216607764630695,
+            127.56972071081469
+          ],
+          "steeringUnderCrossings": [
+            0.0,
+            158.21998120373428
+          ],
+          "minSteeringMinusUnder": -18.48567424000311,
+          "maxSteeringMinusUnder": 1.4922725047540002,
+          "minOverMinusSteering": -0.28268609077499995,
+          "maxOverMinusSteering": 20.57133967579411,
+          "truncatedSeries": 0
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

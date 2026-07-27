@@ -11,7 +11,7 @@ local SCHEMA_VERSION = "0.1.1"
 local INVENTORY_SCHEMA_VERSION = "0.1.0"
 local GRAPH_INVENTORY_SCHEMA_VERSION = "0.1.0"
 local RAW_GRAPH_SCHEMA_VERSION = "0.1.0"
-local EXPORTER_VERSION = "0.1.12-a7-json-values-fix"
+local EXPORTER_VERSION = "0.1.13-a9-steering-raw-graphs"
 local OUTPUT_FILENAME = "automation-lap-vehicle.json"
 local INVENTORY_OUTPUT_FILENAME = "automation-lap-field-inventory.json"
 local GRAPH_INVENTORY_OUTPUT_FILENAME = "automation-lap-graph-inventory.json"
@@ -19,7 +19,7 @@ local RAW_GRAPH_OUTPUT_FILENAME = "automation-lap-raw-graphs.json"
 local EXPORT_TIMESTAMP_PLACEHOLDER = "__AUTOMATION_LAP_EXPORTED_AT_UTC__"
 local GRAPH_CHILD_LIMIT = 64
 local GRAPH_SAMPLE_LIMIT = 5
-local RAW_GRAPH_VALUE_LIMIT = 5000
+local RAW_GRAPH_VALUE_LIMIT = 10000
 
 local JSON_NULL = {}
 
@@ -593,6 +593,8 @@ local function build_raw_graphs()
         "AccelerationToTopSpeed",
         "Braking",
         "BrakingVGrip",
+        "LowSpeedSteering",
+        "HighSpeedSteering",
     }
     local graphs = {}
     local diagnostics = {}

@@ -1,0 +1,177 @@
+{
+  "scenario": "B-S02",
+  "success": true,
+  "generatedAtUtc": "2026-07-26T19:26:10Z",
+  "inputDirectory": "outputs/a8-raw-vehicle-data",
+  "documentsProcessed": 3,
+  "curvesValid": 3,
+  "curvesFailed": 0,
+  "maxInterpolationError": 0.0,
+  "vehicles": [
+    {
+      "path": "outputs/a8-raw-vehicle-data/AIXAM Coupe GTI/automation-lap-raw-vehicle-data.json",
+      "modelName": "AIXAM",
+      "trimName": "Coupe GTI",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.12-a7-json-values-fix",
+      "sampleCount": 113,
+      "speedMonotonic": true,
+      "speedDrops": {
+        "count": 0,
+        "maxDrop": 0.0,
+        "totalDrop": 0
+      },
+      "timeMonotonic": true,
+      "distanceMonotonic": true,
+      "finiteValues": true,
+      "topSpeed": 115.17921700986,
+      "topSpeedTime": 75.254999999997,
+      "topSpeedDistance": 1559.5351854022,
+      "maxAccelG": 0.072098721402525,
+      "minAccelG": 0.0,
+      "maxEnginePower": 15.017536266234,
+      "minEnginePower": 0.0,
+      "maxGear": 1.0,
+      "targets": [
+        {
+          "speed": 50.0,
+          "reachable": true,
+          "time": 20.19440202913052,
+          "distance": 142.33659566764854
+        },
+        {
+          "speed": 100.0,
+          "reachable": true,
+          "time": 50.06976461869703,
+          "distance": 798.8270476574777
+        },
+        {
+          "speed": 115.17921700986,
+          "reachable": true,
+          "time": 75.254999999997,
+          "distance": 1559.5351854022
+        }
+      ],
+      "interpolationErrors": {
+        "speedAtSourceTimesMaxAbs": 0.0,
+        "distanceAtSourceTimesMaxAbs": 0.0
+      }
+    },
+    {
+      "path": "outputs/a8-raw-vehicle-data/PCM - Magmort Carcharhini Recif/automation-lap-raw-vehicle-data.json",
+      "modelName": "PCM - Magmort",
+      "trimName": "Carcharhini Recif",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.12-a7-json-values-fix",
+      "sampleCount": 215,
+      "speedMonotonic": false,
+      "speedDrops": {
+        "count": 1,
+        "maxDrop": 1.043922969810012,
+        "totalDrop": 1.043922969810012
+      },
+      "timeMonotonic": true,
+      "distanceMonotonic": true,
+      "finiteValues": true,
+      "topSpeed": 223.00794746926,
+      "topSpeedTime": 49.404999999999,
+      "topSpeedDistance": 2380.7659273745,
+      "maxAccelG": 0.5351340180144,
+      "minAccelG": -0.10770693629368,
+      "maxEnginePower": 148.9331286961,
+      "minEnginePower": 0.0,
+      "maxGear": 3.0,
+      "targets": [
+        {
+          "speed": 50.0,
+          "reachable": true,
+          "time": 2.657647059133326,
+          "distance": 18.519980349148206
+        },
+        {
+          "speed": 100.0,
+          "reachable": true,
+          "time": 5.686126750289691,
+          "distance": 82.99108123073968
+        },
+        {
+          "speed": 223.00794746926,
+          "reachable": true,
+          "time": 49.404999999999,
+          "distance": 2380.7659273745
+        }
+      ],
+      "interpolationErrors": {
+        "speedAtSourceTimesMaxAbs": 0.0,
+        "distanceAtSourceTimesMaxAbs": 0.0
+      }
+    },
+    {
+      "path": "outputs/a8-raw-vehicle-data/QFC55 - Magmort Carcharhini RCZ/automation-lap-raw-vehicle-data.json",
+      "modelName": "QFC55 - Magmort",
+      "trimName": "Carcharhini RCZ",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.12-a7-json-values-fix",
+      "sampleCount": 273,
+      "speedMonotonic": false,
+      "speedDrops": {
+        "count": 1,
+        "maxDrop": 1.1150446323700294,
+        "totalDrop": 1.1150446323700294
+      },
+      "timeMonotonic": true,
+      "distanceMonotonic": true,
+      "finiteValues": true,
+      "topSpeed": 287.79457951094,
+      "topSpeedTime": 73.704999999997,
+      "topSpeedDistance": 4644.8238179764,
+      "maxAccelG": 0.63661984356973,
+      "minAccelG": -0.12691337505747,
+      "maxEnginePower": 183.25358395161,
+      "minEnginePower": -6.4774452402326,
+      "maxGear": 6.0,
+      "targets": [
+        {
+          "speed": 50.0,
+          "reachable": true,
+          "time": 2.276371156941955,
+          "distance": 15.829235161666938
+        },
+        {
+          "speed": 100.0,
+          "reachable": true,
+          "time": 5.399066874204014,
+          "distance": 83.34023523994159
+        },
+        {
+          "speed": 287.79457951094,
+          "reachable": true,
+          "time": 73.704999999997,
+          "distance": 4644.8238179764
+        }
+      ],
+      "interpolationErrors": {
+        "speedAtSourceTimesMaxAbs": 0.0,
+        "distanceAtSourceTimesMaxAbs": 0.0
+      }
+    }
+  ],
+  "topSpeedRanking": [
+    {
+      "name": "QFC55 - Magmort - Carcharhini RCZ",
+      "topSpeed": 287.79457951094,
+      "topSpeedTime": 73.704999999997
+    },
+    {
+      "name": "PCM - Magmort - Carcharhini Recif",
+      "topSpeed": 223.00794746926,
+      "topSpeedTime": 49.404999999999
+    },
+    {
+      "name": "AIXAM - Coupe GTI",
+      "topSpeed": 115.17921700986,
+      "topSpeedTime": 75.254999999997
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,230 @@
+{
+  "scenario": "B-S03",
+  "success": true,
+  "generatedAtUtc": "2026-07-26T19:30:32Z",
+  "inputDirectory": "outputs/a8-raw-vehicle-data",
+  "documentsProcessed": 3,
+  "curvesValid": 3,
+  "curvesFailed": 0,
+  "maxBrakingVGripAxisDelta": 0.0,
+  "maxInterpolationError": 1.1102230246251565e-16,
+  "vehicles": [
+    {
+      "path": "outputs/a8-raw-vehicle-data/AIXAM Coupe GTI/automation-lap-raw-vehicle-data.json",
+      "modelName": "AIXAM",
+      "trimName": "Coupe GTI",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.12-a7-json-values-fix",
+      "brakingSampleCount": 98,
+      "brakingVGripSampleCount": 98,
+      "speedDecreasing": true,
+      "timeIncreasing": true,
+      "finiteValues": true,
+      "startSpeed": 113.68450866437,
+      "startTime": 0.12,
+      "endSpeed": 0.4091107263182,
+      "endTime": 4.0,
+      "fullDuration": 3.88,
+      "speedTimeArea": 219.7045346181973,
+      "targets": [
+        {
+          "speed": 200.0,
+          "reachable": false,
+          "timeAtSpeed": null,
+          "durationToEnd": null,
+          "speedTimeAreaToEnd": null
+        },
+        {
+          "speed": 100.0,
+          "reachable": true,
+          "timeAtSpeed": 0.5772212909184737,
+          "durationToEnd": 3.422778709081526,
+          "speedTimeAreaToEnd": 170.85932333567385
+        },
+        {
+          "speed": 50.0,
+          "reachable": true,
+          "timeAtSpeed": 2.2809039513404845,
+          "durationToEnd": 1.7190960486595155,
+          "speedTimeAreaToEnd": 43.26883833004472
+        }
+      ],
+      "brakingVGripSpeedAxisMaxAbsDelta": 0.0,
+      "frontBrakeForce": {
+        "min": 2939.0464738246,
+        "max": 2939.0464738246
+      },
+      "frontBrakeGrip": {
+        "min": 2836.2003035428,
+        "max": 2860.5250199929
+      },
+      "rearBrakeForce": {
+        "min": 950.06353869061,
+        "max": 950.06353869061
+      },
+      "rearBrakeGrip": {
+        "min": 856.94322690557,
+        "max": 858.24841904844
+      },
+      "frontGripMinusForce": {
+        "min": -102.84617028179991,
+        "max": -78.5214538317,
+        "atMinIndex": 97
+      },
+      "rearGripMinusForce": {
+        "min": -93.12031178504003,
+        "max": -91.81511964216998,
+        "atMinIndex": 0
+      },
+      "limitingAxleByMinMargin": "front",
+      "interpolationErrors": {
+        "speedAtSourceTimesMaxAbs": 1.1102230246251565e-16
+      }
+    },
+    {
+      "path": "outputs/a8-raw-vehicle-data/PCM - Magmort Carcharhini Recif/automation-lap-raw-vehicle-data.json",
+      "modelName": "PCM - Magmort",
+      "trimName": "Carcharhini Recif",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.12-a7-json-values-fix",
+      "brakingSampleCount": 159,
+      "brakingVGripSampleCount": 159,
+      "speedDecreasing": true,
+      "timeIncreasing": true,
+      "finiteValues": true,
+      "startSpeed": 220.56011209288,
+      "startTime": 0.12,
+      "endSpeed": 1.2067660539476,
+      "endTime": 6.44,
+      "fullDuration": 6.32,
+      "speedTimeArea": 686.7780959006884,
+      "targets": [
+        {
+          "speed": 200.0,
+          "reachable": true,
+          "timeAtSpeed": 0.6715471060772977,
+          "durationToEnd": 5.768452893922703,
+          "speedTimeAreaToEnd": 570.8193413440433
+        },
+        {
+          "speed": 100.0,
+          "reachable": true,
+          "timeAtSpeed": 3.501547004222448,
+          "durationToEnd": 2.9384529957775523,
+          "speedTimeAreaToEnd": 148.12055082123427
+        },
+        {
+          "speed": 50.0,
+          "reachable": true,
+          "timeAtSpeed": 4.980049421584882,
+          "durationToEnd": 1.4599505784151185,
+          "speedTimeAreaToEnd": 37.34518334147512
+        }
+      ],
+      "brakingVGripSpeedAxisMaxAbsDelta": 0.0,
+      "frontBrakeForce": {
+        "min": 4030.8951486936,
+        "max": 4030.8951486936
+      },
+      "frontBrakeGrip": {
+        "min": 4037.000954261,
+        "max": 4332.711583543
+      },
+      "rearBrakeForce": {
+        "min": 1345.3499566135,
+        "max": 1345.3499566135
+      },
+      "rearBrakeGrip": {
+        "min": 1048.6543205361,
+        "max": 1245.3872779596
+      },
+      "frontGripMinusForce": {
+        "min": 6.105805567400239,
+        "max": 301.8164348494006,
+        "atMinIndex": 0
+      },
+      "rearGripMinusForce": {
+        "min": -296.69563607739997,
+        "max": -99.96267865389996,
+        "atMinIndex": 0
+      },
+      "limitingAxleByMinMargin": "rear",
+      "interpolationErrors": {
+        "speedAtSourceTimesMaxAbs": 0.0
+      }
+    },
+    {
+      "path": "outputs/a8-raw-vehicle-data/QFC55 - Magmort Carcharhini RCZ/automation-lap-raw-vehicle-data.json",
+      "modelName": "QFC55 - Magmort",
+      "trimName": "Carcharhini RCZ",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.12-a7-json-values-fix",
+      "brakingSampleCount": 184,
+      "brakingVGripSampleCount": 184,
+      "speedDecreasing": true,
+      "timeIncreasing": true,
+      "finiteValues": true,
+      "startSpeed": 284.94527151563,
+      "startTime": 0.12,
+      "endSpeed": 0.033001170261101,
+      "endTime": 7.4399999999999,
+      "fullDuration": 7.3199999999999,
+      "speedTimeArea": 1027.687670727558,
+      "targets": [
+        {
+          "speed": 200.0,
+          "reachable": true,
+          "timeAtSpeed": 2.22600873672316,
+          "durationToEnd": 5.21399126327674,
+          "speedTimeAreaToEnd": 517.7083457521705
+        },
+        {
+          "speed": 100.0,
+          "reachable": true,
+          "timeAtSpeed": 4.805092941419308,
+          "durationToEnd": 2.634907058580592,
+          "speedTimeAreaToEnd": 131.55193329761713
+        },
+        {
+          "speed": 50.0,
+          "reachable": true,
+          "timeAtSpeed": 6.119426775196135,
+          "durationToEnd": 1.3205732248037654,
+          "speedTimeAreaToEnd": 33.02117915192176
+        }
+      ],
+      "brakingVGripSpeedAxisMaxAbsDelta": 0.0,
+      "frontBrakeForce": {
+        "min": 5946.792797008,
+        "max": 5946.792797008
+      },
+      "frontBrakeGrip": {
+        "min": 5177.2765459833,
+        "max": 5356.3021950233
+      },
+      "rearBrakeForce": {
+        "min": 1917.0582640625,
+        "max": 1917.0582640625
+      },
+      "rearBrakeGrip": {
+        "min": 1613.1863765642,
+        "max": 1661.6191080512
+      },
+      "frontGripMinusForce": {
+        "min": -769.5162510247001,
+        "max": -590.4906019847003,
+        "atMinIndex": 0
+      },
+      "rearGripMinusForce": {
+        "min": -303.8718874983001,
+        "max": -255.43915601129993,
+        "atMinIndex": 0
+      },
+      "limitingAxleByMinMargin": "front",
+      "interpolationErrors": {
+        "speedAtSourceTimesMaxAbs": 5.551115123125783e-17
+      }
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,240 @@
+{
+  "scenario": "B-S06",
+  "success": true,
+  "generatedAtUtc": "2026-07-27T14:37:08Z",
+  "sourceResults": {
+    "B-S02": "prototypes/vehicle-dynamics/results/b_s02_acceleration_curve_summary.json",
+    "B-S03": "prototypes/vehicle-dynamics/results/b_s03_braking_curve_summary.json",
+    "B-S04": "prototypes/vehicle-dynamics/results/b_s04_steering_graphs_summary.json",
+    "B-S05": "prototypes/vehicle-dynamics/results/b_s05_transitions_summary.json"
+  },
+  "sourceResultsSuccessful": true,
+  "vehiclesCompared": 3,
+  "minimumSpreadRatio": 0.05,
+  "allSpreadsVisible": true,
+  "expectedOrderChecks": {
+    "aixamSlowestTopSpeed": true,
+    "qfcFastestTopSpeed": true,
+    "qfcFastest0To100": true,
+    "qfcFastest100ToEnd": true,
+    "aixamLowestTransitionDistance": true
+  },
+  "metrics": {
+    "AIXAM - Coupe GTI": {
+      "topSpeed": 115.17921700986,
+      "time0To50": 20.19440202913052,
+      "time0To100": 50.06976461869703,
+      "maxAccelG": 0.072098721402525,
+      "brake100ToEnd": 3.422778709081526,
+      "brake50ToEnd": 1.7190960486595155,
+      "brakeFullDuration": 3.88,
+      "brakeSpeedTimeArea": 219.7045346181973,
+      "lowSteeringMax": 9.1788193943332,
+      "highSteeringMax": 15.933629649691,
+      "lowInsidePercent": 97.79489904357067,
+      "highInsidePercent": 59.40983606557377,
+      "highSpeedDomainMax": 158.10313568115,
+      "transitionFinalSpeed": 7.697666567339789,
+      "transitionDistance": 17.49307153992649,
+      "transitionHeading": 0.021091124471044696,
+      "transitionMaxLateralG": 0.006347934758928419,
+      "transitionMaxSpeed": 11.949311478546003
+    },
+    "PCM - Magmort - Carcharhini Recif": {
+      "topSpeed": 223.00794746926,
+      "time0To50": 2.657647059133326,
+      "time0To100": 5.686126750289691,
+      "maxAccelG": 0.5351340180144,
+      "brake100ToEnd": 2.9384529957775523,
+      "brake50ToEnd": 1.4599505784151185,
+      "brakeFullDuration": 6.32,
+      "brakeSpeedTimeArea": 686.7780959006884,
+      "lowSteeringMax": 7.4824317228079,
+      "highSteeringMax": 11.730697478796,
+      "lowInsidePercent": 29.866165766611882,
+      "highInsidePercent": 30.71816535908268,
+      "highSpeedDomainMax": 164.7270401001,
+      "transitionFinalSpeed": 107.36081342859178,
+      "transitionDistance": 202.00151870059761,
+      "transitionHeading": 0.08846258653741128,
+      "transitionMaxLateralG": 2.583646003802435,
+      "transitionMaxSpeed": 107.36081342859178
+    },
+    "QFC55 - Magmort - Carcharhini RCZ": {
+      "topSpeed": 287.79457951094,
+      "time0To50": 2.276371156941955,
+      "time0To100": 5.399066874204014,
+      "maxAccelG": 0.63661984356973,
+      "brake100ToEnd": 2.634907058580592,
+      "brake50ToEnd": 1.3205732248037654,
+      "brakeFullDuration": 7.3199999999999,
+      "brakeSpeedTimeArea": 1027.687670727558,
+      "lowSteeringMax": 8.5985570428563,
+      "highSteeringMax": 15.829881451301,
+      "lowInsidePercent": 27.271055535123207,
+      "highInsidePercent": 25.405656003708856,
+      "highSpeedDomainMax": 187.70988922119,
+      "transitionFinalSpeed": 107.27698795547494,
+      "transitionDistance": 221.28624969348277,
+      "transitionHeading": 0.2510873182266299,
+      "transitionMaxLateralG": 1.8741065585066137,
+      "transitionMaxSpeed": 107.27698795547494
+    }
+  },
+  "rankings": {
+    "topSpeed": {
+      "label": "Vmax",
+      "higherIsBetter": true,
+      "ranking": [
+        {
+          "name": "QFC55 - Magmort - Carcharhini RCZ",
+          "value": 287.79457951094,
+          "rank": 1
+        },
+        {
+          "name": "PCM - Magmort - Carcharhini Recif",
+          "value": 223.00794746926,
+          "rank": 2
+        },
+        {
+          "name": "AIXAM - Coupe GTI",
+          "value": 115.17921700986,
+          "rank": 3
+        }
+      ],
+      "spreadRatio": 0.5997867047892691
+    },
+    "time0To100": {
+      "label": "0-100",
+      "higherIsBetter": false,
+      "ranking": [
+        {
+          "name": "QFC55 - Magmort - Carcharhini RCZ",
+          "value": 5.399066874204014,
+          "rank": 1
+        },
+        {
+          "name": "PCM - Magmort - Carcharhini Recif",
+          "value": 5.686126750289691,
+          "rank": 2
+        },
+        {
+          "name": "AIXAM - Coupe GTI",
+          "value": 50.06976461869703,
+          "rank": 3
+        }
+      ],
+      "spreadRatio": 0.8921691181230779
+    },
+    "brake100ToEnd": {
+      "label": "100->fin",
+      "higherIsBetter": false,
+      "ranking": [
+        {
+          "name": "QFC55 - Magmort - Carcharhini RCZ",
+          "value": 2.634907058580592,
+          "rank": 1
+        },
+        {
+          "name": "PCM - Magmort - Carcharhini Recif",
+          "value": 2.9384529957775523,
+          "rank": 2
+        },
+        {
+          "name": "AIXAM - Coupe GTI",
+          "value": 3.422778709081526,
+          "rank": 3
+        }
+      ],
+      "spreadRatio": 0.23018480523163964
+    },
+    "highSteeringMax": {
+      "label": "High steering max",
+      "higherIsBetter": true,
+      "ranking": [
+        {
+          "name": "AIXAM - Coupe GTI",
+          "value": 15.933629649691,
+          "rank": 1
+        },
+        {
+          "name": "QFC55 - Magmort - Carcharhini RCZ",
+          "value": 15.829881451301,
+          "rank": 2
+        },
+        {
+          "name": "PCM - Magmort - Carcharhini Recif",
+          "value": 11.730697478796,
+          "rank": 3
+        }
+      ],
+      "spreadRatio": 0.26377744828382577
+    },
+    "transitionDistance": {
+      "label": "Distance transition",
+      "higherIsBetter": true,
+      "ranking": [
+        {
+          "name": "QFC55 - Magmort - Carcharhini RCZ",
+          "value": 221.28624969348277,
+          "rank": 1
+        },
+        {
+          "name": "PCM - Magmort - Carcharhini Recif",
+          "value": 202.00151870059761,
+          "rank": 2
+        },
+        {
+          "name": "AIXAM - Coupe GTI",
+          "value": 17.49307153992649,
+          "rank": 3
+        }
+      ],
+      "spreadRatio": 0.9209482217527876
+    },
+    "transitionFinalSpeed": {
+      "label": "Vitesse finale transition",
+      "higherIsBetter": true,
+      "ranking": [
+        {
+          "name": "PCM - Magmort - Carcharhini Recif",
+          "value": 107.36081342859178,
+          "rank": 1
+        },
+        {
+          "name": "QFC55 - Magmort - Carcharhini RCZ",
+          "value": 107.27698795547494,
+          "rank": 2
+        },
+        {
+          "name": "AIXAM - Coupe GTI",
+          "value": 7.697666567339789,
+          "rank": 3
+        }
+      ],
+      "spreadRatio": 0.92830096641863
+    },
+    "transitionMaxLateralG": {
+      "label": "Lateral G modele",
+      "higherIsBetter": true,
+      "ranking": [
+        {
+          "name": "PCM - Magmort - Carcharhini Recif",
+          "value": 2.583646003802435,
+          "rank": 1
+        },
+        {
+          "name": "QFC55 - Magmort - Carcharhini RCZ",
+          "value": 1.8741065585066137,
+          "rank": 2
+        },
+        {
+          "name": "AIXAM - Coupe GTI",
+          "value": 0.006347934758928419,
+          "rank": 3
+        }
+      ],
+      "spreadRatio": 0.9975430323079919
+    }
+  }
+}

@@ -111,7 +111,7 @@ Ce fichier inventorie `CarInfo.TrimInfo.Results.GraphData` de façon bornée. Il
 automation-lap-raw-graphs.json
 ```
 
-Ce fichier exporte les séries numériques complètes des graphes ciblés `AccelerationToTopSpeed`, `Braking` et `BrakingVGrip`.
+Ce fichier exporte les séries numériques complètes des graphes ciblés `AccelerationToTopSpeed`, `Braking`, `BrakingVGrip`, `LowSpeedSteering` et `HighSpeedSteering`.
 
 Note de compatibilité observée : le runtime Lua d’Automation peut être restreint par rapport à Lua standard. Ne pas supposer la présence de fonctions comme `pcall`.
 

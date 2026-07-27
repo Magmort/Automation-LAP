@@ -1,0 +1,820 @@
+{
+  "scenario": "B-S01",
+  "success": true,
+  "generatedAtUtc": "2026-07-26T19:19:34Z",
+  "inputDirectory": "outputs/a8-raw-vehicle-data",
+  "documentsFound": 3,
+  "documentsValid": 3,
+  "documentsFailed": 0,
+  "totalRawValues": 13304,
+  "vehicles": [
+    {
+      "path": "outputs/a8-raw-vehicle-data/AIXAM Coupe GTI/automation-lap-raw-vehicle-data.json",
+      "modelName": "AIXAM",
+      "trimName": "Coupe GTI",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.12-a7-json-values-fix",
+      "automationVersion": null,
+      "generatedAtUtc": "2026-07-26T17:19:04Z",
+      "exportedAtUtc": "2026-07-26T17:05:48Z",
+      "controlledFieldsPresent": 73,
+      "controlledFieldsTotal": 73,
+      "availableGraphs": 10,
+      "rawGraphs": 3,
+      "rawGraphKeys": [
+        "AccelerationToTopSpeed",
+        "Braking",
+        "BrakingVGrip"
+      ],
+      "missingGraphs": [],
+      "rawSeries": 24,
+      "rawValues": 2607,
+      "documentDiagnostics": 2,
+      "graphInventoryDiagnostics": 0,
+      "warnings": [
+        "Automation version was not exposed by Lua data"
+      ],
+      "graphs": [
+        {
+          "key": "AccelerationToTopSpeed",
+          "seriesCount": 17,
+          "expectedSeriesLength": 113,
+          "valueCount": 1921,
+          "series": [
+            {
+              "key": "AccelG",
+              "role": "value",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 0.072098721402525,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "AirResistance",
+              "role": "value",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 8.980667743708,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Distance",
+              "role": "axis-candidate",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 1559.5351854022,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "DownForce",
+              "role": "value",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 6.5362605909432,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "EngineTorque",
+              "role": "value",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 27.073209755292,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "FrontEngineG",
+              "role": "value",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 0.072098721402525,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "FrontGripG",
+              "role": "value",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 0.481321667541,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RearEngineG",
+              "role": "value",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 0,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RearGripG",
+              "role": "value",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 0,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RollingResistance",
+              "role": "value",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 1.6037978973599,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Speed",
+              "role": "axis-candidate",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 115.17921700986,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Time",
+              "role": "axis-candidate",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 75.254999999997,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "WeightDistribution",
+              "role": "value",
+              "count": 113,
+              "numericMin": 0.53028931975714,
+              "numericMax": 0.53940202149465,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "dragPower",
+              "role": "value",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 10.584465641068,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "enginePower",
+              "role": "value",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 15.017536266234,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "engineRPM",
+              "role": "value",
+              "count": 113,
+              "numericMin": 0,
+              "numericMax": 5299.7197265625,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "gear",
+              "role": "value",
+              "count": 113,
+              "numericMin": 1,
+              "numericMax": 1,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            }
+          ]
+        },
+        {
+          "key": "Braking",
+          "seriesCount": 2,
+          "expectedSeriesLength": 98,
+          "valueCount": 196,
+          "series": [
+            {
+              "key": "Speed",
+              "role": "axis-candidate",
+              "count": 98,
+              "numericMin": 0.4091107263182,
+              "numericMax": 113.68450866437,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Time",
+              "role": "axis-candidate",
+              "count": 98,
+              "numericMin": 0.12,
+              "numericMax": 4,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            }
+          ]
+        },
+        {
+          "key": "BrakingVGrip",
+          "seriesCount": 5,
+          "expectedSeriesLength": 98,
+          "valueCount": 490,
+          "series": [
+            {
+              "key": "FrontBrakeForce",
+              "role": "value",
+              "count": 98,
+              "numericMin": 2939.0464738246,
+              "numericMax": 2939.0464738246,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "FrontBrakeGrip",
+              "role": "value",
+              "count": 98,
+              "numericMin": 2836.2003035428,
+              "numericMax": 2860.5250199929,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RearBrakeForce",
+              "role": "value",
+              "count": 98,
+              "numericMin": 950.06353869061,
+              "numericMax": 950.06353869061,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RearBrakeGrip",
+              "role": "value",
+              "count": 98,
+              "numericMin": 856.94322690557,
+              "numericMax": 858.24841904844,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Speed",
+              "role": "axis-candidate",
+              "count": 98,
+              "numericMin": 0.4091107263182,
+              "numericMax": 113.68450866437,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "outputs/a8-raw-vehicle-data/PCM - Magmort Carcharhini Recif/automation-lap-raw-vehicle-data.json",
+      "modelName": "PCM - Magmort",
+      "trimName": "Carcharhini Recif",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.12-a7-json-values-fix",
+      "automationVersion": null,
+      "generatedAtUtc": "2026-07-26T17:19:04Z",
+      "exportedAtUtc": "2026-07-26T17:06:18Z",
+      "controlledFieldsPresent": 73,
+      "controlledFieldsTotal": 73,
+      "availableGraphs": 10,
+      "rawGraphs": 3,
+      "rawGraphKeys": [
+        "AccelerationToTopSpeed",
+        "Braking",
+        "BrakingVGrip"
+      ],
+      "missingGraphs": [],
+      "rawSeries": 24,
+      "rawValues": 4768,
+      "documentDiagnostics": 2,
+      "graphInventoryDiagnostics": 0,
+      "warnings": [
+        "Automation version was not exposed by Lua data"
+      ],
+      "graphs": [
+        {
+          "key": "AccelerationToTopSpeed",
+          "seriesCount": 17,
+          "expectedSeriesLength": 215,
+          "valueCount": 3655,
+          "series": [
+            {
+              "key": "AccelG",
+              "role": "value",
+              "count": 215,
+              "numericMin": -0.10770693629368,
+              "numericMax": 0.5351340180144,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "AirResistance",
+              "role": "value",
+              "count": 215,
+              "numericMin": 0,
+              "numericMax": 100.05610207195,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Distance",
+              "role": "axis-candidate",
+              "count": 215,
+              "numericMin": 0,
+              "numericMax": 2380.7659273745,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "DownForce",
+              "role": "value",
+              "count": 215,
+              "numericMin": -115.73019185424,
+              "numericMax": 0,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "EngineTorque",
+              "role": "value",
+              "count": 215,
+              "numericMin": 0,
+              "numericMax": 338.62666392878,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "FrontEngineG",
+              "role": "value",
+              "count": 215,
+              "numericMin": 0,
+              "numericMax": 0,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "FrontGripG",
+              "role": "value",
+              "count": 215,
+              "numericMin": 0,
+              "numericMax": 0,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RearEngineG",
+              "role": "value",
+              "count": 215,
+              "numericMin": -0.10770693629368,
+              "numericMax": 0.5351340180144,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RearGripG",
+              "role": "value",
+              "count": 215,
+              "numericMin": 0,
+              "numericMax": 0.54804072562477,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RollingResistance",
+              "role": "value",
+              "count": 215,
+              "numericMin": 0,
+              "numericMax": 27.207528880203,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Speed",
+              "role": "axis-candidate",
+              "count": 215,
+              "numericMin": 0,
+              "numericMax": 223.00794746926,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Time",
+              "role": "axis-candidate",
+              "count": 215,
+              "numericMin": 0,
+              "numericMax": 49.404999999999,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "WeightDistribution",
+              "role": "value",
+              "count": 215,
+              "numericMin": 0.4914330805868,
+              "numericMax": 0.6111455737816,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "dragPower",
+              "role": "value",
+              "count": 215,
+              "numericMin": 0,
+              "numericMax": 127.26363095215,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "enginePower",
+              "role": "value",
+              "count": 215,
+              "numericMin": 0,
+              "numericMax": 148.9331286961,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "engineRPM",
+              "role": "value",
+              "count": 215,
+              "numericMin": 0,
+              "numericMax": 5801.2294921875,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "gear",
+              "role": "value",
+              "count": 215,
+              "numericMin": 1,
+              "numericMax": 3,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            }
+          ]
+        },
+        {
+          "key": "Braking",
+          "seriesCount": 2,
+          "expectedSeriesLength": 159,
+          "valueCount": 318,
+          "series": [
+            {
+              "key": "Speed",
+              "role": "axis-candidate",
+              "count": 159,
+              "numericMin": 1.2067660539476,
+              "numericMax": 220.56011209288,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Time",
+              "role": "axis-candidate",
+              "count": 159,
+              "numericMin": 0.12,
+              "numericMax": 6.44,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            }
+          ]
+        },
+        {
+          "key": "BrakingVGrip",
+          "seriesCount": 5,
+          "expectedSeriesLength": 159,
+          "valueCount": 795,
+          "series": [
+            {
+              "key": "FrontBrakeForce",
+              "role": "value",
+              "count": 159,
+              "numericMin": 4030.8951486936,
+              "numericMax": 4030.8951486936,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "FrontBrakeGrip",
+              "role": "value",
+              "count": 159,
+              "numericMin": 4037.000954261,
+              "numericMax": 4332.711583543,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RearBrakeForce",
+              "role": "value",
+              "count": 159,
+              "numericMin": 1345.3499566135,
+              "numericMax": 1345.3499566135,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RearBrakeGrip",
+              "role": "value",
+              "count": 159,
+              "numericMin": 1048.6543205361,
+              "numericMax": 1245.3872779596,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Speed",
+              "role": "axis-candidate",
+              "count": 159,
+              "numericMin": 1.2067660539476,
+              "numericMax": 220.56011209288,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "outputs/a8-raw-vehicle-data/QFC55 - Magmort Carcharhini RCZ/automation-lap-raw-vehicle-data.json",
+      "modelName": "QFC55 - Magmort",
+      "trimName": "Carcharhini RCZ",
+      "schemaVersion": "0.1.0",
+      "exporterVersion": "0.1.12-a7-json-values-fix",
+      "automationVersion": null,
+      "generatedAtUtc": "2026-07-26T17:19:04Z",
+      "exportedAtUtc": "2026-07-26T17:06:01Z",
+      "controlledFieldsPresent": 73,
+      "controlledFieldsTotal": 73,
+      "availableGraphs": 10,
+      "rawGraphs": 3,
+      "rawGraphKeys": [
+        "AccelerationToTopSpeed",
+        "Braking",
+        "BrakingVGrip"
+      ],
+      "missingGraphs": [],
+      "rawSeries": 24,
+      "rawValues": 5929,
+      "documentDiagnostics": 2,
+      "graphInventoryDiagnostics": 0,
+      "warnings": [
+        "Automation version was not exposed by Lua data"
+      ],
+      "graphs": [
+        {
+          "key": "AccelerationToTopSpeed",
+          "seriesCount": 17,
+          "expectedSeriesLength": 273,
+          "valueCount": 4641,
+          "series": [
+            {
+              "key": "AccelG",
+              "role": "value",
+              "count": 273,
+              "numericMin": -0.12691337505747,
+              "numericMax": 0.63661984356973,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "AirResistance",
+              "role": "value",
+              "count": 273,
+              "numericMin": 0,
+              "numericMax": 137.35324768247,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Distance",
+              "role": "axis-candidate",
+              "count": 273,
+              "numericMin": 0,
+              "numericMax": 4644.8238179764,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "DownForce",
+              "role": "value",
+              "count": 273,
+              "numericMin": -46.867672033241,
+              "numericMax": 0,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "EngineTorque",
+              "role": "value",
+              "count": 273,
+              "numericMin": -8.24594512027,
+              "numericMax": 273.39303844367,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "FrontEngineG",
+              "role": "value",
+              "count": 273,
+              "numericMin": -0.071071490334769,
+              "numericMax": 0.35650711391687,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "FrontGripG",
+              "role": "value",
+              "count": 273,
+              "numericMin": 0,
+              "numericMax": 0.60121488676467,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RearEngineG",
+              "role": "value",
+              "count": 273,
+              "numericMin": -0.055841884722702,
+              "numericMax": 0.28011272965286,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RearGripG",
+              "role": "value",
+              "count": 273,
+              "numericMin": 0,
+              "numericMax": 0.63978238404532,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RollingResistance",
+              "role": "value",
+              "count": 273,
+              "numericMin": 0,
+              "numericMax": 16.307739516776,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Speed",
+              "role": "axis-candidate",
+              "count": 273,
+              "numericMin": 0,
+              "numericMax": 287.79457951094,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Time",
+              "role": "axis-candidate",
+              "count": 273,
+              "numericMin": 0,
+              "numericMax": 73.704999999997,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "WeightDistribution",
+              "role": "value",
+              "count": 273,
+              "numericMin": 0.45872279765746,
+              "numericMax": 0.57958698590058,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "dragPower",
+              "role": "value",
+              "count": 273,
+              "numericMin": 0,
+              "numericMax": 153.66098719925,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "enginePower",
+              "role": "value",
+              "count": 273,
+              "numericMin": -6.4774452402326,
+              "numericMax": 183.25358395161,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "engineRPM",
+              "role": "value",
+              "count": 273,
+              "numericMin": 0,
+              "numericMax": 7500.7866210938,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "gear",
+              "role": "value",
+              "count": 273,
+              "numericMin": 1,
+              "numericMax": 6,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            }
+          ]
+        },
+        {
+          "key": "Braking",
+          "seriesCount": 2,
+          "expectedSeriesLength": 184,
+          "valueCount": 368,
+          "series": [
+            {
+              "key": "Speed",
+              "role": "axis-candidate",
+              "count": 184,
+              "numericMin": 0.033001170261101,
+              "numericMax": 284.94527151563,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Time",
+              "role": "axis-candidate",
+              "count": 184,
+              "numericMin": 0.12,
+              "numericMax": 7.4399999999999,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            }
+          ]
+        },
+        {
+          "key": "BrakingVGrip",
+          "seriesCount": 5,
+          "expectedSeriesLength": 184,
+          "valueCount": 920,
+          "series": [
+            {
+              "key": "FrontBrakeForce",
+              "role": "value",
+              "count": 184,
+              "numericMin": 5946.792797008,
+              "numericMax": 5946.792797008,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "FrontBrakeGrip",
+              "role": "value",
+              "count": 184,
+              "numericMin": 5177.2765459833,
+              "numericMax": 5356.3021950233,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RearBrakeForce",
+              "role": "value",
+              "count": 184,
+              "numericMin": 1917.0582640625,
+              "numericMax": 1917.0582640625,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "RearBrakeGrip",
+              "role": "value",
+              "count": 184,
+              "numericMin": 1613.1863765642,
+              "numericMax": 1661.6191080512,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            },
+            {
+              "key": "Speed",
+              "role": "axis-candidate",
+              "count": 184,
+              "numericMin": 0.033001170261101,
+              "numericMax": 284.94527151563,
+              "unitSource": "automation-graph",
+              "unitInternalCandidate": "unknown"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

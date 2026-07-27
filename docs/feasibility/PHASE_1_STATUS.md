@@ -33,9 +33,9 @@ L’import UR2D2 est séparé du tour autonome : C définit le contrat interne �
 
 | Expérience | Ticket | État | Dépendances | Prochaine preuve attendue |
 |---|---:|---|---|---|
-| A — Extraction Automation | #3 | Prête à démarrer | Installation locale d’Automation et du SDK | Export JSON minimal avec versions |
-| B — Dynamique d’une voiture | #4 | Bloquée | Données représentatives de A | Scénarios physiques reproductibles |
-| C — Tour autonome et circuit minimal | #5 | Bloquée | Modèle dynamique candidat de B | `TrackDefinition` minimal et tours consécutifs mesurés |
+| A — Extraction Automation | #3 | Validée avec réserves | Installation locale d’Automation et du SDK | Contrat A8 `AutomationRawVehicleData` v0.1 disponible |
+| B — Dynamique d’une voiture | #4 | Validée avec réserves | Données A9 des trois voitures | Modèle dynamique candidat disponible pour C |
+| C — Tour autonome et circuit minimal | #5 | À préparer | Modèle dynamique candidat de B | `TrackDefinition` minimal et tours consécutifs mesurés |
 | D — Trafic et dépassement | #6 | Bloquée | C et replay minimal E | Scénarios de trafic statistiques |
 | E — Replay minimal | #7 | Bloquée | États dynamiques de B | Fichier autonome navigable |
 | F — Charge et accélération | #8 | Bloquée | Boucle représentative B à E | Profils 1, 12, 20 et 40 voitures |
