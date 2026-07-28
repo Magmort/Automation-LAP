@@ -38,4 +38,4 @@ prototypes/
   performance/           # Expérience F
 ```
 
-Seul le répertoire de l’expérience active doit être créé en détail. L'expérience E est clôturée avec réserves ; F est prête à démarrer.
+Seul le répertoire de l’expérience active doit être créé en détail. L'expérience F est validée avec réserves.

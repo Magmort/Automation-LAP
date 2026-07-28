@@ -1,0 +1,29 @@
+{
+  "scenario": "F-S04",
+  "sourceReplay": "prototypes/replay/results/e_s01_minimal_replay.replay.json",
+  "tickRateHz": 60,
+  "durationS": 55.0,
+  "repetitions": 3,
+  "profiles": [
+    {
+      "vehicleCount": 20,
+      "replaySampleHz": [0, 1, 2, 4, 10, 20]
+    },
+    {
+      "vehicleCount": 40,
+      "replaySampleHz": [0, 4, 20]
+    }
+  ],
+  "referenceReplaySampleHz": 4,
+  "targetVehicleCount": 20,
+  "workload": {
+    "neighborLookaheadM": 120.0,
+    "targetHeadwayS": 0.9,
+    "minimumGapM": 7.0,
+    "driverLookaheadTicks": 5
+  },
+  "thresholds": {
+    "requiredMaxReferenceReplayShare": 0.12,
+    "requiredMinFrequencyVariants": 6
+  }
+}

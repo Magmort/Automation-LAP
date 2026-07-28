@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="860" viewBox="0 0 1280 860" role="img" aria-labelledby="title desc">
+<title id="title">F-S05 performance synthesis</title>
+<desc id="desc">Consolidated performance decision for experiment F.</desc>
+<rect width="100%" height="100%" fill="#f7f7f3" />
+<g font-family="Arial, sans-serif" fill="#222">
+<text x="54" y="70" font-size="27" font-weight="700">F-S05 - Synthese charge et acceleration</text>
+<text x="54" y="102" font-size="15" fill="#5f625d">Cloture F-S01 a F-S04, decision validee avec reserves</text>
+<rect x="54" y="120" width="1172" height="138" rx="8" fill="#ffffff" stroke="#c9c9c2" />
+<rect x="76" y="136" width="260" height="72" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="92" y="164" font-size="13" fill="#5f625d">Decision</text>
+<text x="320" y="186" font-size="22" font-weight="700" fill="#2f9d68" text-anchor="end">validee avec reserves</text>
+<rect x="362" y="136" width="260" height="72" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="378" y="164" font-size="13" fill="#5f625d">Cible voitures</text>
+<text x="606" y="186" font-size="22" font-weight="700" fill="#2f7ed8" text-anchor="end">12 a 20</text>
+<rect x="648" y="136" width="260" height="72" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="664" y="164" font-size="13" fill="#5f625d">Tick</text>
+<text x="892" y="186" font-size="22" font-weight="700" fill="#2b8c91" text-anchor="end">60 Hz</text>
+<rect x="934" y="136" width="260" height="72" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="950" y="164" font-size="13" fill="#5f625d">Replay</text>
+<text x="1178" y="186" font-size="22" font-weight="700" fill="#6f4bb2" text-anchor="end">4 Hz</text>
+<text x="80" y="236" font-size="13" fill="#5f625d">20 voitures: F-S02 73.4x temps reel, F-S03 36.3x accelere, replay 4 Hz 6.0% du tick.</text>
+<rect x="54" y="292" width="1172" height="300" rx="8" fill="#ffffff" stroke="#c9c9c2" />
+<text x="84" y="314" font-size="17" font-weight="700">Preuves principales</text>
+<text x="84" y="370" font-size="13" font-weight="700">F-S02 temps reel</text>
+<rect x="286" y="348" width="760" height="28" rx="5" fill="#ecece7" />
+<rect x="286" y="348" width="697.52" height="28" rx="5" fill="#2f7ed8" />
+<text x="1064" y="368" font-size="13">73.4 facteur</text>
+<text x="84" y="434" font-size="13" font-weight="700">F-S03 accelere</text>
+<rect x="286" y="412" width="760" height="28" rx="5" fill="#ecece7" />
+<rect x="286" y="412" width="690.29" height="28" rx="5" fill="#2f9d68" />
+<text x="1064" y="432" font-size="13">36.3 facteur</text>
+<text x="84" y="498" font-size="13" font-weight="700">F-S04 replay 4 Hz</text>
+<rect x="286" y="476" width="760" height="28" rx="5" fill="#ecece7" />
+<rect x="286" y="476" width="378.76" height="28" rx="5" fill="#6f4bb2" />
+<text x="1064" y="496" font-size="13">6.0 % tick</text>
+<text x="84" y="562" font-size="13" font-weight="700">F-S04 replay 20 Hz</text>
+<rect x="286" y="540" width="760" height="28" rx="5" fill="#ecece7" />
+<rect x="286" y="540" width="702.14" height="28" rx="5" fill="#d2842f" />
+<text x="1064" y="560" font-size="13">23.1 % tick</text>
+<rect x="54" y="628" width="1172" height="178" rx="8" fill="#ffffff" stroke="#c9c9c2" />
+<text x="84" y="650" font-size="17" font-weight="700">Reserves de cloture</text>
+<circle cx="92" cy="680" r="4" fill="#d2842f" />
+<text x="108" y="684" font-size="13" fill="#222222">mesures Python hors Unity et hors rendu reel</text>
+<circle cx="92" cy="708" r="4" fill="#d2842f" />
+<text x="108" y="712" font-size="13" fill="#222222">voitures dupliquees depuis E-S01, sans comportements independants complets</text>
+<circle cx="92" cy="736" r="4" fill="#d2842f" />
+<text x="108" y="740" font-size="13" fill="#222222">replay compact JSON en memoire, sans ecriture disque continue ni format binaire</text>
+<circle cx="92" cy="764" r="4" fill="#d2842f" />
+<text x="108" y="768" font-size="13" fill="#222222">pics de scheduling Windows/Python visibles sur certains runs longs</text>
+<circle cx="92" cy="792" r="4" fill="#d2842f" />
+<text x="108" y="796" font-size="13" fill="#222222">couts GPU, UI, audio, cameras et multithreading non mesures</text>
+</g>
+</svg>

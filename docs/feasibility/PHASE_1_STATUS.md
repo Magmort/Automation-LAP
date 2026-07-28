@@ -38,7 +38,7 @@ L’import UR2D2 est séparé du tour autonome : C définit le contrat interne �
 | C — Tour autonome et circuit minimal | #5 | Validée avec réserves | Modèle dynamique candidat de B | `TrackDefinition` v0.1 consolidé |
 | D — Trafic et dépassement | #6 | Validée avec réserves | B et C, replay E utile mais non bloquant | Synthèse D-S06 disponible |
 | E — Replay minimal | #7 | Validée avec réserves | États dynamiques de B, contrat C, résultats D | Synthèse E-S06 disponible |
-| F — Charge et accélération | #8 | Prête | Boucle représentative B à E | Profils 1, 12, 20 et 40 voitures |
+| F — Charge et accélération | #8 | Validée avec réserves | Boucle représentative B à E | Synthèse F-S05 disponible |
 | G — Import UR2D2 | #10 | Prête | Contrat `TrackDefinition` v0.1 issu de C | Circuit UR2D2 converti et validé |
 
 ## Portée de l’expérience G
@@ -70,7 +70,7 @@ G est :
 - [ ] le modèle minimal de circuit et ses invariants sont définis ;
 - [ ] l’architecture IA est confirmée ou ajustée ;
 - [x] le principe de replay hybride est mesuré ;
-- [ ] la cible de douze à vingt voitures est évaluée sur une machine de référence ;
+- [x] la cible de douze à vingt voitures est évaluée sur une machine de référence ;
 - [ ] la capacité d’UR2D2 à alimenter le modèle de circuit est évaluée ;
 - [ ] une décision explicite est prise sur l’adoption d’UR2D2 ;
 - [ ] le rapport consolidé est validé ;

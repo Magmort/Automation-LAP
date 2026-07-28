@@ -1,0 +1,40 @@
+{
+  "scenario": "F-S02",
+  "sourceReplay": "prototypes/replay/results/e_s01_minimal_replay.replay.json",
+  "tickRateHz": 60,
+  "durationS": 55.0,
+  "repetitions": 3,
+  "targetVehicleCounts": [12, 20],
+  "profiles": [
+    {
+      "id": "target_12",
+      "label": "Target 12 cars",
+      "vehicleCount": 12,
+      "required": true
+    },
+    {
+      "id": "target_20",
+      "label": "Target 20 cars",
+      "vehicleCount": 20,
+      "required": true
+    },
+    {
+      "id": "stress_40",
+      "label": "Stress 40 cars",
+      "vehicleCount": 40,
+      "required": false
+    }
+  ],
+  "workload": {
+    "neighborLookaheadM": 120.0,
+    "targetHeadwayS": 0.9,
+    "minimumGapM": 7.0,
+    "replaySampleHz": 4,
+    "driverLookaheadTicks": 5
+  },
+  "thresholds": {
+    "requiredMaxDeadlineMisses": 0,
+    "requiredMaxP95BudgetRatio": 0.5,
+    "requiredMinRealtimeFactor": 10.0
+  }
+}

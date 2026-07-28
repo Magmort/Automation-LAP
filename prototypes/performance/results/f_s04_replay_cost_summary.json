@@ -1,0 +1,2703 @@
+{
+  "scenario": "F-S04",
+  "success": true,
+  "generatedAtUtc": "2026-07-28T17:02:45Z",
+  "replayPath": "prototypes/replay/results/e_s01_minimal_replay.replay.json",
+  "profilesPath": "prototypes/performance/fixtures/f_s04_replay_cost_profiles.json",
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pythonVersion": "3.12.13",
+    "pythonExecutable": "C:\\Users\\jerem\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "cpuCount": 32,
+    "machine": "AMD64"
+  },
+  "config": {
+    "scenario": "F-S04",
+    "sourceReplay": "prototypes/replay/results/e_s01_minimal_replay.replay.json",
+    "tickRateHz": 60,
+    "durationS": 55.0,
+    "repetitions": 3,
+    "profiles": [
+      {
+        "vehicleCount": 20,
+        "replaySampleHz": [
+          0,
+          1,
+          2,
+          4,
+          10,
+          20
+        ]
+      },
+      {
+        "vehicleCount": 40,
+        "replaySampleHz": [
+          0,
+          4,
+          20
+        ]
+      }
+    ],
+    "referenceReplaySampleHz": 4,
+    "targetVehicleCount": 20,
+    "workload": {
+      "neighborLookaheadM": 120.0,
+      "targetHeadwayS": 0.9,
+      "minimumGapM": 7.0,
+      "driverLookaheadTicks": 5
+    },
+    "thresholds": {
+      "requiredMaxReferenceReplayShare": 0.12,
+      "requiredMinFrequencyVariants": 6
+    }
+  },
+  "thresholds": {
+    "requiredMaxReferenceReplayShare": 0.12,
+    "requiredMinFrequencyVariants": 6
+  },
+  "profileErrors": [],
+  "profiles": [
+    {
+      "profileId": "cars_20_off",
+      "required": false,
+      "runs": [
+        {
+          "profileId": "cars_20_off",
+          "vehicleCount": 20,
+          "replaySampleHz": 0.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 729.3660000432283,
+          "cpuTimeMs": 734.375,
+          "realTimeFactor": 75.40795704315836,
+          "ticksPerSecond": 4524.477422589502,
+          "vehicleTicksPerSecond": 90489.54845179003,
+          "tickMeanMs": 0.219567,
+          "tickP95Ms": 0.2589,
+          "tickMaxMs": 0.6894,
+          "replayMeanMs": 0.000616,
+          "replayP95Ms": 0.0007,
+          "replaySampledMeanMs": 0.0,
+          "replaySampledP95Ms": 0.0,
+          "replayShare": 0.00280552177695191,
+          "serializedBytes": 0,
+          "serializedBytesPerSecond": 0.0,
+          "replaySampleCount": 0,
+          "bytesPerSample": 0.0,
+          "peakTracedBytes": 685080,
+          "currentTracedBytes": 679568,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.096326,
+              "p95Ms": 0.1124,
+              "maxMs": 0.4528
+            },
+            "motion": {
+              "meanMs": 0.0335,
+              "p95Ms": 0.0362,
+              "maxMs": 0.3551
+            },
+            "perception": {
+              "meanMs": 0.016096,
+              "p95Ms": 0.0181,
+              "maxMs": 0.1375
+            },
+            "decision": {
+              "meanMs": 0.062691,
+              "p95Ms": 0.0694,
+              "maxMs": 0.3408
+            },
+            "replay": {
+              "meanMs": 0.000616,
+              "p95Ms": 0.0007,
+              "maxMs": 0.0055
+            },
+            "replaySampled": {
+              "meanMs": 0.0,
+              "p95Ms": 0.0,
+              "maxMs": 0.0
+            },
+            "tick": {
+              "meanMs": 0.219567,
+              "p95Ms": 0.2589,
+              "maxMs": 0.6894
+            }
+          },
+          "checksum": 1080552.913
+        },
+        {
+          "profileId": "cars_20_off",
+          "vehicleCount": 20,
+          "replaySampleHz": 0.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 709.5169000094756,
+          "cpuTimeMs": 718.75,
+          "realTimeFactor": 77.51753340796459,
+          "ticksPerSecond": 4651.052004477875,
+          "vehicleTicksPerSecond": 93021.04008955751,
+          "tickMeanMs": 0.21353,
+          "tickP95Ms": 0.2478,
+          "tickMaxMs": 0.7446,
+          "replayMeanMs": 0.000632,
+          "replayP95Ms": 0.0008,
+          "replaySampledMeanMs": 0.0,
+          "replaySampledP95Ms": 0.0,
+          "replayShare": 0.0029597714606846813,
+          "serializedBytes": 0,
+          "serializedBytesPerSecond": 0.0,
+          "replaySampleCount": 0,
+          "bytesPerSample": 0.0,
+          "peakTracedBytes": 668216,
+          "currentTracedBytes": 662704,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.093814,
+              "p95Ms": 0.1082,
+              "maxMs": 0.324
+            },
+            "motion": {
+              "meanMs": 0.033729,
+              "p95Ms": 0.0369,
+              "maxMs": 0.252
+            },
+            "perception": {
+              "meanMs": 0.013838,
+              "p95Ms": 0.016,
+              "maxMs": 0.1438
+            },
+            "decision": {
+              "meanMs": 0.060971,
+              "p95Ms": 0.0685,
+              "maxMs": 0.5516
+            },
+            "replay": {
+              "meanMs": 0.000632,
+              "p95Ms": 0.0008,
+              "maxMs": 0.0113
+            },
+            "replaySampled": {
+              "meanMs": 0.0,
+              "p95Ms": 0.0,
+              "maxMs": 0.0
+            },
+            "tick": {
+              "meanMs": 0.21353,
+              "p95Ms": 0.2478,
+              "maxMs": 0.7446
+            }
+          },
+          "checksum": 1080552.913
+        },
+        {
+          "profileId": "cars_20_off",
+          "vehicleCount": 20,
+          "replaySampleHz": 0.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 689.5078999223188,
+          "cpuTimeMs": 687.5,
+          "realTimeFactor": 79.76703386023047,
+          "ticksPerSecond": 4786.022031613828,
+          "vehicleTicksPerSecond": 95720.44063227656,
+          "tickMeanMs": 0.207473,
+          "tickP95Ms": 0.2478,
+          "tickMaxMs": 0.9438,
+          "replayMeanMs": 0.000606,
+          "replayP95Ms": 0.0007,
+          "replaySampledMeanMs": 0.0,
+          "replaySampledP95Ms": 0.0,
+          "replayShare": 0.0029208619916808454,
+          "serializedBytes": 0,
+          "serializedBytesPerSecond": 0.0,
+          "replaySampleCount": 0,
+          "bytesPerSample": 0.0,
+          "peakTracedBytes": 668216,
+          "currentTracedBytes": 662704,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.091005,
+              "p95Ms": 0.1073,
+              "maxMs": 0.79
+            },
+            "motion": {
+              "meanMs": 0.032726,
+              "p95Ms": 0.0363,
+              "maxMs": 0.3671
+            },
+            "perception": {
+              "meanMs": 0.013367,
+              "p95Ms": 0.0156,
+              "maxMs": 0.1035
+            },
+            "decision": {
+              "meanMs": 0.059352,
+              "p95Ms": 0.0671,
+              "maxMs": 0.523
+            },
+            "replay": {
+              "meanMs": 0.000606,
+              "p95Ms": 0.0007,
+              "maxMs": 0.0123
+            },
+            "replaySampled": {
+              "meanMs": 0.0,
+              "p95Ms": 0.0,
+              "maxMs": 0.0
+            },
+            "tick": {
+              "meanMs": 0.207473,
+              "p95Ms": 0.2478,
+              "maxMs": 0.9438
+            }
+          },
+          "checksum": 1080552.913
+        }
+      ],
+      "aggregate": {
+        "profileId": "cars_20_off",
+        "vehicleCount": 20,
+        "replaySampleHz": 0.0,
+        "tickRateHz": 60.0,
+        "tickCount": 3300,
+        "simulatedDurationS": 55.0,
+        "repetitionCount": 3,
+        "checksumStable": true,
+        "wallTimeMsMean": 709.4636,
+        "wallTimeMsMin": 689.5079,
+        "wallTimeMsMax": 729.366,
+        "wallTimeMsStdev": 16.272045,
+        "cpuTimeMsMean": 713.541667,
+        "cpuTimeMsMin": 687.5,
+        "cpuTimeMsMax": 734.375,
+        "cpuTimeMsStdev": 19.487799,
+        "realTimeFactorMean": 77.564175,
+        "realTimeFactorMin": 75.407957,
+        "realTimeFactorMax": 79.767034,
+        "realTimeFactorStdev": 1.779891,
+        "ticksPerSecondMean": 4653.850486,
+        "ticksPerSecondMin": 4524.477423,
+        "ticksPerSecondMax": 4786.022032,
+        "ticksPerSecondStdev": 106.793474,
+        "vehicleTicksPerSecondMean": 93077.009725,
+        "vehicleTicksPerSecondMin": 90489.548452,
+        "vehicleTicksPerSecondMax": 95720.440632,
+        "vehicleTicksPerSecondStdev": 2135.869487,
+        "tickMeanMsMean": 0.213523,
+        "tickMeanMsMin": 0.207473,
+        "tickMeanMsMax": 0.219567,
+        "tickMeanMsStdev": 0.004937,
+        "tickP95MsMean": 0.2515,
+        "tickP95MsMin": 0.2478,
+        "tickP95MsMax": 0.2589,
+        "tickP95MsStdev": 0.005233,
+        "tickMaxMsMean": 0.7926,
+        "tickMaxMsMin": 0.6894,
+        "tickMaxMsMax": 0.9438,
+        "tickMaxMsStdev": 0.109264,
+        "replayMeanMsMean": 0.000618,
+        "replayMeanMsMin": 0.000606,
+        "replayMeanMsMax": 0.000632,
+        "replayMeanMsStdev": 1.1e-05,
+        "replayP95MsMean": 0.000733,
+        "replayP95MsMin": 0.0007,
+        "replayP95MsMax": 0.0008,
+        "replayP95MsStdev": 4.7e-05,
+        "replaySampledMeanMsMean": 0.0,
+        "replaySampledMeanMsMin": 0.0,
+        "replaySampledMeanMsMax": 0.0,
+        "replaySampledMeanMsStdev": 0.0,
+        "replaySampledP95MsMean": 0.0,
+        "replaySampledP95MsMin": 0.0,
+        "replaySampledP95MsMax": 0.0,
+        "replaySampledP95MsStdev": 0.0,
+        "replayShareMean": 0.002895,
+        "replayShareMin": 0.002806,
+        "replayShareMax": 0.00296,
+        "replayShareStdev": 6.5e-05,
+        "serializedBytesMean": 0.0,
+        "serializedBytesMin": 0.0,
+        "serializedBytesMax": 0.0,
+        "serializedBytesStdev": 0.0,
+        "serializedBytesPerSecondMean": 0.0,
+        "serializedBytesPerSecondMin": 0.0,
+        "serializedBytesPerSecondMax": 0.0,
+        "serializedBytesPerSecondStdev": 0.0,
+        "replaySampleCountMean": 0.0,
+        "replaySampleCountMin": 0.0,
+        "replaySampleCountMax": 0.0,
+        "replaySampleCountStdev": 0.0,
+        "bytesPerSampleMean": 0.0,
+        "bytesPerSampleMin": 0.0,
+        "bytesPerSampleMax": 0.0,
+        "bytesPerSampleStdev": 0.0,
+        "peakTracedBytesMean": 673837.333333,
+        "peakTracedBytesMin": 668216.0,
+        "peakTracedBytesMax": 685080.0,
+        "peakTracedBytesStdev": 7949.765839,
+        "wallOverheadMs": 0.0,
+        "wallOverheadRatio": 0.0,
+        "tickMeanOverheadMs": 0.0,
+        "tickMeanOverheadRatio": 0.0
+      }
+    },
+    {
+      "profileId": "cars_20_1hz",
+      "required": false,
+      "runs": [
+        {
+          "profileId": "cars_20_1hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 1.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 704.3740999652073,
+          "cpuTimeMs": 718.75,
+          "realTimeFactor": 78.0835070493318,
+          "ticksPerSecond": 4685.010422959907,
+          "vehicleTicksPerSecond": 93700.20845919815,
+          "tickMeanMs": 0.211989,
+          "tickP95Ms": 0.2433,
+          "tickMaxMs": 0.5607,
+          "replayMeanMs": 0.004218,
+          "replayP95Ms": 0.0009,
+          "replaySampledMeanMs": 0.21028,
+          "replaySampledP95Ms": 0.2334,
+          "replayShare": 0.019897258820033115,
+          "serializedBytes": 68997,
+          "serializedBytesPerSecond": 1254.490909090909,
+          "replaySampleCount": 55,
+          "bytesPerSample": 1254.490909090909,
+          "peakTracedBytes": 672202,
+          "currentTracedBytes": 666690,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.09151,
+              "p95Ms": 0.1024,
+              "maxMs": 0.4178
+            },
+            "motion": {
+              "meanMs": 0.033004,
+              "p95Ms": 0.0355,
+              "maxMs": 0.1415
+            },
+            "perception": {
+              "meanMs": 0.013586,
+              "p95Ms": 0.0152,
+              "maxMs": 0.3246
+            },
+            "decision": {
+              "meanMs": 0.059344,
+              "p95Ms": 0.0647,
+              "maxMs": 0.3468
+            },
+            "replay": {
+              "meanMs": 0.004218,
+              "p95Ms": 0.0009,
+              "maxMs": 0.2837
+            },
+            "replaySampled": {
+              "meanMs": 0.21028,
+              "p95Ms": 0.2334,
+              "maxMs": 0.2837
+            },
+            "tick": {
+              "meanMs": 0.211989,
+              "p95Ms": 0.2433,
+              "maxMs": 0.5607
+            }
+          },
+          "checksum": 1080552.913
+        },
+        {
+          "profileId": "cars_20_1hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 1.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1597.2504999954253,
+          "cpuTimeMs": 1406.25,
+          "realTimeFactor": 34.43417297421884,
+          "ticksPerSecond": 2066.05037845313,
+          "vehicleTicksPerSecond": 41321.0075690626,
+          "tickMeanMs": 0.481421,
+          "tickP95Ms": 0.8961,
+          "tickMaxMs": 41.573,
+          "replayMeanMs": 0.008354,
+          "replayP95Ms": 0.0029,
+          "replaySampledMeanMs": 0.413715,
+          "replaySampledP95Ms": 0.7851,
+          "replayShare": 0.017352795162653895,
+          "serializedBytes": 68997,
+          "serializedBytesPerSecond": 1254.490909090909,
+          "replaySampleCount": 55,
+          "bytesPerSample": 1254.490909090909,
+          "peakTracedBytes": 670058,
+          "currentTracedBytes": 664546,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.209732,
+              "p95Ms": 0.3557,
+              "maxMs": 41.4198
+            },
+            "motion": {
+              "meanMs": 0.072884,
+              "p95Ms": 0.1307,
+              "maxMs": 7.979
+            },
+            "perception": {
+              "meanMs": 0.027928,
+              "p95Ms": 0.0498,
+              "maxMs": 1.2021
+            },
+            "decision": {
+              "meanMs": 0.139969,
+              "p95Ms": 0.2571,
+              "maxMs": 3.8281
+            },
+            "replay": {
+              "meanMs": 0.008354,
+              "p95Ms": 0.0029,
+              "maxMs": 1.0731
+            },
+            "replaySampled": {
+              "meanMs": 0.413715,
+              "p95Ms": 0.7851,
+              "maxMs": 1.0731
+            },
+            "tick": {
+              "meanMs": 0.481421,
+              "p95Ms": 0.8961,
+              "maxMs": 41.573
+            }
+          },
+          "checksum": 1080552.913
+        },
+        {
+          "profileId": "cars_20_1hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 1.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1758.901400025934,
+          "cpuTimeMs": 1562.5,
+          "realTimeFactor": 31.269518575168032,
+          "ticksPerSecond": 1876.171114510082,
+          "vehicleTicksPerSecond": 37523.42229020164,
+          "tickMeanMs": 0.529248,
+          "tickP95Ms": 0.9112,
+          "tickMaxMs": 40.5919,
+          "replayMeanMs": 0.010865,
+          "replayP95Ms": 0.0029,
+          "replaySampledMeanMs": 0.555024,
+          "replaySampledP95Ms": 0.8039,
+          "replayShare": 0.020529128121409997,
+          "serializedBytes": 68997,
+          "serializedBytesPerSecond": 1254.490909090909,
+          "replaySampleCount": 55,
+          "bytesPerSample": 1254.490909090909,
+          "peakTracedBytes": 670058,
+          "currentTracedBytes": 664546,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.230375,
+              "p95Ms": 0.3656,
+              "maxMs": 40.309
+            },
+            "motion": {
+              "meanMs": 0.074448,
+              "p95Ms": 0.1286,
+              "maxMs": 2.3201
+            },
+            "perception": {
+              "meanMs": 0.033036,
+              "p95Ms": 0.0518,
+              "maxMs": 4.2277
+            },
+            "decision": {
+              "meanMs": 0.157458,
+              "p95Ms": 0.2562,
+              "maxMs": 8.664
+            },
+            "replay": {
+              "meanMs": 0.010865,
+              "p95Ms": 0.0029,
+              "maxMs": 7.705
+            },
+            "replaySampled": {
+              "meanMs": 0.555024,
+              "p95Ms": 0.8039,
+              "maxMs": 7.705
+            },
+            "tick": {
+              "meanMs": 0.529248,
+              "p95Ms": 0.9112,
+              "maxMs": 40.5919
+            }
+          },
+          "checksum": 1080552.913
+        }
+      ],
+      "aggregate": {
+        "profileId": "cars_20_1hz",
+        "vehicleCount": 20,
+        "replaySampleHz": 1.0,
+        "tickRateHz": 60.0,
+        "tickCount": 3300,
+        "simulatedDurationS": 55.0,
+        "repetitionCount": 3,
+        "checksumStable": true,
+        "wallTimeMsMean": 1353.508667,
+        "wallTimeMsMin": 704.3741,
+        "wallTimeMsMax": 1758.9014,
+        "wallTimeMsStdev": 463.727303,
+        "cpuTimeMsMean": 1229.166667,
+        "cpuTimeMsMin": 718.75,
+        "cpuTimeMsMax": 1562.5,
+        "cpuTimeMsStdev": 366.512752,
+        "realTimeFactorMean": 47.929066,
+        "realTimeFactorMin": 31.269519,
+        "realTimeFactorMax": 78.083507,
+        "realTimeFactorStdev": 21.361515,
+        "ticksPerSecondMean": 2875.743972,
+        "ticksPerSecondMin": 1876.171115,
+        "ticksPerSecondMax": 4685.010423,
+        "ticksPerSecondStdev": 1281.690902,
+        "vehicleTicksPerSecondMean": 57514.879439,
+        "vehicleTicksPerSecondMin": 37523.42229,
+        "vehicleTicksPerSecondMax": 93700.208459,
+        "vehicleTicksPerSecondStdev": 25633.818036,
+        "tickMeanMsMean": 0.407553,
+        "tickMeanMsMin": 0.211989,
+        "tickMeanMsMax": 0.529248,
+        "tickMeanMsStdev": 0.139656,
+        "tickP95MsMean": 0.683533,
+        "tickP95MsMin": 0.2433,
+        "tickP95MsMax": 0.9112,
+        "tickP95MsStdev": 0.311353,
+        "tickMaxMsMean": 27.5752,
+        "tickMaxMsMin": 0.5607,
+        "tickMaxMsMax": 41.573,
+        "tickMaxMsStdev": 19.106335,
+        "replayMeanMsMean": 0.007812,
+        "replayMeanMsMin": 0.004218,
+        "replayMeanMsMax": 0.010865,
+        "replayMeanMsStdev": 0.002741,
+        "replayP95MsMean": 0.002233,
+        "replayP95MsMin": 0.0009,
+        "replayP95MsMax": 0.0029,
+        "replayP95MsStdev": 0.000943,
+        "replaySampledMeanMsMean": 0.393006,
+        "replaySampledMeanMsMin": 0.21028,
+        "replaySampledMeanMsMax": 0.555024,
+        "replaySampledMeanMsStdev": 0.141501,
+        "replaySampledP95MsMean": 0.607467,
+        "replaySampledP95MsMin": 0.2334,
+        "replaySampledP95MsMax": 0.8039,
+        "replaySampledP95MsStdev": 0.264616,
+        "replayShareMean": 0.01926,
+        "replayShareMin": 0.017353,
+        "replayShareMax": 0.020529,
+        "replayShareStdev": 0.001373,
+        "serializedBytesMean": 68997.0,
+        "serializedBytesMin": 68997.0,
+        "serializedBytesMax": 68997.0,
+        "serializedBytesStdev": 0.0,
+        "serializedBytesPerSecondMean": 1254.490909,
+        "serializedBytesPerSecondMin": 1254.490909,
+        "serializedBytesPerSecondMax": 1254.490909,
+        "serializedBytesPerSecondStdev": 0.0,
+        "replaySampleCountMean": 55.0,
+        "replaySampleCountMin": 55.0,
+        "replaySampleCountMax": 55.0,
+        "replaySampleCountStdev": 0.0,
+        "bytesPerSampleMean": 1254.490909,
+        "bytesPerSampleMin": 1254.490909,
+        "bytesPerSampleMax": 1254.490909,
+        "bytesPerSampleStdev": 0.0,
+        "peakTracedBytesMean": 670772.666667,
+        "peakTracedBytesMin": 670058.0,
+        "peakTracedBytesMax": 672202.0,
+        "peakTracedBytesStdev": 1010.691293,
+        "wallOverheadMs": 644.045067,
+        "wallOverheadRatio": 0.907792,
+        "tickMeanOverheadMs": 0.19403,
+        "tickMeanOverheadRatio": 0.908708
+      }
+    },
+    {
+      "profileId": "cars_20_2hz",
+      "required": false,
+      "runs": [
+        {
+          "profileId": "cars_20_2hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 2.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1551.340700010769,
+          "cpuTimeMs": 1312.5,
+          "realTimeFactor": 35.45320508874563,
+          "ticksPerSecond": 2127.1923053247374,
+          "vehicleTicksPerSecond": 42543.846106494755,
+          "tickMeanMs": 0.46711,
+          "tickP95Ms": 0.7293,
+          "tickMaxMs": 42.1262,
+          "replayMeanMs": 0.014746,
+          "replayP95Ms": 0.0019,
+          "replaySampledMeanMs": 0.401427,
+          "replaySampledP95Ms": 0.497,
+          "replayShare": 0.031568581276358886,
+          "serializedBytes": 138021,
+          "serializedBytesPerSecond": 2509.4727272727273,
+          "replaySampleCount": 110,
+          "bytesPerSample": 1254.7363636363636,
+          "peakTracedBytes": 672602,
+          "currentTracedBytes": 667090,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.20578,
+              "p95Ms": 0.2635,
+              "maxMs": 41.8197
+            },
+            "motion": {
+              "meanMs": 0.067963,
+              "p95Ms": 0.0806,
+              "maxMs": 4.3599
+            },
+            "perception": {
+              "meanMs": 0.02651,
+              "p95Ms": 0.031,
+              "maxMs": 0.5584
+            },
+            "decision": {
+              "meanMs": 0.131317,
+              "p95Ms": 0.1759,
+              "maxMs": 3.0831
+            },
+            "replay": {
+              "meanMs": 0.014746,
+              "p95Ms": 0.0019,
+              "maxMs": 2.6343
+            },
+            "replaySampled": {
+              "meanMs": 0.401427,
+              "p95Ms": 0.497,
+              "maxMs": 2.6343
+            },
+            "tick": {
+              "meanMs": 0.46711,
+              "p95Ms": 0.7293,
+              "maxMs": 42.1262
+            }
+          },
+          "checksum": 1080552.913
+        },
+        {
+          "profileId": "cars_20_2hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 2.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1509.529500035569,
+          "cpuTimeMs": 1406.25,
+          "realTimeFactor": 36.435193879088835,
+          "ticksPerSecond": 2186.11163274533,
+          "vehicleTicksPerSecond": 43722.232654906606,
+          "tickMeanMs": 0.454197,
+          "tickP95Ms": 0.7297,
+          "tickMaxMs": 4.5602,
+          "replayMeanMs": 0.015798,
+          "replayP95Ms": 0.0027,
+          "replaySampledMeanMs": 0.43266,
+          "replaySampledP95Ms": 0.6838,
+          "replayShare": 0.03478226408364652,
+          "serializedBytes": 138021,
+          "serializedBytesPerSecond": 2509.4727272727273,
+          "replaySampleCount": 110,
+          "bytesPerSample": 1254.7363636363636,
+          "peakTracedBytes": 670570,
+          "currentTracedBytes": 665058,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.183935,
+              "p95Ms": 0.2762,
+              "maxMs": 3.6982
+            },
+            "motion": {
+              "meanMs": 0.068073,
+              "p95Ms": 0.1024,
+              "maxMs": 2.1119
+            },
+            "perception": {
+              "meanMs": 0.026454,
+              "p95Ms": 0.0403,
+              "maxMs": 0.3995
+            },
+            "decision": {
+              "meanMs": 0.139018,
+              "p95Ms": 0.2041,
+              "maxMs": 4.2787
+            },
+            "replay": {
+              "meanMs": 0.015798,
+              "p95Ms": 0.0027,
+              "maxMs": 3.5653
+            },
+            "replaySampled": {
+              "meanMs": 0.43266,
+              "p95Ms": 0.6838,
+              "maxMs": 3.5653
+            },
+            "tick": {
+              "meanMs": 0.454197,
+              "p95Ms": 0.7297,
+              "maxMs": 4.5602
+            }
+          },
+          "checksum": 1080552.913
+        },
+        {
+          "profileId": "cars_20_2hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 2.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1488.1056000012904,
+          "cpuTimeMs": 1453.125,
+          "realTimeFactor": 36.959742641887985,
+          "ticksPerSecond": 2217.5845585132793,
+          "vehicleTicksPerSecond": 44351.691170265585,
+          "tickMeanMs": 0.447999,
+          "tickP95Ms": 0.7259,
+          "tickMaxMs": 5.3982,
+          "replayMeanMs": 0.015369,
+          "replayP95Ms": 0.0025,
+          "replaySampledMeanMs": 0.41989,
+          "replaySampledP95Ms": 0.728,
+          "replayShare": 0.0343058801470539,
+          "serializedBytes": 138021,
+          "serializedBytesPerSecond": 2509.4727272727273,
+          "replaySampleCount": 110,
+          "bytesPerSample": 1254.7363636363636,
+          "peakTracedBytes": 670570,
+          "currentTracedBytes": 665058,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.183924,
+              "p95Ms": 0.2653,
+              "maxMs": 3.3283
+            },
+            "motion": {
+              "meanMs": 0.066651,
+              "p95Ms": 0.0996,
+              "maxMs": 1.5084
+            },
+            "perception": {
+              "meanMs": 0.026397,
+              "p95Ms": 0.0349,
+              "maxMs": 0.8786
+            },
+            "decision": {
+              "meanMs": 0.134671,
+              "p95Ms": 0.1878,
+              "maxMs": 5.0207
+            },
+            "replay": {
+              "meanMs": 0.015369,
+              "p95Ms": 0.0025,
+              "maxMs": 2.3355
+            },
+            "replaySampled": {
+              "meanMs": 0.41989,
+              "p95Ms": 0.728,
+              "maxMs": 2.3355
+            },
+            "tick": {
+              "meanMs": 0.447999,
+              "p95Ms": 0.7259,
+              "maxMs": 5.3982
+            }
+          },
+          "checksum": 1080552.913
+        }
+      ],
+      "aggregate": {
+        "profileId": "cars_20_2hz",
+        "vehicleCount": 20,
+        "replaySampleHz": 2.0,
+        "tickRateHz": 60.0,
+        "tickCount": 3300,
+        "simulatedDurationS": 55.0,
+        "repetitionCount": 3,
+        "checksumStable": true,
+        "wallTimeMsMean": 1516.325267,
+        "wallTimeMsMin": 1488.1056,
+        "wallTimeMsMax": 1551.3407,
+        "wallTimeMsStdev": 26.259047,
+        "cpuTimeMsMean": 1390.625,
+        "cpuTimeMsMin": 1312.5,
+        "cpuTimeMsMax": 1453.125,
+        "cpuTimeMsStdev": 58.463397,
+        "realTimeFactorMean": 36.282714,
+        "realTimeFactorMin": 35.453205,
+        "realTimeFactorMax": 36.959743,
+        "realTimeFactorStdev": 0.624421,
+        "ticksPerSecondMean": 2176.962832,
+        "ticksPerSecondMin": 2127.192305,
+        "ticksPerSecondMax": 2217.584559,
+        "ticksPerSecondStdev": 37.465231,
+        "vehicleTicksPerSecondMean": 43539.256644,
+        "vehicleTicksPerSecondMin": 42543.846106,
+        "vehicleTicksPerSecondMax": 44351.69117,
+        "vehicleTicksPerSecondStdev": 749.304615,
+        "tickMeanMsMean": 0.456435,
+        "tickMeanMsMin": 0.447999,
+        "tickMeanMsMax": 0.46711,
+        "tickMeanMsStdev": 0.007961,
+        "tickP95MsMean": 0.7283,
+        "tickP95MsMin": 0.7259,
+        "tickP95MsMax": 0.7297,
+        "tickP95MsStdev": 0.001705,
+        "tickMaxMsMean": 17.361533,
+        "tickMaxMsMin": 4.5602,
+        "tickMaxMsMax": 42.1262,
+        "tickMaxMsStdev": 17.514605,
+        "replayMeanMsMean": 0.015304,
+        "replayMeanMsMin": 0.014746,
+        "replayMeanMsMax": 0.015798,
+        "replayMeanMsStdev": 0.000432,
+        "replayP95MsMean": 0.002367,
+        "replayP95MsMin": 0.0019,
+        "replayP95MsMax": 0.0027,
+        "replayP95MsStdev": 0.00034,
+        "replaySampledMeanMsMean": 0.417992,
+        "replaySampledMeanMsMin": 0.401427,
+        "replaySampledMeanMsMax": 0.43266,
+        "replaySampledMeanMsStdev": 0.012821,
+        "replaySampledP95MsMean": 0.636267,
+        "replaySampledP95MsMin": 0.497,
+        "replaySampledP95MsMax": 0.728,
+        "replaySampledP95MsStdev": 0.100116,
+        "replayShareMean": 0.033552,
+        "replayShareMin": 0.031569,
+        "replayShareMax": 0.034782,
+        "replayShareStdev": 0.001416,
+        "serializedBytesMean": 138021.0,
+        "serializedBytesMin": 138021.0,
+        "serializedBytesMax": 138021.0,
+        "serializedBytesStdev": 0.0,
+        "serializedBytesPerSecondMean": 2509.472727,
+        "serializedBytesPerSecondMin": 2509.472727,
+        "serializedBytesPerSecondMax": 2509.472727,
+        "serializedBytesPerSecondStdev": 0.0,
+        "replaySampleCountMean": 110.0,
+        "replaySampleCountMin": 110.0,
+        "replaySampleCountMax": 110.0,
+        "replaySampleCountStdev": 0.0,
+        "bytesPerSampleMean": 1254.736364,
+        "bytesPerSampleMin": 1254.736364,
+        "bytesPerSampleMax": 1254.736364,
+        "bytesPerSampleStdev": 0.0,
+        "peakTracedBytesMean": 671247.333333,
+        "peakTracedBytesMin": 670570.0,
+        "peakTracedBytesMax": 672602.0,
+        "peakTracedBytesStdev": 957.893986,
+        "wallOverheadMs": 806.861667,
+        "wallOverheadRatio": 1.137284,
+        "tickMeanOverheadMs": 0.242912,
+        "tickMeanOverheadRatio": 1.137639
+      }
+    },
+    {
+      "profileId": "cars_20_4hz",
+      "required": true,
+      "runs": [
+        {
+          "profileId": "cars_20_4hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 4.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1596.2376999668777,
+          "cpuTimeMs": 1546.875,
+          "realTimeFactor": 34.45602118101913,
+          "ticksPerSecond": 2067.361270861148,
+          "vehicleTicksPerSecond": 41347.22541722296,
+          "tickMeanMs": 0.480641,
+          "tickP95Ms": 0.8193,
+          "tickMaxMs": 7.3219,
+          "replayMeanMs": 0.029007,
+          "replayP95Ms": 0.3511,
+          "replaySampledMeanMs": 0.414083,
+          "replaySampledP95Ms": 0.6376,
+          "replayShare": 0.06035065672716227,
+          "serializedBytes": 276144,
+          "serializedBytesPerSecond": 5020.8,
+          "replaySampleCount": 220,
+          "bytesPerSample": 1255.2,
+          "peakTracedBytes": 673436,
+          "currentTracedBytes": 667924,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.19277,
+              "p95Ms": 0.3093,
+              "maxMs": 2.3933
+            },
+            "motion": {
+              "meanMs": 0.069665,
+              "p95Ms": 0.1088,
+              "maxMs": 3.7606
+            },
+            "perception": {
+              "meanMs": 0.028498,
+              "p95Ms": 0.0446,
+              "maxMs": 2.7199
+            },
+            "decision": {
+              "meanMs": 0.139087,
+              "p95Ms": 0.2161,
+              "maxMs": 4.2792
+            },
+            "replay": {
+              "meanMs": 0.029007,
+              "p95Ms": 0.3511,
+              "maxMs": 2.4848
+            },
+            "replaySampled": {
+              "meanMs": 0.414083,
+              "p95Ms": 0.6376,
+              "maxMs": 2.4848
+            },
+            "tick": {
+              "meanMs": 0.480641,
+              "p95Ms": 0.8193,
+              "maxMs": 7.3219
+            }
+          },
+          "checksum": 1080552.913
+        },
+        {
+          "profileId": "cars_20_4hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 4.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1549.9941000016406,
+          "cpuTimeMs": 1484.375,
+          "realTimeFactor": 35.48400603585638,
+          "ticksPerSecond": 2129.040362151383,
+          "vehicleTicksPerSecond": 42580.80724302766,
+          "tickMeanMs": 0.466725,
+          "tickP95Ms": 0.7697,
+          "tickMaxMs": 7.3809,
+          "replayMeanMs": 0.027907,
+          "replayP95Ms": 0.3486,
+          "replaySampledMeanMs": 0.39852,
+          "replaySampledP95Ms": 0.5724,
+          "replayShare": 0.05979324013069795,
+          "serializedBytes": 276144,
+          "serializedBytesPerSecond": 5020.8,
+          "replaySampleCount": 220,
+          "bytesPerSample": 1255.2,
+          "peakTracedBytes": 671404,
+          "currentTracedBytes": 665892,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.187011,
+              "p95Ms": 0.2729,
+              "maxMs": 7.0882
+            },
+            "motion": {
+              "meanMs": 0.069791,
+              "p95Ms": 0.0994,
+              "maxMs": 4.379
+            },
+            "perception": {
+              "meanMs": 0.026937,
+              "p95Ms": 0.0365,
+              "maxMs": 1.4002
+            },
+            "decision": {
+              "meanMs": 0.133314,
+              "p95Ms": 0.1957,
+              "maxMs": 2.6293
+            },
+            "replay": {
+              "meanMs": 0.027907,
+              "p95Ms": 0.3486,
+              "maxMs": 3.6971
+            },
+            "replaySampled": {
+              "meanMs": 0.39852,
+              "p95Ms": 0.5724,
+              "maxMs": 3.6971
+            },
+            "tick": {
+              "meanMs": 0.466725,
+              "p95Ms": 0.7697,
+              "maxMs": 7.3809
+            }
+          },
+          "checksum": 1080552.913
+        },
+        {
+          "profileId": "cars_20_4hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 4.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1585.0832000141963,
+          "cpuTimeMs": 1500.0,
+          "realTimeFactor": 34.69849405981176,
+          "ticksPerSecond": 2081.9096435887054,
+          "vehicleTicksPerSecond": 41638.1928717741,
+          "tickMeanMs": 0.476516,
+          "tickP95Ms": 0.8082,
+          "tickMaxMs": 4.8028,
+          "replayMeanMs": 0.028242,
+          "replayP95Ms": 0.3505,
+          "replaySampledMeanMs": 0.397947,
+          "replaySampledP95Ms": 0.589,
+          "replayShare": 0.05926768461080006,
+          "serializedBytes": 276144,
+          "serializedBytesPerSecond": 5020.8,
+          "replaySampleCount": 220,
+          "bytesPerSample": 1255.2,
+          "peakTracedBytes": 671404,
+          "currentTracedBytes": 665892,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.190998,
+              "p95Ms": 0.2948,
+              "maxMs": 2.7962
+            },
+            "motion": {
+              "meanMs": 0.070604,
+              "p95Ms": 0.1094,
+              "maxMs": 4.4455
+            },
+            "perception": {
+              "meanMs": 0.02835,
+              "p95Ms": 0.0413,
+              "maxMs": 0.9132
+            },
+            "decision": {
+              "meanMs": 0.136788,
+              "p95Ms": 0.207,
+              "maxMs": 2.3475
+            },
+            "replay": {
+              "meanMs": 0.028242,
+              "p95Ms": 0.3505,
+              "maxMs": 1.2772
+            },
+            "replaySampled": {
+              "meanMs": 0.397947,
+              "p95Ms": 0.589,
+              "maxMs": 1.2772
+            },
+            "tick": {
+              "meanMs": 0.476516,
+              "p95Ms": 0.8082,
+              "maxMs": 4.8028
+            }
+          },
+          "checksum": 1080552.913
+        }
+      ],
+      "aggregate": {
+        "profileId": "cars_20_4hz",
+        "vehicleCount": 20,
+        "replaySampleHz": 4.0,
+        "tickRateHz": 60.0,
+        "tickCount": 3300,
+        "simulatedDurationS": 55.0,
+        "repetitionCount": 3,
+        "checksumStable": true,
+        "wallTimeMsMean": 1577.105,
+        "wallTimeMsMin": 1549.9941,
+        "wallTimeMsMax": 1596.2377,
+        "wallTimeMsStdev": 19.703746,
+        "cpuTimeMsMean": 1510.416667,
+        "cpuTimeMsMin": 1484.375,
+        "cpuTimeMsMax": 1546.875,
+        "cpuTimeMsStdev": 26.557393,
+        "realTimeFactorMean": 34.879507,
+        "realTimeFactorMin": 34.456021,
+        "realTimeFactorMax": 35.484006,
+        "realTimeFactorStdev": 0.438758,
+        "ticksPerSecondMean": 2092.770426,
+        "ticksPerSecondMin": 2067.361271,
+        "ticksPerSecondMax": 2129.040362,
+        "ticksPerSecondStdev": 26.325463,
+        "vehicleTicksPerSecondMean": 41855.408511,
+        "vehicleTicksPerSecondMin": 41347.225417,
+        "vehicleTicksPerSecondMax": 42580.807243,
+        "vehicleTicksPerSecondStdev": 526.509263,
+        "tickMeanMsMean": 0.474627,
+        "tickMeanMsMin": 0.466725,
+        "tickMeanMsMax": 0.480641,
+        "tickMeanMsStdev": 0.005836,
+        "tickP95MsMean": 0.799067,
+        "tickP95MsMin": 0.7697,
+        "tickP95MsMax": 0.8193,
+        "tickP95MsStdev": 0.021254,
+        "tickMaxMsMean": 6.501867,
+        "tickMaxMsMin": 4.8028,
+        "tickMaxMsMax": 7.3809,
+        "tickMaxMsStdev": 1.201663,
+        "replayMeanMsMean": 0.028385,
+        "replayMeanMsMin": 0.027907,
+        "replayMeanMsMax": 0.029007,
+        "replayMeanMsStdev": 0.00046,
+        "replayP95MsMean": 0.350067,
+        "replayP95MsMin": 0.3486,
+        "replayP95MsMax": 0.3511,
+        "replayP95MsStdev": 0.001066,
+        "replaySampledMeanMsMean": 0.403517,
+        "replaySampledMeanMsMin": 0.397947,
+        "replaySampledMeanMsMax": 0.414083,
+        "replaySampledMeanMsStdev": 0.007475,
+        "replaySampledP95MsMean": 0.599667,
+        "replaySampledP95MsMin": 0.5724,
+        "replaySampledP95MsMax": 0.6376,
+        "replaySampledP95MsStdev": 0.027666,
+        "replayShareMean": 0.059804,
+        "replayShareMin": 0.059268,
+        "replayShareMax": 0.060351,
+        "replayShareStdev": 0.000442,
+        "serializedBytesMean": 276144.0,
+        "serializedBytesMin": 276144.0,
+        "serializedBytesMax": 276144.0,
+        "serializedBytesStdev": 0.0,
+        "serializedBytesPerSecondMean": 5020.8,
+        "serializedBytesPerSecondMin": 5020.8,
+        "serializedBytesPerSecondMax": 5020.8,
+        "serializedBytesPerSecondStdev": 0.0,
+        "replaySampleCountMean": 220.0,
+        "replaySampleCountMin": 220.0,
+        "replaySampleCountMax": 220.0,
+        "replaySampleCountStdev": 0.0,
+        "bytesPerSampleMean": 1255.2,
+        "bytesPerSampleMin": 1255.2,
+        "bytesPerSampleMax": 1255.2,
+        "bytesPerSampleStdev": 0.0,
+        "peakTracedBytesMean": 672081.333333,
+        "peakTracedBytesMin": 671404.0,
+        "peakTracedBytesMax": 673436.0,
+        "peakTracedBytesStdev": 957.893986,
+        "wallOverheadMs": 867.6414,
+        "wallOverheadRatio": 1.222954,
+        "tickMeanOverheadMs": 0.261104,
+        "tickMeanOverheadRatio": 1.222838
+      }
+    },
+    {
+      "profileId": "cars_20_10hz",
+      "required": false,
+      "runs": [
+        {
+          "profileId": "cars_20_10hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 10.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1651.1471000267193,
+          "cpuTimeMs": 1562.5,
+          "realTimeFactor": 33.31017569489113,
+          "ticksPerSecond": 1998.610541693468,
+          "vehicleTicksPerSecond": 39972.21083386936,
+          "tickMeanMs": 0.497359,
+          "tickP95Ms": 0.8412,
+          "tickMaxMs": 5.1903,
+          "replayMeanMs": 0.064932,
+          "replayP95Ms": 0.3582,
+          "replaySampledMeanMs": 0.382402,
+          "replaySampledP95Ms": 0.5119,
+          "replayShare": 0.13055358403085096,
+          "serializedBytes": 690079,
+          "serializedBytesPerSecond": 12546.89090909091,
+          "replaySampleCount": 550,
+          "bytesPerSample": 1254.689090909091,
+          "peakTracedBytes": 676652,
+          "currentTracedBytes": 671140,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.182994,
+              "p95Ms": 0.2619,
+              "maxMs": 1.8833
+            },
+            "motion": {
+              "meanMs": 0.067268,
+              "p95Ms": 0.0911,
+              "maxMs": 1.3513
+            },
+            "perception": {
+              "meanMs": 0.027672,
+              "p95Ms": 0.033,
+              "maxMs": 1.7722
+            },
+            "decision": {
+              "meanMs": 0.13368,
+              "p95Ms": 0.1783,
+              "maxMs": 4.9084
+            },
+            "replay": {
+              "meanMs": 0.064932,
+              "p95Ms": 0.3582,
+              "maxMs": 1.541
+            },
+            "replaySampled": {
+              "meanMs": 0.382402,
+              "p95Ms": 0.5119,
+              "maxMs": 1.541
+            },
+            "tick": {
+              "meanMs": 0.497359,
+              "p95Ms": 0.8412,
+              "maxMs": 5.1903
+            }
+          },
+          "checksum": 1080552.913
+        },
+        {
+          "profileId": "cars_20_10hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 10.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1682.5764999957755,
+          "cpuTimeMs": 1656.25,
+          "realTimeFactor": 32.6879639648706,
+          "ticksPerSecond": 1961.2778378922358,
+          "vehicleTicksPerSecond": 39225.556757844715,
+          "tickMeanMs": 0.506832,
+          "tickP95Ms": 0.8572,
+          "tickMaxMs": 13.4912,
+          "replayMeanMs": 0.065694,
+          "replayP95Ms": 0.3613,
+          "replaySampledMeanMs": 0.38699,
+          "replaySampledP95Ms": 0.5411,
+          "replayShare": 0.12961691448053794,
+          "serializedBytes": 690079,
+          "serializedBytesPerSecond": 12546.89090909091,
+          "replaySampleCount": 550,
+          "bytesPerSample": 1254.689090909091,
+          "peakTracedBytes": 674372,
+          "currentTracedBytes": 668860,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.188437,
+              "p95Ms": 0.2738,
+              "maxMs": 13.2234
+            },
+            "motion": {
+              "meanMs": 0.067925,
+              "p95Ms": 0.104,
+              "maxMs": 1.2479
+            },
+            "perception": {
+              "meanMs": 0.027567,
+              "p95Ms": 0.0402,
+              "maxMs": 1.1958
+            },
+            "decision": {
+              "meanMs": 0.135612,
+              "p95Ms": 0.1942,
+              "maxMs": 9.1828
+            },
+            "replay": {
+              "meanMs": 0.065694,
+              "p95Ms": 0.3613,
+              "maxMs": 3.4407
+            },
+            "replaySampled": {
+              "meanMs": 0.38699,
+              "p95Ms": 0.5411,
+              "maxMs": 3.4407
+            },
+            "tick": {
+              "meanMs": 0.506832,
+              "p95Ms": 0.8572,
+              "maxMs": 13.4912
+            }
+          },
+          "checksum": 1080552.913
+        },
+        {
+          "profileId": "cars_20_10hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 10.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1699.3552000494674,
+          "cpuTimeMs": 1484.375,
+          "realTimeFactor": 32.36521711199576,
+          "ticksPerSecond": 1941.9130267197456,
+          "vehicleTicksPerSecond": 38838.26053439491,
+          "tickMeanMs": 0.511762,
+          "tickP95Ms": 0.8692,
+          "tickMaxMs": 12.168,
+          "replayMeanMs": 0.068474,
+          "replayP95Ms": 0.3602,
+          "replaySampledMeanMs": 0.401497,
+          "replaySampledP95Ms": 0.6538,
+          "replayShare": 0.13380047756574343,
+          "serializedBytes": 690079,
+          "serializedBytesPerSecond": 12546.89090909091,
+          "replaySampleCount": 550,
+          "bytesPerSample": 1254.689090909091,
+          "peakTracedBytes": 674372,
+          "currentTracedBytes": 668860,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.186,
+              "p95Ms": 0.2856,
+              "maxMs": 1.6414
+            },
+            "motion": {
+              "meanMs": 0.07135,
+              "p95Ms": 0.1069,
+              "maxMs": 6.73
+            },
+            "perception": {
+              "meanMs": 0.03124,
+              "p95Ms": 0.0408,
+              "maxMs": 11.6433
+            },
+            "decision": {
+              "meanMs": 0.131988,
+              "p95Ms": 0.2007,
+              "maxMs": 1.9534
+            },
+            "replay": {
+              "meanMs": 0.068474,
+              "p95Ms": 0.3602,
+              "maxMs": 2.272
+            },
+            "replaySampled": {
+              "meanMs": 0.401497,
+              "p95Ms": 0.6538,
+              "maxMs": 2.272
+            },
+            "tick": {
+              "meanMs": 0.511762,
+              "p95Ms": 0.8692,
+              "maxMs": 12.168
+            }
+          },
+          "checksum": 1080552.913
+        }
+      ],
+      "aggregate": {
+        "profileId": "cars_20_10hz",
+        "vehicleCount": 20,
+        "replaySampleHz": 10.0,
+        "tickRateHz": 60.0,
+        "tickCount": 3300,
+        "simulatedDurationS": 55.0,
+        "repetitionCount": 3,
+        "checksumStable": true,
+        "wallTimeMsMean": 1677.692933,
+        "wallTimeMsMin": 1651.1471,
+        "wallTimeMsMax": 1699.3552,
+        "wallTimeMsStdev": 19.981527,
+        "cpuTimeMsMean": 1567.708333,
+        "cpuTimeMsMin": 1484.375,
+        "cpuTimeMsMax": 1656.25,
+        "cpuTimeMsStdev": 70.264258,
+        "realTimeFactorMean": 32.787786,
+        "realTimeFactorMin": 32.365217,
+        "realTimeFactorMax": 33.310176,
+        "realTimeFactorStdev": 0.392182,
+        "ticksPerSecondMean": 1967.267135,
+        "ticksPerSecondMin": 1941.913027,
+        "ticksPerSecondMax": 1998.610542,
+        "ticksPerSecondStdev": 23.530913,
+        "vehicleTicksPerSecondMean": 39345.342709,
+        "vehicleTicksPerSecondMin": 38838.260534,
+        "vehicleTicksPerSecondMax": 39972.210834,
+        "vehicleTicksPerSecondStdev": 470.618264,
+        "tickMeanMsMean": 0.505318,
+        "tickMeanMsMin": 0.497359,
+        "tickMeanMsMax": 0.511762,
+        "tickMeanMsStdev": 0.005977,
+        "tickP95MsMean": 0.855867,
+        "tickP95MsMin": 0.8412,
+        "tickP95MsMax": 0.8692,
+        "tickP95MsStdev": 0.01147,
+        "tickMaxMsMean": 10.283167,
+        "tickMaxMsMin": 5.1903,
+        "tickMaxMsMax": 13.4912,
+        "tickMaxMsStdev": 3.641491,
+        "replayMeanMsMean": 0.066367,
+        "replayMeanMsMin": 0.064932,
+        "replayMeanMsMax": 0.068474,
+        "replayMeanMsStdev": 0.001522,
+        "replayP95MsMean": 0.3599,
+        "replayP95MsMin": 0.3582,
+        "replayP95MsMax": 0.3613,
+        "replayP95MsStdev": 0.001283,
+        "replaySampledMeanMsMean": 0.390296,
+        "replaySampledMeanMsMin": 0.382402,
+        "replaySampledMeanMsMax": 0.401497,
+        "replaySampledMeanMsStdev": 0.008139,
+        "replaySampledP95MsMean": 0.568933,
+        "replaySampledP95MsMin": 0.5119,
+        "replaySampledP95MsMax": 0.6538,
+        "replaySampledP95MsStdev": 0.061182,
+        "replayShareMean": 0.131324,
+        "replayShareMin": 0.129617,
+        "replayShareMax": 0.1338,
+        "replayShareStdev": 0.001793,
+        "serializedBytesMean": 690079.0,
+        "serializedBytesMin": 690079.0,
+        "serializedBytesMax": 690079.0,
+        "serializedBytesStdev": 0.0,
+        "serializedBytesPerSecondMean": 12546.890909,
+        "serializedBytesPerSecondMin": 12546.890909,
+        "serializedBytesPerSecondMax": 12546.890909,
+        "serializedBytesPerSecondStdev": 0.0,
+        "replaySampleCountMean": 550.0,
+        "replaySampleCountMin": 550.0,
+        "replaySampleCountMax": 550.0,
+        "replaySampleCountStdev": 0.0,
+        "bytesPerSampleMean": 1254.689091,
+        "bytesPerSampleMin": 1254.689091,
+        "bytesPerSampleMax": 1254.689091,
+        "bytesPerSampleStdev": 0.0,
+        "peakTracedBytesMean": 675132.0,
+        "peakTracedBytesMin": 674372.0,
+        "peakTracedBytesMax": 676652.0,
+        "peakTracedBytesStdev": 1074.802307,
+        "wallOverheadMs": 968.229333,
+        "wallOverheadRatio": 1.364734,
+        "tickMeanOverheadMs": 0.291795,
+        "tickMeanOverheadRatio": 1.366574
+      }
+    },
+    {
+      "profileId": "cars_20_20hz",
+      "required": false,
+      "runs": [
+        {
+          "profileId": "cars_20_20hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 20.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1868.8853000057861,
+          "cpuTimeMs": 1796.875,
+          "realTimeFactor": 29.429307405772693,
+          "ticksPerSecond": 1765.7584443463616,
+          "vehicleTicksPerSecond": 35315.16888692723,
+          "tickMeanMs": 0.563318,
+          "tickP95Ms": 0.903,
+          "tickMaxMs": 4.2814,
+          "replayMeanMs": 0.129308,
+          "replayP95Ms": 0.4111,
+          "replaySampledMeanMs": 0.384216,
+          "replaySampledP95Ms": 0.5283,
+          "replayShare": 0.22954707642929928,
+          "serializedBytes": 1380724,
+          "serializedBytesPerSecond": 25104.072727272727,
+          "replaySampleCount": 1100,
+          "bytesPerSample": 1255.2036363636364,
+          "peakTracedBytes": 680470,
+          "currentTracedBytes": 674958,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.184634,
+              "p95Ms": 0.2667,
+              "maxMs": 2.47
+            },
+            "motion": {
+              "meanMs": 0.068035,
+              "p95Ms": 0.0955,
+              "maxMs": 2.9092
+            },
+            "perception": {
+              "meanMs": 0.027146,
+              "p95Ms": 0.0403,
+              "maxMs": 0.591
+            },
+            "decision": {
+              "meanMs": 0.132986,
+              "p95Ms": 0.1911,
+              "maxMs": 1.7782
+            },
+            "replay": {
+              "meanMs": 0.129308,
+              "p95Ms": 0.4111,
+              "maxMs": 3.8906
+            },
+            "replaySampled": {
+              "meanMs": 0.384216,
+              "p95Ms": 0.5283,
+              "maxMs": 3.8906
+            },
+            "tick": {
+              "meanMs": 0.563318,
+              "p95Ms": 0.903,
+              "maxMs": 4.2814
+            }
+          },
+          "checksum": 1080552.913
+        },
+        {
+          "profileId": "cars_20_20hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 20.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1919.43240002729,
+          "cpuTimeMs": 1843.75,
+          "realTimeFactor": 28.6543042616234,
+          "ticksPerSecond": 1719.258255697404,
+          "vehicleTicksPerSecond": 34385.165113948075,
+          "tickMeanMs": 0.578578,
+          "tickP95Ms": 0.9506,
+          "tickMaxMs": 4.9055,
+          "replayMeanMs": 0.134442,
+          "replayP95Ms": 0.4319,
+          "replaySampledMeanMs": 0.400448,
+          "replaySampledP95Ms": 0.5631,
+          "replayShare": 0.23236624966728772,
+          "serializedBytes": 1380724,
+          "serializedBytesPerSecond": 25104.072727272727,
+          "replaySampleCount": 1100,
+          "bytesPerSample": 1255.2036363636364,
+          "peakTracedBytes": 678438,
+          "currentTracedBytes": 672926,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.189269,
+              "p95Ms": 0.2756,
+              "maxMs": 2.3291
+            },
+            "motion": {
+              "meanMs": 0.069465,
+              "p95Ms": 0.1031,
+              "maxMs": 4.5566
+            },
+            "perception": {
+              "meanMs": 0.027973,
+              "p95Ms": 0.0405,
+              "maxMs": 3.1997
+            },
+            "decision": {
+              "meanMs": 0.136291,
+              "p95Ms": 0.2022,
+              "maxMs": 2.2767
+            },
+            "replay": {
+              "meanMs": 0.134442,
+              "p95Ms": 0.4319,
+              "maxMs": 3.7622
+            },
+            "replaySampled": {
+              "meanMs": 0.400448,
+              "p95Ms": 0.5631,
+              "maxMs": 3.7622
+            },
+            "tick": {
+              "meanMs": 0.578578,
+              "p95Ms": 0.9506,
+              "maxMs": 4.9055
+            }
+          },
+          "checksum": 1080552.913
+        },
+        {
+          "profileId": "cars_20_20hz",
+          "vehicleCount": 20,
+          "replaySampleHz": 20.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 1993.705500033684,
+          "cpuTimeMs": 1843.75,
+          "realTimeFactor": 27.58682262704836,
+          "ticksPerSecond": 1655.2093576229015,
+          "vehicleTicksPerSecond": 33104.187152458035,
+          "tickMeanMs": 0.600599,
+          "tickP95Ms": 1.0813,
+          "tickMaxMs": 5.6718,
+          "replayMeanMs": 0.138729,
+          "replayP95Ms": 0.4499,
+          "replaySampledMeanMs": 0.412784,
+          "replaySampledP95Ms": 0.688,
+          "replayShare": 0.2309844005734275,
+          "serializedBytes": 1380724,
+          "serializedBytesPerSecond": 25104.072727272727,
+          "replaySampleCount": 1100,
+          "bytesPerSample": 1255.2036363636364,
+          "peakTracedBytes": 678438,
+          "currentTracedBytes": 672926,
+          "constrainedDecisionCount": 41751,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.197313,
+              "p95Ms": 0.3358,
+              "maxMs": 3.1522
+            },
+            "motion": {
+              "meanMs": 0.070987,
+              "p95Ms": 0.1133,
+              "maxMs": 1.8148
+            },
+            "perception": {
+              "meanMs": 0.030222,
+              "p95Ms": 0.0484,
+              "maxMs": 4.3354
+            },
+            "decision": {
+              "meanMs": 0.141004,
+              "p95Ms": 0.2383,
+              "maxMs": 3.5632
+            },
+            "replay": {
+              "meanMs": 0.138729,
+              "p95Ms": 0.4499,
+              "maxMs": 3.2602
+            },
+            "replaySampled": {
+              "meanMs": 0.412784,
+              "p95Ms": 0.688,
+              "maxMs": 3.2602
+            },
+            "tick": {
+              "meanMs": 0.600599,
+              "p95Ms": 1.0813,
+              "maxMs": 5.6718
+            }
+          },
+          "checksum": 1080552.913
+        }
+      ],
+      "aggregate": {
+        "profileId": "cars_20_20hz",
+        "vehicleCount": 20,
+        "replaySampleHz": 20.0,
+        "tickRateHz": 60.0,
+        "tickCount": 3300,
+        "simulatedDurationS": 55.0,
+        "repetitionCount": 3,
+        "checksumStable": true,
+        "wallTimeMsMean": 1927.341067,
+        "wallTimeMsMin": 1868.8853,
+        "wallTimeMsMax": 1993.7055,
+        "wallTimeMsStdev": 51.263573,
+        "cpuTimeMsMean": 1828.125,
+        "cpuTimeMsMin": 1796.875,
+        "cpuTimeMsMax": 1843.75,
+        "cpuTimeMsStdev": 22.097087,
+        "realTimeFactorMean": 28.556811,
+        "realTimeFactorMin": 27.586823,
+        "realTimeFactorMax": 29.429307,
+        "realTimeFactorStdev": 0.755344,
+        "ticksPerSecondMean": 1713.408686,
+        "ticksPerSecondMin": 1655.209358,
+        "ticksPerSecondMax": 1765.758444,
+        "ticksPerSecondStdev": 45.320623,
+        "vehicleTicksPerSecondMean": 34268.173718,
+        "vehicleTicksPerSecondMin": 33104.187152,
+        "vehicleTicksPerSecondMax": 35315.168887,
+        "vehicleTicksPerSecondStdev": 906.412451,
+        "tickMeanMsMean": 0.580832,
+        "tickMeanMsMin": 0.563318,
+        "tickMeanMsMax": 0.600599,
+        "tickMeanMsStdev": 0.015303,
+        "tickP95MsMean": 0.9783,
+        "tickP95MsMin": 0.903,
+        "tickP95MsMax": 1.0813,
+        "tickP95MsStdev": 0.07538,
+        "tickMaxMsMean": 4.9529,
+        "tickMaxMsMin": 4.2814,
+        "tickMaxMsMax": 5.6718,
+        "tickMaxMsStdev": 0.568617,
+        "replayMeanMsMean": 0.13416,
+        "replayMeanMsMin": 0.129308,
+        "replayMeanMsMax": 0.138729,
+        "replayMeanMsStdev": 0.003851,
+        "replayP95MsMean": 0.430967,
+        "replayP95MsMin": 0.4111,
+        "replayP95MsMax": 0.4499,
+        "replayP95MsStdev": 0.015854,
+        "replaySampledMeanMsMean": 0.399149,
+        "replaySampledMeanMsMin": 0.384216,
+        "replaySampledMeanMsMax": 0.412784,
+        "replaySampledMeanMsStdev": 0.011699,
+        "replaySampledP95MsMean": 0.593133,
+        "replaySampledP95MsMin": 0.5283,
+        "replaySampledP95MsMax": 0.688,
+        "replaySampledP95MsStdev": 0.068569,
+        "replayShareMean": 0.230966,
+        "replayShareMin": 0.229547,
+        "replayShareMax": 0.232366,
+        "replayShareStdev": 0.001151,
+        "serializedBytesMean": 1380724.0,
+        "serializedBytesMin": 1380724.0,
+        "serializedBytesMax": 1380724.0,
+        "serializedBytesStdev": 0.0,
+        "serializedBytesPerSecondMean": 25104.072727,
+        "serializedBytesPerSecondMin": 25104.072727,
+        "serializedBytesPerSecondMax": 25104.072727,
+        "serializedBytesPerSecondStdev": 0.0,
+        "replaySampleCountMean": 1100.0,
+        "replaySampleCountMin": 1100.0,
+        "replaySampleCountMax": 1100.0,
+        "replaySampleCountStdev": 0.0,
+        "bytesPerSampleMean": 1255.203636,
+        "bytesPerSampleMin": 1255.203636,
+        "bytesPerSampleMax": 1255.203636,
+        "bytesPerSampleStdev": 0.0,
+        "peakTracedBytesMean": 679115.333333,
+        "peakTracedBytesMin": 678438.0,
+        "peakTracedBytesMax": 680470.0,
+        "peakTracedBytesStdev": 957.893986,
+        "wallOverheadMs": 1217.877467,
+        "wallOverheadRatio": 1.716617,
+        "tickMeanOverheadMs": 0.367309,
+        "tickMeanOverheadRatio": 1.720232
+      }
+    },
+    {
+      "profileId": "cars_40_off",
+      "required": false,
+      "runs": [
+        {
+          "profileId": "cars_40_off",
+          "vehicleCount": 40,
+          "replaySampleHz": 0.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 2748.4952000668272,
+          "cpuTimeMs": 2656.25,
+          "realTimeFactor": 20.010949991348983,
+          "ticksPerSecond": 1200.656999480939,
+          "vehicleTicksPerSecond": 48026.27997923756,
+          "tickMeanMs": 0.829515,
+          "tickP95Ms": 1.1335,
+          "tickMaxMs": 11.4664,
+          "replayMeanMs": 0.001148,
+          "replayP95Ms": 0.0013,
+          "replaySampledMeanMs": 0.0,
+          "replaySampledP95Ms": 0.0,
+          "replayShare": 0.001383941218663918,
+          "serializedBytes": 0,
+          "serializedBytesPerSecond": 0.0,
+          "replaySampleCount": 0,
+          "bytesPerSample": 0.0,
+          "peakTracedBytes": 698400,
+          "currentTracedBytes": 686896,
+          "constrainedDecisionCount": 119845,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.352334,
+              "p95Ms": 0.4721,
+              "maxMs": 11.0329
+            },
+            "motion": {
+              "meanMs": 0.133719,
+              "p95Ms": 0.1759,
+              "maxMs": 3.5745
+            },
+            "perception": {
+              "meanMs": 0.050579,
+              "p95Ms": 0.0699,
+              "maxMs": 0.8146
+            },
+            "decision": {
+              "meanMs": 0.267377,
+              "p95Ms": 0.3585,
+              "maxMs": 7.6395
+            },
+            "replay": {
+              "meanMs": 0.001148,
+              "p95Ms": 0.0013,
+              "maxMs": 0.0402
+            },
+            "replaySampled": {
+              "meanMs": 0.0,
+              "p95Ms": 0.0,
+              "maxMs": 0.0
+            },
+            "tick": {
+              "meanMs": 0.829515,
+              "p95Ms": 1.1335,
+              "maxMs": 11.4664
+            }
+          },
+          "checksum": 2161780.693
+        },
+        {
+          "profileId": "cars_40_off",
+          "vehicleCount": 40,
+          "replaySampleHz": 0.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 2724.1875999607146,
+          "cpuTimeMs": 2593.75,
+          "realTimeFactor": 20.189505304551403,
+          "ticksPerSecond": 1211.3703182730842,
+          "vehicleTicksPerSecond": 48454.81273092337,
+          "tickMeanMs": 0.822395,
+          "tickP95Ms": 1.1838,
+          "tickMaxMs": 3.9376,
+          "replayMeanMs": 0.001216,
+          "replayP95Ms": 0.0014,
+          "replaySampledMeanMs": 0.0,
+          "replaySampledP95Ms": 0.0,
+          "replayShare": 0.0014786082113826082,
+          "serializedBytes": 0,
+          "serializedBytesPerSecond": 0.0,
+          "replaySampleCount": 0,
+          "bytesPerSample": 0.0,
+          "peakTracedBytes": 694976,
+          "currentTracedBytes": 683472,
+          "constrainedDecisionCount": 119845,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.34492,
+              "p95Ms": 0.4849,
+              "maxMs": 1.9483
+            },
+            "motion": {
+              "meanMs": 0.132609,
+              "p95Ms": 0.1928,
+              "maxMs": 2.5836
+            },
+            "perception": {
+              "meanMs": 0.052549,
+              "p95Ms": 0.0754,
+              "maxMs": 1.8996
+            },
+            "decision": {
+              "meanMs": 0.266593,
+              "p95Ms": 0.3826,
+              "maxMs": 3.3219
+            },
+            "replay": {
+              "meanMs": 0.001216,
+              "p95Ms": 0.0014,
+              "maxMs": 0.1646
+            },
+            "replaySampled": {
+              "meanMs": 0.0,
+              "p95Ms": 0.0,
+              "maxMs": 0.0
+            },
+            "tick": {
+              "meanMs": 0.822395,
+              "p95Ms": 1.1838,
+              "maxMs": 3.9376
+            }
+          },
+          "checksum": 2161780.693
+        },
+        {
+          "profileId": "cars_40_off",
+          "vehicleCount": 40,
+          "replaySampleHz": 0.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 2736.413500038907,
+          "cpuTimeMs": 2609.375,
+          "realTimeFactor": 20.099301512442473,
+          "ticksPerSecond": 1205.9580907465484,
+          "vehicleTicksPerSecond": 48238.32362986193,
+          "tickMeanMs": 0.825793,
+          "tickP95Ms": 1.1446,
+          "tickMaxMs": 7.4927,
+          "replayMeanMs": 0.00115,
+          "replayP95Ms": 0.0013,
+          "replaySampledMeanMs": 0.0,
+          "replaySampledP95Ms": 0.0,
+          "replayShare": 0.001392600809161618,
+          "serializedBytes": 0,
+          "serializedBytesPerSecond": 0.0,
+          "replaySampleCount": 0,
+          "bytesPerSample": 0.0,
+          "peakTracedBytes": 694976,
+          "currentTracedBytes": 683472,
+          "constrainedDecisionCount": 119845,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.347395,
+              "p95Ms": 0.4931,
+              "maxMs": 3.1688
+            },
+            "motion": {
+              "meanMs": 0.135072,
+              "p95Ms": 0.1774,
+              "maxMs": 5.0912
+            },
+            "perception": {
+              "meanMs": 0.051392,
+              "p95Ms": 0.0695,
+              "maxMs": 1.6063
+            },
+            "decision": {
+              "meanMs": 0.264583,
+              "p95Ms": 0.3583,
+              "maxMs": 6.9991
+            },
+            "replay": {
+              "meanMs": 0.00115,
+              "p95Ms": 0.0013,
+              "maxMs": 0.0211
+            },
+            "replaySampled": {
+              "meanMs": 0.0,
+              "p95Ms": 0.0,
+              "maxMs": 0.0
+            },
+            "tick": {
+              "meanMs": 0.825793,
+              "p95Ms": 1.1446,
+              "maxMs": 7.4927
+            }
+          },
+          "checksum": 2161780.693
+        }
+      ],
+      "aggregate": {
+        "profileId": "cars_40_off",
+        "vehicleCount": 40,
+        "replaySampleHz": 0.0,
+        "tickRateHz": 60.0,
+        "tickCount": 3300,
+        "simulatedDurationS": 55.0,
+        "repetitionCount": 3,
+        "checksumStable": true,
+        "wallTimeMsMean": 2736.365433,
+        "wallTimeMsMin": 2724.1876,
+        "wallTimeMsMax": 2748.4952,
+        "wallTimeMsStdev": 9.923594,
+        "cpuTimeMsMean": 2619.791667,
+        "cpuTimeMsMin": 2593.75,
+        "cpuTimeMsMax": 2656.25,
+        "cpuTimeMsStdev": 26.557393,
+        "realTimeFactorMean": 20.099919,
+        "realTimeFactorMin": 20.01095,
+        "realTimeFactorMax": 20.189505,
+        "realTimeFactorStdev": 0.072896,
+        "ticksPerSecondMean": 1205.995136,
+        "ticksPerSecondMin": 1200.656999,
+        "ticksPerSecondMax": 1211.370318,
+        "ticksPerSecondStdev": 4.373773,
+        "vehicleTicksPerSecondMean": 48239.805447,
+        "vehicleTicksPerSecondMin": 48026.279979,
+        "vehicleTicksPerSecondMax": 48454.812731,
+        "vehicleTicksPerSecondStdev": 174.950901,
+        "tickMeanMsMean": 0.825901,
+        "tickMeanMsMin": 0.822395,
+        "tickMeanMsMax": 0.829515,
+        "tickMeanMsStdev": 0.002908,
+        "tickP95MsMean": 1.153967,
+        "tickP95MsMin": 1.1335,
+        "tickP95MsMax": 1.1838,
+        "tickP95MsStdev": 0.021577,
+        "tickMaxMsMean": 7.632233,
+        "tickMaxMsMin": 3.9376,
+        "tickMaxMsMax": 11.4664,
+        "tickMaxMsStdev": 3.075203,
+        "replayMeanMsMean": 0.001171,
+        "replayMeanMsMin": 0.001148,
+        "replayMeanMsMax": 0.001216,
+        "replayMeanMsStdev": 3.2e-05,
+        "replayP95MsMean": 0.001333,
+        "replayP95MsMin": 0.0013,
+        "replayP95MsMax": 0.0014,
+        "replayP95MsStdev": 4.7e-05,
+        "replaySampledMeanMsMean": 0.0,
+        "replaySampledMeanMsMin": 0.0,
+        "replaySampledMeanMsMax": 0.0,
+        "replaySampledMeanMsStdev": 0.0,
+        "replaySampledP95MsMean": 0.0,
+        "replaySampledP95MsMin": 0.0,
+        "replaySampledP95MsMax": 0.0,
+        "replaySampledP95MsStdev": 0.0,
+        "replayShareMean": 0.001418,
+        "replayShareMin": 0.001384,
+        "replayShareMax": 0.001479,
+        "replayShareStdev": 4.3e-05,
+        "serializedBytesMean": 0.0,
+        "serializedBytesMin": 0.0,
+        "serializedBytesMax": 0.0,
+        "serializedBytesStdev": 0.0,
+        "serializedBytesPerSecondMean": 0.0,
+        "serializedBytesPerSecondMin": 0.0,
+        "serializedBytesPerSecondMax": 0.0,
+        "serializedBytesPerSecondStdev": 0.0,
+        "replaySampleCountMean": 0.0,
+        "replaySampleCountMin": 0.0,
+        "replaySampleCountMax": 0.0,
+        "replaySampleCountStdev": 0.0,
+        "bytesPerSampleMean": 0.0,
+        "bytesPerSampleMin": 0.0,
+        "bytesPerSampleMax": 0.0,
+        "bytesPerSampleStdev": 0.0,
+        "peakTracedBytesMean": 696117.333333,
+        "peakTracedBytesMin": 694976.0,
+        "peakTracedBytesMax": 698400.0,
+        "peakTracedBytesStdev": 1614.089079,
+        "wallOverheadMs": 0.0,
+        "wallOverheadRatio": 0.0,
+        "tickMeanOverheadMs": 0.0,
+        "tickMeanOverheadRatio": 0.0
+      }
+    },
+    {
+      "profileId": "cars_40_4hz",
+      "required": false,
+      "runs": [
+        {
+          "profileId": "cars_40_4hz",
+          "vehicleCount": 40,
+          "replaySampleHz": 4.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 2809.9010000005364,
+          "cpuTimeMs": 2500.0,
+          "realTimeFactor": 19.573643341879126,
+          "ticksPerSecond": 1174.4186005127476,
+          "vehicleTicksPerSecond": 46976.744020509905,
+          "tickMeanMs": 0.848041,
+          "tickP95Ms": 1.4785,
+          "tickMaxMs": 9.5142,
+          "replayMeanMs": 0.051638,
+          "replayP95Ms": 0.6678,
+          "replaySampledMeanMs": 0.754345,
+          "replaySampledP95Ms": 1.0336,
+          "replayShare": 0.060890923905801725,
+          "serializedBytes": 548668,
+          "serializedBytesPerSecond": 9975.781818181818,
+          "replaySampleCount": 220,
+          "bytesPerSample": 2493.9454545454546,
+          "peakTracedBytes": 699938,
+          "currentTracedBytes": 688434,
+          "constrainedDecisionCount": 119845,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.343119,
+              "p95Ms": 0.4691,
+              "maxMs": 7.9324
+            },
+            "motion": {
+              "meanMs": 0.126364,
+              "p95Ms": 0.1749,
+              "maxMs": 1.4435
+            },
+            "perception": {
+              "meanMs": 0.048781,
+              "p95Ms": 0.0714,
+              "maxMs": 0.3606
+            },
+            "decision": {
+              "meanMs": 0.254208,
+              "p95Ms": 0.3481,
+              "maxMs": 8.9897
+            },
+            "replay": {
+              "meanMs": 0.051638,
+              "p95Ms": 0.6678,
+              "maxMs": 2.0516
+            },
+            "replaySampled": {
+              "meanMs": 0.754345,
+              "p95Ms": 1.0336,
+              "maxMs": 2.0516
+            },
+            "tick": {
+              "meanMs": 0.848041,
+              "p95Ms": 1.4785,
+              "maxMs": 9.5142
+            }
+          },
+          "checksum": 2161780.693
+        },
+        {
+          "profileId": "cars_40_4hz",
+          "vehicleCount": 40,
+          "replaySampleHz": 4.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 2933.472399949096,
+          "cpuTimeMs": 2687.5,
+          "realTimeFactor": 18.749111122011715,
+          "ticksPerSecond": 1124.946667320703,
+          "vehicleTicksPerSecond": 44997.866692828116,
+          "tickMeanMs": 0.88567,
+          "tickP95Ms": 1.5116,
+          "tickMaxMs": 9.0281,
+          "replayMeanMs": 0.051439,
+          "replayP95Ms": 0.6693,
+          "replaySampledMeanMs": 0.75087,
+          "replaySampledP95Ms": 1.0326,
+          "replayShare": 0.05807919428229476,
+          "serializedBytes": 548668,
+          "serializedBytesPerSecond": 9975.781818181818,
+          "replaySampleCount": 220,
+          "bytesPerSample": 2493.9454545454546,
+          "peakTracedBytes": 699370,
+          "currentTracedBytes": 687866,
+          "constrainedDecisionCount": 119845,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.355243,
+              "p95Ms": 0.5316,
+              "maxMs": 4.1609
+            },
+            "motion": {
+              "meanMs": 0.134774,
+              "p95Ms": 0.1951,
+              "maxMs": 5.1475
+            },
+            "perception": {
+              "meanMs": 0.052055,
+              "p95Ms": 0.0757,
+              "maxMs": 1.5186
+            },
+            "decision": {
+              "meanMs": 0.267383,
+              "p95Ms": 0.3863,
+              "maxMs": 5.7343
+            },
+            "replay": {
+              "meanMs": 0.051439,
+              "p95Ms": 0.6693,
+              "maxMs": 1.5158
+            },
+            "replaySampled": {
+              "meanMs": 0.75087,
+              "p95Ms": 1.0326,
+              "maxMs": 1.5158
+            },
+            "tick": {
+              "meanMs": 0.88567,
+              "p95Ms": 1.5116,
+              "maxMs": 9.0281
+            }
+          },
+          "checksum": 2161780.693
+        },
+        {
+          "profileId": "cars_40_4hz",
+          "vehicleCount": 40,
+          "replaySampleHz": 4.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 2916.77490004804,
+          "cpuTimeMs": 2859.375,
+          "realTimeFactor": 18.856443121165825,
+          "ticksPerSecond": 1131.3865872699496,
+          "vehicleTicksPerSecond": 45255.463490797985,
+          "tickMeanMs": 0.880725,
+          "tickP95Ms": 1.4825,
+          "tickMaxMs": 6.5494,
+          "replayMeanMs": 0.051969,
+          "replayP95Ms": 0.6675,
+          "replaySampledMeanMs": 0.759266,
+          "replaySampledP95Ms": 1.0062,
+          "replayShare": 0.05900706804053479,
+          "serializedBytes": 548668,
+          "serializedBytesPerSecond": 9975.781818181818,
+          "replaySampleCount": 220,
+          "bytesPerSample": 2493.9454545454546,
+          "peakTracedBytes": 699370,
+          "currentTracedBytes": 687866,
+          "constrainedDecisionCount": 119845,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.348919,
+              "p95Ms": 0.497,
+              "maxMs": 3.9129
+            },
+            "motion": {
+              "meanMs": 0.133585,
+              "p95Ms": 0.1929,
+              "maxMs": 4.0629
+            },
+            "perception": {
+              "meanMs": 0.053642,
+              "p95Ms": 0.0723,
+              "maxMs": 2.692
+            },
+            "decision": {
+              "meanMs": 0.26749,
+              "p95Ms": 0.3943,
+              "maxMs": 4.8729
+            },
+            "replay": {
+              "meanMs": 0.051969,
+              "p95Ms": 0.6675,
+              "maxMs": 5.2631
+            },
+            "replaySampled": {
+              "meanMs": 0.759266,
+              "p95Ms": 1.0062,
+              "maxMs": 5.2631
+            },
+            "tick": {
+              "meanMs": 0.880725,
+              "p95Ms": 1.4825,
+              "maxMs": 6.5494
+            }
+          },
+          "checksum": 2161780.693
+        }
+      ],
+      "aggregate": {
+        "profileId": "cars_40_4hz",
+        "vehicleCount": 40,
+        "replaySampleHz": 4.0,
+        "tickRateHz": 60.0,
+        "tickCount": 3300,
+        "simulatedDurationS": 55.0,
+        "repetitionCount": 3,
+        "checksumStable": true,
+        "wallTimeMsMean": 2886.7161,
+        "wallTimeMsMin": 2809.901,
+        "wallTimeMsMax": 2933.4724,
+        "wallTimeMsStdev": 54.742557,
+        "cpuTimeMsMean": 2682.291667,
+        "cpuTimeMsMin": 2500.0,
+        "cpuTimeMsMax": 2859.375,
+        "cpuTimeMsStdev": 146.760446,
+        "realTimeFactorMean": 19.059733,
+        "realTimeFactorMin": 18.749111,
+        "realTimeFactorMax": 19.573643,
+        "realTimeFactorStdev": 0.366022,
+        "ticksPerSecondMean": 1143.583952,
+        "ticksPerSecondMin": 1124.946667,
+        "ticksPerSecondMax": 1174.418601,
+        "ticksPerSecondStdev": 21.961327,
+        "vehicleTicksPerSecondMean": 45743.358068,
+        "vehicleTicksPerSecondMin": 44997.866693,
+        "vehicleTicksPerSecondMax": 46976.744021,
+        "vehicleTicksPerSecondStdev": 878.453075,
+        "tickMeanMsMean": 0.871479,
+        "tickMeanMsMin": 0.848041,
+        "tickMeanMsMax": 0.88567,
+        "tickMeanMsStdev": 0.016695,
+        "tickP95MsMean": 1.490867,
+        "tickP95MsMin": 1.4785,
+        "tickP95MsMax": 1.5116,
+        "tickP95MsStdev": 0.014751,
+        "tickMaxMsMean": 8.3639,
+        "tickMaxMsMin": 6.5494,
+        "tickMaxMsMax": 9.5142,
+        "tickMaxMsStdev": 1.298302,
+        "replayMeanMsMean": 0.051682,
+        "replayMeanMsMin": 0.051439,
+        "replayMeanMsMax": 0.051969,
+        "replayMeanMsStdev": 0.000219,
+        "replayP95MsMean": 0.6682,
+        "replayP95MsMin": 0.6675,
+        "replayP95MsMax": 0.6693,
+        "replayP95MsStdev": 0.000787,
+        "replaySampledMeanMsMean": 0.754827,
+        "replaySampledMeanMsMin": 0.75087,
+        "replaySampledMeanMsMax": 0.759266,
+        "replaySampledMeanMsStdev": 0.003445,
+        "replaySampledP95MsMean": 1.024133,
+        "replaySampledP95MsMin": 1.0062,
+        "replaySampledP95MsMax": 1.0336,
+        "replaySampledP95MsStdev": 0.012687,
+        "replayShareMean": 0.059326,
+        "replayShareMin": 0.058079,
+        "replayShareMax": 0.060891,
+        "replayShareStdev": 0.00117,
+        "serializedBytesMean": 548668.0,
+        "serializedBytesMin": 548668.0,
+        "serializedBytesMax": 548668.0,
+        "serializedBytesStdev": 0.0,
+        "serializedBytesPerSecondMean": 9975.781818,
+        "serializedBytesPerSecondMin": 9975.781818,
+        "serializedBytesPerSecondMax": 9975.781818,
+        "serializedBytesPerSecondStdev": 0.0,
+        "replaySampleCountMean": 220.0,
+        "replaySampleCountMin": 220.0,
+        "replaySampleCountMax": 220.0,
+        "replaySampleCountStdev": 0.0,
+        "bytesPerSampleMean": 2493.945455,
+        "bytesPerSampleMin": 2493.945455,
+        "bytesPerSampleMax": 2493.945455,
+        "bytesPerSampleStdev": 0.0,
+        "peakTracedBytesMean": 699559.333333,
+        "peakTracedBytesMin": 699370.0,
+        "peakTracedBytesMax": 699938.0,
+        "peakTracedBytesStdev": 267.757768,
+        "wallOverheadMs": 150.350667,
+        "wallOverheadRatio": 0.054945,
+        "tickMeanOverheadMs": 0.045578,
+        "tickMeanOverheadRatio": 0.055186
+      }
+    },
+    {
+      "profileId": "cars_40_20hz",
+      "required": false,
+      "runs": [
+        {
+          "profileId": "cars_40_20hz",
+          "vehicleCount": 40,
+          "replaySampleHz": 20.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 3547.9874999728054,
+          "cpuTimeMs": 3328.125,
+          "realTimeFactor": 15.501745708072974,
+          "ticksPerSecond": 930.1047424843784,
+          "vehicleTicksPerSecond": 37204.18969937514,
+          "tickMeanMs": 1.07154,
+          "tickP95Ms": 1.717,
+          "tickMaxMs": 9.512,
+          "replayMeanMs": 0.251852,
+          "replayP95Ms": 0.847,
+          "replaySampledMeanMs": 0.751443,
+          "replaySampledP95Ms": 1.1071,
+          "replayShare": 0.23503742277469813,
+          "serializedBytes": 2743364,
+          "serializedBytesPerSecond": 49879.34545454545,
+          "replaySampleCount": 1100,
+          "bytesPerSample": 2493.9672727272728,
+          "peakTracedBytes": 707234,
+          "currentTracedBytes": 695730,
+          "constrainedDecisionCount": 119845,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.350097,
+              "p95Ms": 0.4923,
+              "maxMs": 4.3689
+            },
+            "motion": {
+              "meanMs": 0.13016,
+              "p95Ms": 0.1894,
+              "maxMs": 1.0447
+            },
+            "perception": {
+              "meanMs": 0.051815,
+              "p95Ms": 0.0792,
+              "maxMs": 1.0786
+            },
+            "decision": {
+              "meanMs": 0.26196,
+              "p95Ms": 0.3755,
+              "maxMs": 9.0178
+            },
+            "replay": {
+              "meanMs": 0.251852,
+              "p95Ms": 0.847,
+              "maxMs": 3.0788
+            },
+            "replaySampled": {
+              "meanMs": 0.751443,
+              "p95Ms": 1.1071,
+              "maxMs": 3.0788
+            },
+            "tick": {
+              "meanMs": 1.07154,
+              "p95Ms": 1.717,
+              "maxMs": 9.512
+            }
+          },
+          "checksum": 2161780.693
+        },
+        {
+          "profileId": "cars_40_20hz",
+          "vehicleCount": 40,
+          "replaySampleHz": 20.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 3514.2511000158265,
+          "cpuTimeMs": 3375.0,
+          "realTimeFactor": 15.650560655655001,
+          "ticksPerSecond": 939.0336393393001,
+          "vehicleTicksPerSecond": 37561.345573572,
+          "tickMeanMs": 1.060864,
+          "tickP95Ms": 1.6879,
+          "tickMaxMs": 9.3252,
+          "replayMeanMs": 0.248619,
+          "replayP95Ms": 0.8186,
+          "replaySampledMeanMs": 0.742928,
+          "replaySampledP95Ms": 1.0745,
+          "replayShare": 0.2343552048141892,
+          "serializedBytes": 2743364,
+          "serializedBytesPerSecond": 49879.34545454545,
+          "replaySampleCount": 1100,
+          "bytesPerSample": 2493.9672727272728,
+          "peakTracedBytes": 706714,
+          "currentTracedBytes": 695210,
+          "constrainedDecisionCount": 119845,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.34298,
+              "p95Ms": 0.4711,
+              "maxMs": 3.0
+            },
+            "motion": {
+              "meanMs": 0.129878,
+              "p95Ms": 0.1765,
+              "maxMs": 2.5401
+            },
+            "perception": {
+              "meanMs": 0.053156,
+              "p95Ms": 0.069,
+              "maxMs": 2.2605
+            },
+            "decision": {
+              "meanMs": 0.26034,
+              "p95Ms": 0.3587,
+              "maxMs": 8.8411
+            },
+            "replay": {
+              "meanMs": 0.248619,
+              "p95Ms": 0.8186,
+              "maxMs": 3.4135
+            },
+            "replaySampled": {
+              "meanMs": 0.742928,
+              "p95Ms": 1.0745,
+              "maxMs": 3.4135
+            },
+            "tick": {
+              "meanMs": 1.060864,
+              "p95Ms": 1.6879,
+              "maxMs": 9.3252
+            }
+          },
+          "checksum": 2161780.693
+        },
+        {
+          "profileId": "cars_40_20hz",
+          "vehicleCount": 40,
+          "replaySampleHz": 20.0,
+          "tickRateHz": 60.0,
+          "tickCount": 3300,
+          "simulatedDurationS": 55.0,
+          "wallTimeMs": 3554.2505000485107,
+          "cpuTimeMs": 3500.0,
+          "realTimeFactor": 15.474429840904383,
+          "ticksPerSecond": 928.465790454263,
+          "vehicleTicksPerSecond": 37138.63161817052,
+          "tickMeanMs": 1.073797,
+          "tickP95Ms": 1.7256,
+          "tickMaxMs": 5.4529,
+          "replayMeanMs": 0.250632,
+          "replayP95Ms": 0.8342,
+          "replaySampledMeanMs": 0.74691,
+          "replaySampledP95Ms": 1.068,
+          "replayShare": 0.2334072455035729,
+          "serializedBytes": 2743364,
+          "serializedBytesPerSecond": 49879.34545454545,
+          "replaySampleCount": 1100,
+          "bytesPerSample": 2493.9672727272728,
+          "peakTracedBytes": 706714,
+          "currentTracedBytes": 695210,
+          "constrainedDecisionCount": 119845,
+          "systemTimings": {
+            "input": {
+              "meanMs": 0.348551,
+              "p95Ms": 0.5026,
+              "maxMs": 2.6452
+            },
+            "motion": {
+              "meanMs": 0.131802,
+              "p95Ms": 0.1902,
+              "maxMs": 1.4945
+            },
+            "perception": {
+              "meanMs": 0.053529,
+              "p95Ms": 0.0736,
+              "maxMs": 3.0749
+            },
+            "decision": {
+              "meanMs": 0.263643,
+              "p95Ms": 0.3841,
+              "maxMs": 3.5354
+            },
+            "replay": {
+              "meanMs": 0.250632,
+              "p95Ms": 0.8342,
+              "maxMs": 4.678
+            },
+            "replaySampled": {
+              "meanMs": 0.74691,
+              "p95Ms": 1.068,
+              "maxMs": 4.678
+            },
+            "tick": {
+              "meanMs": 1.073797,
+              "p95Ms": 1.7256,
+              "maxMs": 5.4529
+            }
+          },
+          "checksum": 2161780.693
+        }
+      ],
+      "aggregate": {
+        "profileId": "cars_40_20hz",
+        "vehicleCount": 40,
+        "replaySampleHz": 20.0,
+        "tickRateHz": 60.0,
+        "tickCount": 3300,
+        "simulatedDurationS": 55.0,
+        "repetitionCount": 3,
+        "checksumStable": true,
+        "wallTimeMsMean": 3538.8297,
+        "wallTimeMsMin": 3514.2511,
+        "wallTimeMsMax": 3554.2505,
+        "wallTimeMsStdev": 17.566767,
+        "cpuTimeMsMean": 3401.041667,
+        "cpuTimeMsMin": 3328.125,
+        "cpuTimeMsMax": 3500.0,
+        "cpuTimeMsStdev": 72.543689,
+        "realTimeFactorMean": 15.542245,
+        "realTimeFactorMin": 15.47443,
+        "realTimeFactorMax": 15.650561,
+        "realTimeFactorStdev": 0.077398,
+        "ticksPerSecondMean": 932.534724,
+        "ticksPerSecondMin": 928.46579,
+        "ticksPerSecondMax": 939.033639,
+        "ticksPerSecondStdev": 4.643882,
+        "vehicleTicksPerSecondMean": 37301.388964,
+        "vehicleTicksPerSecondMin": 37138.631618,
+        "vehicleTicksPerSecondMax": 37561.345574,
+        "vehicleTicksPerSecondStdev": 185.755296,
+        "tickMeanMsMean": 1.068734,
+        "tickMeanMsMin": 1.060864,
+        "tickMeanMsMax": 1.073797,
+        "tickMeanMsStdev": 0.00564,
+        "tickP95MsMean": 1.710167,
+        "tickP95MsMin": 1.6879,
+        "tickP95MsMax": 1.7256,
+        "tickP95MsStdev": 0.016132,
+        "tickMaxMsMean": 8.0967,
+        "tickMaxMsMin": 5.4529,
+        "tickMaxMsMax": 9.512,
+        "tickMaxMsStdev": 1.871004,
+        "replayMeanMsMean": 0.250368,
+        "replayMeanMsMin": 0.248619,
+        "replayMeanMsMax": 0.251852,
+        "replayMeanMsStdev": 0.001333,
+        "replayP95MsMean": 0.833267,
+        "replayP95MsMin": 0.8186,
+        "replayP95MsMax": 0.847,
+        "replayP95MsStdev": 0.011613,
+        "replaySampledMeanMsMean": 0.747094,
+        "replaySampledMeanMsMin": 0.742928,
+        "replaySampledMeanMsMax": 0.751443,
+        "replaySampledMeanMsStdev": 0.003479,
+        "replaySampledP95MsMean": 1.0832,
+        "replaySampledP95MsMin": 1.068,
+        "replaySampledP95MsMax": 1.1071,
+        "replaySampledP95MsStdev": 0.017107,
+        "replayShareMean": 0.234267,
+        "replayShareMin": 0.233407,
+        "replayShareMax": 0.235037,
+        "replayShareStdev": 0.000668,
+        "serializedBytesMean": 2743364.0,
+        "serializedBytesMin": 2743364.0,
+        "serializedBytesMax": 2743364.0,
+        "serializedBytesStdev": 0.0,
+        "serializedBytesPerSecondMean": 49879.345455,
+        "serializedBytesPerSecondMin": 49879.345455,
+        "serializedBytesPerSecondMax": 49879.345455,
+        "serializedBytesPerSecondStdev": 0.0,
+        "replaySampleCountMean": 1100.0,
+        "replaySampleCountMin": 1100.0,
+        "replaySampleCountMax": 1100.0,
+        "replaySampleCountStdev": 0.0,
+        "bytesPerSampleMean": 2493.967273,
+        "bytesPerSampleMin": 2493.967273,
+        "bytesPerSampleMax": 2493.967273,
+        "bytesPerSampleStdev": 0.0,
+        "peakTracedBytesMean": 706887.333333,
+        "peakTracedBytesMin": 706714.0,
+        "peakTracedBytesMax": 707234.0,
+        "peakTracedBytesStdev": 245.130351,
+        "wallOverheadMs": 802.464267,
+        "wallOverheadRatio": 0.293259,
+        "tickMeanOverheadMs": 0.242833,
+        "tickMeanOverheadRatio": 0.294022
+      }
+    }
+  ],
+  "metrics": {
+    "profileCount": 9,
+    "repetitionsPerProfile": 3,
+    "profileGroups": [
+      {
+        "vehicleCount": 20,
+        "replaySampleHz": [
+          0,
+          1,
+          2,
+          4,
+          10,
+          20
+        ]
+      },
+      {
+        "vehicleCount": 40,
+        "replaySampleHz": [
+          0,
+          4,
+          20
+        ]
+      }
+    ],
+    "referenceVehicleCount": 20,
+    "referenceReplaySampleHz": 4.0,
+    "referenceReplayShareMean": 0.059804,
+    "referenceWallOverheadRatio": 1.222954,
+    "referenceSerializedBytesPerSecond": 5020.8,
+    "profileErrorCount": 0
+  }
+}

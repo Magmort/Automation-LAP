@@ -27,7 +27,7 @@ Ce document est le livrable final de la Phase 1. Il doit rester synthétique : l
 | C — Tour autonome et circuit minimal | Le contrôleur peut-il rouler sans script par virage avec un contrat de circuit minimal ? | Validée avec réserves | Moyen à bon | Contrat validé sur piste canonique, import réel et surfaces détaillées non prouvés |
 | D — Trafic et dépassement | Les interactions peuvent-elles être crédibles et réglables ? | Validée avec réserves | Moyen | Interactions longues, denses ou contestées non prouvées |
 | E — Replay minimal | Le replay hybride est-il autonome et navigable ? | Validée avec réserves | Moyen à bon | Format JSON non optimisé, coût à l'échelle à mesurer dans F |
-| F — Charge et accélération | La cible de voitures et l’exécution accélérée sont-elles viables ? | En attente | — | Coût combiné physique, perception, IA et enregistrement |
+| F — Charge et accélération | La cible de voitures et l’exécution accélérée sont-elles viables ? | Validée avec réserves | Moyen | Harnais Python hors Unity ; profilage runtime réel à faire pendant le vertical slice |
 | G — Import UR2D2 | Les fichiers UR2D2 peuvent-ils reconstruire le modèle minimal validé en C ? | En attente | — | Format opaque, échelle ambiguë ou informations insuffisantes |
 
 Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, `non viable`.
@@ -47,8 +47,9 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 | Contrôle IA | Saturation du grip | yaw demandé plafonné par limite latérale véhicule | Expérience C-S05 | Garde-fou candidat |
 | Perception | Fréquence de mise à jour | À mesurer | Expérience D | En attente |
 | Replay | Fréquence des images-clés | 1 s | Expérience E-S04 | Candidat avec réserves |
-| Replay | Fréquence de télémétrie | 4 Hz référence, plage 1 à 20 Hz mesurée | Expérience E-S04 | Candidat avec réserves |
-| Performance | Nombre cible de voitures | 12 à 20 | Plan général | À confirmer |
+| Replay | Fréquence de télémétrie | 4 Hz référence, plage 1 à 20 Hz mesurée | Expériences E-S04 et F-S04 | Candidat avec réserves |
+| Performance | Nombre cible de voitures | 12 à 20 | F-S05 | Candidat avec réserves |
+| Performance | Stress de suivi | 40 voitures | F-S01 à F-S05 | Candidat de mesure |
 
 ## 4. Résultats par expérience
 
@@ -113,11 +114,21 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 ### F — Charge et accélération
 
 - **Ticket :** #8
-- **Conclusion :** en attente
-- **Machine de référence :** à compléter
-- **Temps réel :** à compléter
-- **Mode sans rendu :** à compléter
-- **Goulets d’étranglement :** à compléter
+- **Conclusion :** en cours
+- **Protocole :** `docs/feasibility/experiments/F-PERFORMANCE-LOAD.md`
+- **Machine de référence F-S01 :** Windows 11, Python `3.12.13`, `32` CPU logiques
+- **Harnais F-S01 :** `4` profils (`1`, `12`, `20`, `40` voitures), `5` répétitions, `55 s` simulées, `0` erreur de benchmark
+- **Profil 40 voitures F-S01 :** `180,00 ms` de temps mural moyen, facteur temps réel moyen `307,2x`, `49374` véhicules-frames/s, replay compact `12077` octets/s
+- **Charge cible F-S02 :** boucle représentative `60 Hz`, budget `16,667 ms`, profils requis `12` et `20` voitures, `3` répétitions, `0` deadline miss
+- **Profil 20 voitures F-S02 :** tick p95 moyen `0,3744 ms`, ratio p95/budget `0,0225`, facteur temps réel moyen `73,4x`, replay compact `5021` octets/s
+- **Stress 40 voitures F-S02 :** tick p95 moyen `0,7124 ms`, ratio p95/budget `0,0427`, facteur temps réel moyen `38,6x`, non bloquant
+- **Accélération F-S03 :** `180 s` simulées, profils requis `12` et `20` voitures, `3` répétitions, seuil requis `20x`, validation avec facteur minimal moyen `36,3x`
+- **Profil 20 voitures F-S03 :** temps mural moyen `4955,77 ms`, tick p95 moyen `0,7666 ms`, `43598` véhicules-ticks/s, système dominant `input` à `38,5 %`
+- **Stress 40 voitures F-S03 :** facteur moyen `19,7x`, tick p95 moyen `1,4452 ms`, non bloquant
+- **Coût replay F-S04 :** `9` profils, `3` répétitions, référence `20` voitures à `4 Hz`, part replay `6,0 %` du tick moyen, replay moyen `0,0284 ms`, débit `5021` octets/s
+- **Fréquence haute F-S04 :** `20` voitures à `20 Hz`, part replay `23,1 %`, débit `25104` octets/s ; `40` voitures à `20 Hz`, part replay `23,4 %`, débit `49879` octets/s
+- **Synthèse F-S05 :** décision `validée avec réserves`, `0` blocage, paramètres candidats `12` à `20` voitures, tick `60 Hz`, replay compact `4 Hz`, stress suivi `40` voitures
+- **Réserve :** benchmark Python hors Unity, avec voitures dupliquées depuis E-S01 ; F mesure une sérialisation compacte en mémoire, pas une écriture disque continue ni le format binaire final
 
 ### G — Import du modèle minimal depuis UR2D2
 
@@ -135,10 +146,10 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 | Risque | Probabilité | Impact | Preuve disponible | Réponse proposée |
 |---|---|---|---|---|
 | Données Automation insuffisantes | Moyenne | Élevé | Expérience A8 | Paramètres dérivés, usage des courbes Automation et calibration documentée pendant B |
-| Modèle physique trop coûteux | À évaluer | Élevé | Expériences B et F | Simplification guidée par mesure |
+| Modèle physique trop coûteux | Moyenne | Élevé | Expériences B et F | Profilage Unity réel puis simplification guidée par mesure |
 | Modèle de circuit inadapté au contrôle | À évaluer | Élevé | Expérience C | Définition pilotée par les usages et invariants testés |
 | IA peu crédible en trafic | À évaluer | Élevé | Expériences C et D | Architecture en couches et scénarios statistiques |
-| Replay trop volumineux | Moyenne | Moyen | Expérience E-S04 | Fréquences, compression et coût à l'échelle mesurés dans F |
+| Replay trop volumineux | Moyenne | Moyen | Expériences E-S04 et F-S04 | Garder `4 Hz` compact, mesurer format binaire et écriture disque plus tard |
 | Import UR2D2 incomplet ou fragile | À évaluer | Moyen à élevé | Expérience G | Adaptateur versionné et solution de repli indépendante |
 | Dépendance excessive à Unity | Faible par conception | Élevé | ADR-0001 | Tests sans rendu et frontières de dépendance |
 

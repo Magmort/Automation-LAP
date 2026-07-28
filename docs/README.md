@@ -19,6 +19,7 @@ Cette documentation constitue la mémoire durable d’Automation LAP. Les décis
 - [Expérience C — Tour autonome et modèle minimal de circuit](feasibility/experiments/C-AUTONOMOUS-LAP.md)
 - [Expérience D — Trafic et dépassement](feasibility/experiments/D-TRAFFIC-OVERTAKING.md)
 - [Expérience E — Replay minimal](feasibility/experiments/E-REPLAY-MINIMAL.md)
+- [Expérience F — Charge et accélération](feasibility/experiments/F-PERFORMANCE-LOAD.md)
 - [Expérience G — Import du modèle minimal de circuit depuis UR2D2](feasibility/experiments/G-UR2D2-TRACK-IMPORT.md)
 - [Répertoire des prototypes](../prototypes/README.md)
 - [Prototype Automation Exporter](../prototypes/automation-exporter/README.md)
@@ -26,8 +27,9 @@ Cette documentation constitue la mémoire durable d’Automation LAP. Les décis
 - [Prototype Autonomous Lap](../prototypes/autonomous-lap/README.md)
 - [Prototype Traffic](../prototypes/traffic/README.md)
 - [Prototype Replay](../prototypes/replay/README.md)
+- [Prototype Performance](../prototypes/performance/README.md)
 
-L’expérience F recevra son protocole détaillé avant son démarrage. L’expérience C a consolidé le modèle minimal de circuit ; D a validé le trafic nominal avec réserves ; E a validé le replay autonome, navigable, resamplé et versionné avec réserves, et G testera la reconstruction du contrat depuis UR2D2.
+L’expérience C a consolidé le modèle minimal de circuit ; D a validé le trafic nominal avec réserves ; E a validé le replay autonome, navigable, resamplé et versionné avec réserves ; F a validé la cible 12 à 20 voitures, l’accélération hors rendu et le coût replay compact avec réserves ; G testera la reconstruction du contrat depuis UR2D2.
 
 ### Architecture
 

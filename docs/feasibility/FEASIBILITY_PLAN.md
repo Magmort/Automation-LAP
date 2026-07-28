@@ -180,7 +180,8 @@ Une course enregistrée peut-elle être chargée, parcourue dans les deux sens e
 ## Expérience F — Charge et accélération
 
 - **Ticket :** #8
-- **État :** prête, boucle représentative B à E disponible
+- **Protocole :** [experiments/F-PERFORMANCE-LOAD.md](experiments/F-PERFORMANCE-LOAD.md)
+- **État :** validée avec réserves
 
 ### Question
 

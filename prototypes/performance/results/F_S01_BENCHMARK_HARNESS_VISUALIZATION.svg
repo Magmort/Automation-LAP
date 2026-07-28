@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="820" viewBox="0 0 1240 820" role="img" aria-labelledby="title desc">
+<title id="title">F-S01 benchmark harness</title>
+<desc id="desc">No-render benchmark harness across 1, 12, 20 and 40 vehicles.</desc>
+<rect width="100%" height="100%" fill="#f7f7f3" />
+<g font-family="Arial, sans-serif" fill="#222">
+<text x="54" y="70" font-size="26" font-weight="700">F-S01 - Harnais de benchmark</text>
+<text x="54" y="102" font-size="15" fill="#5f625d">4 profils, 5 repetitions, 55s simules, hors rendu Unity</text>
+<rect x="54" y="132" width="1130" height="384" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="84" y="156" font-size="16" font-weight="700">Facteur temps reel moyen</text>
+<line x1="88" y1="460" x2="798" y2="460" stroke="#c9c9c2" />
+<rect x="88.00" y="190.00" width="152.00" height="270.00" rx="5" fill="#2f9d68" />
+<text x="164.00" y="180.00" font-size="12" text-anchor="middle">6916.3x</text>
+<text x="164.00" y="488" font-size="12" text-anchor="middle">1 voitures</text>
+<rect x="274.00" y="422.11" width="152.00" height="37.89" rx="5" fill="#2f9d68" />
+<text x="350.00" y="412.11" font-size="12" text-anchor="middle">970.7x</text>
+<text x="350.00" y="488" font-size="12" text-anchor="middle">12 voitures</text>
+<rect x="460.00" y="433.40" width="152.00" height="26.60" rx="5" fill="#2f9d68" />
+<text x="536.00" y="423.40" font-size="12" text-anchor="middle">681.4x</text>
+<text x="536.00" y="488" font-size="12" text-anchor="middle">20 voitures</text>
+<rect x="646.00" y="448.01" width="152.00" height="11.99" rx="5" fill="#2f9d68" />
+<text x="722.00" y="438.01" font-size="12" text-anchor="middle">307.2x</text>
+<text x="722.00" y="488" font-size="12" text-anchor="middle">40 voitures</text>
+<text x="856" y="156" font-size="16" font-weight="700">Contexte</text>
+<rect x="850" y="184" width="286" height="52" rx="6" fill="#ffffff" stroke="#c9c9c2" />
+<text x="866" y="205" font-size="12" fill="#5f625d">Profils</text>
+<text x="1014" y="217" font-size="23" font-weight="700" fill="#2f7ed8" text-anchor="end">4</text>
+<rect x="850" y="252" width="286" height="52" rx="6" fill="#ffffff" stroke="#c9c9c2" />
+<text x="866" y="273" font-size="12" fill="#5f625d">Repetitions</text>
+<text x="1014" y="285" font-size="23" font-weight="700" fill="#6f4bb2" text-anchor="end">5</text>
+<rect x="850" y="320" width="286" height="52" rx="6" fill="#ffffff" stroke="#c9c9c2" />
+<text x="866" y="341" font-size="12" fill="#5f625d">CPU logiques</text>
+<text x="1014" y="353" font-size="23" font-weight="700" fill="#2f9d68" text-anchor="end">32</text>
+<rect x="850" y="388" width="286" height="52" rx="6" fill="#ffffff" stroke="#c9c9c2" />
+<text x="866" y="409" font-size="12" fill="#5f625d">Erreurs</text>
+<text x="1014" y="421" font-size="23" font-weight="700" fill="#d2842f" text-anchor="end">0</text>
+<text x="856" y="482" font-size="12" fill="#5f625d">Windows-11-10.0.26200-SP0</text>
+<rect x="54" y="532" width="1130" height="222" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="84" y="552" font-size="16" font-weight="700">Profils mesures</text>
+<text x="84" y="586" font-size="12" fill="#5f625d">voitures</text>
+<text x="204" y="586" font-size="12" fill="#5f625d">wall moyen</text>
+<text x="364" y="586" font-size="12" fill="#5f625d">facteur</text>
+<text x="504" y="586" font-size="12" fill="#5f625d">veh-frames/s</text>
+<text x="684" y="586" font-size="12" fill="#5f625d">replay bytes/s</text>
+<text x="884" y="586" font-size="12" fill="#5f625d">pic memoire</text>
+<rect x="74" y="593" width="1088" height="36" rx="4" fill="#fbfbf8" stroke="#ecece7" />
+<text x="84" y="620" font-size="13" font-weight="700">1</text>
+<text x="204" y="620" font-size="13">7.96 ms</text>
+<text x="364" y="620" font-size="13">6916.3x</text>
+<text x="504" y="620" font-size="13">27791</text>
+<text x="684" y="620" font-size="13">413</text>
+<text x="884" y="620" font-size="13">3368</text>
+<rect x="74" y="635" width="1088" height="36" rx="4" fill="#ffffff" stroke="#ecece7" />
+<text x="84" y="662" font-size="13" font-weight="700">12</text>
+<text x="204" y="662" font-size="13">56.95 ms</text>
+<text x="364" y="662" font-size="13">970.7x</text>
+<text x="504" y="662" font-size="13">46803</text>
+<text x="684" y="662" font-size="13">3730</text>
+<text x="884" y="662" font-size="13">15986</text>
+<rect x="74" y="677" width="1088" height="36" rx="4" fill="#fbfbf8" stroke="#ecece7" />
+<text x="84" y="704" font-size="13" font-weight="700">20</text>
+<text x="204" y="704" font-size="13">80.86 ms</text>
+<text x="364" y="704" font-size="13">681.4x</text>
+<text x="504" y="704" font-size="13">54763</text>
+<text x="684" y="704" font-size="13">6105</text>
+<text x="884" y="704" font-size="13">26180</text>
+<rect x="74" y="719" width="1088" height="36" rx="4" fill="#ffffff" stroke="#ecece7" />
+<text x="84" y="746" font-size="13" font-weight="700">40</text>
+<text x="204" y="746" font-size="13">180.00 ms</text>
+<text x="364" y="746" font-size="13">307.2x</text>
+<text x="504" y="746" font-size="13">49374</text>
+<text x="684" y="746" font-size="13">12077</text>
+<text x="884" y="746" font-size="13">55657</text>
+</g>
+</svg>
