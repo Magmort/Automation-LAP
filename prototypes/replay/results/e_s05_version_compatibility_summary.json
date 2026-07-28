@@ -1,0 +1,208 @@
+{
+  "scenario": "E-S05",
+  "success": true,
+  "generatedAtUtc": "2026-07-28T14:24:40Z",
+  "sourceReplayPath": "prototypes/replay/results/e_s01_minimal_replay.replay.json",
+  "casesPath": "prototypes/replay/fixtures/e_s05_compatibility_cases.json",
+  "casesDir": "prototypes/replay/results/e_s05_compatibility_cases",
+  "supportedSchemaVersions": [
+    "0.1.0"
+  ],
+  "cases": [
+    {
+      "caseId": "valid_current",
+      "label": "Current schema is accepted",
+      "expectedCanLoad": true,
+      "actualCanLoad": true,
+      "expectedErrorCode": "OK",
+      "actualErrorCode": "OK",
+      "message": "Replay accepted by compatibility reader.",
+      "details": [
+        {
+          "field": "schemaVersion",
+          "value": "0.1.0"
+        },
+        {
+          "field": "frameCount",
+          "value": 221
+        },
+        {
+          "field": "durationS",
+          "value": 55.0
+        }
+      ],
+      "canLoadMatches": true,
+      "errorCodeMatches": true,
+      "success": true,
+      "outputPath": "prototypes/replay/results/e_s05_compatibility_cases/e_s05_valid_current.replay.json",
+      "fileBytes": 148748
+    },
+    {
+      "caseId": "unsupported_patch",
+      "label": "Patch version is rejected until migration exists",
+      "expectedCanLoad": false,
+      "actualCanLoad": false,
+      "expectedErrorCode": "UNSUPPORTED_SCHEMA_VERSION",
+      "actualErrorCode": "UNSUPPORTED_SCHEMA_VERSION",
+      "message": "Unsupported schema version: 0.1.1",
+      "details": [],
+      "canLoadMatches": true,
+      "errorCodeMatches": true,
+      "success": true,
+      "outputPath": "prototypes/replay/results/e_s05_compatibility_cases/e_s05_unsupported_patch.replay.json",
+      "fileBytes": 148747
+    },
+    {
+      "caseId": "unsupported_future_major",
+      "label": "Future major version is rejected",
+      "expectedCanLoad": false,
+      "actualCanLoad": false,
+      "expectedErrorCode": "UNSUPPORTED_SCHEMA_VERSION",
+      "actualErrorCode": "UNSUPPORTED_SCHEMA_VERSION",
+      "message": "Unsupported schema version: 1.0.0",
+      "details": [],
+      "canLoadMatches": true,
+      "errorCodeMatches": true,
+      "success": true,
+      "outputPath": "prototypes/replay/results/e_s05_compatibility_cases/e_s05_unsupported_future_major.replay.json",
+      "fileBytes": 148747
+    },
+    {
+      "caseId": "missing_schema",
+      "label": "Missing schema version is rejected",
+      "expectedCanLoad": false,
+      "actualCanLoad": false,
+      "expectedErrorCode": "MISSING_FIELD",
+      "actualErrorCode": "MISSING_FIELD",
+      "message": "Replay is missing required top-level fields.",
+      "details": [
+        {
+          "field": "schemaVersion"
+        }
+      ],
+      "canLoadMatches": true,
+      "errorCodeMatches": true,
+      "success": true,
+      "outputPath": "prototypes/replay/results/e_s05_compatibility_cases/e_s05_missing_schema.replay.json",
+      "fileBytes": 148726
+    },
+    {
+      "caseId": "invalid_kind",
+      "label": "Wrong replay kind is rejected",
+      "expectedCanLoad": false,
+      "actualCanLoad": false,
+      "expectedErrorCode": "INVALID_KIND",
+      "actualErrorCode": "INVALID_KIND",
+      "message": "Unsupported replay kind: TrafficReplay",
+      "details": [],
+      "canLoadMatches": true,
+      "errorCodeMatches": true,
+      "success": true,
+      "outputPath": "prototypes/replay/results/e_s05_compatibility_cases/e_s05_invalid_kind.replay.json",
+      "fileBytes": 148741
+    },
+    {
+      "caseId": "missing_units",
+      "label": "Missing units are rejected",
+      "expectedCanLoad": false,
+      "actualCanLoad": false,
+      "expectedErrorCode": "MISSING_FIELD",
+      "actualErrorCode": "MISSING_FIELD",
+      "message": "Replay is missing required top-level fields.",
+      "details": [
+        {
+          "field": "units"
+        }
+      ],
+      "canLoadMatches": true,
+      "errorCodeMatches": true,
+      "success": true,
+      "outputPath": "prototypes/replay/results/e_s05_compatibility_cases/e_s05_missing_units.replay.json",
+      "fileBytes": 148686
+    },
+    {
+      "caseId": "missing_timeline",
+      "label": "Missing timeline is rejected",
+      "expectedCanLoad": false,
+      "actualCanLoad": false,
+      "expectedErrorCode": "MISSING_FIELD",
+      "actualErrorCode": "MISSING_FIELD",
+      "message": "Replay is missing required top-level fields.",
+      "details": [
+        {
+          "field": "timeline"
+        }
+      ],
+      "canLoadMatches": true,
+      "errorCodeMatches": true,
+      "success": true,
+      "outputPath": "prototypes/replay/results/e_s05_compatibility_cases/e_s05_missing_timeline.replay.json",
+      "fileBytes": 148630
+    },
+    {
+      "caseId": "frame_count_mismatch",
+      "label": "Frame count mismatch is rejected",
+      "expectedCanLoad": false,
+      "actualCanLoad": false,
+      "expectedErrorCode": "FRAME_COUNT_MISMATCH",
+      "actualErrorCode": "FRAME_COUNT_MISMATCH",
+      "message": "Timeline frameCount does not match frames length.",
+      "details": [
+        {
+          "timelineFrameCount": 222,
+          "actualFrameCount": 221
+        }
+      ],
+      "canLoadMatches": true,
+      "errorCodeMatches": true,
+      "success": true,
+      "outputPath": "prototypes/replay/results/e_s05_compatibility_cases/e_s05_frame_count_mismatch.replay.json",
+      "fileBytes": 148747
+    },
+    {
+      "caseId": "non_monotonic_frame_time",
+      "label": "Non-monotonic frame time is rejected",
+      "expectedCanLoad": false,
+      "actualCanLoad": false,
+      "expectedErrorCode": "NON_MONOTONIC_FRAME_TIME",
+      "actualErrorCode": "NON_MONOTONIC_FRAME_TIME",
+      "message": "Frame times must be strictly increasing.",
+      "details": [
+        {
+          "frameIndex": 2,
+          "previousTimeS": 0.25,
+          "timeS": 0.25
+        }
+      ],
+      "canLoadMatches": true,
+      "errorCodeMatches": true,
+      "success": true,
+      "outputPath": "prototypes/replay/results/e_s05_compatibility_cases/e_s05_non_monotonic_frame_time.replay.json",
+      "fileBytes": 148749
+    },
+    {
+      "caseId": "malformed_json",
+      "label": "Malformed JSON is rejected",
+      "expectedCanLoad": false,
+      "actualCanLoad": false,
+      "expectedErrorCode": "INVALID_JSON",
+      "actualErrorCode": "INVALID_JSON",
+      "message": "Invalid JSON: Expecting ',' delimiter",
+      "details": [],
+      "canLoadMatches": true,
+      "errorCodeMatches": true,
+      "success": true,
+      "outputPath": "prototypes/replay/results/e_s05_compatibility_cases/e_s05_malformed_json.replay.json",
+      "fileBytes": 53
+    }
+  ],
+  "metrics": {
+    "caseCount": 10,
+    "expectedAcceptCount": 1,
+    "expectedRejectCount": 9,
+    "actualAcceptCount": 1,
+    "actualRejectCount": 9,
+    "successfulCaseCount": 10,
+    "mismatchCount": 0
+  }
+}

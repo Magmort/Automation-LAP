@@ -1,0 +1,899 @@
+{
+  "scenario": "E-S02",
+  "success": true,
+  "generatedAtUtc": "2026-07-28T14:24:39Z",
+  "replayPath": "prototypes/replay/results/e_s01_minimal_replay.replay.json",
+  "scriptPath": "prototypes/replay/fixtures/e_s02_navigation_script.json",
+  "validationErrors": [],
+  "run": {
+    "durationS": 55.0,
+    "sampleStepS": 0.5,
+    "trace": [
+      {
+        "playbackTimeS": 0.0,
+        "replayTimeS": 0.0,
+        "requestedReplayTimeS": 0.0,
+        "commandLabel": "initial",
+        "commandType": "initial",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 71.243405,
+          "yM": -8.886835,
+          "progressM": 86.0,
+          "lateralOffsetM": 1.8,
+          "speedMps": 17.777778
+        },
+        "signals": {
+          "frontGapM": 32.55,
+          "rearGapM": 28.55,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 0.0,
+        "replayTimeS": 0.0,
+        "requestedReplayTimeS": 0.0,
+        "commandLabel": "start",
+        "commandType": "seek",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 71.243405,
+          "yM": -8.886835,
+          "progressM": 86.0,
+          "lateralOffsetM": 1.8,
+          "speedMps": 17.777778
+        },
+        "signals": {
+          "frontGapM": 32.55,
+          "rearGapM": 28.55,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 0.5,
+        "replayTimeS": 0.5,
+        "requestedReplayTimeS": 0.5,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 73.618121,
+          "yM": -0.440459,
+          "progressM": 94.757102,
+          "lateralOffsetM": 1.258067,
+          "speedMps": 17.302523
+        },
+        "signals": {
+          "frontGapM": 32.26512,
+          "rearGapM": 29.251547,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 1.0,
+        "replayTimeS": 1.0,
+        "requestedReplayTimeS": 1.0,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 72.48573,
+          "yM": 7.492601,
+          "progressM": 103.332946,
+          "lateralOffsetM": 0.879296,
+          "speedMps": 17.030548
+        },
+        "signals": {
+          "frontGapM": 32.161498,
+          "rearGapM": 29.771835,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 1.5,
+        "replayTimeS": 1.5,
+        "requestedReplayTimeS": 1.5,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 69.46561,
+          "yM": 14.925806,
+          "progressM": 111.805061,
+          "lateralOffsetM": 0.614563,
+          "speedMps": 16.874905
+        },
+        "signals": {
+          "frontGapM": 32.161605,
+          "rearGapM": 30.188395,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 2.0,
+        "replayTimeS": 2.0,
+        "requestedReplayTimeS": 2.0,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 64.849275,
+          "yM": 21.961296,
+          "progressM": 120.217815,
+          "lateralOffsetM": 0.429534,
+          "speedMps": 16.785836
+        },
+        "signals": {
+          "frontGapM": 32.221074,
+          "rearGapM": 30.545593,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 2.5,
+        "replayTimeS": 2.5,
+        "requestedReplayTimeS": 2.5,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 58.476633,
+          "yM": 27.175793,
+          "progressM": 128.596599,
+          "lateralOffsetM": 0.300213,
+          "speedMps": 16.734863
+        },
+        "signals": {
+          "frontGapM": 32.314513,
+          "rearGapM": 30.868821,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 3.0,
+        "replayTimeS": 3.0,
+        "requestedReplayTimeS": 3.0,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 51.825219,
+          "yM": 32.114345,
+          "progressM": 136.955942,
+          "lateralOffsetM": 0.209827,
+          "speedMps": 16.705694
+        },
+        "signals": {
+          "frontGapM": 32.427392,
+          "rearGapM": 31.172608,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 3.5,
+        "replayTimeS": 3.5,
+        "requestedReplayTimeS": 3.5,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 44.28059,
+          "yM": 35.688603,
+          "progressM": 145.30416,
+          "lateralOffsetM": 0.146653,
+          "speedMps": 16.689001
+        },
+        "signals": {
+          "frontGapM": 32.551396,
+          "rearGapM": 31.465271,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 4.0,
+        "replayTimeS": 4.0,
+        "requestedReplayTimeS": 4.0,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 36.701524,
+          "yM": 39.092896,
+          "progressM": 153.646011,
+          "lateralOffsetM": 0.1025,
+          "speedMps": 16.679448
+        },
+        "signals": {
+          "frontGapM": 32.681767,
+          "rearGapM": 31.751566,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 4.5,
+        "replayTimeS": 4.5,
+        "requestedReplayTimeS": 4.5,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 28.617096,
+          "yM": 41.134636,
+          "progressM": 161.984219,
+          "lateralOffsetM": 0.07164,
+          "speedMps": 16.673981
+        },
+        "signals": {
+          "frontGapM": 32.815781,
+          "rearGapM": 32.034219,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 5.0,
+        "replayTimeS": 5.0,
+        "requestedReplayTimeS": 5.0,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 20.532451,
+          "yM": 43.166856,
+          "progressM": 170.320342,
+          "lateralOffsetM": 0.050071,
+          "speedMps": 16.670852
+        },
+        "signals": {
+          "frontGapM": 32.95188,
+          "rearGapM": 32.314786,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 5.5,
+        "replayTimeS": 5.5,
+        "requestedReplayTimeS": 5.5,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 12.26304,
+          "yM": 44.016726,
+          "progressM": 178.655272,
+          "lateralOffsetM": 0.034996,
+          "speedMps": 16.669062
+        },
+        "signals": {
+          "frontGapM": 33.089173,
+          "rearGapM": 32.59416,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 6.0,
+        "replayTimeS": 6.0,
+        "requestedReplayTimeS": 6.0,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": 3.954407,
+          "yM": 44.669714,
+          "progressM": 186.989518,
+          "lateralOffsetM": 0.02446,
+          "speedMps": 16.668037
+        },
+        "signals": {
+          "frontGapM": 33.227148,
+          "rearGapM": 32.872852,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 6.5,
+        "replayTimeS": 6.5,
+        "requestedReplayTimeS": 6.5,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": -4.351446,
+          "yM": 44.646402,
+          "progressM": 195.323375,
+          "lateralOffsetM": 0.017095,
+          "speedMps": 16.667451
+        },
+        "signals": {
+          "frontGapM": 33.365514,
+          "rearGapM": 33.151152,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 7.0,
+        "replayTimeS": 7.0,
+        "requestedReplayTimeS": 7.0,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": -12.660676,
+          "yM": 44.009098,
+          "progressM": 203.657007,
+          "lateralOffsetM": 0.011948,
+          "speedMps": 16.667116
+        },
+        "signals": {
+          "frontGapM": 33.504104,
+          "rearGapM": 33.429229,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 7.5,
+        "replayTimeS": 7.5,
+        "requestedReplayTimeS": 7.5,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": -20.926445,
+          "yM": 43.111892,
+          "progressM": 211.990512,
+          "lateralOffsetM": 0.008351,
+          "speedMps": 16.666924
+        },
+        "signals": {
+          "frontGapM": 33.642822,
+          "rearGapM": 33.707178,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 8.0,
+        "replayTimeS": 8.0,
+        "requestedReplayTimeS": 8.0,
+        "commandLabel": "forward_x1",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": -29.014289,
+          "yM": 41.103693,
+          "progressM": 220.323943,
+          "lateralOffsetM": 0.005837,
+          "speedMps": 16.666814
+        },
+        "signals": {
+          "frontGapM": 33.781613,
+          "rearGapM": 33.985054,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 9.0,
+        "replayTimeS": 8.0,
+        "requestedReplayTimeS": 8.0,
+        "commandLabel": "inspect",
+        "commandType": "pause",
+        "seekMode": "exact",
+        "clamped": false,
+        "ego": {
+          "xM": -29.014289,
+          "yM": 41.103693,
+          "progressM": 220.323943,
+          "lateralOffsetM": 0.005837,
+          "speedMps": 16.666814
+        },
+        "signals": {
+          "frontGapM": 33.781613,
+          "rearGapM": 33.985054,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 9.0,
+        "replayTimeS": 27.37,
+        "requestedReplayTimeS": 27.37,
+        "commandLabel": "mid_arbitrary",
+        "commandType": "seek",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": 29.354508919999983,
+          "yM": 41.025121840000004,
+          "progressM": 543.15740716,
+          "lateralOffsetM": 0.0,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 39.16203712,
+          "rearGapM": 44.746296720000004,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 9.5,
+        "replayTimeS": 26.37,
+        "requestedReplayTimeS": 26.37,
+        "commandLabel": "backward_x2",
+        "commandType": "play",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": 45.00321343999999,
+          "yM": 35.51463656000001,
+          "progressM": 526.49074068,
+          "lateralOffsetM": 0.0,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 38.88425912,
+          "rearGapM": 44.19074072,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 10.0,
+        "replayTimeS": 25.37,
+        "requestedReplayTimeS": 25.37,
+        "commandLabel": "backward_x2",
+        "commandType": "play",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": 59.204152919999984,
+          "yM": 26.991781360000008,
+          "progressM": 509.82407416,
+          "lateralOffsetM": 0.0,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 38.6064816,
+          "rearGapM": 43.635185240000006,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 10.5,
+        "replayTimeS": 24.37,
+        "requestedReplayTimeS": 24.37,
+        "commandLabel": "backward_x2",
+        "commandType": "play",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": 70.29097595999998,
+          "yM": 14.810448720000014,
+          "progressM": 493.15740716,
+          "lateralOffsetM": 0.0,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 38.3287036,
+          "rearGapM": 43.07962972,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 11.0,
+        "replayTimeS": 23.37,
+        "requestedReplayTimeS": 23.37,
+        "commandLabel": "backward_x2",
+        "commandType": "play",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": 74.55417292,
+          "yM": -0.8830319199999839,
+          "progressM": 476.49074068,
+          "lateralOffsetM": 0.0,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 38.05092612,
+          "rearGapM": 42.524073720000004,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 11.5,
+        "replayTimeS": 22.37,
+        "requestedReplayTimeS": 22.37,
+        "commandLabel": "backward_x2",
+        "commandType": "play",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": 69.26689704,
+          "yM": -16.298775759999987,
+          "progressM": 459.82407416,
+          "lateralOffsetM": 0.0,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 37.77314812,
+          "rearGapM": 41.96851872,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 12.0,
+        "replayTimeS": 21.37,
+        "requestedReplayTimeS": 21.37,
+        "commandLabel": "backward_x2",
+        "commandType": "play",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": 57.77617708000001,
+          "yM": -28.09846163999999,
+          "progressM": 443.15740716,
+          "lateralOffsetM": 0.0,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 37.495370120000004,
+          "rearGapM": 41.41296272,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 12.5,
+        "replayTimeS": 20.37,
+        "requestedReplayTimeS": 20.37,
+        "commandLabel": "backward_x2",
+        "commandType": "play",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": 43.36474208000001,
+          "yM": -36.27573191999999,
+          "progressM": 426.49074068,
+          "lateralOffsetM": 1e-06,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 37.217592599999996,
+          "rearGapM": 40.85740772,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 13.0,
+        "replayTimeS": 19.37,
+        "requestedReplayTimeS": 19.37,
+        "commandLabel": "backward_x2",
+        "commandType": "play",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": 27.601267080000017,
+          "yM": -41.461009159999996,
+          "progressM": 409.82407416,
+          "lateralOffsetM": 2e-06,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 36.9398146,
+          "rearGapM": 40.30185172,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 13.5,
+        "replayTimeS": 18.37,
+        "requestedReplayTimeS": 18.37,
+        "commandLabel": "backward_x2",
+        "commandType": "play",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": 11.208714160000016,
+          "yM": -44.13334312,
+          "progressM": 393.15740716,
+          "lateralOffsetM": 3.519999999999996e-06,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 36.66203712,
+          "rearGapM": 39.746296720000004,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 14.0,
+        "replayTimeS": 17.37,
+        "requestedReplayTimeS": 17.37,
+        "commandLabel": "backward_x2",
+        "commandType": "play",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": -5.4083548399999835,
+          "yM": -44.58182136,
+          "progressM": 376.49074068,
+          "lateralOffsetM": 7.039999999999992e-06,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 36.38425912,
+          "rearGapM": 39.19074072,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 14.5,
+        "replayTimeS": 16.37,
+        "requestedReplayTimeS": 16.37,
+        "commandLabel": "backward_x2",
+        "commandType": "play",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": -21.955462919999984,
+          "yM": -42.864648800000005,
+          "progressM": 359.82407416,
+          "lateralOffsetM": 1.4559999999999988e-05,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 36.1064816,
+          "rearGapM": 38.635185240000006,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 15.0,
+        "replayTimeS": 15.370000000000001,
+        "requestedReplayTimeS": 15.370000000000001,
+        "commandLabel": "backward_x2",
+        "commandType": "play",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": -38.04223515999998,
+          "yM": -38.59545216,
+          "progressM": 343.15740716,
+          "lateralOffsetM": 2.9599999999999977e-05,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 35.8287036,
+          "rearGapM": 38.07962972,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 15.0,
+        "replayTimeS": 54.62,
+        "requestedReplayTimeS": 54.62,
+        "commandLabel": "near_end_arbitrary",
+        "commandType": "seek",
+        "seekMode": "interpolated",
+        "clamped": false,
+        "ego": {
+          "xM": -41.51503907999996,
+          "yM": 37.13494944000002,
+          "progressM": 997.3240741599999,
+          "lateralOffsetM": 0.0,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 46.7314816,
+          "rearGapM": 59.88518524,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 15.5,
+        "replayTimeS": 55.0,
+        "requestedReplayTimeS": 55.12,
+        "commandLabel": "forward_clamp_end",
+        "commandType": "play",
+        "seekMode": "exact",
+        "clamped": true,
+        "ego": {
+          "xM": -47.258923,
+          "yM": 34.466823,
+          "progressM": 1003.657407,
+          "lateralOffsetM": 0.0,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 46.837037,
+          "rearGapM": 60.096296,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 15.5,
+        "replayTimeS": 0.0,
+        "requestedReplayTimeS": -3.0,
+        "commandLabel": "clamp_before_start",
+        "commandType": "seek",
+        "seekMode": "exact",
+        "clamped": true,
+        "ego": {
+          "xM": 71.243405,
+          "yM": -8.886835,
+          "progressM": 86.0,
+          "lateralOffsetM": 1.8,
+          "speedMps": 17.777778
+        },
+        "signals": {
+          "frontGapM": 32.55,
+          "rearGapM": 28.55,
+          "gapSafe": true,
+          "contact": false
+        }
+      },
+      {
+        "playbackTimeS": 15.5,
+        "replayTimeS": 55.0,
+        "requestedReplayTimeS": 80.0,
+        "commandLabel": "clamp_after_end",
+        "commandType": "seek",
+        "seekMode": "exact",
+        "clamped": true,
+        "ego": {
+          "xM": -47.258923,
+          "yM": 34.466823,
+          "progressM": 1003.657407,
+          "lateralOffsetM": 0.0,
+          "speedMps": 16.666667
+        },
+        "signals": {
+          "frontGapM": 46.837037,
+          "rearGapM": 60.096296,
+          "gapSafe": true,
+          "contact": false
+        }
+      }
+    ],
+    "commandResults": [
+      {
+        "index": 0,
+        "label": "start",
+        "type": "seek",
+        "startReplayTimeS": 0.0,
+        "endReplayTimeS": 0.0,
+        "sampleCount": 1
+      },
+      {
+        "index": 1,
+        "label": "forward_x1",
+        "type": "play",
+        "startReplayTimeS": 0.0,
+        "endReplayTimeS": 8.0,
+        "sampleCount": 16
+      },
+      {
+        "index": 2,
+        "label": "inspect",
+        "type": "pause",
+        "startReplayTimeS": 8.0,
+        "endReplayTimeS": 8.0,
+        "sampleCount": 1
+      },
+      {
+        "index": 3,
+        "label": "mid_arbitrary",
+        "type": "seek",
+        "startReplayTimeS": 8.0,
+        "endReplayTimeS": 27.37,
+        "sampleCount": 1
+      },
+      {
+        "index": 4,
+        "label": "backward_x2",
+        "type": "play",
+        "startReplayTimeS": 27.37,
+        "endReplayTimeS": 15.370000000000001,
+        "sampleCount": 12
+      },
+      {
+        "index": 5,
+        "label": "near_end_arbitrary",
+        "type": "seek",
+        "startReplayTimeS": 15.370000000000001,
+        "endReplayTimeS": 54.62,
+        "sampleCount": 1
+      },
+      {
+        "index": 6,
+        "label": "forward_clamp_end",
+        "type": "play",
+        "startReplayTimeS": 54.62,
+        "endReplayTimeS": 55.0,
+        "sampleCount": 1
+      },
+      {
+        "index": 7,
+        "label": "clamp_before_start",
+        "type": "seek",
+        "startReplayTimeS": 55.0,
+        "endReplayTimeS": 0.0,
+        "sampleCount": 1
+      },
+      {
+        "index": 8,
+        "label": "clamp_after_end",
+        "type": "seek",
+        "startReplayTimeS": 0.0,
+        "endReplayTimeS": 55.0,
+        "sampleCount": 1
+      }
+    ],
+    "monotonicFailures": 0
+  },
+  "metrics": {
+    "commandCount": 9,
+    "traceSampleCount": 36,
+    "forwardCommandCount": 2,
+    "backwardCommandCount": 1,
+    "seekCommandCount": 5,
+    "pauseCommandCount": 1,
+    "exactSeekSamples": 22,
+    "interpolatedSeekSamples": 14,
+    "clampedSamples": 3,
+    "monotonicFailures": 0,
+    "validationErrorCount": 0,
+    "minReplayTimeS": 0.0,
+    "maxReplayTimeS": 55.0,
+    "durationS": 55.0,
+    "replayTimeRangeInsideBounds": true,
+    "finiteStateSamples": true
+  }
+}

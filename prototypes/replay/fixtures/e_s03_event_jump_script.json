@@ -1,0 +1,19 @@
+{
+  "kind": "ReplayEventJumpScript",
+  "schemaVersion": "0.1.0",
+  "scriptId": "e-s03-event-jump",
+  "name": "E-S03 Event Jump",
+  "sourceReplay": "prototypes/replay/results/e_s01_minimal_replay.replay.json",
+  "preRollS": 0.75,
+  "postRollS": 1.0,
+  "requiredEvents": [
+    "gap_safe_start",
+    "rejoin_started",
+    "rejoin_completed"
+  ],
+  "expectedChronology": [
+    "gap_safe_start",
+    "rejoin_started",
+    "rejoin_completed"
+  ]
+}

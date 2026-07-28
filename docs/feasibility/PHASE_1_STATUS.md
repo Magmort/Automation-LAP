@@ -37,8 +37,8 @@ L’import UR2D2 est séparé du tour autonome : C définit le contrat interne �
 | B — Dynamique d’une voiture | #4 | Validée avec réserves | Données A9 des trois voitures | Modèle dynamique candidat disponible pour C |
 | C — Tour autonome et circuit minimal | #5 | Validée avec réserves | Modèle dynamique candidat de B | `TrackDefinition` v0.1 consolidé |
 | D — Trafic et dépassement | #6 | Validée avec réserves | B et C, replay E utile mais non bloquant | Synthèse D-S06 disponible |
-| E — Replay minimal | #7 | Prête | États dynamiques de B et contrat C | Fichier autonome navigable |
-| F — Charge et accélération | #8 | Bloquée | Boucle représentative B à E | Profils 1, 12, 20 et 40 voitures |
+| E — Replay minimal | #7 | Validée avec réserves | États dynamiques de B, contrat C, résultats D | Synthèse E-S06 disponible |
+| F — Charge et accélération | #8 | Prête | Boucle représentative B à E | Profils 1, 12, 20 et 40 voitures |
 | G — Import UR2D2 | #10 | Prête | Contrat `TrackDefinition` v0.1 issu de C | Circuit UR2D2 converti et validé |
 
 ## Portée de l’expérience G
@@ -69,7 +69,7 @@ G est :
 - [ ] un modèle dynamique candidat est retenu ou rejeté avec justification ;
 - [ ] le modèle minimal de circuit et ses invariants sont définis ;
 - [ ] l’architecture IA est confirmée ou ajustée ;
-- [ ] le principe de replay hybride est mesuré ;
+- [x] le principe de replay hybride est mesuré ;
 - [ ] la cible de douze à vingt voitures est évaluée sur une machine de référence ;
 - [ ] la capacité d’UR2D2 à alimenter le modèle de circuit est évaluée ;
 - [ ] une décision explicite est prise sur l’adoption d’UR2D2 ;

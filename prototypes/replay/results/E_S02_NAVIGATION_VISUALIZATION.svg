@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="820" viewBox="0 0 1240 820" role="img" aria-labelledby="title desc">
+<title id="title">E-S02 replay navigation</title>
+<desc id="desc">Forward and backward replay navigation validation.</desc>
+<rect width="100%" height="100%" fill="#f7f7f3" />
+<g font-family="Arial, sans-serif" fill="#222">
+<text x="54" y="70" font-size="26" font-weight="700">E-S02 - Navigation temporelle</text>
+<text x="54" y="102" font-size="15" fill="#5f625d">36 samples, 9 commandes, 3 clamps aux bornes</text>
+<line x1="70" y1="180" x2="1150" y2="180" stroke="#c9c9c2" stroke-width="8" stroke-linecap="round" />
+<text x="70" y="146" font-size="16" font-weight="700">Script de navigation</text>
+<line x1="70.00" y1="180" x2="72.00" y2="180" stroke="#6f4bb2" stroke-width="12" stroke-linecap="round" />
+<text x="70.00" y="210" font-size="11">start</text>
+<line x1="104.84" y1="180" x2="627.42" y2="180" stroke="#2f7ed8" stroke-width="12" stroke-linecap="round" />
+<text x="104.84" y="210" font-size="11">forward_x1</text>
+<line x1="697.10" y1="180" x2="699.10" y2="180" stroke="#777777" stroke-width="12" stroke-linecap="round" />
+<text x="697.10" y="210" font-size="11">inspect</text>
+<line x1="697.10" y1="180" x2="699.10" y2="180" stroke="#6f4bb2" stroke-width="12" stroke-linecap="round" />
+<text x="697.10" y="210" font-size="11">mid_arbitrary</text>
+<line x1="731.94" y1="180" x2="1115.16" y2="180" stroke="#d84a3a" stroke-width="12" stroke-linecap="round" />
+<text x="731.94" y="210" font-size="11">backward_x2</text>
+<line x1="1115.16" y1="180" x2="1117.16" y2="180" stroke="#6f4bb2" stroke-width="12" stroke-linecap="round" />
+<text x="1115.16" y="210" font-size="11">near_end_arbitrary</text>
+<line x1="1150.00" y1="180" x2="1152.00" y2="180" stroke="#2f7ed8" stroke-width="12" stroke-linecap="round" />
+<text x="1150.00" y="210" font-size="11">forward_clamp_end</text>
+<line x1="1150.00" y1="180" x2="1152.00" y2="180" stroke="#6f4bb2" stroke-width="12" stroke-linecap="round" />
+<text x="1150.00" y="210" font-size="11">clamp_before_start</text>
+<line x1="1150.00" y1="180" x2="1152.00" y2="180" stroke="#6f4bb2" stroke-width="12" stroke-linecap="round" />
+<text x="1150.00" y="210" font-size="11">clamp_after_end</text>
+<rect x="54" y="250" width="1130" height="430" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<rect x="84" y="310" width="1030" height="130" fill="#fff" stroke="#c9c9c2" />
+<text x="84" y="300" font-size="14" font-weight="700">Temps replay lu pendant le script</text>
+<polyline points="84.00,440.00 84.00,440.00 117.23,438.82 150.45,437.64 183.68,436.45 216.90,435.27 250.13,434.09 283.35,432.91 316.58,431.73 349.81,430.55 383.03,429.36 416.26,428.18 449.48,427.00 482.71,425.82 515.94,424.64 549.16,423.45 582.39,422.27 615.61,421.09 682.06,421.09 682.06,375.31 715.29,377.67 748.52,380.03 781.74,382.40 814.97,384.76 848.19,387.13 881.42,389.49 914.65,391.85 947.87,394.22 981.10,396.58 1014.32,398.94 1047.55,401.31 1080.77,403.67 1080.77,310.90 1114.00,310.00 1114.00,440.00 1114.00,310.00" fill="none" stroke="#2f7ed8" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="84" y="510" width="1030" height="110" fill="#fff" stroke="#c9c9c2" />
+<text x="84" y="500" font-size="14" font-weight="700">Progression ego lue dans le replay</text>
+<polyline points="84.00,620.00 84.00,620.00 117.23,618.95 150.45,617.92 183.68,616.91 216.90,615.90 250.13,614.89 283.35,613.89 316.58,612.89 349.81,611.89 383.03,610.89 416.26,609.89 449.48,608.89 482.71,607.89 515.94,606.90 549.16,605.90 582.39,604.90 615.61,603.90 682.06,603.90 682.06,565.20 715.29,567.20 748.52,569.20 781.74,571.19 814.97,573.19 848.19,575.19 881.42,577.19 914.65,579.19 947.87,581.18 981.10,583.18 1014.32,585.18 1047.55,587.18 1080.77,589.17 1080.77,510.76 1114.00,510.00 1114.00,620.00 1114.00,510.00" fill="none" stroke="#d84a3a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="54" y="706" width="1130" height="72" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="78" y="736" font-size="14" font-weight="700">Validation : 2 lecture(s) avant, 1 lecture(s) arriere, 5 seek(s), 0 echec(s) de monotonicite</text>
+<text x="78" y="762" font-size="13" fill="#5f625d">La navigation est testee hors UI : les sauts vers evenements seront couverts par E-S03.</text>
+</g>
+</svg>

@@ -26,7 +26,7 @@ Ce document est le livrable final de la Phase 1. Il doit rester synthétique : l
 | B — Dynamique d’une voiture | Un modèle 2D commun produit-il des différences plausibles ? | Validée avec réserves | Moyen | Direction encore calibrable, unités latérales inconnues |
 | C — Tour autonome et circuit minimal | Le contrôleur peut-il rouler sans script par virage avec un contrat de circuit minimal ? | Validée avec réserves | Moyen à bon | Contrat validé sur piste canonique, import réel et surfaces détaillées non prouvés |
 | D — Trafic et dépassement | Les interactions peuvent-elles être crédibles et réglables ? | Validée avec réserves | Moyen | Interactions longues, denses ou contestées non prouvées |
-| E — Replay minimal | Le replay hybride est-il autonome et navigable ? | En attente | — | Taille des fichiers et compatibilité de version |
+| E — Replay minimal | Le replay hybride est-il autonome et navigable ? | Validée avec réserves | Moyen à bon | Format JSON non optimisé, coût à l'échelle à mesurer dans F |
 | F — Charge et accélération | La cible de voitures et l’exécution accélérée sont-elles viables ? | En attente | — | Coût combiné physique, perception, IA et enregistrement |
 | G — Import UR2D2 | Les fichiers UR2D2 peuvent-ils reconstruire le modèle minimal validé en C ? | En attente | — | Format opaque, échelle ambiguë ou informations insuffisantes |
 
@@ -46,8 +46,8 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 | Contrôle IA | Profils pilote | prudent, équilibré, agressif | Expérience C-S05 | Candidat avec réserves |
 | Contrôle IA | Saturation du grip | yaw demandé plafonné par limite latérale véhicule | Expérience C-S05 | Garde-fou candidat |
 | Perception | Fréquence de mise à jour | À mesurer | Expérience D | En attente |
-| Replay | Fréquence des images-clés | À mesurer | Expérience E | En attente |
-| Replay | Fréquence de télémétrie | À mesurer | Expérience E | En attente |
+| Replay | Fréquence des images-clés | 1 s | Expérience E-S04 | Candidat avec réserves |
+| Replay | Fréquence de télémétrie | 4 Hz référence, plage 1 à 20 Hz mesurée | Expérience E-S04 | Candidat avec réserves |
 | Performance | Nombre cible de voitures | 12 à 20 | Plan général | À confirmer |
 
 ## 4. Résultats par expérience
@@ -100,10 +100,15 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 ### E — Replay minimal
 
 - **Ticket :** #7
-- **Conclusion :** en attente
-- **Format testé :** à compléter
-- **Taille et débit :** à compléter
-- **Compatibilité :** à compléter
+- **Conclusion :** validée avec réserves
+- **Protocole :** `docs/feasibility/experiments/E-REPLAY-MINIMAL.md`
+- **Format testé :** E-S01 `AutomationLapReplay` JSON v0.1 autonome, avec piste embarquée, véhicules, frames, événements et index
+- **Taille et débit :** E-S01 D-S05 replay : `148756` octets pour `55 s`, `221` frames, `3` véhicules, `3` événements
+- **Navigation E-S02 :** `9` commandes, `36` samples, `2` lectures avant, `1` lecture arrière, `5` seeks, `3` clamps aux bornes, `0` échec de monotonicité
+- **Événements E-S03 :** `3` événements requis trouvés / `3`, `3` jumps, `2` jumps interpolés, `3` contextes pré/post-roll valides, `0` erreur d'index
+- **Échantillonnage E-S04 :** `5` profils de `1` à `20 Hz`, `56` à `1101` frames, `41831` à `719882` octets, `760.6` à `13088.8` octets/s, `0` erreur de validation
+- **Compatibilité E-S05 :** `10` cas testés, `1` replay courant accepté, `9` cas incompatibles refusés, `0` mismatch ; seule la version `0.1.0` est supportée par le prototype
+- **Synthèse E-S06 :** `5` scénarios validés / `5`, décision `validée avec réserves`, confiance `moyen à bon`, contrat candidat pour F et ADR-0002
 
 ### F — Charge et accélération
 
@@ -133,7 +138,7 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 | Modèle physique trop coûteux | À évaluer | Élevé | Expériences B et F | Simplification guidée par mesure |
 | Modèle de circuit inadapté au contrôle | À évaluer | Élevé | Expérience C | Définition pilotée par les usages et invariants testés |
 | IA peu crédible en trafic | À évaluer | Élevé | Expériences C et D | Architecture en couches et scénarios statistiques |
-| Replay trop volumineux | À évaluer | Moyen | Expérience E | Fréquences et compression adaptées |
+| Replay trop volumineux | Moyenne | Moyen | Expérience E-S04 | Fréquences, compression et coût à l'échelle mesurés dans F |
 | Import UR2D2 incomplet ou fragile | À évaluer | Moyen à élevé | Expérience G | Adaptateur versionné et solution de repli indépendante |
 | Dépendance excessive à Unity | Faible par conception | Élevé | ADR-0001 | Tests sans rendu et frontières de dépendance |
 
@@ -152,7 +157,7 @@ Conclusions autorisées : `validée`, `validée avec réserves`, `à modifier`, 
 ### ADR
 
 - ADR-0001 : à confirmer après B et F.
-- ADR-0002 : à confirmer après E.
+- ADR-0002 : candidat confirmé par E, à figer après mesure de charge F.
 - ADR-0003 : à confirmer après A.
 - ADR relatif au format de circuit et aux importeurs externes : à envisager après C et G.
 

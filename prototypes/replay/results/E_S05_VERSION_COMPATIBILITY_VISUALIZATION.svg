@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="820" viewBox="0 0 1240 820" role="img" aria-labelledby="title desc">
+<title id="title">E-S05 replay version compatibility</title>
+<desc id="desc">Replay compatibility reader accepts current schema and rejects incompatible cases.</desc>
+<rect width="100%" height="100%" fill="#f7f7f3" />
+<g font-family="Arial, sans-serif" fill="#222">
+<text x="54" y="70" font-size="26" font-weight="700">E-S05 - Compatibilite replay</text>
+<text x="54" y="102" font-size="15" fill="#5f625d">Versions supportees: 0.1.0; attentes respectees: 10/10</text>
+<rect x="74" y="132" width="242" height="82" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="92" y="164" font-size="13" fill="#5f625d">Cas testes</text>
+<text x="92" y="196" font-size="28" font-weight="700" fill="#2f7ed8">10</text>
+<rect x="348" y="132" width="242" height="82" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="366" y="164" font-size="13" fill="#5f625d">Acceptes</text>
+<text x="366" y="196" font-size="28" font-weight="700" fill="#2f9d68">1</text>
+<rect x="622" y="132" width="242" height="82" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="640" y="164" font-size="13" fill="#5f625d">Refuses</text>
+<text x="640" y="196" font-size="28" font-weight="700" fill="#d84a3a">9</text>
+<rect x="896" y="132" width="242" height="82" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="914" y="164" font-size="13" fill="#5f625d">Mismatches</text>
+<text x="914" y="196" font-size="28" font-weight="700" fill="#d2842f">0</text>
+<rect x="54" y="232" width="1130" height="508" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="84" y="252" font-size="16" font-weight="700">Matrice de compatibilite</text>
+<text x="84" y="286" font-size="12" fill="#5f625d">cas</text>
+<text x="386" y="286" font-size="12" fill="#5f625d">attendu</text>
+<text x="516" y="286" font-size="12" fill="#5f625d">obtenu</text>
+<text x="646" y="286" font-size="12" fill="#5f625d">code obtenu</text>
+<text x="934" y="286" font-size="12" fill="#5f625d">validation</text>
+<rect x="74" y="293" width="1088" height="36" rx="4" fill="#fbfbf8" stroke="#ecece7" />
+<text x="84" y="320" font-size="13" font-weight="700">valid_current</text>
+<rect x="386" y="303" width="60" height="24" rx="5" fill="#2f7ed8" opacity="0.12" stroke="#2f7ed8" /><text x="395" y="320" font-size="12" fill="#2f7ed8" font-weight="700">ACCEPT</text>
+<rect x="516" y="303" width="60" height="24" rx="5" fill="#2f9d68" opacity="0.12" stroke="#2f9d68" /><text x="525" y="320" font-size="12" fill="#2f9d68" font-weight="700">ACCEPT</text>
+<text x="646" y="320" font-size="13">OK</text>
+<rect x="934" y="303" width="32" height="24" rx="5" fill="#2f9d68" opacity="0.12" stroke="#2f9d68" /><text x="943" y="320" font-size="12" fill="#2f9d68" font-weight="700">OK</text>
+<rect x="74" y="335" width="1088" height="36" rx="4" fill="#ffffff" stroke="#ecece7" />
+<text x="84" y="362" font-size="13" font-weight="700">unsupported_patch</text>
+<rect x="386" y="345" width="60" height="24" rx="5" fill="#2f7ed8" opacity="0.12" stroke="#2f7ed8" /><text x="395" y="362" font-size="12" fill="#2f7ed8" font-weight="700">REJECT</text>
+<rect x="516" y="345" width="60" height="24" rx="5" fill="#d84a3a" opacity="0.12" stroke="#d84a3a" /><text x="525" y="362" font-size="12" fill="#d84a3a" font-weight="700">REJECT</text>
+<text x="646" y="362" font-size="13">UNSUPPORTED_SCHEMA_VERSION</text>
+<rect x="934" y="345" width="32" height="24" rx="5" fill="#2f9d68" opacity="0.12" stroke="#2f9d68" /><text x="943" y="362" font-size="12" fill="#2f9d68" font-weight="700">OK</text>
+<rect x="74" y="377" width="1088" height="36" rx="4" fill="#fbfbf8" stroke="#ecece7" />
+<text x="84" y="404" font-size="13" font-weight="700">unsupported_future_major</text>
+<rect x="386" y="387" width="60" height="24" rx="5" fill="#2f7ed8" opacity="0.12" stroke="#2f7ed8" /><text x="395" y="404" font-size="12" fill="#2f7ed8" font-weight="700">REJECT</text>
+<rect x="516" y="387" width="60" height="24" rx="5" fill="#d84a3a" opacity="0.12" stroke="#d84a3a" /><text x="525" y="404" font-size="12" fill="#d84a3a" font-weight="700">REJECT</text>
+<text x="646" y="404" font-size="13">UNSUPPORTED_SCHEMA_VERSION</text>
+<rect x="934" y="387" width="32" height="24" rx="5" fill="#2f9d68" opacity="0.12" stroke="#2f9d68" /><text x="943" y="404" font-size="12" fill="#2f9d68" font-weight="700">OK</text>
+<rect x="74" y="419" width="1088" height="36" rx="4" fill="#ffffff" stroke="#ecece7" />
+<text x="84" y="446" font-size="13" font-weight="700">missing_schema</text>
+<rect x="386" y="429" width="60" height="24" rx="5" fill="#2f7ed8" opacity="0.12" stroke="#2f7ed8" /><text x="395" y="446" font-size="12" fill="#2f7ed8" font-weight="700">REJECT</text>
+<rect x="516" y="429" width="60" height="24" rx="5" fill="#d84a3a" opacity="0.12" stroke="#d84a3a" /><text x="525" y="446" font-size="12" fill="#d84a3a" font-weight="700">REJECT</text>
+<text x="646" y="446" font-size="13">MISSING_FIELD</text>
+<rect x="934" y="429" width="32" height="24" rx="5" fill="#2f9d68" opacity="0.12" stroke="#2f9d68" /><text x="943" y="446" font-size="12" fill="#2f9d68" font-weight="700">OK</text>
+<rect x="74" y="461" width="1088" height="36" rx="4" fill="#fbfbf8" stroke="#ecece7" />
+<text x="84" y="488" font-size="13" font-weight="700">invalid_kind</text>
+<rect x="386" y="471" width="60" height="24" rx="5" fill="#2f7ed8" opacity="0.12" stroke="#2f7ed8" /><text x="395" y="488" font-size="12" fill="#2f7ed8" font-weight="700">REJECT</text>
+<rect x="516" y="471" width="60" height="24" rx="5" fill="#d84a3a" opacity="0.12" stroke="#d84a3a" /><text x="525" y="488" font-size="12" fill="#d84a3a" font-weight="700">REJECT</text>
+<text x="646" y="488" font-size="13">INVALID_KIND</text>
+<rect x="934" y="471" width="32" height="24" rx="5" fill="#2f9d68" opacity="0.12" stroke="#2f9d68" /><text x="943" y="488" font-size="12" fill="#2f9d68" font-weight="700">OK</text>
+<rect x="74" y="503" width="1088" height="36" rx="4" fill="#ffffff" stroke="#ecece7" />
+<text x="84" y="530" font-size="13" font-weight="700">missing_units</text>
+<rect x="386" y="513" width="60" height="24" rx="5" fill="#2f7ed8" opacity="0.12" stroke="#2f7ed8" /><text x="395" y="530" font-size="12" fill="#2f7ed8" font-weight="700">REJECT</text>
+<rect x="516" y="513" width="60" height="24" rx="5" fill="#d84a3a" opacity="0.12" stroke="#d84a3a" /><text x="525" y="530" font-size="12" fill="#d84a3a" font-weight="700">REJECT</text>
+<text x="646" y="530" font-size="13">MISSING_FIELD</text>
+<rect x="934" y="513" width="32" height="24" rx="5" fill="#2f9d68" opacity="0.12" stroke="#2f9d68" /><text x="943" y="530" font-size="12" fill="#2f9d68" font-weight="700">OK</text>
+<rect x="74" y="545" width="1088" height="36" rx="4" fill="#fbfbf8" stroke="#ecece7" />
+<text x="84" y="572" font-size="13" font-weight="700">missing_timeline</text>
+<rect x="386" y="555" width="60" height="24" rx="5" fill="#2f7ed8" opacity="0.12" stroke="#2f7ed8" /><text x="395" y="572" font-size="12" fill="#2f7ed8" font-weight="700">REJECT</text>
+<rect x="516" y="555" width="60" height="24" rx="5" fill="#d84a3a" opacity="0.12" stroke="#d84a3a" /><text x="525" y="572" font-size="12" fill="#d84a3a" font-weight="700">REJECT</text>
+<text x="646" y="572" font-size="13">MISSING_FIELD</text>
+<rect x="934" y="555" width="32" height="24" rx="5" fill="#2f9d68" opacity="0.12" stroke="#2f9d68" /><text x="943" y="572" font-size="12" fill="#2f9d68" font-weight="700">OK</text>
+<rect x="74" y="587" width="1088" height="36" rx="4" fill="#ffffff" stroke="#ecece7" />
+<text x="84" y="614" font-size="13" font-weight="700">frame_count_mismatch</text>
+<rect x="386" y="597" width="60" height="24" rx="5" fill="#2f7ed8" opacity="0.12" stroke="#2f7ed8" /><text x="395" y="614" font-size="12" fill="#2f7ed8" font-weight="700">REJECT</text>
+<rect x="516" y="597" width="60" height="24" rx="5" fill="#d84a3a" opacity="0.12" stroke="#d84a3a" /><text x="525" y="614" font-size="12" fill="#d84a3a" font-weight="700">REJECT</text>
+<text x="646" y="614" font-size="13">FRAME_COUNT_MISMATCH</text>
+<rect x="934" y="597" width="32" height="24" rx="5" fill="#2f9d68" opacity="0.12" stroke="#2f9d68" /><text x="943" y="614" font-size="12" fill="#2f9d68" font-weight="700">OK</text>
+<rect x="74" y="629" width="1088" height="36" rx="4" fill="#fbfbf8" stroke="#ecece7" />
+<text x="84" y="656" font-size="13" font-weight="700">non_monotonic_frame_time</text>
+<rect x="386" y="639" width="60" height="24" rx="5" fill="#2f7ed8" opacity="0.12" stroke="#2f7ed8" /><text x="395" y="656" font-size="12" fill="#2f7ed8" font-weight="700">REJECT</text>
+<rect x="516" y="639" width="60" height="24" rx="5" fill="#d84a3a" opacity="0.12" stroke="#d84a3a" /><text x="525" y="656" font-size="12" fill="#d84a3a" font-weight="700">REJECT</text>
+<text x="646" y="656" font-size="13">NON_MONOTONIC_FRAME_TIME</text>
+<rect x="934" y="639" width="32" height="24" rx="5" fill="#2f9d68" opacity="0.12" stroke="#2f9d68" /><text x="943" y="656" font-size="12" fill="#2f9d68" font-weight="700">OK</text>
+<rect x="74" y="671" width="1088" height="36" rx="4" fill="#ffffff" stroke="#ecece7" />
+<text x="84" y="698" font-size="13" font-weight="700">malformed_json</text>
+<rect x="386" y="681" width="60" height="24" rx="5" fill="#2f7ed8" opacity="0.12" stroke="#2f7ed8" /><text x="395" y="698" font-size="12" fill="#2f7ed8" font-weight="700">REJECT</text>
+<rect x="516" y="681" width="60" height="24" rx="5" fill="#d84a3a" opacity="0.12" stroke="#d84a3a" /><text x="525" y="698" font-size="12" fill="#d84a3a" font-weight="700">REJECT</text>
+<text x="646" y="698" font-size="13">INVALID_JSON</text>
+<rect x="934" y="681" width="32" height="24" rx="5" fill="#2f9d68" opacity="0.12" stroke="#2f9d68" /><text x="943" y="698" font-size="12" fill="#2f9d68" font-weight="700">OK</text>
+</g>
+</svg>

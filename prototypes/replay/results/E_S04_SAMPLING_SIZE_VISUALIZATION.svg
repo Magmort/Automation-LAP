@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="820" viewBox="0 0 1240 820" role="img" aria-labelledby="title desc">
+<title id="title">E-S04 replay sampling size</title>
+<desc id="desc">Replay JSON file size by sampling frequency.</desc>
+<rect width="100%" height="100%" fill="#f7f7f3" />
+<g font-family="Arial, sans-serif" fill="#222">
+<text x="54" y="70" font-size="26" font-weight="700">E-S04 - Taille et frequence replay</text>
+<text x="54" y="102" font-size="15" fill="#5f625d">5 profils, 3 vehicules, 3 evenements, JSON non compresse</text>
+<rect x="54" y="132" width="1130" height="388" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="84" y="156" font-size="16" font-weight="700">Taille brute par frequence</text>
+<line x1="86" y1="480" x2="846" y2="480" stroke="#c9c9c2" />
+<rect x="86.00" y="463.15" width="132.80" height="16.85" rx="5" fill="#2f7ed8" />
+<text x="152.40" y="508" font-size="12" text-anchor="middle">1hz</text>
+<text x="152.40" y="453.15" font-size="12" text-anchor="middle">41 kB</text>
+<text x="152.40" y="528" font-size="11" fill="#5f625d" text-anchor="middle">1 Hz</text>
+<rect x="242.80" y="448.78" width="132.80" height="31.22" rx="5" fill="#2f7ed8" />
+<text x="309.20" y="508" font-size="12" text-anchor="middle">2hz</text>
+<text x="309.20" y="438.78" font-size="12" text-anchor="middle">77 kB</text>
+<text x="309.20" y="528" font-size="11" fill="#5f625d" text-anchor="middle">2 Hz</text>
+<rect x="399.60" y="419.99" width="132.80" height="60.01" rx="5" fill="#2f9d68" />
+<text x="466.00" y="508" font-size="12" text-anchor="middle">4hz_reference</text>
+<text x="466.00" y="409.99" font-size="12" text-anchor="middle">148 kB</text>
+<text x="466.00" y="528" font-size="11" fill="#5f625d" text-anchor="middle">4 Hz</text>
+<rect x="556.40" y="333.90" width="132.80" height="146.10" rx="5" fill="#2f7ed8" />
+<text x="622.80" y="508" font-size="12" text-anchor="middle">10hz</text>
+<text x="622.80" y="323.90" font-size="12" text-anchor="middle">362 kB</text>
+<text x="622.80" y="528" font-size="11" fill="#5f625d" text-anchor="middle">10 Hz</text>
+<rect x="713.20" y="190.00" width="132.80" height="290.00" rx="5" fill="#2f7ed8" />
+<text x="779.60" y="508" font-size="12" text-anchor="middle">20hz</text>
+<text x="779.60" y="180.00" font-size="12" text-anchor="middle">719 kB</text>
+<text x="779.60" y="528" font-size="11" fill="#5f625d" text-anchor="middle">20 Hz</text>
+<text x="910" y="156" font-size="16" font-weight="700">Lecture rapide</text>
+<text x="910" y="196" font-size="13" fill="#5f625d">Duree</text>
+<text x="910" y="222" font-size="24" font-weight="700">55s</text>
+<text x="910" y="270" font-size="13" fill="#5f625d">Taille min / max</text>
+<text x="910" y="296" font-size="24" font-weight="700">41 / 719 kB</text>
+<text x="910" y="344" font-size="13" fill="#5f625d">Debit min / max</text>
+<text x="910" y="370" font-size="24" font-weight="700">761 / 13089 B/s</text>
+<text x="910" y="418" font-size="13" fill="#5f625d">Validation</text>
+<text x="910" y="444" font-size="24" font-weight="700">0 erreur</text>
+<text x="910" y="486" font-size="12" fill="#5f625d">Taille monotone: true, evenements couverts: true</text>
+<rect x="54" y="536" width="1130" height="228" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="84" y="558" font-size="16" font-weight="700">Profils mesures</text>
+<text x="84" y="592" font-size="12" fill="#5f625d">profil</text>
+<text x="244" y="592" font-size="12" fill="#5f625d">frames</text>
+<text x="354" y="592" font-size="12" fill="#5f625d">taille</text>
+<text x="484" y="592" font-size="12" fill="#5f625d">octets/s</text>
+<text x="624" y="592" font-size="12" fill="#5f625d">octets/frame</text>
+<text x="784" y="592" font-size="12" fill="#5f625d">ecart evenement max</text>
+<rect x="74" y="600" width="1088" height="31" rx="4" fill="#fbfbf8" stroke="#ecece7" />
+<text x="84" y="624" font-size="13" font-weight="700">1hz</text>
+<text x="244" y="624" font-size="13">56</text>
+<text x="354" y="624" font-size="13">41831</text>
+<text x="484" y="624" font-size="13">760.6</text>
+<text x="624" y="624" font-size="13">747.0</text>
+<text x="784" y="624" font-size="13">0.492s</text>
+<rect x="74" y="636" width="1088" height="31" rx="4" fill="#ffffff" stroke="#ecece7" />
+<text x="84" y="660" font-size="13" font-weight="700">2hz</text>
+<text x="244" y="660" font-size="13">111</text>
+<text x="354" y="660" font-size="13">77487</text>
+<text x="484" y="660" font-size="13">1408.9</text>
+<text x="624" y="660" font-size="13">698.1</text>
+<text x="784" y="660" font-size="13">0.025s</text>
+<rect x="74" y="672" width="1088" height="31" rx="4" fill="#fbfbf8" stroke="#ecece7" />
+<text x="84" y="696" font-size="13" font-weight="700">4hz_reference</text>
+<text x="244" y="696" font-size="13">221</text>
+<text x="354" y="696" font-size="13">148964</text>
+<text x="484" y="696" font-size="13">2708.4</text>
+<text x="624" y="696" font-size="13">674.0</text>
+<text x="784" y="696" font-size="13">0.025s</text>
+<rect x="74" y="708" width="1088" height="31" rx="4" fill="#ffffff" stroke="#ecece7" />
+<text x="84" y="732" font-size="13" font-weight="700">10hz</text>
+<text x="244" y="732" font-size="13">551</text>
+<text x="354" y="732" font-size="13">362682</text>
+<text x="484" y="732" font-size="13">6594.2</text>
+<text x="624" y="732" font-size="13">658.2</text>
+<text x="784" y="732" font-size="13">0.025s</text>
+<rect x="74" y="744" width="1088" height="31" rx="4" fill="#fbfbf8" stroke="#ecece7" />
+<text x="84" y="768" font-size="13" font-weight="700">20hz</text>
+<text x="244" y="768" font-size="13">1101</text>
+<text x="354" y="768" font-size="13">719882</text>
+<text x="484" y="768" font-size="13">13088.8</text>
+<text x="624" y="768" font-size="13">653.8</text>
+<text x="784" y="768" font-size="13">0.025s</text>
+</g>
+</svg>

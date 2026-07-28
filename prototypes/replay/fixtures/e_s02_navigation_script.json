@@ -1,0 +1,61 @@
+{
+  "kind": "ReplayNavigationScript",
+  "schemaVersion": "0.1.0",
+  "scriptId": "e-s02-basic-navigation",
+  "name": "E-S02 Basic Forward Backward Navigation",
+  "sourceReplay": "prototypes/replay/results/e_s01_minimal_replay.replay.json",
+  "sampleStepS": 0.5,
+  "commands": [
+    {
+      "type": "seek",
+      "targetTimeS": 0.0,
+      "label": "start"
+    },
+    {
+      "type": "play",
+      "direction": "forward",
+      "speed": 1.0,
+      "durationS": 8.0,
+      "label": "forward_x1"
+    },
+    {
+      "type": "pause",
+      "durationS": 1.0,
+      "label": "inspect"
+    },
+    {
+      "type": "seek",
+      "targetTimeS": 27.37,
+      "label": "mid_arbitrary"
+    },
+    {
+      "type": "play",
+      "direction": "backward",
+      "speed": 2.0,
+      "durationS": 6.0,
+      "label": "backward_x2"
+    },
+    {
+      "type": "seek",
+      "targetTimeS": 54.62,
+      "label": "near_end_arbitrary"
+    },
+    {
+      "type": "play",
+      "direction": "forward",
+      "speed": 1.0,
+      "durationS": 2.0,
+      "label": "forward_clamp_end"
+    },
+    {
+      "type": "seek",
+      "targetTimeS": -3.0,
+      "label": "clamp_before_start"
+    },
+    {
+      "type": "seek",
+      "targetTimeS": 80.0,
+      "label": "clamp_after_end"
+    }
+  ]
+}

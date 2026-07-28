@@ -160,7 +160,8 @@ Plusieurs voitures peuvent-elles partager la piste et produire des dépassements
 ## Expérience E — Replay
 
 - **Ticket :** #7
-- **État :** prête, recommandée avant les scénarios D longs
+- **Protocole :** [experiments/E-REPLAY-MINIMAL.md](experiments/E-REPLAY-MINIMAL.md)
+- **État :** validée avec réserves
 
 ### Question
 
@@ -179,7 +180,7 @@ Une course enregistrée peut-elle être chargée, parcourue dans les deux sens e
 ## Expérience F — Charge et accélération
 
 - **Ticket :** #8
-- **État :** bloquée par la boucle représentative B à E
+- **État :** prête, boucle représentative B à E disponible
 
 ### Question
 
