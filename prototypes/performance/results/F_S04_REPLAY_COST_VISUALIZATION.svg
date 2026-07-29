@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900" role="img" aria-labelledby="title desc">
+<title id="title">F-S04 replay cost</title>
+<desc id="desc">Replay serialization throughput and tick share by sampling rate.</desc>
+<rect width="100%" height="100%" fill="#f7f7f3" />
+<g font-family="Arial, sans-serif" fill="#222">
+<text x="54" y="70" font-size="26" font-weight="700">F-S04 - Cout replay detaille</text>
+<text x="54" y="102" font-size="15" fill="#5f625d">9 profils, 3 repetitions, replay off puis 1/2/4/10/20 Hz</text>
+<rect x="54" y="124" width="1156" height="372" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="86" y="146" font-size="16" font-weight="700">Debit replay - 20 voitures</text>
+<line x1="86" y1="458" x2="776" y2="458" stroke="#c9c9c2" />
+<rect x="86.00" y="458.00" width="91.67" height="0.00" rx="5" fill="#2f7ed8" />
+<text x="131.83" y="449.00" font-size="12" text-anchor="middle">0</text>
+<text x="131.83" y="486" font-size="12" text-anchor="middle">off</text>
+<rect x="205.67" y="444.11" width="91.67" height="13.89" rx="5" fill="#2f7ed8" />
+<text x="251.50" y="435.11" font-size="12" text-anchor="middle">1254</text>
+<text x="251.50" y="486" font-size="12" text-anchor="middle">1 Hz</text>
+<rect x="325.33" y="430.21" width="91.67" height="27.79" rx="5" fill="#2f7ed8" />
+<text x="371.17" y="421.21" font-size="12" text-anchor="middle">2509</text>
+<text x="371.17" y="486" font-size="12" text-anchor="middle">2 Hz</text>
+<rect x="445.00" y="402.40" width="91.67" height="55.60" rx="5" fill="#2f9d68" />
+<text x="490.83" y="393.40" font-size="12" text-anchor="middle">5021</text>
+<text x="490.83" y="486" font-size="12" text-anchor="middle">4 Hz</text>
+<rect x="564.67" y="319.06" width="91.67" height="138.94" rx="5" fill="#2f7ed8" />
+<text x="610.50" y="310.06" font-size="12" text-anchor="middle">12547</text>
+<text x="610.50" y="486" font-size="12" text-anchor="middle">10 Hz</text>
+<rect x="684.33" y="180.00" width="91.67" height="278.00" rx="5" fill="#2f7ed8" />
+<text x="730.17" y="171.00" font-size="12" text-anchor="middle">25104</text>
+<text x="730.17" y="486" font-size="12" text-anchor="middle">20 Hz</text>
+<text x="856" y="146" font-size="16" font-weight="700">Part moyenne du tick</text>
+<line x1="856" y1="458" x2="1142" y2="458" stroke="#c9c9c2" />
+<line x1="856" y1="342.45" x2="1142" y2="342.45" stroke="#d2842f" stroke-dasharray="6 5" />
+<text x="1150" y="346.45" font-size="12" fill="#d2842f">seuil</text>
+<polyline points="856.00,455.21 913.20,439.45 970.40,425.69 1027.60,400.41 1084.80,331.55 1142.00,235.60" fill="none" stroke="#6f4bb2" stroke-width="3" />
+<circle cx="856.00" cy="455.21" r="5" fill="#6f4bb2" />
+<text x="856.00" y="443.21" font-size="11" text-anchor="middle">0.3%</text>
+<text x="856.00" y="486" font-size="10" text-anchor="middle">off</text>
+<circle cx="913.20" cy="439.45" r="5" fill="#6f4bb2" />
+<text x="913.20" y="427.45" font-size="11" text-anchor="middle">1.9%</text>
+<text x="913.20" y="486" font-size="10" text-anchor="middle">1 Hz</text>
+<circle cx="970.40" cy="425.69" r="5" fill="#6f4bb2" />
+<text x="970.40" y="413.69" font-size="11" text-anchor="middle">3.4%</text>
+<text x="970.40" y="486" font-size="10" text-anchor="middle">2 Hz</text>
+<circle cx="1027.60" cy="400.41" r="5" fill="#6f4bb2" />
+<text x="1027.60" y="388.41" font-size="11" text-anchor="middle">6.0%</text>
+<text x="1027.60" y="486" font-size="10" text-anchor="middle">4 Hz</text>
+<circle cx="1084.80" cy="331.55" r="5" fill="#6f4bb2" />
+<text x="1084.80" y="319.55" font-size="11" text-anchor="middle">13.1%</text>
+<text x="1084.80" y="486" font-size="10" text-anchor="middle">10 Hz</text>
+<circle cx="1142.00" cy="235.60" r="5" fill="#6f4bb2" />
+<text x="1142.00" y="223.60" font-size="11" text-anchor="middle">23.1%</text>
+<text x="1142.00" y="486" font-size="10" text-anchor="middle">20 Hz</text>
+<rect x="84" y="512" width="246" height="58" rx="6" fill="#ffffff" stroke="#c9c9c2" />
+<text x="98" y="535" font-size="12" fill="#5f625d">Reference</text>
+<text x="316" y="551" font-size="20" font-weight="700" fill="#2f7ed8" text-anchor="end">20 voitures / 4 Hz</text>
+<rect x="358" y="512" width="246" height="58" rx="6" fill="#ffffff" stroke="#c9c9c2" />
+<text x="372" y="535" font-size="12" fill="#5f625d">Part replay</text>
+<text x="590" y="551" font-size="20" font-weight="700" fill="#2f9d68" text-anchor="end">6.0 %</text>
+<rect x="632" y="512" width="246" height="58" rx="6" fill="#ffffff" stroke="#c9c9c2" />
+<text x="646" y="535" font-size="12" fill="#5f625d">Indic. wall</text>
+<text x="864" y="551" font-size="20" font-weight="700" fill="#d2842f" text-anchor="end">122.3 %</text>
+<rect x="906" y="512" width="246" height="58" rx="6" fill="#ffffff" stroke="#c9c9c2" />
+<text x="920" y="535" font-size="12" fill="#5f625d">Debit ref.</text>
+<text x="1138" y="551" font-size="20" font-weight="700" fill="#2b8c91" text-anchor="end">5021 o/s</text>
+<rect x="54" y="610" width="1156" height="260" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="86" y="636" font-size="16" font-weight="700">Comparaison des frequences</text>
+<text x="86" y="670" font-size="12" fill="#5f625d">voitures</text>
+<text x="186" y="670" font-size="12" fill="#5f625d">Hz</text>
+<text x="284" y="670" font-size="12" fill="#5f625d">wall</text>
+<text x="430" y="670" font-size="12" fill="#5f625d">overhead</text>
+<text x="568" y="670" font-size="12" fill="#5f625d">tick</text>
+<text x="704" y="670" font-size="12" fill="#5f625d">replay</text>
+<text x="842" y="670" font-size="12" fill="#5f625d">part</text>
+<text x="956" y="670" font-size="12" fill="#5f625d">octets/s</text>
+<rect x="76" y="686" width="1116" height="23" rx="3" fill="#fbfbf8" stroke="#ecece7" />
+<text x="86" y="704" font-size="12">20</text>
+<text x="186" y="704" font-size="12">off</text>
+<text x="284" y="704" font-size="12">709.46 ms</text>
+<text x="430" y="704" font-size="12">0.0%</text>
+<text x="568" y="704" font-size="12">0.2135 ms</text>
+<text x="704" y="704" font-size="12">0.0006 ms</text>
+<text x="842" y="704" font-size="12">0.3%</text>
+<text x="956" y="704" font-size="12">0</text>
+<rect x="76" y="711" width="1116" height="23" rx="3" fill="#ffffff" stroke="#ecece7" />
+<text x="86" y="729" font-size="12">20</text>
+<text x="186" y="729" font-size="12">1 Hz</text>
+<text x="284" y="729" font-size="12">1353.51 ms</text>
+<text x="430" y="729" font-size="12">90.8%</text>
+<text x="568" y="729" font-size="12">0.4076 ms</text>
+<text x="704" y="729" font-size="12">0.0078 ms</text>
+<text x="842" y="729" font-size="12">1.9%</text>
+<text x="956" y="729" font-size="12">1254</text>
+<rect x="76" y="736" width="1116" height="23" rx="3" fill="#fbfbf8" stroke="#ecece7" />
+<text x="86" y="754" font-size="12">20</text>
+<text x="186" y="754" font-size="12">2 Hz</text>
+<text x="284" y="754" font-size="12">1516.33 ms</text>
+<text x="430" y="754" font-size="12">113.7%</text>
+<text x="568" y="754" font-size="12">0.4564 ms</text>
+<text x="704" y="754" font-size="12">0.0153 ms</text>
+<text x="842" y="754" font-size="12">3.4%</text>
+<text x="956" y="754" font-size="12">2509</text>
+<rect x="76" y="761" width="1116" height="23" rx="3" fill="#ffffff" stroke="#ecece7" />
+<text x="86" y="779" font-size="12">20</text>
+<text x="186" y="779" font-size="12">4 Hz</text>
+<text x="284" y="779" font-size="12">1577.11 ms</text>
+<text x="430" y="779" font-size="12">122.3%</text>
+<text x="568" y="779" font-size="12">0.4746 ms</text>
+<text x="704" y="779" font-size="12">0.0284 ms</text>
+<text x="842" y="779" font-size="12">6.0%</text>
+<text x="956" y="779" font-size="12">5021</text>
+<rect x="76" y="786" width="1116" height="23" rx="3" fill="#fbfbf8" stroke="#ecece7" />
+<text x="86" y="804" font-size="12">20</text>
+<text x="186" y="804" font-size="12">10 Hz</text>
+<text x="284" y="804" font-size="12">1677.69 ms</text>
+<text x="430" y="804" font-size="12">136.5%</text>
+<text x="568" y="804" font-size="12">0.5053 ms</text>
+<text x="704" y="804" font-size="12">0.0664 ms</text>
+<text x="842" y="804" font-size="12">13.1%</text>
+<text x="956" y="804" font-size="12">12547</text>
+<rect x="76" y="811" width="1116" height="23" rx="3" fill="#ffffff" stroke="#ecece7" />
+<text x="86" y="829" font-size="12">20</text>
+<text x="186" y="829" font-size="12">20 Hz</text>
+<text x="284" y="829" font-size="12">1927.34 ms</text>
+<text x="430" y="829" font-size="12">171.7%</text>
+<text x="568" y="829" font-size="12">0.5808 ms</text>
+<text x="704" y="829" font-size="12">0.1342 ms</text>
+<text x="842" y="829" font-size="12">23.1%</text>
+<text x="956" y="829" font-size="12">25104</text>
+<rect x="76" y="836" width="1116" height="23" rx="3" fill="#fbfbf8" stroke="#ecece7" />
+<text x="86" y="854" font-size="12">40</text>
+<text x="186" y="854" font-size="12">off</text>
+<text x="284" y="854" font-size="12">2736.37 ms</text>
+<text x="430" y="854" font-size="12">0.0%</text>
+<text x="568" y="854" font-size="12">0.8259 ms</text>
+<text x="704" y="854" font-size="12">0.0012 ms</text>
+<text x="842" y="854" font-size="12">0.1%</text>
+<text x="956" y="854" font-size="12">0</text>
+</g>
+</svg>

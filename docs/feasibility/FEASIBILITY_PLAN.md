@@ -30,7 +30,7 @@ Le modèle de circuit interne doit être défini à partir des besoins de la sim
 
 L’expérience C définit donc un `TrackDefinition` minimal, indépendant de Unity et de toute source externe, puis le valide à l’aide d’une piste canonique créée directement dans ce format.
 
-L’expérience G teste ensuite si les fichiers produits par le Track Editor d’Ultimate Racing 2D 2 permettent de reconstruire ce même contrat. Un échec de G ne remet pas en cause le contrôleur validé par C ; il remet uniquement en cause UR2D2 comme chaîne de création de circuits.
+L’expérience G teste ensuite si les sauvegardes produites par le Track Editor d’Ultimate Racing 2D 2 permettent de reconstruire ce même contrat. L’expérience H reproduit la démarche sur les vrais fichiers de tracks UR2D2, utilisés ou exportés une fois la piste terminée. Un échec de G ou H ne remet pas en cause le contrôleur validé par C ; il remet uniquement en cause le chemin UR2D2 concerné comme chaîne de création de circuits.
 
 ## Expérience A — Extraction Automation
 
@@ -66,8 +66,8 @@ Pouvons-nous extraire de manière stable les données nécessaires à trois voit
 
 - **Ticket :** #4
 - **Protocole :** [experiments/B-VEHICLE-DYNAMICS.md](experiments/B-VEHICLE-DYNAMICS.md)
-- **État :** en cours
-- **Entrée :** `AutomationRawVehicleData` v0.1 produit par A8
+- **État :** validée avec réserves
+- **Entrée :** `AutomationRawVehicleData` v0.1 produit par A8/A9
 
 ### Question
 
@@ -93,7 +93,8 @@ Un modèle 2D simple peut-il reproduire des différences plausibles d’accélé
 ## Expérience C — Tour autonome et modèle minimal de circuit
 
 - **Ticket :** #5
-- **État :** bloquée par B
+- **Protocole :** [experiments/C-AUTONOMOUS-LAP.md](experiments/C-AUTONOMOUS-LAP.md)
+- **État :** validée avec réserves
 - **Dépendance produite :** contrat d’entrée de G
 
 ### Question
@@ -133,7 +134,8 @@ Les stands, secteurs multiples, dénivelé, dévers, murs détaillés, terrains 
 ## Expérience D — Trafic et dépassement
 
 - **Ticket :** #6
-- **État :** bloquée par C et E
+- **Protocole :** [experiments/D-TRAFFIC-OVERTAKING.md](experiments/D-TRAFFIC-OVERTAKING.md)
+- **État :** validée avec réserves
 
 ### Question
 
@@ -158,7 +160,8 @@ Plusieurs voitures peuvent-elles partager la piste et produire des dépassements
 ## Expérience E — Replay
 
 - **Ticket :** #7
-- **État :** bloquée par B, à mener avant D
+- **Protocole :** [experiments/E-REPLAY-MINIMAL.md](experiments/E-REPLAY-MINIMAL.md)
+- **État :** validée avec réserves
 
 ### Question
 
@@ -177,7 +180,8 @@ Une course enregistrée peut-elle être chargée, parcourue dans les deux sens e
 ## Expérience F — Charge et accélération
 
 - **Ticket :** #8
-- **État :** bloquée par la boucle représentative B à E
+- **Protocole :** [experiments/F-PERFORMANCE-LOAD.md](experiments/F-PERFORMANCE-LOAD.md)
+- **État :** validée avec réserves
 
 ### Question
 
@@ -208,12 +212,12 @@ Le modèle envisagé permet-il de simuler le nombre cible de voitures en temps r
 
 - **Ticket :** #10
 - **Protocole :** [experiments/G-UR2D2-TRACK-IMPORT.md](experiments/G-UR2D2-TRACK-IMPORT.md)
-- **État :** bloquée par la définition du contrat en C
+- **État :** G-S01 prête pour probing G-S02
 - **Caractère :** non bloquante pour E, D et F ; bloquante pour l’adoption d’UR2D2 comme outil de création
 
 ### Question
 
-Pouvons-nous reconstruire automatiquement le `TrackDefinition` minimal validé par C à partir des fichiers produits par le Track Editor d’Ultimate Racing 2D 2 ?
+Pouvons-nous reconstruire automatiquement le `TrackDefinition` minimal validé par C à partir des sauvegardes `.sav` produites par le Track Editor d’Ultimate Racing 2D 2 ?
 
 ### Approche
 
@@ -234,6 +238,36 @@ Pouvons-nous reconstruire automatiquement le `TrackDefinition` minimal validé p
 - le circuit converti est utilisable par le contrôleur validé en C ;
 - les informations non récupérables sont identifiées et quantifiées.
 
+## Expérience H — Import depuis les vrais fichiers de tracks UR2D2
+
+- **Ticket :** #11
+- **Protocole :** [experiments/H-UR2D2-RUNTIME-TRACK-IMPORT.md](experiments/H-UR2D2-RUNTIME-TRACK-IMPORT.md)
+- **État :** prête — H-S00 en préparation
+- **Caractère :** non bloquante pour E, D et F ; complémentaire à G pour l’adoption d’UR2D2
+
+### Question
+
+Pouvons-nous reconstruire automatiquement le `TrackDefinition` minimal validé par C à partir des vrais fichiers de tracks d’Ultimate Racing 2D 2, c’est-à-dire les fichiers finis utilisés par le jeu ou produits à l’export final de la piste ?
+
+### Approche
+
+- inventorier les packages ou dossiers de pistes runtime ;
+- comparer leur structure avec les sauvegardes éditeur analysées par G ;
+- décoder les données dans `UR2D2RuntimeTrackData` ;
+- convertir explicitement les données brutes vers `TrackDefinition` ;
+- valider le résultat avec les invariants et le contrôleur issus de C ;
+- décider si H remplace, complète ou invalide G comme chemin d’import.
+
+### Critères de réussite
+
+- au moins un vrai fichier de track est inventorié ;
+- les fichiers nécessaires à une piste sont identifiés ;
+- la boucle, le sens, les limites et le chronométrage satisfont le contrat minimal ou les limitations sont explicites ;
+- les transformations de coordonnées et l’échelle sont documentées ;
+- l’import est déterministe et versionné ;
+- les écarts avec G sont mesurés ;
+- le circuit converti est utilisable par le contrôleur validé en C.
+
 ## Ordre et dépendances retenus
 
 ```text
@@ -242,7 +276,8 @@ A — Extraction Automation
 B — Dynamique d’une voiture
         ↓
 C — Tour autonome + TrackDefinition minimal
-        ├──────────────→ G — Import UR2D2
+        ├──────────────→ G — Import UR2D2 editor .sav
+        ├──────────────→ H — Import UR2D2 vrais tracks
         ↓
 E — Replay minimal
         ↓
@@ -251,9 +286,9 @@ D — Trafic et dépassement
 F — Charge et accélération
 ```
 
-G peut commencer dès que C a suffisamment stabilisé le contrat de circuit. Elle peut être menée en parallèle d’E, D ou F.
+G et H peuvent commencer maintenant que C-S06 a stabilisé le contrat `TrackDefinition` v0.1. Elles peuvent être menées en parallèle des autres sujets de production.
 
-G ne bloque pas la validation du contrôleur, du replay, du trafic ou des performances. Elle doit toutefois être conclue avant de considérer UR2D2 comme la chaîne officielle de création de circuits du vertical slice.
+G et H ne bloquent pas la validation du contrôleur, du replay, du trafic ou des performances. Au moins l’une des deux doit toutefois être conclue positivement avant de considérer UR2D2 comme la chaîne officielle de création de circuits du vertical slice.
 
 ## Livrable final
 

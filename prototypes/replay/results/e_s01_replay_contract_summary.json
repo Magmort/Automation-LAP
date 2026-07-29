@@ -1,0 +1,119 @@
+{
+  "scenario": "E-S01",
+  "success": true,
+  "generatedAtUtc": "2026-07-28T14:24:25Z",
+  "sourcePath": "prototypes/traffic/results/d_s05_rejoin_summary.json",
+  "trackPath": "prototypes/autonomous-lap/fixtures/canonical_track.json",
+  "replayPath": "prototypes/replay/results/e_s01_minimal_replay.replay.json",
+  "validationErrors": [],
+  "seekChecks": [
+    {
+      "mode": "exact",
+      "timeS": 0.0,
+      "leftFrameIndex": 0,
+      "rightFrameIndex": 0
+    },
+    {
+      "mode": "interpolated",
+      "timeS": 0.375,
+      "leftFrameIndex": 1,
+      "rightFrameIndex": 2,
+      "ratio": 0.5,
+      "vehicles": {
+        "ego": {
+          "xM": 73.0393655,
+          "yM": -2.5402445,
+          "headingRad": 1.358526,
+          "speedMps": 17.404864500000002
+        },
+        "target_front": {
+          "xM": 58.061741,
+          "yM": 27.8771505,
+          "headingRad": 2.482283,
+          "speedMps": 16.944444
+        },
+        "target_rear": {
+          "xM": 56.036867,
+          "yM": -29.446427999999997,
+          "headingRad": 0.65931,
+          "speedMps": 16.111111
+        }
+      }
+    },
+    {
+      "mode": "interpolated",
+      "timeS": 3.13,
+      "leftFrameIndex": 12,
+      "rightFrameIndex": 13,
+      "ratio": 0.5199999999999996,
+      "vehicles": {
+        "ego": {
+          "xM": 49.86374676,
+          "yM": 33.04520896,
+          "headingRad": 2.706733,
+          "speedMps": 16.700751920000002
+        },
+        "target_front": {
+          "xM": 14.8771044,
+          "yM": 43.849708199999995,
+          "headingRad": 3.064427,
+          "speedMps": 16.944444
+        },
+        "target_rear": {
+          "xM": 73.32531156,
+          "yM": 7.770554479999998,
+          "headingRad": 1.783067,
+          "speedMps": 16.111111
+        }
+      }
+    },
+    {
+      "mode": "interpolated",
+      "timeS": 27.57,
+      "leftFrameIndex": 110,
+      "rightFrameIndex": 111,
+      "ratio": 0.28000000000000114,
+      "vehicles": {
+        "ego": {
+          "xM": 26.119651839999996,
+          "yM": 41.82936824,
+          "headingRad": 2.897914,
+          "speedMps": 16.666667
+        },
+        "target_front": {
+          "xM": -17.227509480000005,
+          "yM": 43.627127959999996,
+          "headingRad": -3.01780336,
+          "speedMps": 16.944444
+        },
+        "target_rear": {
+          "xM": 68.00888168,
+          "yM": 18.127092320000003,
+          "headingRad": 2.173473,
+          "speedMps": 16.111111
+        }
+      }
+    },
+    {
+      "mode": "exact",
+      "timeS": 55.0,
+      "leftFrameIndex": 220,
+      "rightFrameIndex": 220
+    }
+  ],
+  "metrics": {
+    "replayFileBytes": 148756,
+    "durationS": 55.0,
+    "frameCount": 221,
+    "vehicleCount": 3,
+    "eventCount": 3,
+    "trackPointCount": 24,
+    "validationErrorCount": 0,
+    "seekCheckCount": 5,
+    "seekModes": [
+      "exact",
+      "interpolated"
+    ],
+    "versionSupported": true
+  }
+}

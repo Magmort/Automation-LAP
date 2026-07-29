@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720">
+<style>
+text{font-family:Segoe UI,Arial,sans-serif;fill:#25313f}
+.title{font-size:28px;font-weight:700}
+.subtitle{font-size:15px;fill:#5c6b7a}
+.label{font-size:14px;font-weight:700}
+.small{font-size:12px;fill:#627282}
+.mono{font-family:Consolas,monospace;font-size:12px;fill:#334155}
+</style>
+<rect width="1180" height="720" fill="#f7f9fc"/>
+<rect x="34" y="34" width="1112" height="86" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="58" y="72" class="title">H-S01 - Comparaison runtime / G</text>
+<text x="58" y="100" class="subtitle">Fixture R00_runtime_track_2 - statut: ready-for-h-s02-runtime-reader</text>
+<rect x="44" y="144" width="350" height="360" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="68" y="180" class="label">Contrôles</text>
+<circle cx="76" cy="202" r="6" fill="#2a9d8f"/>
+<text x="92" y="207" class="small">runtimePackagePresent</text>
+<circle cx="76" cy="238" r="6" fill="#2a9d8f"/>
+<text x="92" y="243" class="small">trackInfoPresent</text>
+<circle cx="76" cy="274" r="6" fill="#2a9d8f"/>
+<text x="92" y="279" class="small">editorSavPresent</text>
+<circle cx="76" cy="310" r="6" fill="#2a9d8f"/>
+<text x="92" y="315" class="small">runtimeContainsAllPrimaryRoadKeyCoordinates</text>
+<circle cx="76" cy="346" r="6" fill="#2a9d8f"/>
+<text x="92" y="351" class="small">runtimeContainsExactPrimaryRoadKeyPairs</text>
+<circle cx="76" cy="382" r="6" fill="#2a9d8f"/>
+<text x="92" y="387" class="small">compactRuntimeCheckpointsDetected</text>
+<circle cx="76" cy="418" r="6" fill="#2a9d8f"/>
+<text x="92" y="423" class="small">compactRuntimeCheckpointsMatchEditor</text>
+<rect x="416" y="144" width="338" height="360" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="440" y="180" class="label">Clés route G dans track.data</text>
+<text x="440" y="214" class="small">Chaque ligne indique les occurrences exactes x/y/paire.</text>
+<rect x="440" y="228" width="286" height="26" rx="4" fill="#f4f7fb" stroke="#e2e8f0"/>
+<text x="452" y="246" class="mono">K0: x 11 / y 206</text>
+<circle cx="712" cy="241" r="6" fill="#2a9d8f"/>
+<rect x="440" y="270" width="286" height="26" rx="4" fill="#f4f7fb" stroke="#e2e8f0"/>
+<text x="452" y="288" class="mono">K1: x 7 / y 206</text>
+<circle cx="712" cy="283" r="6" fill="#e9a23b"/>
+<rect x="440" y="312" width="286" height="26" rx="4" fill="#f4f7fb" stroke="#e2e8f0"/>
+<text x="452" y="330" class="mono">K2: x 7 / y 408</text>
+<circle cx="712" cy="325" r="6" fill="#2a9d8f"/>
+<rect x="440" y="354" width="286" height="26" rx="4" fill="#f4f7fb" stroke="#e2e8f0"/>
+<text x="452" y="372" class="mono">K3: x 11 / y 408</text>
+<circle cx="712" cy="367" r="6" fill="#e9a23b"/>
+<rect x="776" y="144" width="360" height="360" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="800" y="180" class="label">Checkpoints runtime</text>
+<text x="800" y="214" class="small">Comparaison aux checkpoints G, en unités éditeur.</text>
+<circle cx="810" cy="245" r="7" fill="#2a9d8f"/>
+<text x="828" y="250" class="mono">Checkpoint 2 @ 1356.1,1629.6</text>
+<text x="828" y="270" class="small">rot runtime = éditeur - 90°, delta 0.000°</text>
+<circle cx="810" cy="307" r="7" fill="#2a9d8f"/>
+<text x="828" y="312" class="mono">Checkpoint 1 @ 2368.6,1712.0</text>
+<text x="828" y="332" class="small">rot runtime = éditeur - 90°, delta 0.000°</text>
+<circle cx="810" cy="369" r="7" fill="#2a9d8f"/>
+<text x="828" y="374" class="mono">Finish @ 2239.6,1072.0</text>
+<text x="828" y="394" class="small">rot runtime = éditeur - 90°, delta 0.000°</text>
+<rect x="44" y="530" width="1092" height="132" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="68" y="566" class="label">Lecture</text>
+<text x="68" y="596" class="small">track_info.data: C@First_Track ; track:2/2796.14 ; flag_andorra ; ?ffffff ; ?Road Course ; ?medium</text>
+<text x="68" y="626" class="small">track_editor.sav vs fixtures G: aucun match exact</text>
+<text x="68" y="650" class="small">H-S02 peut lire track.data et track_info.data ; track_editor.sav sert de témoin de comparaison.</text>
+</svg>

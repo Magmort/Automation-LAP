@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="760" viewBox="0 0 1120 760">
+<style>
+text{font-family:Segoe UI,Arial,sans-serif;fill:#25313f}
+.title{font-size:28px;font-weight:700}
+.subtitle{font-size:15px;fill:#5c6b7a}
+.label{font-size:14px;font-weight:600}
+.small{font-size:12px;fill:#627282}
+</style>
+<rect width="1120" height="760" fill="#f7f9fc"/>
+<rect x="34" y="34" width="1052" height="88" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="58" y="72" class="title">G-S03 - TrackDefinition candidat</text>
+<text x="58" y="100" class="subtitle">Validation C-S01: succès · statut validated-with-reserves</text>
+<rect x="56" y="150" width="650" height="520" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<polyline points="145.5,338.5 235.4,338.5 381.0,338.5 526.6,338.5 616.5,338.5 649.1,383.1 660.0,481.3 649.1,579.4 616.5,624.0 527.0,624.0 381.3,624.0 235.5,624.0 145.5,624.0 112.9,579.4 102.0,481.3 112.9,383.1 145.5,338.5" fill="none" stroke="#2f5f9f" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="145.5" cy="338.5" r="5" fill="#2f5f9f"/>
+<text x="153.5" y="330.5" class="small">p00</text>
+<circle cx="235.4" cy="338.5" r="5" fill="#7aa6d8"/>
+<text x="243.4" y="330.5" class="small">p01</text>
+<circle cx="381.0" cy="338.5" r="5" fill="#2f5f9f"/>
+<text x="389.0" y="330.5" class="small">p02</text>
+<circle cx="526.6" cy="338.5" r="5" fill="#7aa6d8"/>
+<text x="534.6" y="330.5" class="small">p03</text>
+<circle cx="616.5" cy="338.5" r="5" fill="#2f5f9f"/>
+<text x="624.5" y="330.5" class="small">p04</text>
+<circle cx="649.1" cy="383.1" r="5" fill="#7aa6d8"/>
+<text x="657.1" y="375.1" class="small">p05</text>
+<circle cx="660.0" cy="481.3" r="5" fill="#2f5f9f"/>
+<text x="668.0" y="473.3" class="small">p06</text>
+<circle cx="649.1" cy="579.4" r="5" fill="#7aa6d8"/>
+<text x="657.1" y="571.4" class="small">p07</text>
+<circle cx="616.5" cy="624.0" r="5" fill="#2f5f9f"/>
+<text x="624.5" y="616.0" class="small">p08</text>
+<circle cx="527.0" cy="624.0" r="5" fill="#7aa6d8"/>
+<text x="535.0" y="616.0" class="small">p09</text>
+<circle cx="381.3" cy="624.0" r="5" fill="#2f5f9f"/>
+<text x="389.3" y="616.0" class="small">p10</text>
+<circle cx="235.5" cy="624.0" r="5" fill="#7aa6d8"/>
+<text x="243.5" y="616.0" class="small">p11</text>
+<circle cx="145.5" cy="624.0" r="5" fill="#2f5f9f"/>
+<text x="153.5" y="616.0" class="small">p12</text>
+<circle cx="112.9" cy="579.4" r="5" fill="#7aa6d8"/>
+<text x="120.9" y="571.4" class="small">p13</text>
+<circle cx="102.0" cy="481.3" r="5" fill="#2f5f9f"/>
+<text x="110.0" y="473.3" class="small">p14</text>
+<circle cx="112.9" cy="383.1" r="5" fill="#7aa6d8"/>
+<text x="120.9" y="375.1" class="small">p15</text>
+<rect x="105.9" y="572.4" width="14" height="14" fill="#e9a23b" transform="rotate(45 112.9 579.4)"/>
+<text x="124.9" y="583.4" class="small">checkpoint-2</text>
+<rect x="520.0" y="617.0" width="14" height="14" fill="#e9a23b" transform="rotate(45 527.0 624.0)"/>
+<text x="539.0" y="628.0" class="small">checkpoint-1</text>
+<rect x="519.6" y="331.5" width="14" height="14" fill="#d1495b" transform="rotate(45 526.6 338.5)"/>
+<text x="538.6" y="342.5" class="small">finish</text>
+<rect x="760" y="150" width="310" height="380" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="782" y="184" class="label">Résumé conversion</text>
+<text x="782" y="222" class="small">Échelle: 1 m = 12.8 unités</text>
+<text x="782" y="250" class="small">Clés vectorielles: 4</text>
+<text x="782" y="278" class="small">Points échantillonnés: 16</text>
+<text x="782" y="306" class="small">Direction: clockwise</text>
+<text x="782" y="334" class="small">Checkpoints: 3</text>
+<text x="782" y="382" class="label">Validation C-S01</text>
+<text x="782" y="416" class="small">Longueur: 272.88 m</text>
+<text x="782" y="444" class="small">Largeur min: 10.00 m</text>
+<text x="782" y="472" class="small">Courbure max: 0.07409 1/m</text>
+<text x="56" y="718" class="small">Visualisation en mètres après conversion expérimentale. Les losanges indiquent les checkpoints projetés sur le point central le plus proche.</text>
+</svg>

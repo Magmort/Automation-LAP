@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="820" viewBox="0 0 1240 820" role="img" aria-labelledby="title desc">
+<title id="title">E-S06 replay minimal summary</title>
+<desc id="desc">Replay minimal feasibility synthesis and decision.</desc>
+<rect width="100%" height="100%" fill="#f7f7f3" />
+<g font-family="Arial, sans-serif" fill="#222">
+<text x="54" y="70" font-size="26" font-weight="700">E-S06 - Synthese replay minimal</text>
+<text x="54" y="102" font-size="15" fill="#5f625d">Decision: validee avec reserves; confiance moyen a bon; scenarios 5/5</text>
+<rect x="54" y="132" width="1130" height="174" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="84" y="176" font-size="16" font-weight="700">Preuves validees</text>
+<circle cx="94" cy="238" r="44" fill="#2f9d68" opacity="0.14" stroke="#2f9d68" stroke-width="3" />
+<text x="94" y="234" font-size="16" font-weight="700" text-anchor="middle" fill="#2f9d68">E-S01</text>
+<text x="94" y="256" font-size="12" text-anchor="middle" fill="#5f625d">Autonome</text>
+<line x1="172" y1="238" x2="246" y2="238" stroke="#c9c9c2" stroke-width="4" />
+<circle cx="298" cy="238" r="44" fill="#2f9d68" opacity="0.14" stroke="#2f9d68" stroke-width="3" />
+<text x="298" y="234" font-size="16" font-weight="700" text-anchor="middle" fill="#2f9d68">E-S02</text>
+<text x="298" y="256" font-size="12" text-anchor="middle" fill="#5f625d">Navigation</text>
+<line x1="376" y1="238" x2="450" y2="238" stroke="#c9c9c2" stroke-width="4" />
+<circle cx="502" cy="238" r="44" fill="#2f9d68" opacity="0.14" stroke="#2f9d68" stroke-width="3" />
+<text x="502" y="234" font-size="16" font-weight="700" text-anchor="middle" fill="#2f9d68">E-S03</text>
+<text x="502" y="256" font-size="12" text-anchor="middle" fill="#5f625d">Evenements</text>
+<line x1="580" y1="238" x2="654" y2="238" stroke="#c9c9c2" stroke-width="4" />
+<circle cx="706" cy="238" r="44" fill="#2f9d68" opacity="0.14" stroke="#2f9d68" stroke-width="3" />
+<text x="706" y="234" font-size="16" font-weight="700" text-anchor="middle" fill="#2f9d68">E-S04</text>
+<text x="706" y="256" font-size="12" text-anchor="middle" fill="#5f625d">Taille</text>
+<line x1="784" y1="238" x2="858" y2="238" stroke="#c9c9c2" stroke-width="4" />
+<circle cx="910" cy="238" r="44" fill="#2f9d68" opacity="0.14" stroke="#2f9d68" stroke-width="3" />
+<text x="910" y="234" font-size="16" font-weight="700" text-anchor="middle" fill="#2f9d68">E-S05</text>
+<text x="910" y="256" font-size="12" text-anchor="middle" fill="#5f625d">Version</text>
+<rect x="74" y="332" width="242" height="86" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="92" y="366" font-size="13" fill="#5f625d">Replay</text>
+<text x="92" y="398" font-size="24" font-weight="700" fill="#2f7ed8">55s / 221 frames</text>
+<rect x="348" y="332" width="242" height="86" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="366" y="366" font-size="13" fill="#5f625d">Taille 4 Hz</text>
+<text x="366" y="398" font-size="24" font-weight="700" fill="#6f4bb2">148 kB</text>
+<rect x="622" y="332" width="242" height="86" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="640" y="366" font-size="13" fill="#5f625d">Echantillonnage</text>
+<text x="640" y="398" font-size="24" font-weight="700" fill="#d2842f">41-719 kB</text>
+<rect x="896" y="332" width="242" height="86" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="914" y="366" font-size="13" fill="#5f625d">Compatibilite</text>
+<text x="914" y="398" font-size="24" font-weight="700" fill="#2f9d68">0 mismatch</text>
+<rect x="54" y="456" width="544" height="256" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="84" y="496" font-size="16" font-weight="700">Contrat candidat</text>
+<text x="94" y="532" font-size="13" fill="#5f625d">Kind</text>
+<text x="254" y="532" font-size="13" font-weight="700">AutomationLapReplay</text>
+<text x="94" y="566" font-size="13" fill="#5f625d">Schema</text>
+<text x="254" y="566" font-size="13" font-weight="700">0.1.0</text>
+<text x="94" y="600" font-size="13" fill="#5f625d">Unites</text>
+<text x="254" y="600" font-size="13" font-weight="700">s, m, m/s, rad</text>
+<text x="94" y="634" font-size="13" fill="#5f625d">Telemetrie</text>
+<text x="254" y="634" font-size="13" font-weight="700">4 Hz reference; 1 a 20 Hz mesures</text>
+<text x="94" y="668" font-size="13" fill="#5f625d">Keyframes</text>
+<text x="254" y="668" font-size="13" font-weight="700">1 s</text>
+<text x="94" y="702" font-size="13" fill="#5f625d">Version</text>
+<text x="254" y="702" font-size="13" font-weight="700">accept-list stricte</text>
+<rect x="644" y="456" width="540" height="256" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="684" y="496" font-size="16" font-weight="700">Reserves</text>
+<circle cx="694" cy="528" r="5" fill="#d2842f" />
+<text x="714" y="532" font-size="13" fill="#222222">JSON readable and not optimized; compression or binary packing remains to ev</text>
+<circle cx="694" cy="574" r="5" fill="#d2842f" />
+<text x="714" y="578" font-size="13" fill="#222222">Measurements use one deterministic 55 s scenario with 3 vehicles.</text>
+<circle cx="694" cy="620" r="5" fill="#d2842f" />
+<text x="714" y="624" font-size="13" fill="#222222">Replay rendering and interpolation are not validated inside Unity UI yet.</text>
+<circle cx="694" cy="666" r="5" fill="#d2842f" />
+<text x="714" y="670" font-size="13" fill="#222222">Schema migration is not implemented; incompatible versions are rejected expl</text>
+</g>
+</svg>

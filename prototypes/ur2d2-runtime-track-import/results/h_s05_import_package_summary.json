@@ -1,0 +1,30 @@
+{
+  "scenario": "H-S05",
+  "status": "import-package-ready-for-h-s06",
+  "success": true,
+  "generatedAtUtc": "2026-07-29T20:40:17Z",
+  "packagePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-runtime-track-import\\results\\h_s05_import_package.json",
+  "packageContentSha256": "476eb2a68c2fe2ac8a57876da0e9c88ad0c2b6d4993aa54dbd2f2af0d7af67d7",
+  "checks": {
+    "trackDefinitionValid": true,
+    "overlayValidated": true,
+    "trackDataNotRequired": true,
+    "pitlaneIncluded": true,
+    "wallsIncluded": true,
+    "backgroundIncluded": true,
+    "uniformPixelMapping": true
+  },
+  "summary": {
+    "trackId": "ur2d2-runtime-r00-h03-candidate",
+    "name": "First_Track",
+    "centerlinePoints": 64,
+    "totalLengthM": 275.35198976400955,
+    "minTotalWidthM": 10.0,
+    "pitlaneLaneCount": 2,
+    "wallCount": 1,
+    "checkpointCount": 3,
+    "preferredBackground": "track_preview.png",
+    "trackDataUsed": false
+  },
+  "nextStep": "H-S06 can run the autonomous vehicle on the packaged TrackDefinition and render it over the runtime background."
+}

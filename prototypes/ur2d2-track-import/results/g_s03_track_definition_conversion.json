@@ -1,0 +1,280 @@
+{
+  "scenario": "G-S03",
+  "status": "validated-with-reserves",
+  "generatedAt": "2026-07-29T17:01:13+00:00",
+  "rawInputPath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\results\\g_s02_raw_reader.json",
+  "trackDefinitionPath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\results\\g_s03_track_definition_candidate.json",
+  "conversionNotes": {
+    "sourceFixture": "T05_start_and_checkpoints",
+    "sourceSha256": "e873f0ec955d4d674443b44c67f025b3cdfc571cea3823e3fb67a21c858d2b63",
+    "rawOriginEditorUnits": {
+      "x": 1952.0,
+      "y": 1392.0
+    },
+    "scalePolicy": {
+      "editorUnitsPerMetre": 12.8,
+      "status": "grid-calibrated",
+      "reason": "Les deux premières clés route sont séparées par 1056 unités éditeur et 33 carreaux de grille, soit 32 unités éditeur par carreau. Avec 1 carreau = 2,5 m, l'échelle retenue est 12,8 unités éditeur par mètre."
+    },
+    "widthPolicy": {
+      "totalRoadWidthM": 10.0,
+      "leftWidthM": 5.0,
+      "rightWidthM": 5.0,
+      "status": "source-file",
+      "reason": "La largeur totale provient de `globalCandidates.float32At0`. Sa valeur 10,0 correspond visuellement à environ 4 carreaux, soit 2,5 m par carreau avec l'échelle grille."
+    },
+    "axisPolicy": {
+      "x": "raw x increases to TrackDefinition x",
+      "y": "raw y is inverted so screen-down editor coordinates become negative forward coordinates",
+      "status": "experimental"
+    },
+    "vectorInterpolationPolicy": {
+      "status": "experimental-needs-g-s04-confirmation",
+      "formula": "cubic bezier per segment; handle A is key[i] + angleA[i]/weightA[i], handle B is key[i+1] + angleB[i]/weightB[i]",
+      "samplesPerSegment": 4,
+      "warning": "UR2D2 stores the incoming B handle on the previous segment row. Handle vectors use a global vertical inversion relative to raw point coordinates."
+    },
+    "centerlinePolicy": {
+      "rawVectorKeys": 4,
+      "convertedCenterlinePoints": 16,
+      "method": "drop duplicated closure key, then sample each vector segment with a provisional cubic Bezier formula"
+    },
+    "checkpointPolicy": {
+      "method": "map each raw checkpoint candidate to nearest converted centerline point; use Finish as start line when present",
+      "rawCheckpointCount": 3
+    }
+  },
+  "validation": {
+    "success": true,
+    "errors": [],
+    "preprocessed": {
+      "trackId": "ur2d2-editor-t05-candidate",
+      "name": "UR2D2 Editor T05 Candidate",
+      "schemaVersion": "0.1.0",
+      "pointCount": 16,
+      "segmentCount": 16,
+      "sampleCount": 55,
+      "sampleSpacingM": 4.961535711643667,
+      "totalLengthM": 272.8844641404017,
+      "minSegmentLengthM": 9.67844408093992,
+      "maxSegmentLengthM": 25.539551,
+      "minTotalWidthM": 10.0,
+      "maxTotalWidthM": 10.0,
+      "maxAbsCurvature": 0.07408663551033831,
+      "maxAbsTurnAngleRad": 0.9394035757690001,
+      "startDistanceM": 66.75292999999999,
+      "checkpointDistancesM": [
+        228.62067615114077,
+        152.12338407020084,
+        66.75292999999999
+      ],
+      "segments": [
+        {
+          "index": 0,
+          "from": "p00",
+          "to": "p01",
+          "length": 15.74707,
+          "heading": 0.0
+        },
+        {
+          "index": 1,
+          "from": "p01",
+          "to": "p02",
+          "length": 25.50293,
+          "heading": 0.0
+        },
+        {
+          "index": 2,
+          "from": "p02",
+          "to": "p03",
+          "length": 25.50293,
+          "heading": 0.0
+        },
+        {
+          "index": 3,
+          "from": "p03",
+          "to": "p04",
+          "length": 15.74707,
+          "heading": 0.0
+        },
+        {
+          "index": 4,
+          "from": "p04",
+          "to": "p05",
+          "length": 9.67844408093992,
+          "heading": -0.9394035757690001
+        },
+        {
+          "index": 5,
+          "from": "p05",
+          "to": "p06",
+          "length": 17.292671954160497,
+          "heading": -1.4604509163247097
+        },
+        {
+          "index": 6,
+          "from": "p06",
+          "to": "p07",
+          "length": 17.292671954160497,
+          "heading": -1.6811417372650834
+        },
+        {
+          "index": 7,
+          "from": "p07",
+          "to": "p08",
+          "length": 9.67844408093992,
+          "heading": -2.202189077820793
+        },
+        {
+          "index": 8,
+          "from": "p08",
+          "to": "p09",
+          "length": 15.681152,
+          "heading": 3.141592653589793
+        },
+        {
+          "index": 9,
+          "from": "p09",
+          "to": "p10",
+          "length": 25.510254,
+          "heading": 3.141592653589793
+        },
+        {
+          "index": 10,
+          "from": "p10",
+          "to": "p11",
+          "length": 25.539551,
+          "heading": 3.141592653589793
+        },
+        {
+          "index": 11,
+          "from": "p11",
+          "to": "p12",
+          "length": 15.769043,
+          "heading": 3.141592653589793
+        },
+        {
+          "index": 12,
+          "from": "p12",
+          "to": "p13",
+          "length": 9.67844408093992,
+          "heading": 2.202189077820793
+        },
+        {
+          "index": 13,
+          "from": "p13",
+          "to": "p14",
+          "length": 17.292671954160497,
+          "heading": 1.6811417372650834
+        },
+        {
+          "index": 14,
+          "from": "p14",
+          "to": "p15",
+          "length": 17.292671954160497,
+          "heading": 1.4604509163247097
+        },
+        {
+          "index": 15,
+          "from": "p15",
+          "to": "p00",
+          "length": 9.67844408093992,
+          "heading": 0.9394035757690001
+        }
+      ],
+      "pointDistancesM": [
+        0.0,
+        15.74707,
+        41.25,
+        66.75292999999999,
+        82.5,
+        92.17844408093993,
+        109.47111603510042,
+        126.76378798926092,
+        136.44223207020084,
+        152.12338407020084,
+        177.63363807020085,
+        203.17318907020083,
+        218.94223207020084,
+        228.62067615114077,
+        245.91334810530128,
+        263.20602005946176
+      ],
+      "curvatures": [
+        -0.07389455904635715,
+        0.0,
+        0.0,
+        0.0,
+        -0.07389455904635715,
+        -0.03863743271710482,
+        -0.012762100705164713,
+        -0.038637432717104826,
+        -0.07408663551033831,
+        0.0,
+        0.0,
+        0.0,
+        -0.0738307537228389,
+        -0.038637432717104826,
+        -0.012762100705164713,
+        -0.03863743271710482
+      ],
+      "samplesPreview": [
+        {
+          "s": 0.0,
+          "x": -41.25,
+          "y": 25.0,
+          "tangentX": 1.0,
+          "tangentY": 0.0,
+          "normalX": -0.0,
+          "normalY": 1.0,
+          "leftWidth": 5.0,
+          "rightWidth": 5.0
+        },
+        {
+          "s": 4.961535711643667,
+          "x": -36.28846428835633,
+          "y": 25.0,
+          "tangentX": 1.0,
+          "tangentY": 0.0,
+          "normalX": -0.0,
+          "normalY": 1.0,
+          "leftWidth": 5.0,
+          "rightWidth": 5.0
+        },
+        {
+          "s": 9.923071423287334,
+          "x": -31.326928576712668,
+          "y": 25.0,
+          "tangentX": 1.0,
+          "tangentY": 0.0,
+          "normalX": -0.0,
+          "normalY": 1.0,
+          "leftWidth": 5.0,
+          "rightWidth": 5.0
+        },
+        {
+          "s": 14.884607134931002,
+          "x": -26.365392865068998,
+          "y": 25.0,
+          "tangentX": 1.0,
+          "tangentY": 0.0,
+          "normalX": -0.0,
+          "normalY": 1.0,
+          "leftWidth": 5.0,
+          "rightWidth": 5.0
+        },
+        {
+          "s": 19.84614284657467,
+          "x": -21.40385715342533,
+          "y": 25.0,
+          "tangentX": 1.0,
+          "tangentY": 0.0,
+          "normalX": -0.0,
+          "normalY": 1.0,
+          "leftWidth": 5.0,
+          "rightWidth": 5.0
+        }
+      ]
+    }
+  }
+}

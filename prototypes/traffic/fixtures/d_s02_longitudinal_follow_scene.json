@@ -1,0 +1,48 @@
+{
+  "kind": "TrafficFollowScene",
+  "schemaVersion": "0.1.0",
+  "sceneId": "d-s02-longitudinal-follow",
+  "name": "D-S02 Longitudinal Follow",
+  "trackRef": "prototypes/autonomous-lap/fixtures/canonical_track.json",
+  "simulation": {
+    "durationS": 90.0,
+    "dt": 0.008333333333333333,
+    "sampleIntervalS": 0.25
+  },
+  "perception": {
+    "forwardLookaheadM": 120.0,
+    "sameCorridorLateralM": 2.2
+  },
+  "controller": {
+    "standstillGapM": 7.0,
+    "timeHeadwayS": 0.9,
+    "gapGain": 0.72,
+    "speedResponseTimeS": 0.75,
+    "maxAccelMps2": 3.0,
+    "maxDecelMps2": 6.0
+  },
+  "vehicles": [
+    {
+      "id": "leader",
+      "label": "Leader",
+      "role": "leader",
+      "progressM": 70.0,
+      "lateralOffsetM": 0.0,
+      "initialSpeedKmh": 42.0,
+      "targetSpeedKmh": 42.0,
+      "lengthM": 4.4,
+      "widthM": 1.9
+    },
+    {
+      "id": "follower",
+      "label": "Follower",
+      "role": "follower",
+      "progressM": 15.0,
+      "lateralOffsetM": 0.1,
+      "initialSpeedKmh": 64.0,
+      "freeSpeedKmh": 70.0,
+      "lengthM": 4.4,
+      "widthM": 1.9
+    }
+  ]
+}

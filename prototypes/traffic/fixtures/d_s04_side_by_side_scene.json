@@ -1,0 +1,50 @@
+{
+  "kind": "TrafficSideBySideScene",
+  "schemaVersion": "0.1.0",
+  "sceneId": "d-s04-side-by-side",
+  "name": "D-S04 Side By Side",
+  "trackRef": "prototypes/autonomous-lap/fixtures/canonical_track.json",
+  "simulation": {
+    "durationS": 45.0,
+    "dt": 0.008333333333333333,
+    "sampleIntervalS": 0.25
+  },
+  "adjacency": {
+    "longitudinalOverlapM": 6.5,
+    "minSideClearanceM": 0.75,
+    "trackEdgeClearanceM": 0.5
+  },
+  "controller": {
+    "speedResponseTimeS": 0.8,
+    "lateralResponseTimeS": 1.2,
+    "maxAccelMps2": 2.5,
+    "maxDecelMps2": 3.5,
+    "maxLateralSpeedMps": 1.8
+  },
+  "vehicles": [
+    {
+      "id": "inside",
+      "label": "Inside",
+      "role": "side_by_side",
+      "progressM": 42.0,
+      "lateralOffsetM": -1.2,
+      "targetLateralOffsetM": -1.8,
+      "initialSpeedKmh": 52.0,
+      "targetSpeedKmh": 52.0,
+      "lengthM": 4.4,
+      "widthM": 1.9
+    },
+    {
+      "id": "outside",
+      "label": "Outside",
+      "role": "side_by_side",
+      "progressM": 40.5,
+      "lateralOffsetM": 1.2,
+      "targetLateralOffsetM": 1.8,
+      "initialSpeedKmh": 53.0,
+      "targetSpeedKmh": 52.0,
+      "lengthM": 4.4,
+      "widthM": 1.9
+    }
+  ]
+}

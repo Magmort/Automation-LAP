@@ -1,0 +1,40 @@
+{
+  "scenario": "F-S03",
+  "sourceReplay": "prototypes/replay/results/e_s01_minimal_replay.replay.json",
+  "tickRateHz": 60,
+  "durationS": 180.0,
+  "repetitions": 3,
+  "targetVehicleCounts": [12, 20],
+  "profiles": [
+    {
+      "id": "target_12_accel",
+      "label": "Accelerated 12 cars",
+      "vehicleCount": 12,
+      "required": true
+    },
+    {
+      "id": "target_20_accel",
+      "label": "Accelerated 20 cars",
+      "vehicleCount": 20,
+      "required": true
+    },
+    {
+      "id": "stress_40_accel",
+      "label": "Accelerated 40 cars",
+      "vehicleCount": 40,
+      "required": false
+    }
+  ],
+  "workload": {
+    "neighborLookaheadM": 120.0,
+    "targetHeadwayS": 0.9,
+    "minimumGapM": 7.0,
+    "replaySampleHz": 4,
+    "driverLookaheadTicks": 5
+  },
+  "thresholds": {
+    "requiredMinRealtimeFactor": 20.0,
+    "requiredMaxP95TickMs": 4.0,
+    "requiredMaxTickStdevMs": 1.0
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "scenario": "F-S05",
+  "success": true,
+  "generatedAtUtc": "2026-07-28T17:26:15Z",
+  "inputSummaries": {
+    "F-S01": "prototypes/performance/results/f_s01_benchmark_harness_summary.json",
+    "F-S02": "prototypes/performance/results/f_s02_realtime_load_summary.json",
+    "F-S03": "prototypes/performance/results/f_s03_accelerated_no_render_summary.json",
+    "F-S04": "prototypes/performance/results/f_s04_replay_cost_summary.json"
+  },
+  "decision": {
+    "success": true,
+    "decision": "validee avec reserves",
+    "confidence": "moyen",
+    "blockers": [],
+    "candidateParameters": {
+      "targetVehicleCountMin": 12,
+      "targetVehicleCountMax": 20,
+      "stressVehicleCount": 40,
+      "simulationTickRateHz": 60,
+      "referenceReplaySampleHz": 4,
+      "target20RealtimeFactorMean": 73.423053,
+      "target20TickP95Ms": 0.374367,
+      "target20AcceleratedFactorMean": 36.331298,
+      "target20ReplayShareAt4Hz": 0.059804,
+      "target20ReplayBytesPerSecondAt4Hz": 5020.8,
+      "target20ReplayShareAt20Hz": 0.230966,
+      "stress40HarnessRealtimeFactorMean": 307.188
+    },
+    "residualRisks": [
+      "mesures Python hors Unity et hors rendu reel",
+      "voitures dupliquees depuis E-S01, sans comportements independants complets",
+      "replay compact JSON en memoire, sans ecriture disque continue ni format binaire",
+      "pics de scheduling Windows/Python visibles sur certains runs longs",
+      "couts GPU, UI, audio, cameras et multithreading non mesures"
+    ]
+  },
+  "sourceMetrics": {
+    "fS01": {
+      "profileCount": 4,
+      "repetitionsPerProfile": 5,
+      "simulatedDurationS": 55.0,
+      "minVehicleCount": 1,
+      "maxVehicleCount": 40,
+      "benchmarkErrorCount": 0,
+      "allRealTimeFactorsAboveOne": true
+    },
+    "fS02": {
+      "profileCount": 3,
+      "requiredProfileCount": 2,
+      "repetitionsPerProfile": 3,
+      "tickRateHz": 60.0,
+      "tickBudgetMs": 16.666666666666668,
+      "simulatedDurationS": 55.0,
+      "profileErrorCount": 0,
+      "requiredProfilesPass": true,
+      "minRequiredRealtimeFactorMean": 73.423053,
+      "maxRequiredP95BudgetRatioMean": 0.022462
+    },
+    "fS03": {
+      "profileCount": 3,
+      "requiredProfileCount": 2,
+      "repetitionsPerProfile": 3,
+      "tickRateHz": 60.0,
+      "simulatedDurationS": 180.0,
+      "profileErrorCount": 0,
+      "requiredProfilesPass": true,
+      "minRequiredRealtimeFactorMean": 36.331298,
+      "maxRequiredTickP95MsMean": 0.766633,
+      "maxRequiredTickMeanStdevMs": 0.074657
+    },
+    "fS04": {
+      "profileCount": 9,
+      "repetitionsPerProfile": 3,
+      "profileGroups": [
+        {
+          "vehicleCount": 20,
+          "replaySampleHz": [
+            0,
+            1,
+            2,
+            4,
+            10,
+            20
+          ]
+        },
+        {
+          "vehicleCount": 40,
+          "replaySampleHz": [
+            0,
+            4,
+            20
+          ]
+        }
+      ],
+      "referenceVehicleCount": 20,
+      "referenceReplaySampleHz": 4.0,
+      "referenceReplayShareMean": 0.059804,
+      "referenceWallOverheadRatio": 1.222954,
+      "referenceSerializedBytesPerSecond": 5020.8,
+      "profileErrorCount": 0
+    }
+  }
+}

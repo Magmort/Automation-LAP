@@ -1,0 +1,1536 @@
+{
+  "scenario": "H-S01b",
+  "status": "complete-runtime-element-map",
+  "generatedAtUtc": "2026-07-29T19:30:14Z",
+  "runtimeFixture": "R00_runtime_track_2",
+  "editorSav": {
+    "path": "track_editor.sav",
+    "sizeBytes": 3655,
+    "sourceSha256": "4483667becaec07722e3d3eddb3eb2a93fd9b117bd2aff7e96666e8781557ab3",
+    "globalWidthCandidate": 10.0,
+    "lineLikeBlocks": [
+      {
+        "hexOffset": "0x004d",
+        "pointCount": 5,
+        "firstPoint": {
+          "x": 1424.0,
+          "y": 1072.0
+        },
+        "lastPoint": {
+          "x": 1424.0,
+          "y": 1072.0
+        }
+      },
+      {
+        "hexOffset": "0x015d",
+        "pointCount": 20,
+        "firstPoint": {
+          "x": 2204.248291,
+          "y": 1092.0
+        },
+        "lastPoint": {
+          "x": 1306.987915,
+          "y": 1426.178345
+        }
+      },
+      {
+        "hexOffset": "0x0290",
+        "pointCount": 8,
+        "firstPoint": {
+          "x": 1424.0,
+          "y": 1104.0
+        },
+        "lastPoint": {
+          "x": 1424.0,
+          "y": 1104.0
+        }
+      },
+      {
+        "hexOffset": "0x04c8",
+        "pointCount": 11,
+        "firstPoint": {
+          "x": 1488.0,
+          "y": 624.0
+        },
+        "lastPoint": {
+          "x": 1488.0,
+          "y": 624.0
+        }
+      },
+      {
+        "hexOffset": "0x06e6",
+        "pointCount": 8,
+        "firstPoint": {
+          "x": 2416.0,
+          "y": 1136.0
+        },
+        "lastPoint": {
+          "x": 1520.0,
+          "y": 1616.0
+        }
+      },
+      {
+        "hexOffset": "0x0997",
+        "pointCount": 3,
+        "firstPoint": {
+          "x": 1565.0,
+          "y": 826.900024
+        },
+        "lastPoint": {
+          "x": 1359.41687,
+          "y": 1094.69104
+        }
+      },
+      {
+        "hexOffset": "0x0a43",
+        "pointCount": 5,
+        "firstPoint": {
+          "x": 2819.0,
+          "y": 826.900024
+        },
+        "lastPoint": {
+          "x": 2587.147217,
+          "y": 1551.060425
+        }
+      },
+      {
+        "hexOffset": "0x0b43",
+        "pointCount": 5,
+        "firstPoint": {
+          "x": 1424.0,
+          "y": 1072.0
+        },
+        "lastPoint": {
+          "x": 1424.0,
+          "y": 1072.0
+        }
+      },
+      {
+        "hexOffset": "0x0c43",
+        "pointCount": 5,
+        "firstPoint": {
+          "x": 1424.0,
+          "y": 1098.25
+        },
+        "lastPoint": {
+          "x": 1424.0,
+          "y": 1098.25
+        }
+      },
+      {
+        "hexOffset": "0x0d43",
+        "pointCount": 5,
+        "firstPoint": {
+          "x": 1424.0,
+          "y": 1045.75
+        },
+        "lastPoint": {
+          "x": 1424.0,
+          "y": 1045.75
+        }
+      }
+    ],
+    "relevantStringTokens": [
+      {
+        "offset": 8,
+        "hexOffset": "0x0008",
+        "value": "spr_road"
+      },
+      {
+        "offset": 25,
+        "hexOffset": "0x0019",
+        "value": "grass_1"
+      },
+      {
+        "offset": 620,
+        "hexOffset": "0x026c",
+        "value": "spr_sand"
+      },
+      {
+        "offset": 630,
+        "hexOffset": "0x0276",
+        "value": "spr_sand_edge"
+      },
+      {
+        "offset": 1044,
+        "hexOffset": "0x0414",
+        "value": "forrest2"
+      },
+      {
+        "offset": 1053,
+        "hexOffset": "0x041d",
+        "value": "spr_water_edge"
+      },
+      {
+        "offset": 1116,
+        "hexOffset": "0x045c",
+        "value": "forrest2"
+      },
+      {
+        "offset": 1125,
+        "hexOffset": "0x0465",
+        "value": "spr_water_edge"
+      },
+      {
+        "offset": 1188,
+        "hexOffset": "0x04a4",
+        "value": "forrest2"
+      },
+      {
+        "offset": 1197,
+        "hexOffset": "0x04ad",
+        "value": "spr_water_edge"
+      },
+      {
+        "offset": 1752,
+        "hexOffset": "0x06d8",
+        "value": "wall1"
+      },
+      {
+        "offset": 2157,
+        "hexOffset": "0x086d",
+        "value": "spr_checkpoint"
+      },
+      {
+        "offset": 2205,
+        "hexOffset": "0x089d",
+        "value": "Finish"
+      },
+      {
+        "offset": 2216,
+        "hexOffset": "0x08a8",
+        "value": "checkpoint"
+      },
+      {
+        "offset": 2231,
+        "hexOffset": "0x08b7",
+        "value": "spr_checkpoint"
+      },
+      {
+        "offset": 2278,
+        "hexOffset": "0x08e6",
+        "value": "Checkpoint 1"
+      },
+      {
+        "offset": 2294,
+        "hexOffset": "0x08f6",
+        "value": "checkpoint"
+      },
+      {
+        "offset": 2310,
+        "hexOffset": "0x0906",
+        "value": "spr_checkpoint"
+      },
+      {
+        "offset": 2357,
+        "hexOffset": "0x0935",
+        "value": "Checkpoint 2"
+      },
+      {
+        "offset": 2373,
+        "hexOffset": "0x0945",
+        "value": "checkpoint"
+      },
+      {
+        "offset": 2389,
+        "hexOffset": "0x0955",
+        "value": "spr_pit_building_to_right"
+      }
+    ],
+    "asciiStringCandidateCount": 34
+  },
+  "trackData": {
+    "path": "track.data",
+    "sizeBytes": 35124,
+    "relevantStringTokens": [
+      {
+        "token": "checkpoint",
+        "offsets": [
+          32,
+          63,
+          94,
+          25159,
+          25202,
+          25245
+        ],
+        "count": 6
+      },
+      {
+        "token": "spr_checkpoint",
+        "offsets": [
+          25155,
+          25198,
+          25241
+        ],
+        "count": 3
+      },
+      {
+        "token": "spr_pit_building_to_right",
+        "offsets": [
+          25101
+        ],
+        "count": 1
+      }
+    ],
+    "asciiStringCandidateCount": 269
+  },
+  "runtimeLayers": {
+    "track.png": {
+      "path": "track.png",
+      "size": [
+        4096,
+        2048
+      ],
+      "nonTransparentPixelCount": 8388608,
+      "bbox": [
+        0,
+        0,
+        4096,
+        2048
+      ]
+    },
+    "track_preview.png": {
+      "path": "track_preview.png",
+      "size": [
+        768,
+        384
+      ],
+      "nonTransparentPixelCount": 294912,
+      "bbox": [
+        0,
+        0,
+        768,
+        384
+      ]
+    },
+    "gravel.png": {
+      "path": "gravel.png",
+      "size": [
+        4096,
+        2048
+      ],
+      "nonTransparentPixelCount": 153194,
+      "bbox": [
+        1381,
+        1126,
+        1875,
+        1536
+      ]
+    },
+    "grass.png": {
+      "path": "grass.png",
+      "size": [
+        4096,
+        2048
+      ],
+      "nonTransparentPixelCount": 7766457,
+      "bbox": [
+        0,
+        0,
+        4096,
+        2048
+      ]
+    },
+    "minimap.png": {
+      "path": "minimap.png",
+      "size": [
+        4096,
+        2048
+      ],
+      "nonTransparentPixelCount": 633113,
+      "bbox": [
+        1272,
+        718,
+        3006,
+        1767
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "road_segments",
+      "label": "Segments de route",
+      "expected": 4,
+      "detectedInEditorSav": 4,
+      "runtimeStatus": "localized-sampled-track-data",
+      "confidence": "high",
+      "evidence": "La route est lue comme trace vectorielle dans track_editor.sav et présente comme blocs échantillonnés dans track.data.",
+      "details": {
+        "sourceOffset": 77,
+        "sourceHexOffset": "0x004d",
+        "sourcePointCount": 5,
+        "sampledPointsChecked": [
+          {
+            "x": 1424.0,
+            "y": 1072.0,
+            "xOffsets": [
+              3185,
+              4265,
+              4273,
+              8477,
+              9437,
+              9445,
+              13905,
+              15121
+            ],
+            "xOccurrenceCount": 11,
+            "yOffsets": [
+              86,
+              117,
+              125,
+              133,
+              141,
+              149,
+              157,
+              165
+            ],
+            "yOccurrenceCount": 206,
+            "xyPairOffsets": [
+              4265,
+              4273
+            ],
+            "xyPairOccurrenceCount": 2,
+            "yxPairOffsets": [
+              4261,
+              4269
+            ],
+            "yxPairOccurrenceCount": 2
+          },
+          {
+            "x": 2480.0,
+            "y": 1712.0,
+            "xOffsets": [
+              489,
+              1569,
+              5893,
+              6861,
+              11065,
+              12289,
+              19001
+            ],
+            "xOccurrenceCount": 7,
+            "yOffsets": [
+              55,
+              1565,
+              1573,
+              1581,
+              1589,
+              1597,
+              1605,
+              1613
+            ],
+            "yOccurrenceCount": 408,
+            "xyPairOffsets": [
+              1569,
+              19001
+            ],
+            "xyPairOccurrenceCount": 2,
+            "yxPairOffsets": [
+              1565,
+              18997
+            ],
+            "yxPairOccurrenceCount": 2
+          },
+          {
+            "x": 1424.0,
+            "y": 1072.0,
+            "xOffsets": [
+              3185,
+              4265,
+              4273,
+              8477,
+              9437,
+              9445,
+              13905,
+              15121
+            ],
+            "xOccurrenceCount": 11,
+            "yOffsets": [
+              86,
+              117,
+              125,
+              133,
+              141,
+              149,
+              157,
+              165
+            ],
+            "yOccurrenceCount": 206,
+            "xyPairOffsets": [
+              4265,
+              4273
+            ],
+            "xyPairOccurrenceCount": 2,
+            "yxPairOffsets": [
+              4261,
+              4269
+            ],
+            "yxPairOccurrenceCount": 2
+          }
+        ],
+        "xyPairHits": 3,
+        "yxPairHits": 3,
+        "scalarCoordinateHits": 3,
+        "runtimeOffsets": [
+          1565,
+          1569,
+          4261,
+          4265,
+          4269,
+          4273,
+          18997,
+          19001
+        ]
+      }
+    },
+    {
+      "id": "ai_lines",
+      "label": "Lignes IA",
+      "expected": 3,
+      "detectedInEditorSav": 3,
+      "runtimeStatus": "localized-sampled-track-data",
+      "confidence": "high",
+      "evidence": "Les trois lignes IA sont lues dans track_editor.sav ; leurs points caractéristiques ressortent dans track.data, avec alternance XY/YX selon les blocs runtime.",
+      "details": {
+        "ai_line_1": {
+          "sourceOffset": 2883,
+          "sourceHexOffset": "0x0b43",
+          "sourcePointCount": 5,
+          "sampledPointsChecked": [
+            {
+              "x": 1424.0,
+              "y": 1072.0,
+              "xOffsets": [
+                3185,
+                4265,
+                4273,
+                8477,
+                9437,
+                9445,
+                13905,
+                15121
+              ],
+              "xOccurrenceCount": 11,
+              "yOffsets": [
+                86,
+                117,
+                125,
+                133,
+                141,
+                149,
+                157,
+                165
+              ],
+              "yOccurrenceCount": 206,
+              "xyPairOffsets": [
+                4265,
+                4273
+              ],
+              "xyPairOccurrenceCount": 2,
+              "yxPairOffsets": [
+                4261,
+                4269
+              ],
+              "yxPairOccurrenceCount": 2
+            },
+            {
+              "x": 2480.0,
+              "y": 1712.0,
+              "xOffsets": [
+                489,
+                1569,
+                5893,
+                6861,
+                11065,
+                12289,
+                19001
+              ],
+              "xOccurrenceCount": 7,
+              "yOffsets": [
+                55,
+                1565,
+                1573,
+                1581,
+                1589,
+                1597,
+                1605,
+                1613
+              ],
+              "yOccurrenceCount": 408,
+              "xyPairOffsets": [
+                1569,
+                19001
+              ],
+              "xyPairOccurrenceCount": 2,
+              "yxPairOffsets": [
+                1565,
+                18997
+              ],
+              "yxPairOccurrenceCount": 2
+            },
+            {
+              "x": 1424.0,
+              "y": 1072.0,
+              "xOffsets": [
+                3185,
+                4265,
+                4273,
+                8477,
+                9437,
+                9445,
+                13905,
+                15121
+              ],
+              "xOccurrenceCount": 11,
+              "yOffsets": [
+                86,
+                117,
+                125,
+                133,
+                141,
+                149,
+                157,
+                165
+              ],
+              "yOccurrenceCount": 206,
+              "xyPairOffsets": [
+                4265,
+                4273
+              ],
+              "xyPairOccurrenceCount": 2,
+              "yxPairOffsets": [
+                4261,
+                4269
+              ],
+              "yxPairOccurrenceCount": 2
+            }
+          ],
+          "xyPairHits": 3,
+          "yxPairHits": 3,
+          "scalarCoordinateHits": 3,
+          "runtimeOffsets": [
+            1565,
+            1569,
+            4261,
+            4265,
+            4269,
+            4273,
+            18997,
+            19001
+          ]
+        },
+        "ai_line_2": {
+          "sourceOffset": 3139,
+          "sourceHexOffset": "0x0c43",
+          "sourcePointCount": 5,
+          "sampledPointsChecked": [
+            {
+              "x": 1424.0,
+              "y": 1098.25,
+              "xOffsets": [
+                3185,
+                4265,
+                4273,
+                8477,
+                9437,
+                9445,
+                13905,
+                15121
+              ],
+              "xOccurrenceCount": 11,
+              "yOffsets": [
+                5889,
+                9433,
+                9441
+              ],
+              "yOccurrenceCount": 3,
+              "xyPairOffsets": [
+                9437
+              ],
+              "xyPairOccurrenceCount": 1,
+              "yxPairOffsets": [
+                9433,
+                9441
+              ],
+              "yxPairOccurrenceCount": 2
+            },
+            {
+              "x": 2480.0,
+              "y": 1685.75,
+              "xOffsets": [
+                489,
+                1569,
+                5893,
+                6861,
+                11065,
+                12289,
+                19001
+              ],
+              "xOccurrenceCount": 7,
+              "yOffsets": [
+                6857,
+                8473
+              ],
+              "yOccurrenceCount": 2,
+              "xyPairOffsets": [],
+              "xyPairOccurrenceCount": 0,
+              "yxPairOffsets": [
+                6857
+              ],
+              "yxPairOccurrenceCount": 1
+            },
+            {
+              "x": 1424.0,
+              "y": 1098.25,
+              "xOffsets": [
+                3185,
+                4265,
+                4273,
+                8477,
+                9437,
+                9445,
+                13905,
+                15121
+              ],
+              "xOccurrenceCount": 11,
+              "yOffsets": [
+                5889,
+                9433,
+                9441
+              ],
+              "yOccurrenceCount": 3,
+              "xyPairOffsets": [
+                9437
+              ],
+              "xyPairOccurrenceCount": 1,
+              "yxPairOffsets": [
+                9433,
+                9441
+              ],
+              "yxPairOccurrenceCount": 2
+            }
+          ],
+          "xyPairHits": 2,
+          "yxPairHits": 3,
+          "scalarCoordinateHits": 3,
+          "runtimeOffsets": [
+            6857,
+            9433,
+            9437,
+            9441
+          ]
+        },
+        "ai_line_3": {
+          "sourceOffset": 3395,
+          "sourceHexOffset": "0x0d43",
+          "sourcePointCount": 5,
+          "sampledPointsChecked": [
+            {
+              "x": 1424.0,
+              "y": 1045.75,
+              "xOffsets": [
+                3185,
+                4265,
+                4273,
+                8477,
+                9437,
+                9445,
+                13905,
+                15121
+              ],
+              "xOccurrenceCount": 11,
+              "yOffsets": [
+                11061,
+                15117,
+                15125
+              ],
+              "yOccurrenceCount": 3,
+              "xyPairOffsets": [
+                15121
+              ],
+              "xyPairOccurrenceCount": 1,
+              "yxPairOffsets": [
+                15117,
+                15125
+              ],
+              "yxPairOccurrenceCount": 2
+            },
+            {
+              "x": 2480.0,
+              "y": 1738.25,
+              "xOffsets": [
+                489,
+                1569,
+                5893,
+                6861,
+                11065,
+                12289,
+                19001
+              ],
+              "xOccurrenceCount": 7,
+              "yOffsets": [
+                12285,
+                13901
+              ],
+              "yOccurrenceCount": 2,
+              "xyPairOffsets": [],
+              "xyPairOccurrenceCount": 0,
+              "yxPairOffsets": [
+                12285
+              ],
+              "yxPairOccurrenceCount": 1
+            },
+            {
+              "x": 1424.0,
+              "y": 1045.75,
+              "xOffsets": [
+                3185,
+                4265,
+                4273,
+                8477,
+                9437,
+                9445,
+                13905,
+                15121
+              ],
+              "xOccurrenceCount": 11,
+              "yOffsets": [
+                11061,
+                15117,
+                15125
+              ],
+              "yOccurrenceCount": 3,
+              "xyPairOffsets": [
+                15121
+              ],
+              "xyPairOccurrenceCount": 1,
+              "yxPairOffsets": [
+                15117,
+                15125
+              ],
+              "yxPairOccurrenceCount": 2
+            }
+          ],
+          "xyPairHits": 2,
+          "yxPairHits": 3,
+          "scalarCoordinateHits": 3,
+          "runtimeOffsets": [
+            12285,
+            15117,
+            15121,
+            15125
+          ]
+        }
+      }
+    },
+    {
+      "id": "checkpoints",
+      "label": "Checkpoints",
+      "expected": 3,
+      "detectedInEditorSav": 3,
+      "runtimeStatus": "localized-runtime-records",
+      "confidence": "high",
+      "evidence": "Les trois checkpoints sont présents dans track_editor.sav et correspondent aux records compacts de track.data.",
+      "details": {
+        "matches": [
+          {
+            "label": "Finish",
+            "sourcePayloadOffset": "0x087d",
+            "x": 2239.638916,
+            "y": 1072.0,
+            "runtimeRecordOffset": 74,
+            "runtimeTokenOffset": 94,
+            "distanceEditorUnits": 0.0,
+            "rotationRuntimeMinusEditorMinus90Deg": 0.0
+          },
+          {
+            "label": "Checkpoint 1",
+            "sourcePayloadOffset": "0x08c6",
+            "x": 2368.644531,
+            "y": 1712.0,
+            "runtimeRecordOffset": 43,
+            "runtimeTokenOffset": 63,
+            "distanceEditorUnits": 0.0,
+            "rotationRuntimeMinusEditorMinus90Deg": 0.0
+          },
+          {
+            "label": "Checkpoint 2",
+            "sourcePayloadOffset": "0x0915",
+            "x": 1356.068115,
+            "y": 1629.605835,
+            "runtimeRecordOffset": 12,
+            "runtimeTokenOffset": 32,
+            "distanceEditorUnits": 0.0,
+            "rotationRuntimeMinusEditorMinus90Deg": 0.0
+          }
+        ],
+        "spriteCheckpointRecordCount": 3
+      }
+    },
+    {
+      "id": "pitlane",
+      "label": "Pitlane",
+      "expected": 1,
+      "detectedInEditorSav": 1,
+      "runtimeStatus": "localized-token-and-sampled-connectors",
+      "confidence": "medium",
+      "evidence": "Le bâtiment pitlane est présent par token runtime ; les deux voies pit1/pit2 sont lues comme connecteurs vectoriels dans le .sav et échantillonnées dans track.data.",
+      "details": {
+        "runtimePitBuildingTokenOffsets": [
+          25101
+        ],
+        "entry": {
+          "sourceOffset": 2455,
+          "sourceHexOffset": "0x0997",
+          "sourcePointCount": 3,
+          "sampledPointsChecked": [
+            {
+              "x": 1565.0,
+              "y": 826.900024,
+              "xOffsets": [
+                22201
+              ],
+              "xOccurrenceCount": 1,
+              "yOffsets": [
+                16381,
+                16389,
+                16397,
+                16405,
+                16413,
+                16421,
+                16429,
+                16437
+              ],
+              "yOccurrenceCount": 238,
+              "xyPairOffsets": [
+                22201
+              ],
+              "xyPairOccurrenceCount": 1,
+              "yxPairOffsets": [
+                22197
+              ],
+              "yxPairOccurrenceCount": 1
+            },
+            {
+              "x": 1424.0,
+              "y": 880.0,
+              "xOffsets": [
+                3185,
+                4265,
+                4273,
+                8477,
+                9437,
+                9445,
+                13905,
+                15121
+              ],
+              "xOccurrenceCount": 11,
+              "yOffsets": [
+                21957
+              ],
+              "yOccurrenceCount": 1,
+              "xyPairOffsets": [],
+              "xyPairOccurrenceCount": 0,
+              "yxPairOffsets": [
+                21957
+              ],
+              "yxPairOccurrenceCount": 1
+            },
+            {
+              "x": 1359.41687,
+              "y": 1094.69104,
+              "xOffsets": [
+                21609
+              ],
+              "xOccurrenceCount": 1,
+              "yOffsets": [
+                21605
+              ],
+              "yOccurrenceCount": 1,
+              "xyPairOffsets": [],
+              "xyPairOccurrenceCount": 0,
+              "yxPairOffsets": [
+                21605
+              ],
+              "yxPairOccurrenceCount": 1
+            }
+          ],
+          "xyPairHits": 1,
+          "yxPairHits": 3,
+          "scalarCoordinateHits": 3,
+          "runtimeOffsets": [
+            21605,
+            21957,
+            22197,
+            22201
+          ]
+        },
+        "exit": {
+          "sourceOffset": 2627,
+          "sourceHexOffset": "0x0a43",
+          "sourcePointCount": 5,
+          "sampledPointsChecked": [
+            {
+              "x": 2819.0,
+              "y": 826.900024,
+              "xOffsets": [
+                17257
+              ],
+              "xOccurrenceCount": 1,
+              "yOffsets": [
+                16381,
+                16389,
+                16397,
+                16405,
+                16413,
+                16421,
+                16429,
+                16437
+              ],
+              "yOccurrenceCount": 238,
+              "xyPairOffsets": [],
+              "xyPairOccurrenceCount": 0,
+              "yxPairOffsets": [
+                17253
+              ],
+              "yxPairOccurrenceCount": 1
+            },
+            {
+              "x": 2928.0,
+              "y": 1104.0,
+              "xOffsets": [
+                17817
+              ],
+              "xOccurrenceCount": 1,
+              "yOffsets": [
+                17813
+              ],
+              "yOccurrenceCount": 1,
+              "xyPairOffsets": [],
+              "xyPairOccurrenceCount": 0,
+              "yxPairOffsets": [
+                17813
+              ],
+              "yxPairOccurrenceCount": 1
+            },
+            {
+              "x": 2587.147217,
+              "y": 1551.060425,
+              "xOffsets": [
+                18689
+              ],
+              "xOccurrenceCount": 1,
+              "yOffsets": [
+                18685
+              ],
+              "yOccurrenceCount": 1,
+              "xyPairOffsets": [],
+              "xyPairOccurrenceCount": 0,
+              "yxPairOffsets": [
+                18685
+              ],
+              "yxPairOccurrenceCount": 1
+            }
+          ],
+          "xyPairHits": 0,
+          "yxPairHits": 3,
+          "scalarCoordinateHits": 3,
+          "runtimeOffsets": [
+            17253,
+            17813,
+            18685
+          ]
+        }
+      }
+    },
+    {
+      "id": "pitlane_entry",
+      "label": "Entrée de pitlane",
+      "expected": 1,
+      "detectedInEditorSav": 1,
+      "runtimeStatus": "localized-sampled-track-data",
+      "confidence": "medium",
+      "evidence": "La voie pit1 commence à 1565/826.9 dans le .sav et est retrouvée dans track.data.",
+      "details": {
+        "sourceOffset": 2455,
+        "sourceHexOffset": "0x0997",
+        "sourcePointCount": 3,
+        "sampledPointsChecked": [
+          {
+            "x": 1565.0,
+            "y": 826.900024,
+            "xOffsets": [
+              22201
+            ],
+            "xOccurrenceCount": 1,
+            "yOffsets": [
+              16381,
+              16389,
+              16397,
+              16405,
+              16413,
+              16421,
+              16429,
+              16437
+            ],
+            "yOccurrenceCount": 238,
+            "xyPairOffsets": [
+              22201
+            ],
+            "xyPairOccurrenceCount": 1,
+            "yxPairOffsets": [
+              22197
+            ],
+            "yxPairOccurrenceCount": 1
+          },
+          {
+            "x": 1424.0,
+            "y": 880.0,
+            "xOffsets": [
+              3185,
+              4265,
+              4273,
+              8477,
+              9437,
+              9445,
+              13905,
+              15121
+            ],
+            "xOccurrenceCount": 11,
+            "yOffsets": [
+              21957
+            ],
+            "yOccurrenceCount": 1,
+            "xyPairOffsets": [],
+            "xyPairOccurrenceCount": 0,
+            "yxPairOffsets": [
+              21957
+            ],
+            "yxPairOccurrenceCount": 1
+          },
+          {
+            "x": 1359.41687,
+            "y": 1094.69104,
+            "xOffsets": [
+              21609
+            ],
+            "xOccurrenceCount": 1,
+            "yOffsets": [
+              21605
+            ],
+            "yOccurrenceCount": 1,
+            "xyPairOffsets": [],
+            "xyPairOccurrenceCount": 0,
+            "yxPairOffsets": [
+              21605
+            ],
+            "yxPairOccurrenceCount": 1
+          }
+        ],
+        "xyPairHits": 1,
+        "yxPairHits": 3,
+        "scalarCoordinateHits": 3,
+        "runtimeOffsets": [
+          21605,
+          21957,
+          22197,
+          22201
+        ]
+      }
+    },
+    {
+      "id": "pitlane_exit",
+      "label": "Sortie de pitlane",
+      "expected": 1,
+      "detectedInEditorSav": 1,
+      "runtimeStatus": "localized-sampled-track-data",
+      "confidence": "medium",
+      "evidence": "La voie pit2 commence à 2819/826.9 dans le .sav ; ses coordonnées sont retrouvées dans track.data, surtout en stockage YX.",
+      "details": {
+        "sourceOffset": 2627,
+        "sourceHexOffset": "0x0a43",
+        "sourcePointCount": 5,
+        "sampledPointsChecked": [
+          {
+            "x": 2819.0,
+            "y": 826.900024,
+            "xOffsets": [
+              17257
+            ],
+            "xOccurrenceCount": 1,
+            "yOffsets": [
+              16381,
+              16389,
+              16397,
+              16405,
+              16413,
+              16421,
+              16429,
+              16437
+            ],
+            "yOccurrenceCount": 238,
+            "xyPairOffsets": [],
+            "xyPairOccurrenceCount": 0,
+            "yxPairOffsets": [
+              17253
+            ],
+            "yxPairOccurrenceCount": 1
+          },
+          {
+            "x": 2928.0,
+            "y": 1104.0,
+            "xOffsets": [
+              17817
+            ],
+            "xOccurrenceCount": 1,
+            "yOffsets": [
+              17813
+            ],
+            "yOccurrenceCount": 1,
+            "xyPairOffsets": [],
+            "xyPairOccurrenceCount": 0,
+            "yxPairOffsets": [
+              17813
+            ],
+            "yxPairOccurrenceCount": 1
+          },
+          {
+            "x": 2587.147217,
+            "y": 1551.060425,
+            "xOffsets": [
+              18689
+            ],
+            "xOccurrenceCount": 1,
+            "yOffsets": [
+              18685
+            ],
+            "yOccurrenceCount": 1,
+            "xyPairOffsets": [],
+            "xyPairOccurrenceCount": 0,
+            "yxPairOffsets": [
+              18685
+            ],
+            "yxPairOccurrenceCount": 1
+          }
+        ],
+        "xyPairHits": 0,
+        "yxPairHits": 3,
+        "scalarCoordinateHits": 3,
+        "runtimeOffsets": [
+          17253,
+          17813,
+          18685
+        ]
+      }
+    },
+    {
+      "id": "wall",
+      "label": "Mur en plusieurs segments",
+      "expected": 1,
+      "detectedInEditorSav": 1,
+      "runtimeStatus": "editor-vector-and-baked-runtime-raster",
+      "confidence": "medium",
+      "evidence": "Le mur est vectoriel dans track_editor.sav ; dans le runtime jouable il est principalement validé par sa présence rasterisée dans track.png/track_preview.png.",
+      "details": {
+        "source": {
+          "sourceOffset": 1766,
+          "sourceHexOffset": "0x06e6",
+          "sourcePointCount": 8,
+          "sampledPointsChecked": [
+            {
+              "x": 2416.0,
+              "y": 1136.0,
+              "xOffsets": [],
+              "xOccurrenceCount": 0,
+              "yOffsets": [
+                31616
+              ],
+              "yOccurrenceCount": 1,
+              "xyPairOffsets": [],
+              "xyPairOccurrenceCount": 0,
+              "yxPairOffsets": [],
+              "yxPairOccurrenceCount": 0
+            },
+            {
+              "x": 2384.0,
+              "y": 1616.0,
+              "xOffsets": [],
+              "xOccurrenceCount": 0,
+              "yOffsets": [],
+              "yOccurrenceCount": 0,
+              "xyPairOffsets": [],
+              "xyPairOccurrenceCount": 0,
+              "yxPairOffsets": [],
+              "yxPairOccurrenceCount": 0
+            },
+            {
+              "x": 1520.0,
+              "y": 1616.0,
+              "xOffsets": [
+                27744,
+                27752
+              ],
+              "xOccurrenceCount": 2,
+              "yOffsets": [],
+              "yOccurrenceCount": 0,
+              "xyPairOffsets": [],
+              "xyPairOccurrenceCount": 0,
+              "yxPairOffsets": [],
+              "yxPairOccurrenceCount": 0
+            }
+          ],
+          "xyPairHits": 0,
+          "yxPairHits": 0,
+          "scalarCoordinateHits": 0,
+          "runtimeOffsets": []
+        },
+        "trackPngBbox": [
+          0,
+          0,
+          4096,
+          2048
+        ],
+        "previewBbox": [
+          0,
+          0,
+          768,
+          384
+        ]
+      }
+    },
+    {
+      "id": "sand_zone",
+      "label": "Zone de sable (polygone)",
+      "expected": 1,
+      "detectedInEditorSav": 1,
+      "runtimeStatus": "editor-vector-and-runtime-layer",
+      "confidence": "high",
+      "evidence": "Le polygone sable est vectoriel dans track_editor.sav et correspond au calque runtime gravel.png.",
+      "details": {
+        "source": {
+          "sourceOffset": 656,
+          "sourceHexOffset": "0x0290",
+          "sourcePointCount": 8,
+          "sampledPointsChecked": [
+            {
+              "x": 1424.0,
+              "y": 1104.0,
+              "xOffsets": [
+                3185,
+                4265,
+                4273,
+                8477,
+                9437,
+                9445,
+                13905,
+                15121
+              ],
+              "xOccurrenceCount": 11,
+              "yOffsets": [
+                17813
+              ],
+              "yOccurrenceCount": 1,
+              "xyPairOffsets": [],
+              "xyPairOccurrenceCount": 0,
+              "yxPairOffsets": [],
+              "yxPairOccurrenceCount": 0
+            },
+            {
+              "x": 1712.0,
+              "y": 1424.0,
+              "xOffsets": [
+                55,
+                1565,
+                1573,
+                1581,
+                1589,
+                1597,
+                1605,
+                1613
+              ],
+              "xOccurrenceCount": 408,
+              "yOffsets": [
+                3185,
+                4265,
+                4273,
+                8477,
+                9437,
+                9445,
+                13905,
+                15121
+              ],
+              "yOccurrenceCount": 11,
+              "xyPairOffsets": [
+                3181,
+                20613
+              ],
+              "xyPairOccurrenceCount": 2,
+              "yxPairOffsets": [],
+              "yxPairOccurrenceCount": 0
+            },
+            {
+              "x": 1424.0,
+              "y": 1104.0,
+              "xOffsets": [
+                3185,
+                4265,
+                4273,
+                8477,
+                9437,
+                9445,
+                13905,
+                15121
+              ],
+              "xOccurrenceCount": 11,
+              "yOffsets": [
+                17813
+              ],
+              "yOccurrenceCount": 1,
+              "xyPairOffsets": [],
+              "xyPairOccurrenceCount": 0,
+              "yxPairOffsets": [],
+              "yxPairOccurrenceCount": 0
+            }
+          ],
+          "xyPairHits": 1,
+          "yxPairHits": 0,
+          "scalarCoordinateHits": 3,
+          "runtimeOffsets": [
+            3181,
+            20613
+          ]
+        },
+        "gravelPngBbox": [
+          1381,
+          1126,
+          1875,
+          1536
+        ]
+      }
+    },
+    {
+      "id": "tree_zone",
+      "label": "Zone d'arbres (polygone)",
+      "expected": 1,
+      "detectedInEditorSav": 1,
+      "runtimeStatus": "editor-vector-and-baked-runtime-raster",
+      "confidence": "medium",
+      "evidence": "La zone d'arbres est vectorielle dans track_editor.sav ; le runtime la porte dans les rendus composites plutôt que dans un calque alpha isolable.",
+      "details": {
+        "source": {
+          "sourceOffset": 1224,
+          "sourceHexOffset": "0x04c8",
+          "sourcePointCount": 11,
+          "sampledPointsChecked": [
+            {
+              "x": 1488.0,
+              "y": 624.0,
+              "xOffsets": [
+                29980,
+                35100,
+                35108
+              ],
+              "xOccurrenceCount": 3,
+              "yOffsets": [
+                29976,
+                35096,
+                35104
+              ],
+              "yOccurrenceCount": 3,
+              "xyPairOffsets": [
+                35100
+              ],
+              "xyPairOccurrenceCount": 1,
+              "yxPairOffsets": [
+                29976,
+                35096,
+                35104
+              ],
+              "yxPairOccurrenceCount": 3
+            },
+            {
+              "x": 976.0,
+              "y": 688.0,
+              "xOffsets": [
+                30736,
+                31620,
+                32332
+              ],
+              "xOccurrenceCount": 3,
+              "yOffsets": [
+                32328
+              ],
+              "yOccurrenceCount": 1,
+              "xyPairOffsets": [],
+              "xyPairOccurrenceCount": 0,
+              "yxPairOffsets": [
+                32328
+              ],
+              "yxPairOccurrenceCount": 1
+            },
+            {
+              "x": 1488.0,
+              "y": 624.0,
+              "xOffsets": [
+                29980,
+                35100,
+                35108
+              ],
+              "xOccurrenceCount": 3,
+              "yOffsets": [
+                29976,
+                35096,
+                35104
+              ],
+              "yOccurrenceCount": 3,
+              "xyPairOffsets": [
+                35100
+              ],
+              "xyPairOccurrenceCount": 1,
+              "yxPairOffsets": [
+                29976,
+                35096,
+                35104
+              ],
+              "yxPairOccurrenceCount": 3
+            }
+          ],
+          "xyPairHits": 2,
+          "yxPairHits": 3,
+          "scalarCoordinateHits": 3,
+          "runtimeOffsets": [
+            29976,
+            32328,
+            35096,
+            35100,
+            35104
+          ]
+        },
+        "trackPngBbox": [
+          0,
+          0,
+          4096,
+          2048
+        ],
+        "previewBbox": [
+          0,
+          0,
+          768,
+          384
+        ]
+      }
+    }
+  ],
+  "checks": {
+    "allExpectedElementsFoundInEditorSav": true,
+    "allExpectedElementsLocalizedInRuntimePackage": true,
+    "compactCheckpointRecordsMatchEditorSav": true,
+    "gravelLayerHasLocalizedAlphaBBox": true
+  },
+  "notes": [
+    "H-S01b distingue volontairement la source vectorielle embarquée (`track_editor.sav`) des données runtime jouables (`track.data` et PNG).",
+    "Les éléments route, IA, checkpoints et pitlane gardent des signaux exploitables dans `track.data`.",
+    "Les surfaces et objets décoratifs sont bien présents dans le `.sav`, mais une partie est consommée côté runtime sous forme de calques/rendus raster.",
+    "Ce résultat suffit pour démarrer H-S02 sans perdre l'information source : le lecteur runtime devra garder `track_editor.sav` comme source vectorielle quand il est disponible."
+  ]
+}

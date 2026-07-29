@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="780" viewBox="0 0 1240 780" role="img" aria-labelledby="title desc">
+<title id="title">E-S03 event jumps</title>
+<desc id="desc">Replay event index and event jump validation.</desc>
+<rect width="100%" height="100%" fill="#f7f7f3" />
+<g font-family="Arial, sans-serif" fill="#222">
+<text x="54" y="70" font-size="26" font-weight="700">E-S03 - Saut vers evenement</text>
+<text x="54" y="102" font-size="15" fill="#5f625d">3 jumps, 3/3 evenements requis, 2 clamp(s)</text>
+<rect x="54" y="132" width="1130" height="128" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="76" y="164" font-size="16" font-weight="700">Evenements indexes</text>
+<line x1="76" y1="206" x2="1126" y2="206" stroke="#c9c9c2" stroke-width="8" stroke-linecap="round" />
+<line x1="76.00" y1="206" x2="95.09" y2="206" stroke="#2f7ed8" stroke-width="14" stroke-linecap="round" opacity="0.25" />
+<circle cx="76.00" cy="206" r="5" fill="#2f7ed8" />
+<circle cx="95.09" cy="206" r="5" fill="#2f9d68" />
+<line x1="76.00" y1="164" x2="76.00" y2="248" stroke="#6f4bb2" stroke-width="2.6" />
+<circle cx="76.00" cy="206" r="8" fill="#6f4bb2" />
+<text x="84.00" y="240.00" font-size="12">gap_safe_start</text>
+<circle cx="76.00" cy="172.00" r="5" fill="#d84a3a" />
+<line x1="76.00" y1="206" x2="104.48" y2="206" stroke="#2f7ed8" stroke-width="14" stroke-linecap="round" opacity="0.25" />
+<circle cx="76.00" cy="206" r="5" fill="#2f7ed8" />
+<circle cx="104.48" cy="206" r="5" fill="#2f9d68" />
+<line x1="85.39" y1="164" x2="85.39" y2="248" stroke="#6f4bb2" stroke-width="2.6" />
+<circle cx="85.39" cy="206" r="8" fill="#6f4bb2" />
+<text x="93.39" y="240.00" font-size="12">rejoin_started</text>
+<circle cx="85.39" cy="172.00" r="5" fill="#d84a3a" />
+<line x1="128.02" y1="206" x2="161.43" y2="206" stroke="#2f7ed8" stroke-width="14" stroke-linecap="round" opacity="0.25" />
+<circle cx="128.02" cy="206" r="5" fill="#2f7ed8" />
+<circle cx="161.43" cy="206" r="5" fill="#2f9d68" />
+<line x1="142.34" y1="164" x2="142.34" y2="248" stroke="#6f4bb2" stroke-width="2.6" />
+<circle cx="142.34" cy="206" r="8" fill="#6f4bb2" />
+<text x="150.34" y="240.00" font-size="12">rejoin_completed</text>
+<rect x="54" y="286" width="1130" height="270" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="84" y="316" font-size="16" font-weight="700">Jumps verifies</text>
+<text x="84" y="350" font-size="12" fill="#5f625d">event</text>
+<text x="314" y="350" font-size="12" fill="#5f625d">time</text>
+<text x="424" y="350" font-size="12" fill="#5f625d">mode</text>
+<text x="566" y="350" font-size="12" fill="#5f625d">pre/post</text>
+<text x="746" y="350" font-size="12" fill="#5f625d">ego offset</text>
+<text x="914" y="350" font-size="12" fill="#5f625d">gaps</text>
+<rect x="74" y="354" width="1088" height="52" rx="5" fill="#fbfbf8" stroke="#ecece7" />
+<text x="84" y="382" font-size="13" font-weight="700">gap_safe_start</text>
+<text x="314" y="382" font-size="13">0.000s</text>
+<text x="424" y="382" font-size="13">exact</text>
+<text x="566" y="382" font-size="13">0.00s / 1.00s</text>
+<text x="746" y="382" font-size="13">1.800m</text>
+<text x="914" y="382" font-size="13">32.55m / 28.55m</text>
+<rect x="74" y="418" width="1088" height="52" rx="5" fill="#ffffff" stroke="#ecece7" />
+<text x="84" y="446" font-size="13" font-weight="700">rejoin_started</text>
+<text x="314" y="446" font-size="13">0.492s</text>
+<text x="424" y="446" font-size="13">interpolated</text>
+<text x="566" y="446" font-size="13">0.00s / 1.49s</text>
+<text x="746" y="446" font-size="13">1.266m</text>
+<text x="914" y="446" font-size="13">32.27m / 29.24m</text>
+<rect x="74" y="482" width="1088" height="52" rx="5" fill="#fbfbf8" stroke="#ecece7" />
+<text x="84" y="510" font-size="13" font-weight="700">rejoin_completed</text>
+<text x="314" y="510" font-size="13">3.475s</text>
+<text x="424" y="510" font-size="13">interpolated</text>
+<text x="566" y="510" font-size="13">2.73s / 4.47s</text>
+<text x="746" y="510" font-size="13">0.150m</text>
+<text x="914" y="510" font-size="13">32.55m / 31.45m</text>
+<rect x="54" y="604" width="1130" height="82" rx="7" fill="#ffffff" stroke="#c9c9c2" />
+<text x="76" y="636" font-size="15" font-weight="700">Validation</text>
+<text x="76" y="666" font-size="13" fill="#5f625d">Index errors: 0, contexts valides: 3, jumps interpoles: 2. Les evenements sont testees hors UI Unity.</text>
+</g>
+</svg>

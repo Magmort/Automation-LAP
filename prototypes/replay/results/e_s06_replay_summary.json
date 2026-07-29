@@ -1,0 +1,99 @@
+{
+  "scenario": "E-S06",
+  "success": true,
+  "decision": "validee avec reserves",
+  "confidence": "moyen a bon",
+  "generatedAtUtc": "2026-07-28T14:29:03Z",
+  "inputs": {
+    "resultsDir": "prototypes/replay/results",
+    "summaries": {
+      "E-S01": "prototypes/replay/results/e_s01_replay_contract_summary.json",
+      "E-S02": "prototypes/replay/results/e_s02_navigation_summary.json",
+      "E-S03": "prototypes/replay/results/e_s03_event_jump_summary.json",
+      "E-S04": "prototypes/replay/results/e_s04_sampling_size_summary.json",
+      "E-S05": "prototypes/replay/results/e_s05_version_compatibility_summary.json"
+    }
+  },
+  "candidateContract": {
+    "kind": "AutomationLapReplay",
+    "schemaVersion": "0.1.0",
+    "format": "JSON readable prototype",
+    "units": {
+      "time": "s",
+      "distance": "m",
+      "speed": "m/s",
+      "angle": "rad"
+    },
+    "referenceTelemetryHz": 4.0,
+    "measuredTelemetryHzRange": [
+      1.0,
+      20.0
+    ],
+    "keyframeIntervalS": 1.0,
+    "versionPolicy": "strict accept list, no automatic migration in prototype"
+  },
+  "scenarioResults": [
+    {
+      "scenario": "E-S01",
+      "success": true,
+      "resultPath": "prototypes/replay/results/E_S01_REPLAY_CONTRACT_RESULT.md"
+    },
+    {
+      "scenario": "E-S02",
+      "success": true,
+      "resultPath": "prototypes/replay/results/E_S02_NAVIGATION_RESULT.md"
+    },
+    {
+      "scenario": "E-S03",
+      "success": true,
+      "resultPath": "prototypes/replay/results/E_S03_EVENT_JUMP_RESULT.md"
+    },
+    {
+      "scenario": "E-S04",
+      "success": true,
+      "resultPath": "prototypes/replay/results/E_S04_SAMPLING_SIZE_RESULT.md"
+    },
+    {
+      "scenario": "E-S05",
+      "success": true,
+      "resultPath": "prototypes/replay/results/E_S05_VERSION_COMPATIBILITY_RESULT.md"
+    }
+  ],
+  "metrics": {
+    "validatedScenarioCount": 5,
+    "scenarioCount": 5,
+    "durationS": 55.0,
+    "replayFileBytes": 148756,
+    "frameCount": 221,
+    "vehicleCount": 3,
+    "eventCount": 3,
+    "trackPointCount": 24,
+    "seekCheckCount": 5,
+    "navigationCommandCount": 9,
+    "navigationTraceSampleCount": 36,
+    "navigationClampCount": 3,
+    "navigationMonotonicFailures": 0,
+    "eventJumpCount": 3,
+    "validEventContextCount": 3,
+    "samplingProfileCount": 5,
+    "samplingMinFileBytes": 41831,
+    "samplingMaxFileBytes": 719882,
+    "samplingMinBytesPerSecond": 760.564,
+    "samplingMaxBytesPerSecond": 13088.764,
+    "compatibilityCaseCount": 10,
+    "compatibilityMismatchCount": 0
+  },
+  "residualRisks": [
+    "JSON readable and not optimized; compression or binary packing remains to evaluate.",
+    "Measurements use one deterministic 55 s scenario with 3 vehicles.",
+    "Replay rendering and interpolation are not validated inside Unity UI yet.",
+    "Schema migration is not implemented; incompatible versions are rejected explicitly.",
+    "Advanced event categories, bookmarks and camera metadata are not covered yet.",
+    "Load impact with 12 to 20 vehicles belongs to experiment F."
+  ],
+  "recommendedNextWork": [
+    "Use the E-S01 replay contract as candidate input for debugging and F load tests.",
+    "Keep 4 Hz telemetry and 1 s keyframes as baseline until F measures cost at scale.",
+    "Design schema migrations only when a second real replay schema exists."
+  ]
+}

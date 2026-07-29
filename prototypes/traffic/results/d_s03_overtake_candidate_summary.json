@@ -1,0 +1,299 @@
+{
+  "scenario": "D-S03",
+  "success": true,
+  "generatedAtUtc": "2026-07-27T20:21:23Z",
+  "trackInputPath": "prototypes/autonomous-lap/fixtures/canonical_track.json",
+  "sceneInputPath": "prototypes/traffic/fixtures/d_s03_overtake_candidate_scene.json",
+  "trackLengthM": 381.9152381450591,
+  "decisionSettings": {
+    "sameCorridorLateralM": 2.2,
+    "frontLookaheadM": 90.0,
+    "triggerTimeToCatchS": 18.0,
+    "minSpeedDeltaKmh": 8.0,
+    "candidateOffsetM": -3.0,
+    "frontSafetyGapM": 35.0,
+    "rearSafetyGapM": 20.0,
+    "trackEdgeClearanceM": 0.5
+  },
+  "caseResults": [
+    {
+      "id": "clear_overtake",
+      "label": "Clear Overtake",
+      "expectedDecision": true,
+      "actualDecision": true,
+      "matchedExpectation": true,
+      "vehicles": [
+        {
+          "id": "ego",
+          "label": "Ego",
+          "role": "ego",
+          "progressM": 40.0,
+          "lateralOffsetM": 0.0,
+          "speedKmh": 70.0,
+          "lengthM": 4.4,
+          "widthM": 1.9,
+          "speedMps": 19.444444444444446,
+          "x": 39.215085875526064,
+          "y": -38.20331494814273,
+          "heading": 0.4348597526754057,
+          "projectedLateralM": 0.0,
+          "offTrack": false
+        },
+        {
+          "id": "leader",
+          "label": "Leader",
+          "role": "leader",
+          "progressM": 66.0,
+          "lateralOffsetM": 0.1,
+          "speedKmh": 42.0,
+          "lengthM": 4.4,
+          "widthM": 1.9,
+          "speedMps": 11.666666666666668,
+          "x": 61.47558161566346,
+          "y": -25.104908438572018,
+          "heading": 0.6593100683328579,
+          "projectedLateralM": 0.10000000000000178,
+          "offTrack": false
+        }
+      ],
+      "egoId": "ego",
+      "candidateOffsetM": -3.0,
+      "currentFront": {
+        "id": "leader",
+        "gapM": 21.6,
+        "centerGapM": 26.0,
+        "lateralSeparationM": 0.1,
+        "closingSpeedMps": 7.777777777777779,
+        "timeToCatchS": 2.777142857142857,
+        "speedDeltaKmh": 28.000000000000004
+      },
+      "candidateInsideTrack": true,
+      "candidateBlockers": [],
+      "reasons": [
+        "candidate_clear"
+      ]
+    },
+    {
+      "id": "blocked_front",
+      "label": "Blocked Front",
+      "expectedDecision": false,
+      "actualDecision": false,
+      "matchedExpectation": true,
+      "vehicles": [
+        {
+          "id": "ego",
+          "label": "Ego",
+          "role": "ego",
+          "progressM": 40.0,
+          "lateralOffsetM": 0.0,
+          "speedKmh": 70.0,
+          "lengthM": 4.4,
+          "widthM": 1.9,
+          "speedMps": 19.444444444444446,
+          "x": 39.215085875526064,
+          "y": -38.20331494814273,
+          "heading": 0.4348597526754057,
+          "projectedLateralM": 0.0,
+          "offTrack": false
+        },
+        {
+          "id": "leader",
+          "label": "Leader",
+          "role": "leader",
+          "progressM": 66.0,
+          "lateralOffsetM": 0.1,
+          "speedKmh": 42.0,
+          "lengthM": 4.4,
+          "widthM": 1.9,
+          "speedMps": 11.666666666666668,
+          "x": 61.47558161566346,
+          "y": -25.104908438572018,
+          "heading": 0.6593100683328579,
+          "projectedLateralM": 0.10000000000000178,
+          "offTrack": false
+        },
+        {
+          "id": "front_blocker",
+          "label": "Front Blocker",
+          "role": "traffic",
+          "progressM": 62.0,
+          "lateralOffsetM": -3.0,
+          "speedKmh": 55.0,
+          "lengthM": 4.4,
+          "widthM": 1.9,
+          "speedMps": 15.277777777777779,
+          "x": 60.21289356981351,
+          "y": -30.005481762058526,
+          "heading": 0.6593100683328579,
+          "projectedLateralM": -2.9999999999999964,
+          "offTrack": false
+        }
+      ],
+      "egoId": "ego",
+      "candidateOffsetM": -3.0,
+      "currentFront": {
+        "id": "leader",
+        "gapM": 21.6,
+        "centerGapM": 26.0,
+        "lateralSeparationM": 0.1,
+        "closingSpeedMps": 7.777777777777779,
+        "timeToCatchS": 2.777142857142857,
+        "speedDeltaKmh": 28.000000000000004
+      },
+      "candidateInsideTrack": true,
+      "candidateBlockers": [
+        {
+          "id": "front_blocker",
+          "where": "front",
+          "gapM": 17.6
+        }
+      ],
+      "reasons": [
+        "candidate_blocked_front_front_blocker"
+      ]
+    },
+    {
+      "id": "blocked_rear",
+      "label": "Blocked Rear",
+      "expectedDecision": false,
+      "actualDecision": false,
+      "matchedExpectation": true,
+      "vehicles": [
+        {
+          "id": "ego",
+          "label": "Ego",
+          "role": "ego",
+          "progressM": 40.0,
+          "lateralOffsetM": 0.0,
+          "speedKmh": 70.0,
+          "lengthM": 4.4,
+          "widthM": 1.9,
+          "speedMps": 19.444444444444446,
+          "x": 39.215085875526064,
+          "y": -38.20331494814273,
+          "heading": 0.4348597526754057,
+          "projectedLateralM": 0.0,
+          "offTrack": false
+        },
+        {
+          "id": "leader",
+          "label": "Leader",
+          "role": "leader",
+          "progressM": 66.0,
+          "lateralOffsetM": 0.1,
+          "speedKmh": 42.0,
+          "lengthM": 4.4,
+          "widthM": 1.9,
+          "speedMps": 11.666666666666668,
+          "x": 61.47558161566346,
+          "y": -25.104908438572018,
+          "heading": 0.6593100683328579,
+          "projectedLateralM": 0.10000000000000178,
+          "offTrack": false
+        },
+        {
+          "id": "rear_blocker",
+          "label": "Rear Blocker",
+          "role": "traffic",
+          "progressM": 25.0,
+          "lateralOffsetM": -3.0,
+          "speedKmh": 82.0,
+          "lengthM": 4.4,
+          "widthM": 1.9,
+          "speedMps": 22.77777777777778,
+          "x": 25.50218852087701,
+          "y": -45.074208158041706,
+          "heading": 0.2436782737428211,
+          "projectedLateralM": -2.999999999999999,
+          "offTrack": false
+        }
+      ],
+      "egoId": "ego",
+      "candidateOffsetM": -3.0,
+      "currentFront": {
+        "id": "leader",
+        "gapM": 21.6,
+        "centerGapM": 26.0,
+        "lateralSeparationM": 0.1,
+        "closingSpeedMps": 7.777777777777779,
+        "timeToCatchS": 2.777142857142857,
+        "speedDeltaKmh": 28.000000000000004
+      },
+      "candidateInsideTrack": true,
+      "candidateBlockers": [
+        {
+          "id": "rear_blocker",
+          "where": "rear",
+          "gapM": 10.6
+        }
+      ],
+      "reasons": [
+        "candidate_blocked_rear_rear_blocker"
+      ]
+    },
+    {
+      "id": "no_need",
+      "label": "No Need",
+      "expectedDecision": false,
+      "actualDecision": false,
+      "matchedExpectation": true,
+      "vehicles": [
+        {
+          "id": "ego",
+          "label": "Ego",
+          "role": "ego",
+          "progressM": 40.0,
+          "lateralOffsetM": 0.0,
+          "speedKmh": 46.0,
+          "lengthM": 4.4,
+          "widthM": 1.9,
+          "speedMps": 12.777777777777779,
+          "x": 39.215085875526064,
+          "y": -38.20331494814273,
+          "heading": 0.4348597526754057,
+          "projectedLateralM": 0.0,
+          "offTrack": false
+        },
+        {
+          "id": "leader",
+          "label": "Leader",
+          "role": "leader",
+          "progressM": 66.0,
+          "lateralOffsetM": 0.1,
+          "speedKmh": 42.0,
+          "lengthM": 4.4,
+          "widthM": 1.9,
+          "speedMps": 11.666666666666668,
+          "x": 61.47558161566346,
+          "y": -25.104908438572018,
+          "heading": 0.6593100683328579,
+          "projectedLateralM": 0.10000000000000178,
+          "offTrack": false
+        }
+      ],
+      "egoId": "ego",
+      "candidateOffsetM": -3.0,
+      "currentFront": {
+        "id": "leader",
+        "gapM": 21.6,
+        "centerGapM": 26.0,
+        "lateralSeparationM": 0.1,
+        "closingSpeedMps": 1.1111111111111107,
+        "timeToCatchS": 19.44000000000001,
+        "speedDeltaKmh": 3.9999999999999987
+      },
+      "candidateInsideTrack": true,
+      "candidateBlockers": [],
+      "reasons": [
+        "no_slow_front_trigger"
+      ]
+    }
+  ],
+  "metrics": {
+    "caseCount": 4,
+    "matchedCases": 4,
+    "positiveDecisions": 1,
+    "negativeDecisions": 3,
+    "blockedCandidateCases": 2
+  }
+}

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="832" viewBox="0 0 1160 832">
+<style>
+text{font-family:Segoe UI,Arial,sans-serif;fill:#25313f}
+.title{font-size:28px;font-weight:700}
+.subtitle{font-size:15px;fill:#5c6b7a}
+.label{font-size:14px;font-weight:600}
+.small{font-size:12px;fill:#627282}
+.axis{stroke:#c9d2dd;stroke-width:1}
+</style>
+<rect width="1160" height="100%" fill="#f7f9fc"/>
+<rect x="34" y="34" width="1092" height="84" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="58" y="72" class="title">G-S00 - Inventaire UR2D2</text>
+<text x="58" y="99" class="subtitle">Statut: complete-inventory · fixtures observées 8 / 8</text>
+<text x="58" y="142" class="small">Fixture</text>
+<text x="330" y="142" class="small">Couverture fichiers</text>
+<text x="650" y="142" class="small">Différence vs fixture précédente</text>
+<text x="940" y="142" class="small">Signatures</text>
+<line x1="48" y1="214" x2="1112" y2="214" class="axis"/>
+<rect x="58" y="163" width="18" height="18" rx="3" fill="#2a9d8f"/>
+<text x="88" y="178" class="label">T00_empty_save</text>
+<text x="88" y="200" class="small">Circuit vide enregistré</text>
+<rect x="330" y="164" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="330" y="164" width="230" height="16" rx="4" fill="#457b9d"/>
+<text x="572" y="178" class="small">1 fichiers</text>
+<rect x="650" y="164" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="650" y="164" width="0" height="16" rx="4" fill="#e76f51"/>
+<text x="892" y="178" class="small">+0 / ~0 / -0</text>
+<text x="940" y="178" class="small">unknown-binary</text>
+<line x1="48" y1="288" x2="1112" y2="288" class="axis"/>
+<rect x="58" y="237" width="18" height="18" rx="3" fill="#2a9d8f"/>
+<text x="88" y="252" class="label">T01_single_straight</text>
+<text x="88" y="274" class="small">Route droite unique</text>
+<rect x="330" y="238" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="330" y="238" width="230" height="16" rx="4" fill="#457b9d"/>
+<text x="572" y="252" class="small">1 fichiers</text>
+<rect x="650" y="238" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="650" y="238" width="230" height="16" rx="4" fill="#e76f51"/>
+<text x="892" y="252" class="small">+0 / ~1 / -0</text>
+<text x="940" y="252" class="small">unknown-binary</text>
+<line x1="48" y1="362" x2="1112" y2="362" class="axis"/>
+<rect x="58" y="311" width="18" height="18" rx="3" fill="#2a9d8f"/>
+<text x="88" y="326" class="label">T02_simple_closed_loop</text>
+<text x="88" y="348" class="small">Boucle simple fermée</text>
+<rect x="330" y="312" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="330" y="312" width="230" height="16" rx="4" fill="#457b9d"/>
+<text x="572" y="326" class="small">1 fichiers</text>
+<rect x="650" y="312" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="650" y="312" width="230" height="16" rx="4" fill="#e76f51"/>
+<text x="892" y="326" class="small">+0 / ~1 / -0</text>
+<text x="940" y="326" class="small">unknown-binary</text>
+<line x1="48" y1="436" x2="1112" y2="436" class="axis"/>
+<rect x="58" y="385" width="18" height="18" rx="3" fill="#2a9d8f"/>
+<text x="88" y="400" class="label">T03_ai_line</text>
+<text x="88" y="422" class="small">Ligne IA ajoutée</text>
+<rect x="330" y="386" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="330" y="386" width="230" height="16" rx="4" fill="#457b9d"/>
+<text x="572" y="400" class="small">1 fichiers</text>
+<rect x="650" y="386" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="650" y="386" width="230" height="16" rx="4" fill="#e76f51"/>
+<text x="892" y="400" class="small">+0 / ~1 / -0</text>
+<text x="940" y="400" class="small">unknown-binary</text>
+<line x1="48" y1="510" x2="1112" y2="510" class="axis"/>
+<rect x="58" y="459" width="18" height="18" rx="3" fill="#2a9d8f"/>
+<text x="88" y="474" class="label">T04_limits_or_walls</text>
+<text x="88" y="496" class="small">Limites ou murs ajoutés</text>
+<rect x="330" y="460" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="330" y="460" width="230" height="16" rx="4" fill="#457b9d"/>
+<text x="572" y="474" class="small">1 fichiers</text>
+<rect x="650" y="460" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="650" y="460" width="230" height="16" rx="4" fill="#e76f51"/>
+<text x="892" y="474" class="small">+0 / ~1 / -0</text>
+<text x="940" y="474" class="small">unknown-binary</text>
+<line x1="48" y1="584" x2="1112" y2="584" class="axis"/>
+<rect x="58" y="533" width="18" height="18" rx="3" fill="#2a9d8f"/>
+<text x="88" y="548" class="label">T05_start_and_checkpoints</text>
+<text x="88" y="570" class="small">Départ et checkpoints</text>
+<rect x="330" y="534" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="330" y="534" width="230" height="16" rx="4" fill="#457b9d"/>
+<text x="572" y="548" class="small">1 fichiers</text>
+<rect x="650" y="534" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="650" y="534" width="230" height="16" rx="4" fill="#e76f51"/>
+<text x="892" y="548" class="small">+0 / ~1 / -0</text>
+<text x="940" y="548" class="small">unknown-binary</text>
+<line x1="48" y1="658" x2="1112" y2="658" class="axis"/>
+<rect x="58" y="607" width="18" height="18" rx="3" fill="#2a9d8f"/>
+<text x="88" y="622" class="label">T06_pit_lane</text>
+<text x="88" y="644" class="small">Voie des stands</text>
+<rect x="330" y="608" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="330" y="608" width="230" height="16" rx="4" fill="#457b9d"/>
+<text x="572" y="622" class="small">1 fichiers</text>
+<rect x="650" y="608" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="650" y="608" width="230" height="16" rx="4" fill="#e76f51"/>
+<text x="892" y="622" class="small">+0 / ~1 / -0</text>
+<text x="940" y="622" class="small">unknown-binary</text>
+<line x1="48" y1="732" x2="1112" y2="732" class="axis"/>
+<rect x="58" y="681" width="18" height="18" rx="3" fill="#2a9d8f"/>
+<text x="88" y="696" class="label">T07_surfaces</text>
+<text x="88" y="718" class="small">Surfaces distinctes</text>
+<rect x="330" y="682" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="330" y="682" width="230" height="16" rx="4" fill="#457b9d"/>
+<text x="572" y="696" class="small">1 fichiers</text>
+<rect x="650" y="682" width="230" height="16" rx="4" fill="#e5ebf2"/>
+<rect x="650" y="682" width="230" height="16" rx="4" fill="#e76f51"/>
+<text x="892" y="696" class="small">+0 / ~1 / -0</text>
+<text x="940" y="696" class="small">unknown-binary</text>
+<text x="58" y="790" class="small">Légende: vert = fixture présente, gris = manquante, orange = dossier présent sans fichier. Les barres de différence affichent ajouts / modifications / suppressions.</text>
+</svg>

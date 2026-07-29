@@ -1,0 +1,31 @@
+{
+  "scenario": "E-S04",
+  "sourceReplay": "prototypes/replay/results/e_s01_minimal_replay.replay.json",
+  "profiles": [
+    {
+      "id": "1hz",
+      "label": "1 Hz audit",
+      "sampleIntervalS": 1.0
+    },
+    {
+      "id": "2hz",
+      "label": "2 Hz coarse",
+      "sampleIntervalS": 0.5
+    },
+    {
+      "id": "4hz_reference",
+      "label": "4 Hz reference",
+      "sampleIntervalS": 0.25
+    },
+    {
+      "id": "10hz",
+      "label": "10 Hz smooth",
+      "sampleIntervalS": 0.1
+    },
+    {
+      "id": "20hz",
+      "label": "20 Hz dense",
+      "sampleIntervalS": 0.05
+    }
+  ]
+}

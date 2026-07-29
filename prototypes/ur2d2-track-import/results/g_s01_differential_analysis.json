@@ -1,0 +1,2969 @@
+{
+  "scenario": "G-S01",
+  "status": "valid-for-g-s02-probing",
+  "generatedAt": "2026-07-28T18:27:10+00:00",
+  "fixturesRoot": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source",
+  "fixtureCount": 8,
+  "fixtures": [
+    {
+      "fixture": "T00_empty_save",
+      "path": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T00_empty_save.sav",
+      "sizeBytes": 289,
+      "stringCount": 2,
+      "strings": [
+        {
+          "offset": 8,
+          "hexOffset": "0x0008",
+          "value": "spr_road"
+        },
+        {
+          "offset": 25,
+          "hexOffset": "0x0019",
+          "value": "grass_1"
+        }
+      ],
+      "leadingFloat32": [
+        {
+          "offset": 0,
+          "hexOffset": "0x0000",
+          "value": 10.0
+        },
+        {
+          "offset": 33,
+          "hexOffset": "0x0021",
+          "value": 1.0
+        },
+        {
+          "offset": 45,
+          "hexOffset": "0x002d",
+          "value": 250.0
+        },
+        {
+          "offset": 57,
+          "hexOffset": "0x0039",
+          "value": 105.0
+        },
+        {
+          "offset": 61,
+          "hexOffset": "0x003d",
+          "value": 12.5
+        },
+        {
+          "offset": 65,
+          "hexOffset": "0x0041",
+          "value": 4096.0
+        },
+        {
+          "offset": 69,
+          "hexOffset": "0x0045",
+          "value": 2048.0
+        }
+      ]
+    },
+    {
+      "fixture": "T01_single_straight",
+      "path": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T01_single_straight.sav",
+      "sizeBytes": 377,
+      "stringCount": 2,
+      "strings": [
+        {
+          "offset": 8,
+          "hexOffset": "0x0008",
+          "value": "spr_road"
+        },
+        {
+          "offset": 25,
+          "hexOffset": "0x0019",
+          "value": "grass_1"
+        }
+      ],
+      "leadingFloat32": [
+        {
+          "offset": 0,
+          "hexOffset": "0x0000",
+          "value": 10.0
+        },
+        {
+          "offset": 33,
+          "hexOffset": "0x0021",
+          "value": 1.0
+        },
+        {
+          "offset": 45,
+          "hexOffset": "0x002d",
+          "value": 250.0
+        },
+        {
+          "offset": 57,
+          "hexOffset": "0x0039",
+          "value": 105.0
+        },
+        {
+          "offset": 61,
+          "hexOffset": "0x003d",
+          "value": 12.5
+        },
+        {
+          "offset": 65,
+          "hexOffset": "0x0041",
+          "value": 4096.0
+        },
+        {
+          "offset": 69,
+          "hexOffset": "0x0045",
+          "value": 2048.0
+        },
+        {
+          "offset": 77,
+          "hexOffset": "0x004d",
+          "value": 2.0
+        },
+        {
+          "offset": 81,
+          "hexOffset": "0x0051",
+          "value": 1424.0
+        },
+        {
+          "offset": 85,
+          "hexOffset": "0x0055",
+          "value": 2480.0
+        },
+        {
+          "offset": 89,
+          "hexOffset": "0x0059",
+          "value": 2.0
+        },
+        {
+          "offset": 93,
+          "hexOffset": "0x005d",
+          "value": 1072.0
+        }
+      ]
+    },
+    {
+      "fixture": "T02_simple_closed_loop",
+      "path": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T02_simple_closed_loop.sav",
+      "sizeBytes": 749,
+      "stringCount": 2,
+      "strings": [
+        {
+          "offset": 8,
+          "hexOffset": "0x0008",
+          "value": "spr_road"
+        },
+        {
+          "offset": 25,
+          "hexOffset": "0x0019",
+          "value": "grass_1"
+        }
+      ],
+      "leadingFloat32": [
+        {
+          "offset": 0,
+          "hexOffset": "0x0000",
+          "value": 10.0
+        },
+        {
+          "offset": 33,
+          "hexOffset": "0x0021",
+          "value": 1.0
+        },
+        {
+          "offset": 45,
+          "hexOffset": "0x002d",
+          "value": 250.0
+        },
+        {
+          "offset": 57,
+          "hexOffset": "0x0039",
+          "value": 105.0
+        },
+        {
+          "offset": 61,
+          "hexOffset": "0x003d",
+          "value": 12.5
+        },
+        {
+          "offset": 65,
+          "hexOffset": "0x0041",
+          "value": 4096.0
+        },
+        {
+          "offset": 69,
+          "hexOffset": "0x0045",
+          "value": 2048.0
+        },
+        {
+          "offset": 77,
+          "hexOffset": "0x004d",
+          "value": 5.0
+        },
+        {
+          "offset": 81,
+          "hexOffset": "0x0051",
+          "value": 1424.0
+        },
+        {
+          "offset": 85,
+          "hexOffset": "0x0055",
+          "value": 2480.0
+        },
+        {
+          "offset": 89,
+          "hexOffset": "0x0059",
+          "value": 2480.0
+        },
+        {
+          "offset": 93,
+          "hexOffset": "0x005d",
+          "value": 1424.0
+        }
+      ]
+    },
+    {
+      "fixture": "T03_ai_line",
+      "path": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T03_ai_line.sav",
+      "sizeBytes": 1409,
+      "stringCount": 6,
+      "strings": [
+        {
+          "offset": 8,
+          "hexOffset": "0x0008",
+          "value": "spr_road"
+        },
+        {
+          "offset": 25,
+          "hexOffset": "0x0019",
+          "value": "grass_1"
+        },
+        {
+          "offset": 992,
+          "hexOffset": "0x03e0",
+          "value": "@l%4C"
+        },
+        {
+          "offset": 1078,
+          "hexOffset": "0x0436",
+          "value": " !ES"
+        },
+        {
+          "offset": 1107,
+          "hexOffset": "0x0453",
+          "value": " ANS"
+        },
+        {
+          "offset": 1260,
+          "hexOffset": "0x04ec",
+          "value": "C3d4C"
+        }
+      ],
+      "leadingFloat32": [
+        {
+          "offset": 0,
+          "hexOffset": "0x0000",
+          "value": 10.0
+        },
+        {
+          "offset": 33,
+          "hexOffset": "0x0021",
+          "value": 1.0
+        },
+        {
+          "offset": 45,
+          "hexOffset": "0x002d",
+          "value": 250.0
+        },
+        {
+          "offset": 53,
+          "hexOffset": "0x0035",
+          "value": 1.0
+        },
+        {
+          "offset": 57,
+          "hexOffset": "0x0039",
+          "value": 105.0
+        },
+        {
+          "offset": 61,
+          "hexOffset": "0x003d",
+          "value": 12.5
+        },
+        {
+          "offset": 65,
+          "hexOffset": "0x0041",
+          "value": 4096.0
+        },
+        {
+          "offset": 69,
+          "hexOffset": "0x0045",
+          "value": 2048.0
+        },
+        {
+          "offset": 77,
+          "hexOffset": "0x004d",
+          "value": 5.0
+        },
+        {
+          "offset": 81,
+          "hexOffset": "0x0051",
+          "value": 1424.0
+        },
+        {
+          "offset": 85,
+          "hexOffset": "0x0055",
+          "value": 2480.0
+        },
+        {
+          "offset": 89,
+          "hexOffset": "0x0059",
+          "value": 2480.0
+        }
+      ]
+    },
+    {
+      "fixture": "T04_limits_or_walls",
+      "path": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T04_limit_or_walls.sav",
+      "sizeBytes": 1815,
+      "stringCount": 7,
+      "strings": [
+        {
+          "offset": 8,
+          "hexOffset": "0x0008",
+          "value": "spr_road"
+        },
+        {
+          "offset": 25,
+          "hexOffset": "0x0019",
+          "value": "grass_1"
+        },
+        {
+          "offset": 629,
+          "hexOffset": "0x0275",
+          "value": "wall1"
+        },
+        {
+          "offset": 1398,
+          "hexOffset": "0x0576",
+          "value": "@l%4C"
+        },
+        {
+          "offset": 1484,
+          "hexOffset": "0x05cc",
+          "value": " !ES"
+        },
+        {
+          "offset": 1513,
+          "hexOffset": "0x05e9",
+          "value": " ANS"
+        },
+        {
+          "offset": 1666,
+          "hexOffset": "0x0682",
+          "value": "C3d4C"
+        }
+      ],
+      "leadingFloat32": [
+        {
+          "offset": 0,
+          "hexOffset": "0x0000",
+          "value": 10.0
+        },
+        {
+          "offset": 33,
+          "hexOffset": "0x0021",
+          "value": 1.0
+        },
+        {
+          "offset": 45,
+          "hexOffset": "0x002d",
+          "value": 250.0
+        },
+        {
+          "offset": 53,
+          "hexOffset": "0x0035",
+          "value": 1.0
+        },
+        {
+          "offset": 57,
+          "hexOffset": "0x0039",
+          "value": 105.0
+        },
+        {
+          "offset": 61,
+          "hexOffset": "0x003d",
+          "value": 12.5
+        },
+        {
+          "offset": 65,
+          "hexOffset": "0x0041",
+          "value": 4096.0
+        },
+        {
+          "offset": 69,
+          "hexOffset": "0x0045",
+          "value": 2048.0
+        },
+        {
+          "offset": 77,
+          "hexOffset": "0x004d",
+          "value": 5.0
+        },
+        {
+          "offset": 81,
+          "hexOffset": "0x0051",
+          "value": 1424.0
+        },
+        {
+          "offset": 85,
+          "hexOffset": "0x0055",
+          "value": 2480.0
+        },
+        {
+          "offset": 89,
+          "hexOffset": "0x0059",
+          "value": 2480.0
+        }
+      ]
+    },
+    {
+      "fixture": "T05_start_and_checkpoints",
+      "path": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T05_start_and_checkpoints.sav",
+      "sizeBytes": 2046,
+      "stringCount": 16,
+      "strings": [
+        {
+          "offset": 8,
+          "hexOffset": "0x0008",
+          "value": "spr_road"
+        },
+        {
+          "offset": 25,
+          "hexOffset": "0x0019",
+          "value": "grass_1"
+        },
+        {
+          "offset": 629,
+          "hexOffset": "0x0275",
+          "value": "wall1"
+        },
+        {
+          "offset": 1033,
+          "hexOffset": "0x0409",
+          "value": "@@spr_checkpoint"
+        },
+        {
+          "offset": 1082,
+          "hexOffset": "0x043a",
+          "value": "Checkpoint 2"
+        },
+        {
+          "offset": 1098,
+          "hexOffset": "0x044a",
+          "value": "@checkpoint"
+        },
+        {
+          "offset": 1114,
+          "hexOffset": "0x045a",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 1161,
+          "hexOffset": "0x0489",
+          "value": "Checkpoint 1"
+        },
+        {
+          "offset": 1177,
+          "hexOffset": "0x0499",
+          "value": "?checkpoint"
+        },
+        {
+          "offset": 1193,
+          "hexOffset": "0x04a9",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 1240,
+          "hexOffset": "0x04d8",
+          "value": "Finish"
+        },
+        {
+          "offset": 1251,
+          "hexOffset": "0x04e3",
+          "value": "checkpoint"
+        },
+        {
+          "offset": 1629,
+          "hexOffset": "0x065d",
+          "value": "@l%4C"
+        },
+        {
+          "offset": 1715,
+          "hexOffset": "0x06b3",
+          "value": " !ES"
+        },
+        {
+          "offset": 1744,
+          "hexOffset": "0x06d0",
+          "value": " ANS"
+        },
+        {
+          "offset": 1897,
+          "hexOffset": "0x0769",
+          "value": "C3d4C"
+        }
+      ],
+      "leadingFloat32": [
+        {
+          "offset": 0,
+          "hexOffset": "0x0000",
+          "value": 10.0
+        },
+        {
+          "offset": 33,
+          "hexOffset": "0x0021",
+          "value": 1.0
+        },
+        {
+          "offset": 45,
+          "hexOffset": "0x002d",
+          "value": 250.0
+        },
+        {
+          "offset": 53,
+          "hexOffset": "0x0035",
+          "value": 1.0
+        },
+        {
+          "offset": 57,
+          "hexOffset": "0x0039",
+          "value": 105.0
+        },
+        {
+          "offset": 61,
+          "hexOffset": "0x003d",
+          "value": 12.5
+        },
+        {
+          "offset": 65,
+          "hexOffset": "0x0041",
+          "value": 4096.0
+        },
+        {
+          "offset": 69,
+          "hexOffset": "0x0045",
+          "value": 2048.0
+        },
+        {
+          "offset": 73,
+          "hexOffset": "0x0049",
+          "value": 1.0
+        },
+        {
+          "offset": 77,
+          "hexOffset": "0x004d",
+          "value": 5.0
+        },
+        {
+          "offset": 81,
+          "hexOffset": "0x0051",
+          "value": 1424.0
+        },
+        {
+          "offset": 85,
+          "hexOffset": "0x0055",
+          "value": 2480.0
+        }
+      ]
+    },
+    {
+      "fixture": "T06_pit_lane",
+      "path": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T06_pit_lane.sav",
+      "sizeBytes": 2532,
+      "stringCount": 23,
+      "strings": [
+        {
+          "offset": 8,
+          "hexOffset": "0x0008",
+          "value": "spr_road"
+        },
+        {
+          "offset": 25,
+          "hexOffset": "0x0019",
+          "value": "grass_1"
+        },
+        {
+          "offset": 629,
+          "hexOffset": "0x0275",
+          "value": "wall1"
+        },
+        {
+          "offset": 1034,
+          "hexOffset": "0x040a",
+          "value": "@spr_pit_building_to_right"
+        },
+        {
+          "offset": 1097,
+          "hexOffset": "0x0449",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 1144,
+          "hexOffset": "0x0478",
+          "value": "Checkpoint 2"
+        },
+        {
+          "offset": 1160,
+          "hexOffset": "0x0488",
+          "value": "@checkpoint"
+        },
+        {
+          "offset": 1176,
+          "hexOffset": "0x0498",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 1223,
+          "hexOffset": "0x04c7",
+          "value": "Checkpoint 1"
+        },
+        {
+          "offset": 1239,
+          "hexOffset": "0x04d7",
+          "value": "?checkpoint"
+        },
+        {
+          "offset": 1255,
+          "hexOffset": "0x04e7",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 1302,
+          "hexOffset": "0x0516",
+          "value": "Finish"
+        },
+        {
+          "offset": 1313,
+          "hexOffset": "0x0521",
+          "value": "checkpoint"
+        },
+        {
+          "offset": 1478,
+          "hexOffset": "0x05c6",
+          "value": "NDB)SD"
+        },
+        {
+          "offset": 1587,
+          "hexOffset": "0x0633",
+          "value": "CZosC"
+        },
+        {
+          "offset": 1614,
+          "hexOffset": "0x064e",
+          "value": "4BP'gB"
+        },
+        {
+          "offset": 1677,
+          "hexOffset": "0x068d",
+          "value": "P3EP"
+        },
+        {
+          "offset": 1697,
+          "hexOffset": "0x06a1",
+          "value": "5/EQ"
+        },
+        {
+          "offset": 1722,
+          "hexOffset": "0x06ba",
+          "value": "ND@)[D"
+        },
+        {
+          "offset": 2115,
+          "hexOffset": "0x0843",
+          "value": "@l%4C"
+        },
+        {
+          "offset": 2201,
+          "hexOffset": "0x0899",
+          "value": " !ES"
+        },
+        {
+          "offset": 2230,
+          "hexOffset": "0x08b6",
+          "value": " ANS"
+        },
+        {
+          "offset": 2383,
+          "hexOffset": "0x094f",
+          "value": "C3d4C"
+        }
+      ],
+      "leadingFloat32": [
+        {
+          "offset": 0,
+          "hexOffset": "0x0000",
+          "value": 10.0
+        },
+        {
+          "offset": 33,
+          "hexOffset": "0x0021",
+          "value": 1.0
+        },
+        {
+          "offset": 45,
+          "hexOffset": "0x002d",
+          "value": 250.0
+        },
+        {
+          "offset": 53,
+          "hexOffset": "0x0035",
+          "value": 1.0
+        },
+        {
+          "offset": 57,
+          "hexOffset": "0x0039",
+          "value": 105.0
+        },
+        {
+          "offset": 61,
+          "hexOffset": "0x003d",
+          "value": 12.5
+        },
+        {
+          "offset": 65,
+          "hexOffset": "0x0041",
+          "value": 4096.0
+        },
+        {
+          "offset": 69,
+          "hexOffset": "0x0045",
+          "value": 2048.0
+        },
+        {
+          "offset": 73,
+          "hexOffset": "0x0049",
+          "value": 1.0
+        },
+        {
+          "offset": 77,
+          "hexOffset": "0x004d",
+          "value": 5.0
+        },
+        {
+          "offset": 81,
+          "hexOffset": "0x0051",
+          "value": 1424.0
+        },
+        {
+          "offset": 85,
+          "hexOffset": "0x0055",
+          "value": 2480.0
+        }
+      ]
+    },
+    {
+      "fixture": "T07_surfaces",
+      "path": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T07_surfaces.sav",
+      "sizeBytes": 3655,
+      "stringCount": 34,
+      "strings": [
+        {
+          "offset": 8,
+          "hexOffset": "0x0008",
+          "value": "spr_road"
+        },
+        {
+          "offset": 25,
+          "hexOffset": "0x0019",
+          "value": "grass_1"
+        },
+        {
+          "offset": 620,
+          "hexOffset": "0x026c",
+          "value": "@forrest2"
+        },
+        {
+          "offset": 630,
+          "hexOffset": "0x0276",
+          "value": "spr_water_edge"
+        },
+        {
+          "offset": 819,
+          "hexOffset": "0x0333",
+          "value": "{CYO"
+        },
+        {
+          "offset": 1091,
+          "hexOffset": "0x0443",
+          "value": "*D/w%D"
+        },
+        {
+          "offset": 1163,
+          "hexOffset": "0x048b",
+          "value": "$D-w"
+        },
+        {
+          "offset": 1177,
+          "hexOffset": "0x0499",
+          "value": "forrest2"
+        },
+        {
+          "offset": 1186,
+          "hexOffset": "0x04a2",
+          "value": "spr_water_edge"
+        },
+        {
+          "offset": 1249,
+          "hexOffset": "0x04e1",
+          "value": "forrest2"
+        },
+        {
+          "offset": 1258,
+          "hexOffset": "0x04ea",
+          "value": "spr_water_edge"
+        },
+        {
+          "offset": 1321,
+          "hexOffset": "0x0529",
+          "value": "spr_sand"
+        },
+        {
+          "offset": 1330,
+          "hexOffset": "0x0532",
+          "value": "spr_sand_edge"
+        },
+        {
+          "offset": 1752,
+          "hexOffset": "0x06d8",
+          "value": "wall1"
+        },
+        {
+          "offset": 2157,
+          "hexOffset": "0x086d",
+          "value": "@spr_pit_building_to_right"
+        },
+        {
+          "offset": 2220,
+          "hexOffset": "0x08ac",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 2267,
+          "hexOffset": "0x08db",
+          "value": "Checkpoint 2"
+        },
+        {
+          "offset": 2283,
+          "hexOffset": "0x08eb",
+          "value": "@checkpoint"
+        },
+        {
+          "offset": 2299,
+          "hexOffset": "0x08fb",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 2346,
+          "hexOffset": "0x092a",
+          "value": "Checkpoint 1"
+        },
+        {
+          "offset": 2362,
+          "hexOffset": "0x093a",
+          "value": "?checkpoint"
+        },
+        {
+          "offset": 2378,
+          "hexOffset": "0x094a",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 2425,
+          "hexOffset": "0x0979",
+          "value": "Finish"
+        },
+        {
+          "offset": 2436,
+          "hexOffset": "0x0984",
+          "value": "checkpoint"
+        },
+        {
+          "offset": 2601,
+          "hexOffset": "0x0a29",
+          "value": "NDB)SD"
+        },
+        {
+          "offset": 2710,
+          "hexOffset": "0x0a96",
+          "value": "CZosC"
+        },
+        {
+          "offset": 2737,
+          "hexOffset": "0x0ab1",
+          "value": "4BP'gB"
+        },
+        {
+          "offset": 2800,
+          "hexOffset": "0x0af0",
+          "value": "P3EP"
+        },
+        {
+          "offset": 2820,
+          "hexOffset": "0x0b04",
+          "value": "5/EQ"
+        },
+        {
+          "offset": 2845,
+          "hexOffset": "0x0b1d",
+          "value": "ND@)[D"
+        },
+        {
+          "offset": 3238,
+          "hexOffset": "0x0ca6",
+          "value": "@l%4C"
+        },
+        {
+          "offset": 3324,
+          "hexOffset": "0x0cfc",
+          "value": " !ES"
+        },
+        {
+          "offset": 3353,
+          "hexOffset": "0x0d19",
+          "value": " ANS"
+        },
+        {
+          "offset": 3506,
+          "hexOffset": "0x0db2",
+          "value": "C3d4C"
+        }
+      ],
+      "leadingFloat32": [
+        {
+          "offset": 0,
+          "hexOffset": "0x0000",
+          "value": 10.0
+        },
+        {
+          "offset": 33,
+          "hexOffset": "0x0021",
+          "value": 1.0
+        },
+        {
+          "offset": 45,
+          "hexOffset": "0x002d",
+          "value": 250.0
+        },
+        {
+          "offset": 53,
+          "hexOffset": "0x0035",
+          "value": 1.0
+        },
+        {
+          "offset": 57,
+          "hexOffset": "0x0039",
+          "value": 105.0
+        },
+        {
+          "offset": 61,
+          "hexOffset": "0x003d",
+          "value": 12.5
+        },
+        {
+          "offset": 65,
+          "hexOffset": "0x0041",
+          "value": 4096.0
+        },
+        {
+          "offset": 69,
+          "hexOffset": "0x0045",
+          "value": 2048.0
+        },
+        {
+          "offset": 73,
+          "hexOffset": "0x0049",
+          "value": 1.0
+        },
+        {
+          "offset": 77,
+          "hexOffset": "0x004d",
+          "value": 5.0
+        },
+        {
+          "offset": 81,
+          "hexOffset": "0x0051",
+          "value": 1424.0
+        },
+        {
+          "offset": 85,
+          "hexOffset": "0x0055",
+          "value": 2480.0
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "from": "T00_empty_save",
+      "to": "T01_single_straight",
+      "oldSize": 289,
+      "newSize": 377,
+      "deltaBytes": 88,
+      "commonPrefixBytes": 80,
+      "commonSuffixBytes": 184,
+      "changedOldRange": [
+        80,
+        105
+      ],
+      "changedNewRange": [
+        80,
+        193
+      ],
+      "oldChangedSize": 25,
+      "newChangedSize": 113,
+      "opcodes": [
+        {
+          "tag": "insert",
+          "oldStart": 80,
+          "oldEnd": 80,
+          "newStart": 80,
+          "newEnd": 173,
+          "oldSize": 0,
+          "newSize": 93
+        },
+        {
+          "tag": "insert",
+          "oldStart": 90,
+          "oldEnd": 90,
+          "newStart": 183,
+          "newEnd": 185,
+          "oldSize": 0,
+          "newSize": 2
+        },
+        {
+          "tag": "insert",
+          "oldStart": 92,
+          "oldEnd": 92,
+          "newStart": 187,
+          "newEnd": 189,
+          "oldSize": 0,
+          "newSize": 2
+        },
+        {
+          "tag": "replace",
+          "oldStart": 94,
+          "oldEnd": 105,
+          "newStart": 191,
+          "newEnd": 193,
+          "oldSize": 11,
+          "newSize": 2
+        }
+      ],
+      "newStringsInChangedRange": [],
+      "newFloat32CandidatesInChangedRange": [
+        {
+          "offset": 81,
+          "hexOffset": "0x0051",
+          "value": 1424.0
+        },
+        {
+          "offset": 85,
+          "hexOffset": "0x0055",
+          "value": 2480.0
+        },
+        {
+          "offset": 89,
+          "hexOffset": "0x0059",
+          "value": 2.0
+        },
+        {
+          "offset": 93,
+          "hexOffset": "0x005d",
+          "value": 1072.0
+        },
+        {
+          "offset": 97,
+          "hexOffset": "0x0061",
+          "value": 1072.0
+        },
+        {
+          "offset": 101,
+          "hexOffset": "0x0065",
+          "value": 2.0
+        },
+        {
+          "offset": 105,
+          "hexOffset": "0x0069",
+          "value": 1.0
+        },
+        {
+          "offset": 113,
+          "hexOffset": "0x0071",
+          "value": 2.0
+        },
+        {
+          "offset": 125,
+          "hexOffset": "0x007d",
+          "value": 2.0
+        },
+        {
+          "offset": 129,
+          "hexOffset": "0x0081",
+          "value": 180.0
+        },
+        {
+          "offset": 137,
+          "hexOffset": "0x0089",
+          "value": 2.0
+        },
+        {
+          "offset": 141,
+          "hexOffset": "0x008d",
+          "value": 130.0
+        },
+        {
+          "offset": 149,
+          "hexOffset": "0x0095",
+          "value": 2.0
+        },
+        {
+          "offset": 153,
+          "hexOffset": "0x0099",
+          "value": 130.0
+        },
+        {
+          "offset": 161,
+          "hexOffset": "0x00a1",
+          "value": 4.0
+        },
+        {
+          "offset": 163,
+          "hexOffset": "0x00a3",
+          "value": 2.003937
+        },
+        {
+          "offset": 164,
+          "hexOffset": "0x00a4",
+          "value": -48.000244
+        },
+        {
+          "offset": 165,
+          "hexOffset": "0x00a5",
+          "value": 1554.0
+        },
+        {
+          "offset": 169,
+          "hexOffset": "0x00a9",
+          "value": 2350.0
+        },
+        {
+          "offset": 181,
+          "hexOffset": "0x00b5",
+          "value": 4.0
+        },
+        {
+          "offset": 185,
+          "hexOffset": "0x00b9",
+          "value": 1072.0
+        },
+        {
+          "offset": 189,
+          "hexOffset": "0x00bd",
+          "value": 1072.0
+        }
+      ]
+    },
+    {
+      "from": "T01_single_straight",
+      "to": "T02_simple_closed_loop",
+      "oldSize": 377,
+      "newSize": 749,
+      "deltaBytes": 372,
+      "commonPrefixBytes": 79,
+      "commonSuffixBytes": 0,
+      "changedOldRange": [
+        79,
+        377
+      ],
+      "changedNewRange": [
+        79,
+        749
+      ],
+      "oldChangedSize": 298,
+      "newChangedSize": 670,
+      "opcodes": [
+        {
+          "tag": "replace",
+          "oldStart": 79,
+          "oldEnd": 80,
+          "newStart": 79,
+          "newEnd": 80,
+          "oldSize": 1,
+          "newSize": 1
+        },
+        {
+          "tag": "insert",
+          "oldStart": 91,
+          "oldEnd": 91,
+          "newStart": 91,
+          "newEnd": 93,
+          "oldSize": 0,
+          "newSize": 2
+        },
+        {
+          "tag": "insert",
+          "oldStart": 92,
+          "oldEnd": 92,
+          "newStart": 94,
+          "newEnd": 104,
+          "oldSize": 0,
+          "newSize": 10
+        },
+        {
+          "tag": "insert",
+          "oldStart": 103,
+          "oldEnd": 103,
+          "newStart": 115,
+          "newEnd": 117,
+          "oldSize": 0,
+          "newSize": 2
+        },
+        {
+          "tag": "insert",
+          "oldStart": 104,
+          "oldEnd": 104,
+          "newStart": 118,
+          "newEnd": 128,
+          "oldSize": 0,
+          "newSize": 10
+        },
+        {
+          "tag": "insert",
+          "oldStart": 105,
+          "oldEnd": 105,
+          "newStart": 129,
+          "newEnd": 141,
+          "oldSize": 0,
+          "newSize": 12
+        },
+        {
+          "tag": "replace",
+          "oldStart": 115,
+          "oldEnd": 116,
+          "newStart": 151,
+          "newEnd": 152,
+          "oldSize": 1,
+          "newSize": 1
+        },
+        {
+          "tag": "insert",
+          "oldStart": 124,
+          "oldEnd": 124,
+          "newStart": 160,
+          "newEnd": 161,
+          "oldSize": 0,
+          "newSize": 1
+        },
+        {
+          "tag": "replace",
+          "oldStart": 126,
+          "oldEnd": 129,
+          "newStart": 163,
+          "newEnd": 165,
+          "oldSize": 3,
+          "newSize": 2
+        },
+        {
+          "tag": "insert",
+          "oldStart": 139,
+          "oldEnd": 139,
+          "newStart": 175,
+          "newEnd": 177,
+          "oldSize": 0,
+          "newSize": 2
+        },
+        {
+          "tag": "insert",
+          "oldStart": 140,
+          "oldEnd": 140,
+          "newStart": 178,
+          "newEnd": 200,
+          "oldSize": 0,
+          "newSize": 22
+        },
+        {
+          "tag": "insert",
+          "oldStart": 141,
+          "oldEnd": 141,
+          "newStart": 201,
+          "newEnd": 213,
+          "oldSize": 0,
+          "newSize": 12
+        },
+        {
+          "tag": "insert",
+          "oldStart": 151,
+          "oldEnd": 151,
+          "newStart": 223,
+          "newEnd": 225,
+          "oldSize": 0,
+          "newSize": 2
+        },
+        {
+          "tag": "replace",
+          "oldStart": 152,
+          "oldEnd": 153,
+          "newStart": 226,
+          "newEnd": 237,
+          "oldSize": 1,
+          "newSize": 11
+        },
+        {
+          "tag": "replace",
+          "oldStart": 163,
+          "oldEnd": 165,
+          "newStart": 247,
+          "newEnd": 249,
+          "oldSize": 2,
+          "newSize": 2
+        },
+        {
+          "tag": "insert",
+          "oldStart": 173,
+          "oldEnd": 173,
+          "newStart": 257,
+          "newEnd": 281,
+          "oldSize": 0,
+          "newSize": 24
+        },
+        {
+          "tag": "replace",
+          "oldStart": 183,
+          "oldEnd": 185,
+          "newStart": 291,
+          "newEnd": 293,
+          "oldSize": 2,
+          "newSize": 2
+        },
+        {
+          "tag": "insert",
+          "oldStart": 188,
+          "oldEnd": 188,
+          "newStart": 296,
+          "newEnd": 320,
+          "oldSize": 0,
+          "newSize": 24
+        },
+        {
+          "tag": "insert",
+          "oldStart": 219,
+          "oldEnd": 219,
+          "newStart": 351,
+          "newEnd": 433,
+          "oldSize": 0,
+          "newSize": 82
+        },
+        {
+          "tag": "insert",
+          "oldStart": 221,
+          "oldEnd": 221,
+          "newStart": 435,
+          "newEnd": 517,
+          "oldSize": 0,
+          "newSize": 82
+        },
+        {
+          "tag": "replace",
+          "oldStart": 223,
+          "oldEnd": 232,
+          "newStart": 519,
+          "newEnd": 521,
+          "oldSize": 9,
+          "newSize": 2
+        },
+        {
+          "tag": "replace",
+          "oldStart": 236,
+          "oldEnd": 237,
+          "newStart": 525,
+          "newEnd": 526,
+          "oldSize": 1,
+          "newSize": 1
+        },
+        {
+          "tag": "replace",
+          "oldStart": 240,
+          "oldEnd": 241,
+          "newStart": 529,
+          "newEnd": 617,
+          "oldSize": 1,
+          "newSize": 88
+        },
+        {
+          "tag": "replace",
+          "oldStart": 371,
+          "oldEnd": 377,
+          "newStart": 747,
+          "newEnd": 749,
+          "oldSize": 6,
+          "newSize": 2
+        }
+      ],
+      "newStringsInChangedRange": [],
+      "newFloat32CandidatesInChangedRange": [
+        {
+          "offset": 81,
+          "hexOffset": "0x0051",
+          "value": 1424.0
+        },
+        {
+          "offset": 85,
+          "hexOffset": "0x0055",
+          "value": 2480.0
+        },
+        {
+          "offset": 89,
+          "hexOffset": "0x0059",
+          "value": 2480.0
+        },
+        {
+          "offset": 93,
+          "hexOffset": "0x005d",
+          "value": 1424.0
+        },
+        {
+          "offset": 97,
+          "hexOffset": "0x0061",
+          "value": 1424.0
+        },
+        {
+          "offset": 101,
+          "hexOffset": "0x0065",
+          "value": 5.0
+        },
+        {
+          "offset": 105,
+          "hexOffset": "0x0069",
+          "value": 1072.0
+        },
+        {
+          "offset": 109,
+          "hexOffset": "0x006d",
+          "value": 1072.0
+        },
+        {
+          "offset": 113,
+          "hexOffset": "0x0071",
+          "value": 1712.0
+        },
+        {
+          "offset": 117,
+          "hexOffset": "0x0075",
+          "value": 1712.0
+        },
+        {
+          "offset": 121,
+          "hexOffset": "0x0079",
+          "value": 1072.0
+        },
+        {
+          "offset": 125,
+          "hexOffset": "0x007d",
+          "value": 5.0
+        },
+        {
+          "offset": 129,
+          "hexOffset": "0x0081",
+          "value": 1.0
+        },
+        {
+          "offset": 133,
+          "hexOffset": "0x0085",
+          "value": 1.0
+        },
+        {
+          "offset": 137,
+          "hexOffset": "0x0089",
+          "value": 1.0
+        },
+        {
+          "offset": 141,
+          "hexOffset": "0x008d",
+          "value": 1.0
+        },
+        {
+          "offset": 149,
+          "hexOffset": "0x0095",
+          "value": 5.0
+        },
+        {
+          "offset": 161,
+          "hexOffset": "0x00a1",
+          "value": 180.0
+        },
+        {
+          "offset": 165,
+          "hexOffset": "0x00a5",
+          "value": 180.0
+        },
+        {
+          "offset": 173,
+          "hexOffset": "0x00ad",
+          "value": 5.0
+        },
+        {
+          "offset": 177,
+          "hexOffset": "0x00b1",
+          "value": 180.0
+        },
+        {
+          "offset": 189,
+          "hexOffset": "0x00bd",
+          "value": 180.0
+        },
+        {
+          "offset": 197,
+          "hexOffset": "0x00c5",
+          "value": 5.0
+        },
+        {
+          "offset": 201,
+          "hexOffset": "0x00c9",
+          "value": 130.0
+        }
+      ]
+    },
+    {
+      "from": "T02_simple_closed_loop",
+      "to": "T03_ai_line",
+      "oldSize": 749,
+      "newSize": 1409,
+      "deltaBytes": 660,
+      "commonPrefixBytes": 55,
+      "commonSuffixBytes": 4,
+      "changedOldRange": [
+        55,
+        745
+      ],
+      "changedNewRange": [
+        55,
+        1405
+      ],
+      "oldChangedSize": 690,
+      "newChangedSize": 1350,
+      "opcodes": [
+        {
+          "tag": "replace",
+          "oldStart": 55,
+          "oldEnd": 57,
+          "newStart": 55,
+          "newEnd": 57,
+          "oldSize": 2,
+          "newSize": 2
+        },
+        {
+          "tag": "replace",
+          "oldStart": 353,
+          "oldEnd": 355,
+          "newStart": 353,
+          "newEnd": 359,
+          "oldSize": 2,
+          "newSize": 6
+        },
+        {
+          "tag": "replace",
+          "oldStart": 357,
+          "oldEnd": 360,
+          "newStart": 361,
+          "newEnd": 364,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "replace",
+          "oldStart": 361,
+          "oldEnd": 364,
+          "newStart": 365,
+          "newEnd": 368,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "replace",
+          "oldStart": 365,
+          "oldEnd": 368,
+          "newStart": 369,
+          "newEnd": 372,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "insert",
+          "oldStart": 369,
+          "oldEnd": 369,
+          "newStart": 373,
+          "newEnd": 382,
+          "oldSize": 0,
+          "newSize": 9
+        },
+        {
+          "tag": "delete",
+          "oldStart": 370,
+          "oldEnd": 379,
+          "newStart": 383,
+          "newEnd": 383,
+          "oldSize": 9,
+          "newSize": 0
+        },
+        {
+          "tag": "replace",
+          "oldStart": 381,
+          "oldEnd": 384,
+          "newStart": 385,
+          "newEnd": 388,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "replace",
+          "oldStart": 385,
+          "oldEnd": 388,
+          "newStart": 389,
+          "newEnd": 392,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "replace",
+          "oldStart": 389,
+          "oldEnd": 392,
+          "newStart": 393,
+          "newEnd": 396,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "delete",
+          "oldStart": 393,
+          "oldEnd": 394,
+          "newStart": 397,
+          "newEnd": 397,
+          "oldSize": 1,
+          "newSize": 0
+        },
+        {
+          "tag": "insert",
+          "oldStart": 395,
+          "oldEnd": 395,
+          "newStart": 398,
+          "newEnd": 399,
+          "oldSize": 0,
+          "newSize": 1
+        },
+        {
+          "tag": "replace",
+          "oldStart": 397,
+          "oldEnd": 400,
+          "newStart": 401,
+          "newEnd": 404,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "insert",
+          "oldStart": 401,
+          "oldEnd": 401,
+          "newStart": 405,
+          "newEnd": 407,
+          "oldSize": 0,
+          "newSize": 2
+        },
+        {
+          "tag": "delete",
+          "oldStart": 402,
+          "oldEnd": 404,
+          "newStart": 408,
+          "newEnd": 408,
+          "oldSize": 2,
+          "newSize": 0
+        },
+        {
+          "tag": "replace",
+          "oldStart": 405,
+          "oldEnd": 408,
+          "newStart": 409,
+          "newEnd": 412,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "delete",
+          "oldStart": 409,
+          "oldEnd": 410,
+          "newStart": 413,
+          "newEnd": 413,
+          "oldSize": 1,
+          "newSize": 0
+        },
+        {
+          "tag": "replace",
+          "oldStart": 411,
+          "oldEnd": 412,
+          "newStart": 414,
+          "newEnd": 416,
+          "oldSize": 1,
+          "newSize": 2
+        },
+        {
+          "tag": "replace",
+          "oldStart": 413,
+          "oldEnd": 416,
+          "newStart": 417,
+          "newEnd": 420,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "replace",
+          "oldStart": 417,
+          "oldEnd": 419,
+          "newStart": 421,
+          "newEnd": 427,
+          "oldSize": 2,
+          "newSize": 6
+        },
+        {
+          "tag": "replace",
+          "oldStart": 421,
+          "oldEnd": 431,
+          "newStart": 429,
+          "newEnd": 431,
+          "oldSize": 10,
+          "newSize": 2
+        },
+        {
+          "tag": "replace",
+          "oldStart": 485,
+          "oldEnd": 487,
+          "newStart": 485,
+          "newEnd": 487,
+          "oldSize": 2,
+          "newSize": 2
+        },
+        {
+          "tag": "replace",
+          "oldStart": 489,
+          "oldEnd": 492,
+          "newStart": 489,
+          "newEnd": 492,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "replace",
+          "oldStart": 493,
+          "oldEnd": 496,
+          "newStart": 493,
+          "newEnd": 496,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "replace",
+          "oldStart": 497,
+          "oldEnd": 500,
+          "newStart": 497,
+          "newEnd": 500,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "replace",
+          "oldStart": 501,
+          "oldEnd": 503,
+          "newStart": 501,
+          "newEnd": 507,
+          "oldSize": 2,
+          "newSize": 6
+        },
+        {
+          "tag": "replace",
+          "oldStart": 505,
+          "oldEnd": 508,
+          "newStart": 509,
+          "newEnd": 512,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "replace",
+          "oldStart": 509,
+          "oldEnd": 516,
+          "newStart": 513,
+          "newEnd": 516,
+          "oldSize": 7,
+          "newSize": 3
+        },
+        {
+          "tag": "replace",
+          "oldStart": 559,
+          "oldEnd": 561,
+          "newStart": 559,
+          "newEnd": 561,
+          "oldSize": 2,
+          "newSize": 2
+        },
+        {
+          "tag": "replace",
+          "oldStart": 569,
+          "oldEnd": 572,
+          "newStart": 569,
+          "newEnd": 575,
+          "oldSize": 3,
+          "newSize": 6
+        },
+        {
+          "tag": "replace",
+          "oldStart": 573,
+          "oldEnd": 576,
+          "newStart": 576,
+          "newEnd": 580,
+          "oldSize": 3,
+          "newSize": 4
+        },
+        {
+          "tag": "replace",
+          "oldStart": 577,
+          "oldEnd": 578,
+          "newStart": 581,
+          "newEnd": 598,
+          "oldSize": 1,
+          "newSize": 17
+        },
+        {
+          "tag": "delete",
+          "oldStart": 579,
+          "oldEnd": 595,
+          "newStart": 599,
+          "newEnd": 599,
+          "oldSize": 16,
+          "newSize": 0
+        },
+        {
+          "tag": "delete",
+          "oldStart": 596,
+          "oldEnd": 600,
+          "newStart": 600,
+          "newEnd": 600,
+          "oldSize": 4,
+          "newSize": 0
+        },
+        {
+          "tag": "replace",
+          "oldStart": 609,
+          "oldEnd": 612,
+          "newStart": 609,
+          "newEnd": 612,
+          "oldSize": 3,
+          "newSize": 3
+        },
+        {
+          "tag": "insert",
+          "oldStart": 639,
+          "oldEnd": 639,
+          "newStart": 639,
+          "newEnd": 841,
+          "oldSize": 0,
+          "newSize": 202
+        },
+        {
+          "tag": "insert",
+          "oldStart": 649,
+          "oldEnd": 649,
+          "newStart": 851,
+          "newEnd": 885,
+          "oldSize": 0,
+          "newSize": 34
+        },
+        {
+          "tag": "insert",
+          "oldStart": 659,
+          "oldEnd": 659,
+          "newStart": 895,
+          "newEnd": 961,
+          "oldSize": 0,
+          "newSize": 66
+        },
+        {
+          "tag": "insert",
+          "oldStart": 665,
+          "oldEnd": 665,
+          "newStart": 967,
+          "newEnd": 1009,
+          "oldSize": 0,
+          "newSize": 42
+        },
+        {
+          "tag": "insert",
+          "oldStart": 671,
+          "oldEnd": 671,
+          "newStart": 1015,
+          "newEnd": 1033,
+          "oldSize": 0,
+          "newSize": 18
+        }
+      ],
+      "newStringsInChangedRange": [
+        {
+          "offset": 992,
+          "hexOffset": "0x03e0",
+          "value": "@l%4C"
+        },
+        {
+          "offset": 1078,
+          "hexOffset": "0x0436",
+          "value": " !ES"
+        },
+        {
+          "offset": 1107,
+          "hexOffset": "0x0453",
+          "value": " ANS"
+        },
+        {
+          "offset": 1260,
+          "hexOffset": "0x04ec",
+          "value": "C3d4C"
+        }
+      ],
+      "newFloat32CandidatesInChangedRange": [
+        {
+          "offset": 57,
+          "hexOffset": "0x0039",
+          "value": 105.0
+        },
+        {
+          "offset": 61,
+          "hexOffset": "0x003d",
+          "value": 12.5
+        },
+        {
+          "offset": 65,
+          "hexOffset": "0x0041",
+          "value": 4096.0
+        },
+        {
+          "offset": 69,
+          "hexOffset": "0x0045",
+          "value": 2048.0
+        },
+        {
+          "offset": 77,
+          "hexOffset": "0x004d",
+          "value": 5.0
+        },
+        {
+          "offset": 81,
+          "hexOffset": "0x0051",
+          "value": 1424.0
+        },
+        {
+          "offset": 85,
+          "hexOffset": "0x0055",
+          "value": 2480.0
+        },
+        {
+          "offset": 89,
+          "hexOffset": "0x0059",
+          "value": 2480.0
+        },
+        {
+          "offset": 93,
+          "hexOffset": "0x005d",
+          "value": 1424.0
+        },
+        {
+          "offset": 97,
+          "hexOffset": "0x0061",
+          "value": 1424.0
+        },
+        {
+          "offset": 101,
+          "hexOffset": "0x0065",
+          "value": 5.0
+        },
+        {
+          "offset": 105,
+          "hexOffset": "0x0069",
+          "value": 1072.0
+        },
+        {
+          "offset": 109,
+          "hexOffset": "0x006d",
+          "value": 1072.0
+        },
+        {
+          "offset": 113,
+          "hexOffset": "0x0071",
+          "value": 1712.0
+        },
+        {
+          "offset": 117,
+          "hexOffset": "0x0075",
+          "value": 1712.0
+        },
+        {
+          "offset": 121,
+          "hexOffset": "0x0079",
+          "value": 1072.0
+        },
+        {
+          "offset": 125,
+          "hexOffset": "0x007d",
+          "value": 5.0
+        },
+        {
+          "offset": 129,
+          "hexOffset": "0x0081",
+          "value": 1.0
+        },
+        {
+          "offset": 133,
+          "hexOffset": "0x0085",
+          "value": 1.0
+        },
+        {
+          "offset": 137,
+          "hexOffset": "0x0089",
+          "value": 1.0
+        },
+        {
+          "offset": 141,
+          "hexOffset": "0x008d",
+          "value": 1.0
+        },
+        {
+          "offset": 149,
+          "hexOffset": "0x0095",
+          "value": 5.0
+        },
+        {
+          "offset": 161,
+          "hexOffset": "0x00a1",
+          "value": 180.0
+        },
+        {
+          "offset": 165,
+          "hexOffset": "0x00a5",
+          "value": 180.0
+        }
+      ]
+    },
+    {
+      "from": "T03_ai_line",
+      "to": "T04_limits_or_walls",
+      "oldSize": 1409,
+      "newSize": 1815,
+      "deltaBytes": 406,
+      "commonPrefixBytes": 623,
+      "commonSuffixBytes": 786,
+      "changedOldRange": [
+        623,
+        623
+      ],
+      "changedNewRange": [
+        623,
+        1029
+      ],
+      "oldChangedSize": 0,
+      "newChangedSize": 406,
+      "opcodes": [
+        {
+          "tag": "insert",
+          "oldStart": 617,
+          "oldEnd": 617,
+          "newStart": 617,
+          "newEnd": 1023,
+          "oldSize": 0,
+          "newSize": 406
+        }
+      ],
+      "newStringsInChangedRange": [
+        {
+          "offset": 629,
+          "hexOffset": "0x0275",
+          "value": "wall1"
+        }
+      ],
+      "newFloat32CandidatesInChangedRange": [
+        {
+          "offset": 634,
+          "hexOffset": "0x027a",
+          "value": 2.0
+        },
+        {
+          "offset": 635,
+          "hexOffset": "0x027b",
+          "value": 12.0
+        },
+        {
+          "offset": 639,
+          "hexOffset": "0x027f",
+          "value": -1.0
+        },
+        {
+          "offset": 643,
+          "hexOffset": "0x0283",
+          "value": 8.0
+        },
+        {
+          "offset": 647,
+          "hexOffset": "0x0287",
+          "value": 2416.0
+        },
+        {
+          "offset": 651,
+          "hexOffset": "0x028b",
+          "value": 2480.0
+        },
+        {
+          "offset": 655,
+          "hexOffset": "0x028f",
+          "value": 2480.0
+        },
+        {
+          "offset": 659,
+          "hexOffset": "0x0293",
+          "value": 2480.0
+        },
+        {
+          "offset": 663,
+          "hexOffset": "0x0297",
+          "value": 2384.0
+        },
+        {
+          "offset": 667,
+          "hexOffset": "0x029b",
+          "value": 2064.0
+        },
+        {
+          "offset": 671,
+          "hexOffset": "0x029f",
+          "value": 1648.0
+        },
+        {
+          "offset": 674,
+          "hexOffset": "0x02a2",
+          "value": -0.125001
+        },
+        {
+          "offset": 675,
+          "hexOffset": "0x02a3",
+          "value": 1520.0
+        },
+        {
+          "offset": 679,
+          "hexOffset": "0x02a7",
+          "value": 8.0
+        },
+        {
+          "offset": 683,
+          "hexOffset": "0x02ab",
+          "value": 1136.0
+        },
+        {
+          "offset": 687,
+          "hexOffset": "0x02af",
+          "value": 1168.0
+        },
+        {
+          "offset": 691,
+          "hexOffset": "0x02b3",
+          "value": 1328.0
+        },
+        {
+          "offset": 694,
+          "hexOffset": "0x02b6",
+          "value": -32.000259
+        },
+        {
+          "offset": 695,
+          "hexOffset": "0x02b7",
+          "value": 1552.0
+        },
+        {
+          "offset": 699,
+          "hexOffset": "0x02bb",
+          "value": 1616.0
+        },
+        {
+          "offset": 703,
+          "hexOffset": "0x02bf",
+          "value": 1616.0
+        },
+        {
+          "offset": 707,
+          "hexOffset": "0x02c3",
+          "value": 1616.0
+        },
+        {
+          "offset": 711,
+          "hexOffset": "0x02c7",
+          "value": 1616.0
+        },
+        {
+          "offset": 715,
+          "hexOffset": "0x02cb",
+          "value": 8.0
+        }
+      ]
+    },
+    {
+      "from": "T04_limits_or_walls",
+      "to": "T05_start_and_checkpoints",
+      "oldSize": 1815,
+      "newSize": 2046,
+      "deltaBytes": 231,
+      "commonPrefixBytes": 75,
+      "commonSuffixBytes": 785,
+      "changedOldRange": [
+        75,
+        1030
+      ],
+      "changedNewRange": [
+        75,
+        1261
+      ],
+      "oldChangedSize": 955,
+      "newChangedSize": 1186,
+      "opcodes": [
+        {
+          "tag": "replace",
+          "oldStart": 75,
+          "oldEnd": 77,
+          "newStart": 75,
+          "newEnd": 77,
+          "oldSize": 2,
+          "newSize": 2
+        },
+        {
+          "tag": "insert",
+          "oldStart": 1033,
+          "oldEnd": 1033,
+          "newStart": 1033,
+          "newEnd": 1264,
+          "oldSize": 0,
+          "newSize": 231
+        }
+      ],
+      "newStringsInChangedRange": [
+        {
+          "offset": 629,
+          "hexOffset": "0x0275",
+          "value": "wall1"
+        },
+        {
+          "offset": 1033,
+          "hexOffset": "0x0409",
+          "value": "@@spr_checkpoint"
+        },
+        {
+          "offset": 1082,
+          "hexOffset": "0x043a",
+          "value": "Checkpoint 2"
+        },
+        {
+          "offset": 1098,
+          "hexOffset": "0x044a",
+          "value": "@checkpoint"
+        },
+        {
+          "offset": 1114,
+          "hexOffset": "0x045a",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 1161,
+          "hexOffset": "0x0489",
+          "value": "Checkpoint 1"
+        },
+        {
+          "offset": 1177,
+          "hexOffset": "0x0499",
+          "value": "?checkpoint"
+        },
+        {
+          "offset": 1193,
+          "hexOffset": "0x04a9",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 1240,
+          "hexOffset": "0x04d8",
+          "value": "Finish"
+        },
+        {
+          "offset": 1251,
+          "hexOffset": "0x04e3",
+          "value": "checkpoint"
+        }
+      ],
+      "newFloat32CandidatesInChangedRange": [
+        {
+          "offset": 77,
+          "hexOffset": "0x004d",
+          "value": 5.0
+        },
+        {
+          "offset": 81,
+          "hexOffset": "0x0051",
+          "value": 1424.0
+        },
+        {
+          "offset": 85,
+          "hexOffset": "0x0055",
+          "value": 2480.0
+        },
+        {
+          "offset": 89,
+          "hexOffset": "0x0059",
+          "value": 2480.0
+        },
+        {
+          "offset": 93,
+          "hexOffset": "0x005d",
+          "value": 1424.0
+        },
+        {
+          "offset": 97,
+          "hexOffset": "0x0061",
+          "value": 1424.0
+        },
+        {
+          "offset": 101,
+          "hexOffset": "0x0065",
+          "value": 5.0
+        },
+        {
+          "offset": 105,
+          "hexOffset": "0x0069",
+          "value": 1072.0
+        },
+        {
+          "offset": 109,
+          "hexOffset": "0x006d",
+          "value": 1072.0
+        },
+        {
+          "offset": 113,
+          "hexOffset": "0x0071",
+          "value": 1712.0
+        },
+        {
+          "offset": 117,
+          "hexOffset": "0x0075",
+          "value": 1712.0
+        },
+        {
+          "offset": 121,
+          "hexOffset": "0x0079",
+          "value": 1072.0
+        },
+        {
+          "offset": 125,
+          "hexOffset": "0x007d",
+          "value": 5.0
+        },
+        {
+          "offset": 129,
+          "hexOffset": "0x0081",
+          "value": 1.0
+        },
+        {
+          "offset": 133,
+          "hexOffset": "0x0085",
+          "value": 1.0
+        },
+        {
+          "offset": 137,
+          "hexOffset": "0x0089",
+          "value": 1.0
+        },
+        {
+          "offset": 141,
+          "hexOffset": "0x008d",
+          "value": 1.0
+        },
+        {
+          "offset": 149,
+          "hexOffset": "0x0095",
+          "value": 5.0
+        },
+        {
+          "offset": 161,
+          "hexOffset": "0x00a1",
+          "value": 180.0
+        },
+        {
+          "offset": 165,
+          "hexOffset": "0x00a5",
+          "value": 180.0
+        },
+        {
+          "offset": 173,
+          "hexOffset": "0x00ad",
+          "value": 5.0
+        },
+        {
+          "offset": 177,
+          "hexOffset": "0x00b1",
+          "value": 180.0
+        },
+        {
+          "offset": 189,
+          "hexOffset": "0x00bd",
+          "value": 180.0
+        },
+        {
+          "offset": 197,
+          "hexOffset": "0x00c5",
+          "value": 5.0
+        }
+      ]
+    },
+    {
+      "from": "T05_start_and_checkpoints",
+      "to": "T06_pit_lane",
+      "oldSize": 2046,
+      "newSize": 2532,
+      "deltaBytes": 486,
+      "commonPrefixBytes": 1033,
+      "commonSuffixBytes": 780,
+      "changedOldRange": [
+        1033,
+        1266
+      ],
+      "changedNewRange": [
+        1033,
+        1752
+      ],
+      "oldChangedSize": 233,
+      "newChangedSize": 719,
+      "opcodes": [
+        {
+          "tag": "insert",
+          "oldStart": 1033,
+          "oldEnd": 1033,
+          "newStart": 1033,
+          "newEnd": 1034,
+          "oldSize": 0,
+          "newSize": 1
+        },
+        {
+          "tag": "replace",
+          "oldStart": 1034,
+          "oldEnd": 1035,
+          "newStart": 1035,
+          "newEnd": 1097,
+          "oldSize": 1,
+          "newSize": 62
+        },
+        {
+          "tag": "insert",
+          "oldStart": 1266,
+          "oldEnd": 1266,
+          "newStart": 1328,
+          "newEnd": 1752,
+          "oldSize": 0,
+          "newSize": 424
+        }
+      ],
+      "newStringsInChangedRange": [
+        {
+          "offset": 1034,
+          "hexOffset": "0x040a",
+          "value": "@spr_pit_building_to_right"
+        },
+        {
+          "offset": 1097,
+          "hexOffset": "0x0449",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 1144,
+          "hexOffset": "0x0478",
+          "value": "Checkpoint 2"
+        },
+        {
+          "offset": 1160,
+          "hexOffset": "0x0488",
+          "value": "@checkpoint"
+        },
+        {
+          "offset": 1176,
+          "hexOffset": "0x0498",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 1223,
+          "hexOffset": "0x04c7",
+          "value": "Checkpoint 1"
+        },
+        {
+          "offset": 1239,
+          "hexOffset": "0x04d7",
+          "value": "?checkpoint"
+        },
+        {
+          "offset": 1255,
+          "hexOffset": "0x04e7",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 1302,
+          "hexOffset": "0x0516",
+          "value": "Finish"
+        },
+        {
+          "offset": 1313,
+          "hexOffset": "0x0521",
+          "value": "checkpoint"
+        },
+        {
+          "offset": 1478,
+          "hexOffset": "0x05c6",
+          "value": "NDB)SD"
+        },
+        {
+          "offset": 1587,
+          "hexOffset": "0x0633",
+          "value": "CZosC"
+        },
+        {
+          "offset": 1614,
+          "hexOffset": "0x064e",
+          "value": "4BP'gB"
+        },
+        {
+          "offset": 1677,
+          "hexOffset": "0x068d",
+          "value": "P3EP"
+        },
+        {
+          "offset": 1697,
+          "hexOffset": "0x06a1",
+          "value": "5/EQ"
+        },
+        {
+          "offset": 1722,
+          "hexOffset": "0x06ba",
+          "value": "ND@)[D"
+        }
+      ],
+      "newFloat32CandidatesInChangedRange": [
+        {
+          "offset": 1061,
+          "hexOffset": "0x0425",
+          "value": 2192.0
+        },
+        {
+          "offset": 1065,
+          "hexOffset": "0x0429",
+          "value": 720.0
+        },
+        {
+          "offset": 1069,
+          "hexOffset": "0x042d",
+          "value": -1.0
+        },
+        {
+          "offset": 1073,
+          "hexOffset": "0x0431",
+          "value": 90.0
+        },
+        {
+          "offset": 1077,
+          "hexOffset": "0x0435",
+          "value": 1.0
+        },
+        {
+          "offset": 1081,
+          "hexOffset": "0x0439",
+          "value": 1.0
+        },
+        {
+          "offset": 1089,
+          "hexOffset": "0x0441",
+          "value": 1.0
+        },
+        {
+          "offset": 1112,
+          "hexOffset": "0x0458",
+          "value": 1356.068115
+        },
+        {
+          "offset": 1116,
+          "hexOffset": "0x045c",
+          "value": 1629.605835
+        },
+        {
+          "offset": 1120,
+          "hexOffset": "0x0460",
+          "value": -1.0
+        },
+        {
+          "offset": 1123,
+          "hexOffset": "0x0463",
+          "value": -0.028664
+        },
+        {
+          "offset": 1124,
+          "hexOffset": "0x0464",
+          "value": 377.834503
+        },
+        {
+          "offset": 1128,
+          "hexOffset": "0x0468",
+          "value": 20.0
+        },
+        {
+          "offset": 1132,
+          "hexOffset": "0x046c",
+          "value": 105.0
+        },
+        {
+          "offset": 1140,
+          "hexOffset": "0x0474",
+          "value": -1.0
+        },
+        {
+          "offset": 1141,
+          "hexOffset": "0x0475",
+          "value": 383.0
+        },
+        {
+          "offset": 1157,
+          "hexOffset": "0x0485",
+          "value": 2.0
+        },
+        {
+          "offset": 1195,
+          "hexOffset": "0x04ab",
+          "value": 1712.0
+        },
+        {
+          "offset": 1199,
+          "hexOffset": "0x04af",
+          "value": -1.0
+        },
+        {
+          "offset": 1203,
+          "hexOffset": "0x04b3",
+          "value": 450.0
+        },
+        {
+          "offset": 1207,
+          "hexOffset": "0x04b7",
+          "value": 20.0
+        },
+        {
+          "offset": 1211,
+          "hexOffset": "0x04bb",
+          "value": 105.0
+        },
+        {
+          "offset": 1219,
+          "hexOffset": "0x04c3",
+          "value": -1.0
+        },
+        {
+          "offset": 1220,
+          "hexOffset": "0x04c4",
+          "value": 383.0
+        }
+      ]
+    },
+    {
+      "from": "T06_pit_lane",
+      "to": "T07_surfaces",
+      "oldSize": 2532,
+      "newSize": 3655,
+      "deltaBytes": 1123,
+      "commonPrefixBytes": 619,
+      "commonSuffixBytes": 948,
+      "changedOldRange": [
+        619,
+        1584
+      ],
+      "changedNewRange": [
+        619,
+        2707
+      ],
+      "oldChangedSize": 965,
+      "newChangedSize": 2088,
+      "opcodes": [
+        {
+          "tag": "insert",
+          "oldStart": 617,
+          "oldEnd": 617,
+          "newStart": 617,
+          "newEnd": 1740,
+          "oldSize": 0,
+          "newSize": 1123
+        },
+        {
+          "tag": "replace",
+          "oldStart": 1583,
+          "oldEnd": 1584,
+          "newStart": 2706,
+          "newEnd": 2707,
+          "oldSize": 1,
+          "newSize": 1
+        }
+      ],
+      "newStringsInChangedRange": [
+        {
+          "offset": 620,
+          "hexOffset": "0x026c",
+          "value": "@forrest2"
+        },
+        {
+          "offset": 630,
+          "hexOffset": "0x0276",
+          "value": "spr_water_edge"
+        },
+        {
+          "offset": 819,
+          "hexOffset": "0x0333",
+          "value": "{CYO"
+        },
+        {
+          "offset": 1091,
+          "hexOffset": "0x0443",
+          "value": "*D/w%D"
+        },
+        {
+          "offset": 1163,
+          "hexOffset": "0x048b",
+          "value": "$D-w"
+        },
+        {
+          "offset": 1177,
+          "hexOffset": "0x0499",
+          "value": "forrest2"
+        },
+        {
+          "offset": 1186,
+          "hexOffset": "0x04a2",
+          "value": "spr_water_edge"
+        },
+        {
+          "offset": 1249,
+          "hexOffset": "0x04e1",
+          "value": "forrest2"
+        },
+        {
+          "offset": 1258,
+          "hexOffset": "0x04ea",
+          "value": "spr_water_edge"
+        },
+        {
+          "offset": 1321,
+          "hexOffset": "0x0529",
+          "value": "spr_sand"
+        },
+        {
+          "offset": 1330,
+          "hexOffset": "0x0532",
+          "value": "spr_sand_edge"
+        },
+        {
+          "offset": 1752,
+          "hexOffset": "0x06d8",
+          "value": "wall1"
+        },
+        {
+          "offset": 2157,
+          "hexOffset": "0x086d",
+          "value": "@spr_pit_building_to_right"
+        },
+        {
+          "offset": 2220,
+          "hexOffset": "0x08ac",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 2267,
+          "hexOffset": "0x08db",
+          "value": "Checkpoint 2"
+        },
+        {
+          "offset": 2283,
+          "hexOffset": "0x08eb",
+          "value": "@checkpoint"
+        },
+        {
+          "offset": 2299,
+          "hexOffset": "0x08fb",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 2346,
+          "hexOffset": "0x092a",
+          "value": "Checkpoint 1"
+        },
+        {
+          "offset": 2362,
+          "hexOffset": "0x093a",
+          "value": "?checkpoint"
+        },
+        {
+          "offset": 2378,
+          "hexOffset": "0x094a",
+          "value": "spr_checkpoint"
+        },
+        {
+          "offset": 2425,
+          "hexOffset": "0x0979",
+          "value": "Finish"
+        },
+        {
+          "offset": 2436,
+          "hexOffset": "0x0984",
+          "value": "checkpoint"
+        },
+        {
+          "offset": 2601,
+          "hexOffset": "0x0a29",
+          "value": "NDB)SD"
+        }
+      ],
+      "newFloat32CandidatesInChangedRange": [
+        {
+          "offset": 645,
+          "hexOffset": "0x0285",
+          "value": 1.0
+        },
+        {
+          "offset": 649,
+          "hexOffset": "0x0289",
+          "value": 8.0
+        },
+        {
+          "offset": 652,
+          "hexOffset": "0x028c",
+          "value": 2.000015
+        },
+        {
+          "offset": 653,
+          "hexOffset": "0x028d",
+          "value": -3.0
+        },
+        {
+          "offset": 657,
+          "hexOffset": "0x0291",
+          "value": 11.0
+        },
+        {
+          "offset": 660,
+          "hexOffset": "0x0294",
+          "value": -0.000488
+        },
+        {
+          "offset": 661,
+          "hexOffset": "0x0295",
+          "value": 1488.0
+        },
+        {
+          "offset": 665,
+          "hexOffset": "0x0299",
+          "value": 1296.0
+        },
+        {
+          "offset": 669,
+          "hexOffset": "0x029d",
+          "value": 1264.0
+        },
+        {
+          "offset": 673,
+          "hexOffset": "0x02a1",
+          "value": 1168.0
+        },
+        {
+          "offset": 677,
+          "hexOffset": "0x02a5",
+          "value": 976.0
+        },
+        {
+          "offset": 681,
+          "hexOffset": "0x02a9",
+          "value": 976.0
+        },
+        {
+          "offset": 685,
+          "hexOffset": "0x02ad",
+          "value": 1168.0
+        },
+        {
+          "offset": 689,
+          "hexOffset": "0x02b1",
+          "value": 1584.0
+        },
+        {
+          "offset": 693,
+          "hexOffset": "0x02b5",
+          "value": 1904.0
+        },
+        {
+          "offset": 697,
+          "hexOffset": "0x02b9",
+          "value": 1904.0
+        },
+        {
+          "offset": 700,
+          "hexOffset": "0x02bc",
+          "value": -0.000488
+        },
+        {
+          "offset": 701,
+          "hexOffset": "0x02bd",
+          "value": 1488.0
+        },
+        {
+          "offset": 705,
+          "hexOffset": "0x02c1",
+          "value": 11.0
+        },
+        {
+          "offset": 709,
+          "hexOffset": "0x02c5",
+          "value": 624.0
+        },
+        {
+          "offset": 713,
+          "hexOffset": "0x02c9",
+          "value": 720.0
+        },
+        {
+          "offset": 717,
+          "hexOffset": "0x02cd",
+          "value": 976.0
+        },
+        {
+          "offset": 721,
+          "hexOffset": "0x02d1",
+          "value": 1264.0
+        },
+        {
+          "offset": 725,
+          "hexOffset": "0x02d5",
+          "value": 1136.0
+        }
+      ]
+    }
+  ],
+  "initialFindings": [
+    "Les sauvegardes .sav ne semblent pas compressées : chaînes lisibles et entropie basse à moyenne observées en G-S00.",
+    "Le fichier commence par un float32 little-endian valant 10.0, candidat pour une largeur, échelle ou paramètre global.",
+    "Les étapes ajoutent des blocs lisibles liés aux familles d'objets attendues : wall1, spr_checkpoint, checkpoint, spr_pit_building_to_right, surfaces.",
+    "La géométrie de route apparaît avant les objets décoratifs/fonctionnels et contient des float32 plausibles, dont -48.0 dès T01."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "scenario": "F-S01",
+  "sourceReplay": "prototypes/replay/results/e_s01_minimal_replay.replay.json",
+  "vehicleCounts": [1, 12, 20, 40],
+  "repetitions": 5,
+  "telemetry": {
+    "mode": "compactJson",
+    "sampleEveryFrame": true
+  },
+  "workload": {
+    "neighborLookaheadM": 120.0,
+    "targetHeadwayS": 0.9,
+    "minimumGapM": 7.0
+  }
+}

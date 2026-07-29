@@ -1,0 +1,136 @@
+{
+  "scenario": "E-S05",
+  "sourceReplay": "prototypes/replay/results/e_s01_minimal_replay.replay.json",
+  "supportedSchemaVersions": [
+    "0.1.0"
+  ],
+  "cases": [
+    {
+      "id": "valid_current",
+      "label": "Current schema is accepted",
+      "expectedCanLoad": true,
+      "expectedErrorCode": "OK",
+      "mutation": {
+        "type": "none"
+      }
+    },
+    {
+      "id": "unsupported_patch",
+      "label": "Patch version is rejected until migration exists",
+      "expectedCanLoad": false,
+      "expectedErrorCode": "UNSUPPORTED_SCHEMA_VERSION",
+      "mutation": {
+        "type": "set",
+        "path": [
+          "schemaVersion"
+        ],
+        "value": "0.1.1"
+      }
+    },
+    {
+      "id": "unsupported_future_major",
+      "label": "Future major version is rejected",
+      "expectedCanLoad": false,
+      "expectedErrorCode": "UNSUPPORTED_SCHEMA_VERSION",
+      "mutation": {
+        "type": "set",
+        "path": [
+          "schemaVersion"
+        ],
+        "value": "1.0.0"
+      }
+    },
+    {
+      "id": "missing_schema",
+      "label": "Missing schema version is rejected",
+      "expectedCanLoad": false,
+      "expectedErrorCode": "MISSING_FIELD",
+      "mutation": {
+        "type": "remove",
+        "path": [
+          "schemaVersion"
+        ]
+      }
+    },
+    {
+      "id": "invalid_kind",
+      "label": "Wrong replay kind is rejected",
+      "expectedCanLoad": false,
+      "expectedErrorCode": "INVALID_KIND",
+      "mutation": {
+        "type": "set",
+        "path": [
+          "kind"
+        ],
+        "value": "TrafficReplay"
+      }
+    },
+    {
+      "id": "missing_units",
+      "label": "Missing units are rejected",
+      "expectedCanLoad": false,
+      "expectedErrorCode": "MISSING_FIELD",
+      "mutation": {
+        "type": "remove",
+        "path": [
+          "units"
+        ]
+      }
+    },
+    {
+      "id": "missing_timeline",
+      "label": "Missing timeline is rejected",
+      "expectedCanLoad": false,
+      "expectedErrorCode": "MISSING_FIELD",
+      "mutation": {
+        "type": "remove",
+        "path": [
+          "timeline"
+        ]
+      }
+    },
+    {
+      "id": "frame_count_mismatch",
+      "label": "Frame count mismatch is rejected",
+      "expectedCanLoad": false,
+      "expectedErrorCode": "FRAME_COUNT_MISMATCH",
+      "mutation": {
+        "type": "set",
+        "path": [
+          "timeline",
+          "frameCount"
+        ],
+        "value": 222
+      }
+    },
+    {
+      "id": "non_monotonic_frame_time",
+      "label": "Non-monotonic frame time is rejected",
+      "expectedCanLoad": false,
+      "expectedErrorCode": "NON_MONOTONIC_FRAME_TIME",
+      "mutation": {
+        "type": "copy",
+        "fromPath": [
+          "frames",
+          1,
+          "timeS"
+        ],
+        "toPath": [
+          "frames",
+          2,
+          "timeS"
+        ]
+      }
+    },
+    {
+      "id": "malformed_json",
+      "label": "Malformed JSON is rejected",
+      "expectedCanLoad": false,
+      "expectedErrorCode": "INVALID_JSON",
+      "mutation": {
+        "type": "raw",
+        "content": "{\"kind\":\"AutomationLapReplay\",\"schemaVersion\":\"0.1.0\""
+      }
+    }
+  ]
+}

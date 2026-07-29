@@ -1,0 +1,283 @@
+{
+  "scenario": "C-S06",
+  "success": true,
+  "generatedAtUtc": "2026-07-27T17:11:29Z",
+  "trackInputPath": "prototypes/autonomous-lap/fixtures/canonical_track.json",
+  "contractCandidate": {
+    "kind": "TrackDefinition",
+    "schemaVersion": "0.1.0",
+    "sourceFields": [
+      "kind",
+      "schemaVersion",
+      "trackId",
+      "name",
+      "coordinateSystem.units.distance",
+      "coordinateSystem.units.angle",
+      "coordinateSystem.units.time",
+      "coordinateSystem.axis.x",
+      "coordinateSystem.axis.y",
+      "coordinateSystem.orientation",
+      "closedLoop",
+      "direction",
+      "surface.type",
+      "surface.grip",
+      "centerline[].id",
+      "centerline[].x",
+      "centerline[].y",
+      "centerline[].leftWidth",
+      "centerline[].rightWidth",
+      "startLine.centerlinePointId",
+      "startLine.width",
+      "checkpoints[].id",
+      "checkpoints[].centerlinePointId"
+    ],
+    "derivedRuntimeFields": [
+      "segment list and segment length",
+      "cumulative distance / curvilinear coordinate",
+      "total track length",
+      "sampled x/y positions along the centerline",
+      "tangent and normal vectors",
+      "local left/right width interpolation",
+      "curvature and lookahead curvature",
+      "projection of vehicle position onto centerline",
+      "lateral error and off-track test",
+      "lap count from wrapped progress"
+    ],
+    "validatedInvariants": [
+      "kind == TrackDefinition",
+      "schemaVersion == 0.1.0",
+      "units are metres, radians and seconds",
+      "closed loop is implicit from last centerline point to first point",
+      "direction is explicit and finite",
+      "centerline has at least 8 points",
+      "centerline ids are unique",
+      "coordinates and widths are finite",
+      "total width is at least 4 m everywhere",
+      "start line references a centerline point",
+      "checkpoints are present and reference centerline points",
+      "loop length is finite and above 100 m",
+      "preprocessed curvature is finite"
+    ],
+    "gImporterAcceptance": [
+      "Produce a TrackDefinition JSON with the source fields listed by C-S06.",
+      "Do not store derived runtime geometry as source truth when it can be reconstructed deterministically.",
+      "Preserve SI units or document a deterministic conversion to metres/radians/seconds.",
+      "Preserve the ordered centerline and the driving direction.",
+      "Provide left/right drivable widths or a deterministic fallback width policy.",
+      "Provide a start line and at least one checkpoint reference.",
+      "Pass the C-S01 validator without hidden repair.",
+      "Run at least the C-S02 path-following smoke test after conversion."
+    ]
+  },
+  "sourceFieldDetails": [
+    {
+      "path": "kind",
+      "type": "string",
+      "constraint": "must be TrackDefinition",
+      "reason": "contract identity"
+    },
+    {
+      "path": "schemaVersion",
+      "type": "semver string",
+      "constraint": "0.1.0 candidate",
+      "reason": "versioned importer target"
+    },
+    {
+      "path": "trackId",
+      "type": "string",
+      "constraint": "stable unique id",
+      "reason": "persistence and replay references"
+    },
+    {
+      "path": "name",
+      "type": "string",
+      "constraint": "human readable",
+      "reason": "debug and authoring"
+    },
+    {
+      "path": "coordinateSystem.units.distance",
+      "type": "enum",
+      "constraint": "m",
+      "reason": "SI distance contract"
+    },
+    {
+      "path": "coordinateSystem.units.angle",
+      "type": "enum",
+      "constraint": "rad",
+      "reason": "SI angle contract"
+    },
+    {
+      "path": "coordinateSystem.units.time",
+      "type": "enum",
+      "constraint": "s",
+      "reason": "SI time contract"
+    },
+    {
+      "path": "coordinateSystem.axis.x",
+      "type": "enum",
+      "constraint": "right",
+      "reason": "2D coordinate convention"
+    },
+    {
+      "path": "coordinateSystem.axis.y",
+      "type": "enum",
+      "constraint": "forward",
+      "reason": "2D coordinate convention"
+    },
+    {
+      "path": "coordinateSystem.orientation",
+      "type": "enum",
+      "constraint": "clockwise or counter-clockwise",
+      "reason": "authoring convention"
+    },
+    {
+      "path": "closedLoop",
+      "type": "bool",
+      "constraint": "true for current scope",
+      "reason": "lap counting and implicit closure"
+    },
+    {
+      "path": "direction",
+      "type": "enum",
+      "constraint": "clockwise or counter-clockwise",
+      "reason": "progression direction"
+    },
+    {
+      "path": "surface.type",
+      "type": "string",
+      "constraint": "asphalt in fixture",
+      "reason": "future surface model"
+    },
+    {
+      "path": "surface.grip",
+      "type": "number",
+      "constraint": "finite positive scalar",
+      "reason": "future surface grip multiplier"
+    },
+    {
+      "path": "centerline[].id",
+      "type": "string",
+      "constraint": "unique and stable",
+      "reason": "references from start/checkpoints"
+    },
+    {
+      "path": "centerline[].x",
+      "type": "number",
+      "constraint": "finite metres",
+      "reason": "track geometry"
+    },
+    {
+      "path": "centerline[].y",
+      "type": "number",
+      "constraint": "finite metres",
+      "reason": "track geometry"
+    },
+    {
+      "path": "centerline[].leftWidth",
+      "type": "number",
+      "constraint": "finite metres",
+      "reason": "left track limit"
+    },
+    {
+      "path": "centerline[].rightWidth",
+      "type": "number",
+      "constraint": "finite metres",
+      "reason": "right track limit"
+    },
+    {
+      "path": "startLine.centerlinePointId",
+      "type": "string",
+      "constraint": "references centerline[].id",
+      "reason": "lap origin"
+    },
+    {
+      "path": "startLine.width",
+      "type": "number",
+      "constraint": "finite metres",
+      "reason": "start line drawing/import hint"
+    },
+    {
+      "path": "checkpoints[].id",
+      "type": "string",
+      "constraint": "unique and stable",
+      "reason": "checkpoint identity"
+    },
+    {
+      "path": "checkpoints[].centerlinePointId",
+      "type": "string",
+      "constraint": "references centerline[].id",
+      "reason": "progress validation"
+    }
+  ],
+  "scenarioSuccess": {
+    "C-S01": true,
+    "C-S02": true,
+    "C-S03": true,
+    "C-S04": true,
+    "C-S05": true
+  },
+  "evidence": {
+    "C-S01": {
+      "pointCount": 24,
+      "segmentCount": 24,
+      "totalLengthM": 381.9152381450591,
+      "minTotalWidthM": 10.0,
+      "maxAbsCurvature": 0.03577691428974263,
+      "checkpointDistancesM": [
+        0.0,
+        95.47880953626476,
+        190.95761907252952,
+        286.4364286087943
+      ]
+    },
+    "C-S02": {
+      "durationS": 91.35000000001877,
+      "meanAbsLateralErrorM": 0.1727806232431199,
+      "maxAbsLateralErrorM": 0.6931007580627764,
+      "offTrackCount": 0
+    },
+    "C-S03": {
+      "durationS": 83.33333333334572,
+      "meanSpeedKmh": 49.31209113425458,
+      "maxSpeedKmh": 62.7924358533343,
+      "meanAbsLateralErrorM": 0.23127531949288008,
+      "maxAbsLateralErrorM": 0.8073895625884455,
+      "maxLateralGModel": 0.4457975965534096,
+      "offTrackCount": 0
+    },
+    "C-S04": {
+      "maxRecoveryDurationS": 2.4666666666665265,
+      "meanAbsLateralErrorM": 0.348350227595431,
+      "maxAbsLateralErrorM": 3.2499999999999964,
+      "offTrackCount": 0,
+      "recoveredPerturbations": 3,
+      "perturbationCount": 3
+    },
+    "C-S05": {
+      "durationByProfileS": {
+        "cautious": 115.28333333337115,
+        "balanced": 83.33333333334572,
+        "aggressive": 56.84166666666408
+      },
+      "meanLateralErrorByProfileM": {
+        "cautious": 0.12552187970127726,
+        "balanced": 0.23127531949288008,
+        "aggressive": 0.3020986979709698
+      },
+      "overspeedProbe": {
+        "profileId": "overspeed_probe",
+        "gripSaturationTickPercent": 84.1120095837077,
+        "maxGripSaturationRatio": 5.865279398357284,
+        "offTrackCount": 4011,
+        "maxAbsLateralErrorM": 24.196525354977954,
+        "expectedFailure": true
+      }
+    }
+  },
+  "decision": {
+    "status": "valide avec reserves",
+    "readyForExperimentG": true,
+    "confidence": "moyen a bon",
+    "mainReservation": "TrackDefinition v0.1 is validated for centerline-based autonomous control, but not yet for real imported tracks, detailed surfaces, elevation, racing lines, or a full understeer/oversteer tyre model."
+  }
+}

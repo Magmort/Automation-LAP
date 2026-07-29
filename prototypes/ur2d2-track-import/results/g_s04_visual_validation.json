@@ -1,0 +1,80 @@
+{
+  "scenario": "G-S04",
+  "status": "validated-with-reserves",
+  "generatedAt": "2026-07-29T17:01:22+00:00",
+  "inputs": {
+    "rawReader": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\results\\g_s02_raw_reader.json",
+    "trackDefinition": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\results\\g_s03_track_definition_candidate.json",
+    "conversionSummary": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\results\\g_s03_track_definition_conversion.json"
+  },
+  "visualizationPath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\results\\G_S04_VISUAL_VALIDATION.svg",
+  "checks": {
+    "cS01Validation": {
+      "status": "pass"
+    },
+    "requiredVisualLayers": {
+      "status": "pass",
+      "layers": {
+        "roadVectorKeys": 4,
+        "aiLines": 3,
+        "checkpoints": 3,
+        "wallBlocks": 1,
+        "pitConnectors": 2,
+        "pitlaneSegments": 1,
+        "sandPolygons": 1,
+        "treePolygons": 1
+      }
+    },
+    "straightAlignment": [
+      {
+        "id": "top-straight",
+        "expected": "samples p00..p04 remain aligned on the P00-P04 axis",
+        "maxDeviationM": 0.0,
+        "status": "pass"
+      },
+      {
+        "id": "bottom-straight",
+        "expected": "samples p08..p12 remain aligned on the P08-P12 axis",
+        "maxDeviationM": 0.0,
+        "status": "pass"
+      }
+    ],
+    "checkpointProjection": [
+      {
+        "id": "checkpoint-2",
+        "rawLabel": "Checkpoint 2",
+        "projectedPointId": "p13",
+        "nearestPointId": "p13",
+        "distanceM": 1.4340437375013255,
+        "status": "pass"
+      },
+      {
+        "id": "checkpoint-1",
+        "rawLabel": "Checkpoint 1",
+        "projectedPointId": "p09",
+        "nearestPointId": "p09",
+        "distanceM": 6.981505984374994,
+        "status": "reserve"
+      },
+      {
+        "id": "finish",
+        "rawLabel": "Finish",
+        "projectedPointId": "p03",
+        "nearestPointId": "p03",
+        "distanceM": 3.0311396875000085,
+        "status": "pass"
+      }
+    ]
+  },
+  "decisionNotes": [
+    "La forme convertie de la route est cohérente pour préparer la validation fonctionnelle G-S05.",
+    "Les deux segments droits valident la convention corrigée de la poignée B sur les deux axes faciles à contrôler.",
+    "La largeur de route est visuellement recalibrée à 5 m au total après retour utilisateur : 10 m rendait la piste presque deux fois trop large.",
+    "pit1 est confirmé comme voie d'entrée des stands, pit2 comme voie de sortie, et la pitlane manquante est représentée par le segment droit entre les deux.",
+    "Les lignes IA, le mur, les connecteurs pitlane, le sable et les arbres sont visualisés depuis les blocs bruts, mais ne font pas encore partie de TrackDefinition v0.1.",
+    "La poignée B est maintenant interprétée comme la poignée entrante de la clé suivante : B visible sur Ki provient de la ligne Ki-1.",
+    "Les vecteurs de poignées utilisent une inversion verticale globale par rapport aux coordonnées brutes des points.",
+    "La convention d'index et de repère des poignées rétablit l'alignement tangent, mais reste à confirmer visuellement sur toutes les familles de tracés.",
+    "Aucune capture de l'éditeur n'est disponible ; G-S04 valide donc la cohérence interne source/candidat plutôt qu'une superposition pixel-perfect avec l'UI UR2D2."
+  ]
+}

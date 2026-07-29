@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="910" viewBox="0 0 1280 910">
+<style>
+text{font-family:Segoe UI,Arial,sans-serif;fill:#25313f}
+.title{font-size:28px;font-weight:700}
+.subtitle{font-size:15px;fill:#5c6b7a}
+.label{font-size:14px;font-weight:600}
+.small{font-size:12px;fill:#627282}
+.tiny{font-size:11px;fill:#627282}
+</style>
+<rect width="1280" height="910" fill="#f7f9fc"/>
+<rect x="32" y="32" width="1216" height="86" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="56" y="70" class="title">G-S04 - Hypothèses de repère des poignées du sable</text>
+<text x="56" y="98" class="subtitle">A en trait plein, B en pointillé ; B reste ancrée sur la clé courante depuis la ligne précédente</text>
+<rect x="48" y="142" width="570" height="330" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="66" y="170" class="label">Sans inversion</text>
+<path d="M 130.5 229.6 L 102.9 298.8 L 102.9 381.8 L 144.4 409.5 L 255.1 368.0 L 324.3 257.3 L 310.4 215.7 Z" fill="none" stroke="#c58a1f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="130.5" y1="229.6" x2="109.7" y2="177.4" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="130.5" y1="229.6" x2="151.4" y2="281.8" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="130.5" cy="229.6" r="4" fill="#c58a1f"/>
+<circle cx="109.7" cy="177.4" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="151.4" cy="281.8" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="135.5" y="224.6" class="tiny">K0</text>
+<line x1="102.9" y1="298.8" x2="82.0" y2="246.6" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="102.9" y1="298.8" x2="123.8" y2="351.0" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="102.9" cy="298.8" r="4" fill="#c58a1f"/>
+<circle cx="82.0" cy="246.6" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="123.8" cy="351.0" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="107.9" y="293.8" class="tiny">K1</text>
+<line x1="102.9" y1="381.8" x2="102.9" y2="325.6" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="102.9" y1="381.8" x2="102.9" y2="438.0" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="102.9" cy="381.8" r="4" fill="#c58a1f"/>
+<circle cx="102.9" cy="325.6" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="102.9" cy="438.0" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="107.9" y="376.8" class="tiny">K2</text>
+<line x1="144.4" y1="409.5" x2="200.6" y2="409.5" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="144.4" y1="409.5" x2="130.5" y2="409.5" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="144.4" cy="409.5" r="4" fill="#c58a1f"/>
+<circle cx="200.6" cy="409.5" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="130.5" cy="409.5" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="149.4" y="404.5" class="tiny">K3</text>
+<line x1="255.1" y1="368.0" x2="310.4" y2="395.6" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="255.1" y1="368.0" x2="204.8" y2="342.8" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="255.1" cy="368.0" r="4" fill="#c58a1f"/>
+<circle cx="310.4" cy="395.6" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="204.8" cy="342.8" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="260.1" y="363.0" class="tiny">K4</text>
+<line x1="324.3" y1="257.3" x2="324.3" y2="313.5" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="324.3" y1="257.3" x2="324.3" y2="215.7" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="324.3" cy="257.3" r="4" fill="#c58a1f"/>
+<circle cx="324.3" cy="313.5" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="324.3" cy="215.7" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="329.3" y="252.3" class="tiny">K5</text>
+<line x1="310.4" y1="215.7" x2="296.6" y2="229.6" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="310.4" y1="215.7" x2="350.2" y2="176.0" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="310.4" cy="215.7" r="4" fill="#c58a1f"/>
+<circle cx="296.6" cy="229.6" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="350.2" cy="176.0" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="315.4" y="210.7" class="tiny">K6</text>
+<rect x="662" y="142" width="570" height="330" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="680" y="170" class="label">Hypothèse retenue : inversion verticale globale</text>
+<path d="M 744.8 228.5 L 717.0 298.0 L 717.0 381.5 L 758.7 409.3 L 870.0 367.6 L 939.6 256.3 L 925.6 214.6 Z" fill="none" stroke="#c58a1f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="744.8" y1="228.5" x2="723.8" y2="280.9" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="744.8" y1="228.5" x2="765.8" y2="176.0" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="744.8" cy="228.5" r="4" fill="#c58a1f"/>
+<circle cx="723.8" cy="280.9" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="765.8" cy="176.0" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="749.8" y="223.5" class="tiny">K0</text>
+<line x1="717.0" y1="298.0" x2="696.0" y2="350.5" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="717.0" y1="298.0" x2="738.0" y2="245.6" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="717.0" cy="298.0" r="4" fill="#c58a1f"/>
+<circle cx="696.0" cy="350.5" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="738.0" cy="245.6" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="722.0" y="293.0" class="tiny">K1</text>
+<line x1="717.0" y1="381.5" x2="717.0" y2="438.0" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="717.0" y1="381.5" x2="717.0" y2="325.0" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="717.0" cy="381.5" r="4" fill="#c58a1f"/>
+<circle cx="717.0" cy="438.0" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="717.0" cy="325.0" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="722.0" y="376.5" class="tiny">K2</text>
+<line x1="758.7" y1="409.3" x2="815.2" y2="409.3" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="758.7" y1="409.3" x2="744.8" y2="409.3" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="758.7" cy="409.3" r="4" fill="#c58a1f"/>
+<circle cx="815.2" cy="409.3" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="744.8" cy="409.3" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="763.7" y="404.3" class="tiny">K3</text>
+<line x1="870.0" y1="367.6" x2="925.6" y2="339.8" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="870.0" y1="367.6" x2="819.5" y2="392.9" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="870.0" cy="367.6" r="4" fill="#c58a1f"/>
+<circle cx="925.6" cy="339.8" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="819.5" cy="392.9" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="875.0" y="362.6" class="tiny">K4</text>
+<line x1="939.6" y1="256.3" x2="939.6" y2="199.8" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="939.6" y1="256.3" x2="939.6" y2="298.0" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="939.6" cy="256.3" r="4" fill="#c58a1f"/>
+<circle cx="939.6" cy="199.8" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="939.6" cy="298.0" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="944.6" y="251.3" class="tiny">K5</text>
+<line x1="925.6" y1="214.6" x2="911.7" y2="200.6" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="925.6" y1="214.6" x2="965.6" y2="254.5" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="925.6" cy="214.6" r="4" fill="#c58a1f"/>
+<circle cx="911.7" cy="200.6" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="965.6" cy="254.5" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="930.6" y="209.6" class="tiny">K6</text>
+<rect x="48" y="514" width="570" height="330" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="66" y="542" class="label">Inversion horizontale globale</text>
+<path d="M 130.5 601.6 L 102.9 670.8 L 102.9 753.8 L 144.4 781.5 L 255.1 740.0 L 324.3 629.3 L 310.4 587.7 Z" fill="none" stroke="#c58a1f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="130.5" y1="601.6" x2="151.4" y2="549.4" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="130.5" y1="601.6" x2="109.7" y2="653.8" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="130.5" cy="601.6" r="4" fill="#c58a1f"/>
+<circle cx="151.4" cy="549.4" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="109.7" cy="653.8" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="135.5" y="596.6" class="tiny">K0</text>
+<line x1="102.9" y1="670.8" x2="123.8" y2="618.6" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="102.9" y1="670.8" x2="82.0" y2="723.0" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="102.9" cy="670.8" r="4" fill="#c58a1f"/>
+<circle cx="123.8" cy="618.6" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="82.0" cy="723.0" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="107.9" y="665.8" class="tiny">K1</text>
+<line x1="102.9" y1="753.8" x2="102.9" y2="697.6" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="102.9" y1="753.8" x2="102.9" y2="810.0" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="102.9" cy="753.8" r="4" fill="#c58a1f"/>
+<circle cx="102.9" cy="697.6" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="102.9" cy="810.0" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="107.9" y="748.8" class="tiny">K2</text>
+<line x1="144.4" y1="781.5" x2="88.2" y2="781.5" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="144.4" y1="781.5" x2="158.2" y2="781.5" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="144.4" cy="781.5" r="4" fill="#c58a1f"/>
+<circle cx="88.2" cy="781.5" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="158.2" cy="781.5" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="149.4" y="776.5" class="tiny">K3</text>
+<line x1="255.1" y1="740.0" x2="199.7" y2="767.6" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="255.1" y1="740.0" x2="305.4" y2="714.8" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="255.1" cy="740.0" r="4" fill="#c58a1f"/>
+<circle cx="199.7" cy="767.6" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="305.4" cy="714.8" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="260.1" y="735.0" class="tiny">K4</text>
+<line x1="324.3" y1="629.3" x2="324.3" y2="685.5" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="324.3" y1="629.3" x2="324.3" y2="587.7" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="324.3" cy="629.3" r="4" fill="#c58a1f"/>
+<circle cx="324.3" cy="685.5" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="324.3" cy="587.7" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="329.3" y="624.3" class="tiny">K5</text>
+<line x1="310.4" y1="587.7" x2="324.3" y2="601.6" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="310.4" y1="587.7" x2="270.7" y2="548.0" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="310.4" cy="587.7" r="4" fill="#c58a1f"/>
+<circle cx="324.3" cy="601.6" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="270.7" cy="548.0" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="315.4" y="582.7" class="tiny">K6</text>
+<rect x="662" y="514" width="570" height="330" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="680" y="542" class="label">Selon ton retour : K0-K1 Y, K2-K3 ok, K4-K6 X</text>
+<path d="M 744.5 601.6 L 716.9 670.8 L 716.9 753.8 L 758.4 781.5 L 869.1 740.0 L 938.3 629.3 L 924.4 587.7 Z" fill="none" stroke="#c58a1f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="744.5" y1="601.6" x2="723.7" y2="653.8" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="744.5" y1="601.6" x2="765.4" y2="549.4" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="744.5" cy="601.6" r="4" fill="#c58a1f"/>
+<circle cx="723.7" cy="653.8" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="765.4" cy="549.4" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="749.5" y="596.6" class="tiny">K0</text>
+<line x1="716.9" y1="670.8" x2="696.0" y2="723.0" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="716.9" y1="670.8" x2="737.8" y2="618.6" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="716.9" cy="670.8" r="4" fill="#c58a1f"/>
+<circle cx="696.0" cy="723.0" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="737.8" cy="618.6" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="721.9" y="665.8" class="tiny">K1</text>
+<line x1="716.9" y1="753.8" x2="716.9" y2="697.6" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="716.9" y1="753.8" x2="716.9" y2="810.0" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="716.9" cy="753.8" r="4" fill="#c58a1f"/>
+<circle cx="716.9" cy="697.6" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="716.9" cy="810.0" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="721.9" y="748.8" class="tiny">K2</text>
+<line x1="758.4" y1="781.5" x2="814.6" y2="781.5" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="758.4" y1="781.5" x2="744.5" y2="781.5" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="758.4" cy="781.5" r="4" fill="#c58a1f"/>
+<circle cx="814.6" cy="781.5" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="744.5" cy="781.5" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="763.4" y="776.5" class="tiny">K3</text>
+<line x1="869.1" y1="740.0" x2="813.7" y2="767.6" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="869.1" y1="740.0" x2="919.4" y2="714.8" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="869.1" cy="740.0" r="4" fill="#c58a1f"/>
+<circle cx="813.7" cy="767.6" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="919.4" cy="714.8" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="874.1" y="735.0" class="tiny">K4</text>
+<line x1="938.3" y1="629.3" x2="938.3" y2="685.5" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="938.3" y1="629.3" x2="938.3" y2="587.7" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="938.3" cy="629.3" r="4" fill="#c58a1f"/>
+<circle cx="938.3" cy="685.5" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="938.3" cy="587.7" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="943.3" y="624.3" class="tiny">K5</text>
+<line x1="924.4" y1="587.7" x2="938.3" y2="601.6" stroke="#c58a1f" stroke-width="1.5"/>
+<line x1="924.4" y1="587.7" x2="884.7" y2="548.0" stroke="#c58a1f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="924.4" cy="587.7" r="4" fill="#c58a1f"/>
+<circle cx="938.3" cy="601.6" r="3" fill="#ffffff" stroke="#c58a1f" stroke-width="1.5"/>
+<circle cx="884.7" cy="548.0" r="3" fill="#c58a1f" fill-opacity="0.32" stroke="#c58a1f" stroke-width="1.5"/>
+<text x="929.4" y="582.7" class="tiny">K6</text>
+<rect x="48" y="854" width="1184" height="34" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="66" y="876" class="small">But : identifier si les angles des zones utilisent un repère local ou une règle d’axe dépendante de la clé avant de généraliser la correction à l’importeur.</text>
+</svg>

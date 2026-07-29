@@ -1,0 +1,60 @@
+{
+  "kind": "TrackDefinition",
+  "schemaVersion": "0.1.0",
+  "trackId": "canonical-test-loop",
+  "name": "Canonical Test Loop",
+  "coordinateSystem": {
+    "units": {
+      "distance": "m",
+      "angle": "rad",
+      "time": "s"
+    },
+    "axis": {
+      "x": "right",
+      "y": "forward"
+    },
+    "orientation": "counter-clockwise"
+  },
+  "closedLoop": true,
+  "direction": "counter-clockwise",
+  "surface": {
+    "type": "asphalt",
+    "grip": 1.0
+  },
+  "centerline": [
+    {"id": "p00", "x": 0.0, "y": -45.0, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p01", "x": 19.4, "y": -43.5, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p02", "x": 37.5, "y": -39.0, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p03", "x": 53.0, "y": -31.8, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p04", "x": 65.0, "y": -22.5, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p05", "x": 72.5, "y": -11.6, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p06", "x": 75.0, "y": 0.0, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p07", "x": 72.5, "y": 11.6, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p08", "x": 65.0, "y": 22.5, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p09", "x": 53.0, "y": 31.8, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p10", "x": 37.5, "y": 39.0, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p11", "x": 19.4, "y": 43.5, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p12", "x": 0.0, "y": 45.0, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p13", "x": -19.4, "y": 43.5, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p14", "x": -37.5, "y": 39.0, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p15", "x": -53.0, "y": 31.8, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p16", "x": -65.0, "y": 22.5, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p17", "x": -72.5, "y": 11.6, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p18", "x": -75.0, "y": 0.0, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p19", "x": -72.5, "y": -11.6, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p20", "x": -65.0, "y": -22.5, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p21", "x": -53.0, "y": -31.8, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p22", "x": -37.5, "y": -39.0, "leftWidth": 5.0, "rightWidth": 5.0},
+    {"id": "p23", "x": -19.4, "y": -43.5, "leftWidth": 5.0, "rightWidth": 5.0}
+  ],
+  "startLine": {
+    "centerlinePointId": "p00",
+    "width": 10.0
+  },
+  "checkpoints": [
+    {"id": "cp00", "centerlinePointId": "p00"},
+    {"id": "cp01", "centerlinePointId": "p06"},
+    {"id": "cp02", "centerlinePointId": "p12"},
+    {"id": "cp03", "centerlinePointId": "p18"}
+  ]
+}

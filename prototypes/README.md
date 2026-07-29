@@ -36,6 +36,8 @@ prototypes/
   traffic/               # Expérience D
   replay/                # Expérience E
   performance/           # Expérience F
+  ur2d2-track-import/    # Expérience G
+  ur2d2-runtime-track-import/ # Expérience H
 ```
 
-Seul le répertoire de l’expérience active doit être créé en détail.
+Seul le répertoire de l’expérience active doit être créé en détail. G analyse les sauvegardes éditeur UR2D2 ; H analyse les vrais fichiers de tracks UR2D2.
