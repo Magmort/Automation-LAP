@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="860" viewBox="0 0 1280 860">
+<style>
+text{font-family:Segoe UI,Arial,sans-serif;fill:#25313f}
+.title{font-size:28px;font-weight:700}
+.subtitle{font-size:15px;fill:#5c6b7a}
+.label{font-size:14px;font-weight:600}
+.small{font-size:12px;fill:#627282}
+.tiny{font-size:11px;fill:#627282}
+</style>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#2f5f9f"/></marker></defs>
+<rect width="1280" height="860" fill="#f7f9fc"/>
+<rect x="32" y="32" width="1216" height="86" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="56" y="70" class="title">G-S04 - Validation visuelle UR2D2</text>
+<text x="56" y="98" class="subtitle">Statut: validated-with-reserves · repère converti en mètres · source .sav éditeur</text>
+<rect x="48" y="142" width="820" height="650" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<path d="M 298.0 336.8 L 287.4 342.1 L 279.4 346.1 L 273.4 349.1 L 268.7 351.4 L 264.7 353.4 L 260.6 355.5 L 255.9 357.8 L 249.9 360.8 L 242.0 364.8 L 231.4 370.1 L 221.5 376.2 L 215.3 382.7 L 212.3 389.7 L 211.7 397.1 L 212.9 405.2 L 215.0 414.0 L 217.6 423.7 L 219.8 434.3 L 220.9 446.0 L 220.3 458.8 L 218.4 471.3 L 216.1 482.2 L 213.4 492.0 L 210.3 500.9 L 206.9 509.4 L 203.3 517.9 L 199.5 526.6 L 195.5 536.1 L 191.3 546.6 L 187.1 558.6 L 183.5 566.1 L 179.5 569.1 L 174.9 568.4 L 169.6 564.5 L 163.7 558.2 L 156.9 550.2 L 149.3 541.1 L 140.8 531.6 L 131.2 522.4 L 120.5 514.2 L 111.4 505.0 L 106.1 492.8 L 104.0 478.2 L 104.3 461.8 L 106.5 444.1 L 109.7 425.9 L 113.4 407.7 L 116.9 390.0 L 119.5 373.6 L 120.5 359.0 L 121.4 345.9 L 123.9 333.7 L 127.8 322.3 L 133.2 311.6 L 139.7 301.6 L 147.5 292.1 L 156.2 283.2 L 165.8 274.8 L 176.1 266.8 L 187.1 259.2 L 198.0 252.9 L 210.6 247.2 L 224.5 242.2 L 239.4 237.9 L 255.0 234.2 L 270.9 231.2 L 286.8 228.9 L 302.4 227.2 L 317.3 226.2 L 331.2 225.9 L 344.1 226.1 L 355.7 226.6 L 366.6 227.5 L 376.8 228.5 L 386.7 229.8 L 396.7 231.2 L 406.9 232.6 L 417.7 234.1 L 429.3 235.6 L 442.1 237.0 L 453.0 238.7 L 459.3 241.3 L 461.9 244.8 L 461.5 249.4 L 458.9 255.1 L 455.0 261.9 L 450.6 270.1 L 446.4 279.7 L 443.3 290.8 L 442.1 303.5 L 439.2 314.9 L 431.0 322.4 L 418.6 326.8 L 403.0 328.9 L 385.1 329.5 L 366.1 329.4 L 346.9 329.2 L 328.4 329.9 L 311.8 332.2 L 298.0 336.8 L 298.0 336.8 Z" fill="#7fb069" fill-opacity="0.18" stroke="#5c8d55" stroke-width="2"/>
+<path d="M 275.8 503.1 L 271.5 513.7 L 268.6 520.9 L 266.8 525.6 L 265.6 528.7 L 264.7 530.9 L 263.8 533.0 L 262.6 536.1 L 260.7 540.8 L 257.8 548.0 L 253.6 558.6 L 249.5 569.4 L 247.2 577.2 L 246.2 582.9 L 246.4 587.1 L 247.3 590.6 L 248.8 594.3 L 250.4 598.8 L 252.0 604.9 L 253.1 613.4 L 253.6 625.1 L 254.2 636.7 L 256.0 644.7 L 258.7 649.8 L 262.1 652.4 L 266.1 653.1 L 270.4 652.5 L 274.8 651.0 L 279.1 649.3 L 283.2 647.9 L 286.9 647.3 L 299.2 646.9 L 309.5 645.8 L 318.3 643.9 L 325.9 641.4 L 333.0 638.2 L 339.9 634.4 L 347.2 630.1 L 355.2 625.2 L 364.5 619.8 L 375.6 614.0 L 387.9 607.0 L 398.4 599.5 L 407.1 591.4 L 414.3 582.8 L 419.9 573.8 L 424.3 564.5 L 427.4 555.0 L 429.5 545.2 L 430.7 535.3 L 431.0 525.3 L 431.6 514.3 L 432.9 507.6 L 434.6 504.3 L 436.3 503.3 L 437.4 503.7 L 437.6 504.5 L 436.4 504.8 L 433.3 503.4 L 428.0 499.5 L 419.9 492.0 L 413.7 488.5 L 402.3 484.9 L 387.1 481.6 L 369.2 479.1 L 350.0 477.7 L 330.6 478.0 L 312.2 480.2 L 296.1 484.9 L 283.6 492.4 L 275.8 503.1 L 275.8 503.1 Z" fill="#e3b55d" fill-opacity="0.28" stroke="#c58a1f" stroke-width="2"/>
+<path d="M 275.8 492.0 L 345.6 492.0 L 458.7 492.0 L 571.9 492.0 L 641.7 492.0 L 667.0 526.7 L 675.5 602.9 L 667.0 679.2 L 641.7 713.8 L 572.2 713.8 L 459.0 713.8 L 345.7 713.8 L 275.8 713.8 L 250.4 679.2 L 242.0 602.9 L 250.4 526.7 L 275.8 492.0 Z" fill="none" stroke="#d9e1ea" stroke-width="44.36" stroke-linecap="round" stroke-linejoin="round" opacity="0.72"/>
+<path d="M 275.8 492.0 L 295.8 492.0 L 326.8 492.0 L 366.2 492.0 L 411.1 492.0 L 458.7 492.0 L 506.4 492.0 L 551.3 492.0 L 590.7 492.0 L 621.7 492.0 L 641.7 492.0 L 653.9 498.3 L 663.3 515.1 L 670.1 539.9 L 674.1 570.1 L 675.5 602.9 L 674.1 635.8 L 670.1 665.9 L 663.3 690.8 L 653.9 707.6 L 641.7 713.8 L 621.9 713.8 L 590.9 713.8 L 551.6 713.8 L 506.7 713.8 L 459.0 713.8 L 411.3 713.8 L 366.3 713.8 L 326.9 713.8 L 295.8 713.8 L 275.8 713.8 L 263.6 707.6 L 254.2 690.8 L 247.4 665.9 L 243.3 635.8 L 242.0 602.9 L 243.3 570.1 L 247.4 539.9 L 254.2 515.1 L 263.6 498.3 L 275.8 492.0" fill="none" stroke="#e9a23b" stroke-width="2.2" stroke-dasharray="7 6"/>
+<path d="M 275.8 501.1 L 295.8 501.2 L 326.8 501.2 L 366.2 501.2 L 411.1 501.2 L 458.7 501.2 L 506.4 501.2 L 551.3 501.2 L 590.7 501.2 L 621.7 501.2 L 641.7 501.1 L 650.9 506.8 L 658.0 522.2 L 663.1 545.0 L 666.2 572.6 L 667.2 602.7 L 666.2 632.8 L 663.1 660.5 L 658.0 683.3 L 650.9 698.9 L 641.7 704.7 L 621.9 704.9 L 590.9 705.0 L 551.6 705.0 L 506.7 704.9 L 459.0 704.8 L 411.3 704.7 L 366.3 704.6 L 326.9 704.6 L 295.8 704.6 L 275.8 704.7 L 267.0 699.1 L 260.2 683.7 L 255.4 660.9 L 252.5 633.2 L 251.6 603.1 L 252.6 572.9 L 255.6 545.2 L 260.4 522.3 L 267.1 506.8 L 275.8 501.1" fill="none" stroke="#e9a23b" stroke-width="2.2" stroke-dasharray="7 6"/>
+<path d="M 275.8 482.9 L 295.8 482.9 L 326.8 482.8 L 366.2 482.8 L 411.1 482.7 L 458.7 482.7 L 506.4 482.7 L 551.3 482.8 L 590.7 482.8 L 621.7 482.9 L 641.7 482.9 L 658.9 489.8 L 672.4 508.1 L 682.0 535.0 L 687.8 567.6 L 689.8 603.1 L 687.9 638.5 L 682.2 671.1 L 672.6 698.0 L 659.1 716.2 L 641.7 722.9 L 621.9 722.9 L 590.9 722.9 L 551.6 723.0 L 506.7 723.0 L 459.0 723.0 L 411.3 723.0 L 366.3 723.0 L 326.9 722.9 L 295.8 722.9 L 275.8 722.9 L 258.9 716.2 L 245.7 698.0 L 236.3 671.1 L 230.6 638.5 L 228.6 603.1 L 230.4 567.6 L 236.0 535.0 L 245.4 508.1 L 258.7 489.8 L 275.8 482.9" fill="none" stroke="#e9a23b" stroke-width="2.2" stroke-dasharray="7 6"/>
+<path d="M 324.6 407.1 L 759.2 407.1" fill="none" stroke="#8b5fbf" stroke-width="22.18" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.32"/>
+<path d="M 324.6 407.1 L 319.4 407.3 L 314.1 407.8 L 308.8 408.8 L 303.5 410.1 L 298.3 411.7 L 293.3 413.7 L 288.5 416.1 L 283.9 418.9 L 279.7 422.0 L 275.8 425.5 L 272.5 429.8 L 269.2 435.7 L 266.1 442.9 L 263.2 451.0 L 260.5 459.8 L 258.2 468.7 L 256.2 477.6 L 254.7 486.0 L 253.8 493.5 L 253.4 499.9" fill="none" stroke="#8b5fbf" stroke-width="22.18" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<path d="M 324.6 407.1 L 319.4 407.3 L 314.1 407.8 L 308.8 408.8 L 303.5 410.1 L 298.3 411.7 L 293.3 413.7 L 288.5 416.1 L 283.9 418.9 L 279.7 422.0 L 275.8 425.5 L 272.5 429.8 L 269.2 435.7 L 266.1 442.9 L 263.2 451.0 L 260.5 459.8 L 258.2 468.7 L 256.2 477.6 L 254.7 486.0 L 253.8 493.5 L 253.4 499.9" fill="none" stroke="#8b5fbf" stroke-width="2.2" stroke-dasharray="9 5"/>
+<text x="332.6" y="399.1" class="tiny">pit1 entrée</text>
+<path d="M 759.2 407.1 L 764.4 407.6 L 769.7 409.0 L 775.1 411.2 L 780.3 414.0 L 785.5 417.3 L 790.5 420.9 L 795.4 424.8 L 799.9 428.8 L 804.2 432.8 L 808.0 436.6 L 810.6 440.7 L 811.9 446.3 L 812.0 452.9 L 811.2 460.3 L 809.6 468.2 L 807.4 476.2 L 804.9 484.0 L 802.1 491.3 L 799.4 497.8 L 797.0 503.1 L 793.0 509.7 L 788.1 516.2 L 782.4 522.6 L 776.2 528.7 L 769.7 534.6 L 763.1 540.2 L 756.8 545.4 L 750.9 550.2 L 745.7 554.6 L 741.5 558.6 L 737.0 563.9 L 731.2 572.2 L 724.3 582.7 L 716.8 594.7 L 709.0 607.4 L 701.4 620.2 L 694.1 632.4 L 687.7 643.3 L 682.5 652.0 L 678.8 658.1" fill="none" stroke="#8b5fbf" stroke-width="22.18" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.22"/>
+<path d="M 759.2 407.1 L 764.4 407.6 L 769.7 409.0 L 775.1 411.2 L 780.3 414.0 L 785.5 417.3 L 790.5 420.9 L 795.4 424.8 L 799.9 428.8 L 804.2 432.8 L 808.0 436.6 L 810.6 440.7 L 811.9 446.3 L 812.0 452.9 L 811.2 460.3 L 809.6 468.2 L 807.4 476.2 L 804.9 484.0 L 802.1 491.3 L 799.4 497.8 L 797.0 503.1 L 793.0 509.7 L 788.1 516.2 L 782.4 522.6 L 776.2 528.7 L 769.7 534.6 L 763.1 540.2 L 756.8 545.4 L 750.9 550.2 L 745.7 554.6 L 741.5 558.6 L 737.0 563.9 L 731.2 572.2 L 724.3 582.7 L 716.8 594.7 L 709.0 607.4 L 701.4 620.2 L 694.1 632.4 L 687.7 643.3 L 682.5 652.0 L 678.8 658.1" fill="none" stroke="#8b5fbf" stroke-width="2.2" stroke-dasharray="9 5"/>
+<text x="767.2" y="399.1" class="tiny">pit2 sortie</text>
+<path d="M 619.5 514.2 L 619.7 514.5 L 620.3 515.4 L 621.4 516.6 L 622.8 518.1 L 624.7 519.8 L 627.1 521.4 L 630.0 522.9 L 633.4 524.2 L 637.3 525.0 L 641.7 525.3 L 641.7 525.6 L 641.7 526.8 L 641.7 528.8 L 641.7 531.9 L 641.7 536.1 L 641.7 541.8 L 641.7 548.9 L 641.7 557.7 L 641.7 568.3 L 641.7 580.8 L 641.7 593.0 L 641.7 602.9 L 641.7 611.1 L 641.7 618.0 L 641.7 624.0 L 641.7 629.7 L 641.7 635.5 L 641.7 641.9 L 641.7 649.3 L 641.7 658.4 L 640.9 659.0 L 638.6 660.7 L 635.2 663.2 L 631.0 666.2 L 626.4 669.5 L 621.6 672.7 L 617.2 675.8 L 613.2 678.2 L 610.2 679.9 L 608.4 680.6 L 595.6 680.6 L 583.9 680.6 L 573.1 680.6 L 562.9 680.6 L 553.0 680.6 L 543.1 680.6 L 532.9 680.6 L 522.1 680.6 L 510.4 680.6 L 497.6 680.6 L 483.8 680.6 L 469.6 680.6 L 455.1 680.6 L 440.3 680.6 L 425.5 680.6 L 410.6 680.6 L 395.9 680.6 L 381.4 680.6 L 367.2 680.6 L 353.4 680.6 L 342.4 680.6 L 335.8 680.6 L 332.5 680.6 L 331.3 680.6 L 331.2 680.6 L 331.1 680.6 L 330.0 680.6 L 326.6 680.6 L 320.0 680.6 L 309.0 680.6" fill="none" stroke="#4d4f53" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 275.8 492.0 L 345.6 492.0 L 458.7 492.0 L 571.9 492.0 L 641.7 492.0 L 667.0 526.7 L 675.5 602.9 L 667.0 679.2 L 641.7 713.8 L 572.2 713.8 L 459.0 713.8 L 345.7 713.8 L 275.8 713.8 L 250.4 679.2 L 242.0 602.9 L 250.4 526.7 L 275.8 492.0 Z" fill="none" stroke="#2f5f9f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#arrow)"/>
+<line x1="275.8" y1="492.0" x2="320.8" y2="492.0" stroke="#2f5f9f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="641.7" y1="492.0" x2="596.7" y2="492.0" stroke="#2f5f9f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="320.8" cy="492.0" r="3" fill="#ffffff" stroke="#2f5f9f" stroke-width="1.5"/>
+<circle cx="596.7" cy="492.0" r="3" fill="#ffffff" stroke="#2f5f9f" stroke-width="1.5"/>
+<line x1="641.7" y1="492.0" x2="686.8" y2="492.0" stroke="#2f5f9f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="641.7" y1="713.8" x2="686.8" y2="713.8" stroke="#2f5f9f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="686.8" cy="492.0" r="3" fill="#ffffff" stroke="#2f5f9f" stroke-width="1.5"/>
+<circle cx="686.8" cy="713.8" r="3" fill="#ffffff" stroke="#2f5f9f" stroke-width="1.5"/>
+<line x1="641.7" y1="713.8" x2="597.4" y2="713.8" stroke="#2f5f9f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="275.8" y1="713.8" x2="320.8" y2="713.8" stroke="#2f5f9f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="597.4" cy="713.8" r="3" fill="#ffffff" stroke="#2f5f9f" stroke-width="1.5"/>
+<circle cx="320.8" cy="713.8" r="3" fill="#ffffff" stroke="#2f5f9f" stroke-width="1.5"/>
+<line x1="275.8" y1="713.8" x2="230.7" y2="713.8" stroke="#2f5f9f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="275.8" y1="492.0" x2="230.7" y2="492.0" stroke="#2f5f9f" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="230.7" cy="713.8" r="3" fill="#ffffff" stroke="#2f5f9f" stroke-width="1.5"/>
+<circle cx="230.7" cy="492.0" r="3" fill="#ffffff" stroke="#2f5f9f" stroke-width="1.5"/>
+<circle cx="275.8" cy="492.0" r="6" fill="#2f5f9f"/>
+<text x="283.8" y="484.0" class="small">P00</text>
+<circle cx="345.6" cy="492.0" r="3.5" fill="#7aa6d8"/>
+<circle cx="458.7" cy="492.0" r="3.5" fill="#7aa6d8"/>
+<circle cx="571.9" cy="492.0" r="3.5" fill="#7aa6d8"/>
+<circle cx="641.7" cy="492.0" r="6" fill="#2f5f9f"/>
+<text x="649.7" y="484.0" class="small">P04</text>
+<circle cx="667.0" cy="526.7" r="3.5" fill="#7aa6d8"/>
+<circle cx="675.5" cy="602.9" r="3.5" fill="#7aa6d8"/>
+<circle cx="667.0" cy="679.2" r="3.5" fill="#7aa6d8"/>
+<circle cx="641.7" cy="713.8" r="6" fill="#2f5f9f"/>
+<text x="649.7" y="705.8" class="small">P08</text>
+<circle cx="572.2" cy="713.8" r="3.5" fill="#7aa6d8"/>
+<circle cx="459.0" cy="713.8" r="3.5" fill="#7aa6d8"/>
+<circle cx="345.7" cy="713.8" r="3.5" fill="#7aa6d8"/>
+<circle cx="275.8" cy="713.8" r="6" fill="#2f5f9f"/>
+<text x="283.8" y="705.8" class="small">P12</text>
+<circle cx="250.4" cy="679.2" r="3.5" fill="#7aa6d8"/>
+<circle cx="242.0" cy="602.9" r="3.5" fill="#7aa6d8"/>
+<circle cx="250.4" cy="526.7" r="3.5" fill="#7aa6d8"/>
+<circle cx="275.8" cy="492.0" r="9" fill="none" stroke="#d1495b" stroke-width="2"/>
+<text x="265.8" y="514.0" class="small">K0</text>
+<circle cx="641.7" cy="492.0" r="9" fill="none" stroke="#d1495b" stroke-width="2"/>
+<text x="631.7" y="514.0" class="small">K1</text>
+<circle cx="641.7" cy="713.8" r="9" fill="none" stroke="#d1495b" stroke-width="2"/>
+<text x="631.7" y="735.8" class="small">K2</text>
+<circle cx="275.8" cy="713.8" r="9" fill="none" stroke="#d1495b" stroke-width="2"/>
+<text x="265.8" y="735.8" class="small">K3</text>
+<rect x="245.2" y="678.3" width="14" height="14" fill="#f29f05" transform="rotate(45 252.2 685.3)"/>
+<text x="262.2" y="689.3" class="small">Checkpoint 2</text>
+<rect x="596.1" y="706.8" width="14" height="14" fill="#f29f05" transform="rotate(45 603.1 713.8)"/>
+<text x="613.1" y="717.8" class="small">Checkpoint 1</text>
+<rect x="551.4" y="485.0" width="14" height="14" fill="#d1495b" transform="rotate(45 558.4 492.0)"/>
+<text x="568.4" y="496.0" class="small">Finish</text>
+<rect x="910" y="142" width="318" height="510" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="932" y="178" class="label">Couches superposées</text>
+<path d="M932,212 L962,212" stroke="#2f5f9f" stroke-width="4"/><text x="974" y="217" class="small">centerline TrackDefinition</text>
+<rect x="932" y="236" width="30" height="14" fill="#d9e1ea" stroke="#b4c2d0"/><text x="974" y="248" class="small">largeur de piste 10.0 m</text>
+<path d="M932,274 L962,274" stroke="#e9a23b" stroke-width="2.2" stroke-dasharray="7 6"/><text x="974" y="279" class="small">lignes IA (3)</text>
+<path d="M932,306 L962,306" stroke="#4d4f53" stroke-width="4"/><text x="974" y="311" class="small">mur multi-segments</text>
+<path d="M932,338 L962,338" stroke="#8b5fbf" stroke-width="8" stroke-opacity="0.28"/><path d="M932,338 L962,338" stroke="#8b5fbf" stroke-width="2.2" stroke-dasharray="9 5"/><text x="974" y="343" class="small">pit1 entrée / pit2 sortie, 5 m</text>
+<path d="M932,370 L962,370" stroke="#8b5fbf" stroke-width="8" stroke-opacity="0.32"/><text x="974" y="375" class="small">pitlane droite (1)</text>
+<rect x="932" y="394" width="30" height="16" fill="#e3b55d" fill-opacity="0.45" stroke="#c58a1f"/><text x="974" y="407" class="small">sable</text>
+<rect x="932" y="426" width="30" height="16" fill="#7fb069" fill-opacity="0.28" stroke="#5c8d55"/><text x="974" y="439" class="small">arbres</text>
+<circle cx="947" cy="468" r="9" fill="none" stroke="#d1495b" stroke-width="2"/><text x="974" y="473" class="small">clés vectorielles route</text>
+<rect x="940" y="492" width="14" height="14" fill="#d1495b" transform="rotate(45 947 499)"/><text x="974" y="504" class="small">départ/checkpoints (3)</text>
+<text x="932" y="522" class="label">Validation</text>
+<text x="932" y="552" class="small">C-S01: pass</text>
+<text x="932" y="578" class="small">Longueur: 272.884 m</text>
+<text x="932" y="604" class="small">Largeur min: 10.000 m</text>
+<text x="932" y="630" class="small">Statut couches: pass</text>
+<rect x="910" y="676" width="318" height="116" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="932" y="710" class="label">Réserves</text>
+<text x="932" y="738" class="small">Pas de capture éditeur de référence.</text>
+<text x="932" y="764" class="small">Poignées hors route non confirmées.</text>
+<text x="48" y="828" class="small">La vue superpose les données brutes converties dans le repère G-S03. Les surfaces hors contrat C sont affichées pour contrôle visuel, mais ne sont pas encore sérialisées dans TrackDefinition v0.1.</text>
+</svg>

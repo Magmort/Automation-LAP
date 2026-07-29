@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760">
+<style>
+text{font-family:Segoe UI,Arial,sans-serif;fill:#25313f}
+.title{font-size:28px;font-weight:700}
+.subtitle{font-size:15px;fill:#5c6b7a}
+.label{font-size:14px;font-weight:600}
+.small{font-size:12px;fill:#627282}
+</style>
+<rect width="1180" height="760" fill="#f7f9fc"/>
+<rect x="34" y="34" width="1112" height="84" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="58" y="72" class="title">G-S02 - Lecteur brut UR2D2 .sav</text>
+<text x="58" y="99" class="subtitle">Statut: raw-reader-ready-for-g-s03-candidate-conversion</text>
+<text x="50" y="134" class="label">Fixture affichée: T05_start_and_checkpoints</text>
+<rect x="50" y="142" width="700" height="560" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<g transform="translate(50,142)">
+<polyline points="409.5,265.7 599.8,265.7 662.0,265.7 662.0,112.7 600.3,112.7 409.5,112.7 347.4,112.7 347.4,265.7 38.0,522.0 38.0,522.0" fill="none" stroke="#9cc7b5" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="565.0,260.9 554.6,270.5 534.6,260.9 524.7,270.5 504.7,260.9 494.6,270.5 474.7,260.9 465.0,270.5 445.7,260.9 435.6,270.5 415.5,260.9 405.5,270.5 385.7,260.9 374.4,269.9 368.0,248.0 355.9,241.4 361.8,220.6 351.2,211.4 359.9,191.1 350.5,181.0" fill="none" stroke="#e9a23b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="378.5,265.7 630.9,265.7 630.9,112.7 378.5,112.7 378.5,265.7 378.5,265.7" fill="none" stroke="#2f5f9f" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<circle cx="428.5" cy="407.7" r="5" fill="#2f5f9f"/>
+<text x="435.5" y="400.7" class="small">R0</text>
+<circle cx="680.9" cy="407.7" r="5" fill="#2f5f9f"/>
+<text x="687.9" y="400.7" class="small">R1</text>
+<circle cx="680.9" cy="254.7" r="5" fill="#2f5f9f"/>
+<text x="687.9" y="247.7" class="small">R2</text>
+<circle cx="428.5" cy="254.7" r="5" fill="#2f5f9f"/>
+<text x="435.5" y="247.7" class="small">R3</text>
+<circle cx="428.5" cy="407.7" r="5" fill="#2f5f9f"/>
+<text x="435.5" y="400.7" class="small">R4</text>
+<rect x="405.2" y="267.4" width="14" height="14" fill="#d1495b" transform="rotate(45 412.2 274.4)"/>
+<text x="422.2" y="278.4" class="small">Checkpoint 2</text>
+<rect x="647.3" y="247.7" width="14" height="14" fill="#d1495b" transform="rotate(45 654.3 254.7)"/>
+<text x="664.3" y="258.7" class="small">Checkpoint 1</text>
+<rect x="616.5" y="400.7" width="14" height="14" fill="#d1495b" transform="rotate(45 623.5 407.7)"/>
+<text x="633.5" y="411.7" class="small">Finish</text>
+<rect x="800" y="142" width="328" height="476" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="824" y="176" class="label">Structures candidates</text>
+<circle cx="830" cy="212" r="5" fill="#2f5f9f"/><text x="848" y="217" class="small">Tableaux 0/1: route control x/y</text>
+<line x1="824" y1="244" x2="846" y2="244" stroke="#9cc7b5" stroke-width="4"/><text x="858" y="249" class="small">Tableaux 7/8: enveloppe/mesh</text>
+<line x1="824" y1="276" x2="846" y2="276" stroke="#e9a23b" stroke-width="3"/><text x="858" y="281" class="small">Tableaux 13/14: ligne échantillonnée</text>
+<rect x="824" y="304" width="12" height="12" fill="#d1495b" transform="rotate(45 830 310)"/><text x="848" y="315" class="small">Checkpoints candidats</text>
+<text x="824" y="364" class="small">Tableaux extraits: 17</text>
+<text x="824" y="390" class="small">Points route: 5</text>
+<text x="824" y="416" class="small">Points échantillonnés: 20</text>
+<text x="824" y="442" class="small">Checkpoints: 3</text>
+<text x="824" y="468" class="small">Région tableaux: 0x004d..0x0261</text>
+<text x="824" y="514" class="label">Inventaire attendu: 9/9</text>
+<text x="824" y="542" class="small">Route 4, IA 3, checkpoints 3: lus</text>
+<text x="824" y="568" class="small">Mur, sable, arbres: blocs lus</text>
+<text x="824" y="594" class="small">Pitlane: détectée, rôles entrée/sortie candidats</text>
+<text x="50" y="734" class="small">Les coordonnées sont en unités éditeur brutes. Aucune échelle SI ni orientation finale n’est appliquée à ce stade.</text>
+</svg>

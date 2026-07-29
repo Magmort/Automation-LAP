@@ -1,0 +1,477 @@
+{
+  "scenario": "G-S00",
+  "status": "complete-inventory",
+  "generatedAt": "2026-07-28T18:24:33+00:00",
+  "fixturesRoot": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source",
+  "expectedFixtureCount": 8,
+  "observedFixtureCount": 8,
+  "fixtures": [
+    {
+      "fixture": "T00_empty_save",
+      "exists": true,
+      "sourceKind": "file",
+      "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T00_empty_save.sav",
+      "fileCount": 1,
+      "totalSizeBytes": 289,
+      "signatures": {
+        "unknown-binary": 1
+      },
+      "files": [
+        {
+          "path": "track.sav",
+          "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T00_empty_save.sav",
+          "sizeBytes": 289,
+          "modifiedUtc": "2026-07-28T17:53:16+00:00",
+          "sha256": "424ee37bdae85f9126e62d308267978f086739c130001c91dd6695e8e33730f1",
+          "firstBytesHex": "00 00 20 41 00 00 00 00 73 70 72 5f 72 6f 61 64 00 00 00 00 00 00 00 00 00 67 72 61 73 73 5f 31",
+          "signature": "unknown-binary",
+          "entropy64k": 1.2381,
+          "strings": [
+            "spr_road",
+            "grass_1"
+          ]
+        }
+      ],
+      "purpose": "Circuit vide enregistré"
+    },
+    {
+      "fixture": "T01_single_straight",
+      "exists": true,
+      "sourceKind": "file",
+      "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T01_single_straight.sav",
+      "fileCount": 1,
+      "totalSizeBytes": 377,
+      "signatures": {
+        "unknown-binary": 1
+      },
+      "files": [
+        {
+          "path": "track.sav",
+          "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T01_single_straight.sav",
+          "sizeBytes": 377,
+          "modifiedUtc": "2026-07-28T18:02:37+00:00",
+          "sha256": "3e0e0acfb4bc649eab61fbc7e784c657371ea1fdb60fd69d33245d6c91a75424",
+          "firstBytesHex": "00 00 20 41 00 00 00 00 73 70 72 5f 72 6f 61 64 00 00 00 00 00 00 00 00 00 67 72 61 73 73 5f 31",
+          "signature": "unknown-binary",
+          "entropy64k": 1.7364,
+          "strings": [
+            "spr_road",
+            "grass_1"
+          ]
+        }
+      ],
+      "purpose": "Route droite unique"
+    },
+    {
+      "fixture": "T02_simple_closed_loop",
+      "exists": true,
+      "sourceKind": "file",
+      "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T02_simple_closed_loop.sav",
+      "fileCount": 1,
+      "totalSizeBytes": 749,
+      "signatures": {
+        "unknown-binary": 1
+      },
+      "files": [
+        {
+          "path": "track.sav",
+          "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T02_simple_closed_loop.sav",
+          "sizeBytes": 749,
+          "modifiedUtc": "2026-07-28T18:06:56+00:00",
+          "sha256": "b860e3d9e420fe764dfd4c91ded9a877336c41b7963d0051c00b6b8a8808f465",
+          "firstBytesHex": "00 00 20 41 00 00 00 00 73 70 72 5f 72 6f 61 64 00 00 00 00 00 00 00 00 00 67 72 61 73 73 5f 31",
+          "signature": "unknown-binary",
+          "entropy64k": 3.7211,
+          "strings": [
+            "spr_road",
+            "grass_1"
+          ]
+        }
+      ],
+      "purpose": "Boucle simple fermée"
+    },
+    {
+      "fixture": "T03_ai_line",
+      "exists": true,
+      "sourceKind": "file",
+      "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T03_ai_line.sav",
+      "fileCount": 1,
+      "totalSizeBytes": 1409,
+      "signatures": {
+        "unknown-binary": 1
+      },
+      "files": [
+        {
+          "path": "track.sav",
+          "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T03_ai_line.sav",
+          "sizeBytes": 1409,
+          "modifiedUtc": "2026-07-28T18:10:28+00:00",
+          "sha256": "f3f8b452232e2ab2c10cbee71926dad2c089b072b903d2302938063c73908c7a",
+          "firstBytesHex": "00 00 20 41 00 00 00 00 73 70 72 5f 72 6f 61 64 00 00 00 00 00 00 00 00 00 67 72 61 73 73 5f 31",
+          "signature": "unknown-binary",
+          "entropy64k": 4.4189,
+          "strings": [
+            "spr_road",
+            "grass_1",
+            "@l%4C",
+            "!ES",
+            "ANS",
+            "C3d4C"
+          ]
+        }
+      ],
+      "purpose": "Ligne IA ajoutée"
+    },
+    {
+      "fixture": "T04_limits_or_walls",
+      "exists": true,
+      "sourceKind": "file",
+      "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T04_limit_or_walls.sav",
+      "fileCount": 1,
+      "totalSizeBytes": 1815,
+      "signatures": {
+        "unknown-binary": 1
+      },
+      "files": [
+        {
+          "path": "track.sav",
+          "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T04_limit_or_walls.sav",
+          "sizeBytes": 1815,
+          "modifiedUtc": "2026-07-28T18:12:54+00:00",
+          "sha256": "1ecdc770769561a3b2cbb69cb36d72e8125089238a7fee51f871cc91d4bbccc0",
+          "firstBytesHex": "00 00 20 41 00 00 00 00 73 70 72 5f 72 6f 61 64 00 00 00 00 00 00 00 00 00 67 72 61 73 73 5f 31",
+          "signature": "unknown-binary",
+          "entropy64k": 4.2106,
+          "strings": [
+            "spr_road",
+            "grass_1",
+            "wall1",
+            "@l%4C",
+            "!ES",
+            "ANS",
+            "C3d4C"
+          ]
+        }
+      ],
+      "purpose": "Limites ou murs ajoutés"
+    },
+    {
+      "fixture": "T05_start_and_checkpoints",
+      "exists": true,
+      "sourceKind": "file",
+      "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T05_start_and_checkpoints.sav",
+      "fileCount": 1,
+      "totalSizeBytes": 2046,
+      "signatures": {
+        "unknown-binary": 1
+      },
+      "files": [
+        {
+          "path": "track.sav",
+          "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T05_start_and_checkpoints.sav",
+          "sizeBytes": 2046,
+          "modifiedUtc": "2026-07-28T18:16:11+00:00",
+          "sha256": "e873f0ec955d4d674443b44c67f025b3cdfc571cea3823e3fb67a21c858d2b63",
+          "firstBytesHex": "00 00 20 41 00 00 00 00 73 70 72 5f 72 6f 61 64 00 00 00 00 00 00 00 00 00 67 72 61 73 73 5f 31",
+          "signature": "unknown-binary",
+          "entropy64k": 4.4237,
+          "strings": [
+            "spr_road",
+            "grass_1",
+            "wall1",
+            "@@spr_checkpoint",
+            "Checkpoint 2",
+            "@checkpoint",
+            "spr_checkpoint",
+            "Checkpoint 1",
+            "?checkpoint",
+            "Finish",
+            "checkpoint",
+            "@l%4C",
+            "!ES",
+            "ANS",
+            "C3d4C"
+          ]
+        }
+      ],
+      "purpose": "Départ et checkpoints"
+    },
+    {
+      "fixture": "T06_pit_lane",
+      "exists": true,
+      "sourceKind": "file",
+      "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T06_pit_lane.sav",
+      "fileCount": 1,
+      "totalSizeBytes": 2532,
+      "signatures": {
+        "unknown-binary": 1
+      },
+      "files": [
+        {
+          "path": "track.sav",
+          "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T06_pit_lane.sav",
+          "sizeBytes": 2532,
+          "modifiedUtc": "2026-07-28T18:18:12+00:00",
+          "sha256": "685759c42c70389c37548effa601e2afd67c8ce45f8e2bf4a0cf9d6aa3691839",
+          "firstBytesHex": "00 00 20 41 00 00 00 00 73 70 72 5f 72 6f 61 64 00 00 00 00 00 00 00 00 00 67 72 61 73 73 5f 31",
+          "signature": "unknown-binary",
+          "entropy64k": 4.5693,
+          "strings": [
+            "spr_road",
+            "grass_1",
+            "wall1",
+            "@spr_pit_building_to_right",
+            "spr_checkpoint",
+            "Checkpoint 2",
+            "@checkpoint",
+            "Checkpoint 1",
+            "?checkpoint",
+            "Finish",
+            "checkpoint",
+            "NDB)SD",
+            "CZosC",
+            "4BP'gB",
+            "P3EP",
+            "5/EQ",
+            "ND@)[D",
+            "@l%4C",
+            "!ES",
+            "ANS"
+          ]
+        }
+      ],
+      "purpose": "Voie des stands"
+    },
+    {
+      "fixture": "T07_surfaces",
+      "exists": true,
+      "sourceKind": "file",
+      "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T07_surfaces.sav",
+      "fileCount": 1,
+      "totalSizeBytes": 3655,
+      "signatures": {
+        "unknown-binary": 1
+      },
+      "files": [
+        {
+          "path": "track.sav",
+          "sourcePath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-track-import\\fixtures\\source\\T07_surfaces.sav",
+          "sizeBytes": 3655,
+          "modifiedUtc": "2026-07-28T18:20:50+00:00",
+          "sha256": "578df5a4e7210c6530640618781b6b947c260a4ef86459613df1515fc7047c6d",
+          "firstBytesHex": "00 00 20 41 00 00 00 00 73 70 72 5f 72 6f 61 64 00 00 00 00 00 00 00 00 00 67 72 61 73 73 5f 31",
+          "signature": "unknown-binary",
+          "entropy64k": 4.684,
+          "strings": [
+            "spr_road",
+            "grass_1",
+            "@forrest2",
+            "spr_water_edge",
+            "{CYO",
+            "*D/w%D",
+            "$D-w",
+            "forrest2",
+            "spr_sand",
+            "spr_sand_edge",
+            "wall1",
+            "@spr_pit_building_to_right",
+            "spr_checkpoint",
+            "Checkpoint 2",
+            "@checkpoint",
+            "Checkpoint 1",
+            "?checkpoint",
+            "Finish",
+            "checkpoint",
+            "NDB)SD"
+          ]
+        }
+      ],
+      "purpose": "Surfaces distinctes"
+    }
+  ],
+  "comparisons": [
+    {
+      "from": "T00_empty_save",
+      "to": "T01_single_straight",
+      "addedCount": 0,
+      "removedCount": 0,
+      "modifiedCount": 1,
+      "unchangedCount": 0,
+      "added": [],
+      "removed": [],
+      "modified": [
+        "track.sav"
+      ]
+    },
+    {
+      "from": "T01_single_straight",
+      "to": "T02_simple_closed_loop",
+      "addedCount": 0,
+      "removedCount": 0,
+      "modifiedCount": 1,
+      "unchangedCount": 0,
+      "added": [],
+      "removed": [],
+      "modified": [
+        "track.sav"
+      ]
+    },
+    {
+      "from": "T02_simple_closed_loop",
+      "to": "T03_ai_line",
+      "addedCount": 0,
+      "removedCount": 0,
+      "modifiedCount": 1,
+      "unchangedCount": 0,
+      "added": [],
+      "removed": [],
+      "modified": [
+        "track.sav"
+      ]
+    },
+    {
+      "from": "T03_ai_line",
+      "to": "T04_limits_or_walls",
+      "addedCount": 0,
+      "removedCount": 0,
+      "modifiedCount": 1,
+      "unchangedCount": 0,
+      "added": [],
+      "removed": [],
+      "modified": [
+        "track.sav"
+      ]
+    },
+    {
+      "from": "T04_limits_or_walls",
+      "to": "T05_start_and_checkpoints",
+      "addedCount": 0,
+      "removedCount": 0,
+      "modifiedCount": 1,
+      "unchangedCount": 0,
+      "added": [],
+      "removed": [],
+      "modified": [
+        "track.sav"
+      ]
+    },
+    {
+      "from": "T05_start_and_checkpoints",
+      "to": "T06_pit_lane",
+      "addedCount": 0,
+      "removedCount": 0,
+      "modifiedCount": 1,
+      "unchangedCount": 0,
+      "added": [],
+      "removed": [],
+      "modified": [
+        "track.sav"
+      ]
+    },
+    {
+      "from": "T06_pit_lane",
+      "to": "T07_surfaces",
+      "addedCount": 0,
+      "removedCount": 0,
+      "modifiedCount": 1,
+      "unchangedCount": 0,
+      "added": [],
+      "removed": [],
+      "modified": [
+        "track.sav"
+      ]
+    }
+  ],
+  "globalHints": {
+    "highEntropyUnknownFiles": [],
+    "readableStringCandidates": [
+      {
+        "fixture": "T00_empty_save",
+        "path": "track.sav",
+        "signature": "unknown-binary",
+        "strings": [
+          "spr_road",
+          "grass_1"
+        ]
+      },
+      {
+        "fixture": "T01_single_straight",
+        "path": "track.sav",
+        "signature": "unknown-binary",
+        "strings": [
+          "spr_road",
+          "grass_1"
+        ]
+      },
+      {
+        "fixture": "T02_simple_closed_loop",
+        "path": "track.sav",
+        "signature": "unknown-binary",
+        "strings": [
+          "spr_road",
+          "grass_1"
+        ]
+      },
+      {
+        "fixture": "T03_ai_line",
+        "path": "track.sav",
+        "signature": "unknown-binary",
+        "strings": [
+          "spr_road",
+          "grass_1",
+          "@l%4C",
+          "!ES",
+          "ANS"
+        ]
+      },
+      {
+        "fixture": "T04_limits_or_walls",
+        "path": "track.sav",
+        "signature": "unknown-binary",
+        "strings": [
+          "spr_road",
+          "grass_1",
+          "wall1",
+          "@l%4C",
+          "!ES"
+        ]
+      },
+      {
+        "fixture": "T05_start_and_checkpoints",
+        "path": "track.sav",
+        "signature": "unknown-binary",
+        "strings": [
+          "spr_road",
+          "grass_1",
+          "wall1",
+          "@@spr_checkpoint",
+          "Checkpoint 2"
+        ]
+      },
+      {
+        "fixture": "T06_pit_lane",
+        "path": "track.sav",
+        "signature": "unknown-binary",
+        "strings": [
+          "spr_road",
+          "grass_1",
+          "wall1",
+          "@spr_pit_building_to_right",
+          "spr_checkpoint"
+        ]
+      },
+      {
+        "fixture": "T07_surfaces",
+        "path": "track.sav",
+        "signature": "unknown-binary",
+        "strings": [
+          "spr_road",
+          "grass_1",
+          "@forrest2",
+          "spr_water_edge",
+          "{CYO"
+        ]
+      }
+    ]
+  }
+}

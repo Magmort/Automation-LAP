@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<defs><marker id="arrow-h05" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#94a3b8"/></marker></defs>
+<rect x="32" y="28" width="1216" height="90" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="56.0" y="66.0" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#1f2937">H-S05 - Paquet d&#x27;import prêt simulation</text>
+<text x="56.0" y="96.0" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#64748b">Statut : import-package-ready-for-h-s06 | SHA contenu : 476eb2a68c2fe2ac | track.data utilisé : non</text>
+<rect x="56.0" y="158.0" width="250.0" height="116.0" rx="8" fill="#ffffff" stroke="#2f5f9f" stroke-width="2"/>
+<rect x="56.0" y="158.0" width="250.0" height="34" rx="8" fill="#2f5f9f" opacity="0.12"/>
+<text x="74.0" y="181.0" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#2f5f9f">Source .sav</text>
+<text x="74.0" y="216.0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">piste, pitlane, murs, checkpoints</text>
+<rect x="56.0" y="328.0" width="250.0" height="116.0" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+<rect x="56.0" y="328.0" width="250.0" height="34" rx="8" fill="#64748b" opacity="0.12"/>
+<text x="74.0" y="351.0" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#64748b">track_info.data</text>
+<text x="74.0" y="386.0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">nom, pays, type, conditions</text>
+<rect x="56.0" y="498.0" width="250.0" height="116.0" rx="8" fill="#ffffff" stroke="#d48a00" stroke-width="2"/>
+<rect x="56.0" y="498.0" width="250.0" height="34" rx="8" fill="#d48a00" opacity="0.12"/>
+<text x="74.0" y="521.0" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d48a00">PNG runtime</text>
+<text x="74.0" y="556.0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">fond de carte et calques visuels</text>
+<line x1="306.0" y1="216.0" x2="398.0" y2="216.0" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#arrow-h05)"/>
+<line x1="306.0" y1="386.0" x2="398.0" y2="386.0" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#arrow-h05)"/>
+<line x1="306.0" y1="556.0" x2="398.0" y2="556.0" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#arrow-h05)"/>
+<rect x="398.0" y="158.0" width="300.0" height="286.0" rx="8" fill="#ffffff" stroke="#27ae60" stroke-width="2"/>
+<rect x="398.0" y="158.0" width="300.0" height="34" rx="8" fill="#27ae60" opacity="0.12"/>
+<text x="416.0" y="181.0" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#27ae60">UR2D2ImportedTrackPackage</text>
+<text x="416.0" y="216.0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">64 points | 275.352 m | 10.0 m</text>
+<text x="426.0" y="244.0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">Pitlane : 2 voies</text>
+<text x="426.0" y="274.0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">Murs : 1</text>
+<text x="426.0" y="304.0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">Checkpoints : 3</text>
+<text x="426.0" y="334.0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">Fond : track_preview.png</text>
+<text x="426.0" y="364.0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">Mapping : 0.1875 x 0.1875</text>
+<line x1="698.0" y1="302.0" x2="796.0" y2="302.0" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#arrow-h05)"/>
+<rect x="796.0" y="158.0" width="376.0" height="286.0" rx="8" fill="#ffffff" stroke="#8b5fbf" stroke-width="2"/>
+<rect x="796.0" y="158.0" width="376.0" height="34" rx="8" fill="#8b5fbf" opacity="0.12"/>
+<text x="814.0" y="181.0" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8b5fbf">H-S06</text>
+<text x="814.0" y="216.0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">simulation voiture + rendu sur fond runtime</text>
+<text x="824.0" y="244.0" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#475569">Entrée simulation :</text>
+<text x="844.0" y="274.0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">TrackDefinition v0.1</text>
+<text x="844.0" y="304.0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">simulationExtras</text>
+<text x="844.0" y="334.0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">runtimeRendering</text>
+<text x="824.0" y="382.0" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#475569">Objectif suivant :</text>
+<text x="844.0" y="412.0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#475569">faire rouler la QFC55</text>
+<rect x="398" y="498" width="774" height="116" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="426.0" y="532.0" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#1f2937">Contrôles</text>
+<circle cx="426.0" cy="561.0" r="8" fill="#27ae60" opacity="0.18"/><text x="419.0" y="565.0" font-family="Segoe UI, Arial, sans-serif" font-size="7" font-weight="800" fill="#27ae60">OK</text><text x="444.0" y="566.0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">trackDefinitionValid</text>
+<circle cx="610.0" cy="561.0" r="8" fill="#27ae60" opacity="0.18"/><text x="603.0" y="565.0" font-family="Segoe UI, Arial, sans-serif" font-size="7" font-weight="800" fill="#27ae60">OK</text><text x="628.0" y="566.0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">overlayValidated</text>
+<circle cx="794.0" cy="561.0" r="8" fill="#27ae60" opacity="0.18"/><text x="787.0" y="565.0" font-family="Segoe UI, Arial, sans-serif" font-size="7" font-weight="800" fill="#27ae60">OK</text><text x="812.0" y="566.0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">trackDataNotRequired</text>
+<circle cx="978.0" cy="561.0" r="8" fill="#27ae60" opacity="0.18"/><text x="971.0" y="565.0" font-family="Segoe UI, Arial, sans-serif" font-size="7" font-weight="800" fill="#27ae60">OK</text><text x="996.0" y="566.0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">pitlaneIncluded</text>
+<circle cx="426.0" cy="595.0" r="8" fill="#27ae60" opacity="0.18"/><text x="419.0" y="599.0" font-family="Segoe UI, Arial, sans-serif" font-size="7" font-weight="800" fill="#27ae60">OK</text><text x="444.0" y="600.0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">wallsIncluded</text>
+<circle cx="610.0" cy="595.0" r="8" fill="#27ae60" opacity="0.18"/><text x="603.0" y="599.0" font-family="Segoe UI, Arial, sans-serif" font-size="7" font-weight="800" fill="#27ae60">OK</text><text x="628.0" y="600.0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">backgroundIncluded</text>
+<circle cx="794.0" cy="595.0" r="8" fill="#27ae60" opacity="0.18"/><text x="787.0" y="599.0" font-family="Segoe UI, Arial, sans-serif" font-size="7" font-weight="800" fill="#27ae60">OK</text><text x="812.0" y="600.0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#475569">uniformPixelMapping</text>
+<text x="56.0" y="694.0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="500" fill="#64748b">H-S05 fige le contrat d&#x27;import : C consomme TrackDefinition, la simulation avancée consomme les extras, le rendu consomme les références PNG.</text>
+</svg>

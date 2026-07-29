@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="470" viewBox="0 0 1120 470">
+<style>
+text{font-family:Segoe UI,Arial,sans-serif;fill:#25313f}
+.title{font-size:28px;font-weight:700}
+.subtitle{font-size:15px;fill:#5c6b7a}
+.label{font-size:14px;font-weight:600}
+.small{font-size:12px;fill:#627282}
+.axis{stroke:#c9d2dd;stroke-width:1}
+</style>
+<rect width="1120" height="100%" fill="#f7f9fc"/>
+<rect x="34" y="34" width="1052" height="84" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="58" y="72" class="title">H-S00 - Inventaire tracks runtime UR2D2</text>
+<text x="58" y="99" class="subtitle">Statut: awaiting-track-files · fixtures 0 · fichiers 0</text>
+<text x="58" y="142" class="small">Fixture</text>
+<text x="360" y="142" class="small">Nombre de fichiers</text>
+<text x="650" y="142" class="small">Taille totale</text>
+<text x="900" y="142" class="small">Signatures</text>
+<rect x="248" y="218" width="624" height="124" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+<text x="294" y="274" class="label">Aucun fichier de track runtime disponible</text>
+<text x="294" y="304" class="small">Déposer les pistes dans fixtures/source puis relancer H-S00.</text>
+<text x="58" y="428" class="small">H complète G : cette vue concerne les fichiers de piste finis/runtime, pas les sauvegardes éditeur .sav.</text>
+</svg>

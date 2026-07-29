@@ -1,0 +1,77 @@
+{
+  "scenario": "H-S04",
+  "status": "overlay-ready",
+  "generatedAtUtc": "2026-07-29T20:29:44Z",
+  "background": {
+    "path": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-runtime-track-import\\fixtures\\source\\R00_runtime_track_2\\track_preview.png",
+    "sourceTrackPngSize": [
+      4096,
+      2048
+    ],
+    "previewSize": [
+      768,
+      384
+    ],
+    "scaleX": 0.1875,
+    "scaleY": 0.1875,
+    "displayPolicy": "embed track_preview.png and map raw .sav coordinates using track.png -> preview scale"
+  },
+  "sourceGeometry": {
+    "hS02Path": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-runtime-track-import\\results\\h_s02_runtime_sav_reader.json",
+    "hS03Path": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-runtime-track-import\\results\\h_s03_simulation_geometry.json",
+    "rawFeatureBboxEditorUnits": {
+      "minX": 1356.068115,
+      "maxX": 2960.0,
+      "minY": 826.900024,
+      "maxY": 1712.0,
+      "spanX": 1603.931885,
+      "spanY": 885.099976
+    },
+    "featureBboxPreviewPx": {
+      "minX": 254.2627715625,
+      "maxX": 555.0,
+      "minY": 155.0437545,
+      "maxY": 321.0,
+      "spanX": 300.7372284375,
+      "spanY": 165.9562455
+    },
+    "trackOffset": "0x004d",
+    "pitlaneOffsets": [
+      "0x0997",
+      "0x0a43"
+    ],
+    "wallOffsets": [
+      "0x06e6"
+    ],
+    "checkpointLabels": [
+      "Finish",
+      "Checkpoint 1",
+      "Checkpoint 2"
+    ]
+  },
+  "strokePolicy": {
+    "roadWidthM": 10.0,
+    "roadWidthEditorUnits": 128.0,
+    "roadWidthPreviewPx": 24.0,
+    "pitlaneWidthM": 5.0,
+    "pitlaneWidthEditorUnits": 64.0,
+    "pitlaneWidthPreviewPx": 12.0
+  },
+  "checks": {
+    "backgroundPreviewPresent": true,
+    "aspectRatioMatchesTrackPng": true,
+    "uniformPreviewScale": true,
+    "featureBoundsInsideTrackCanvas": true,
+    "trackFeaturePresent": true,
+    "pitlaneLanesPresent": true,
+    "wallPresent": true,
+    "checkpointsPresent": true,
+    "hS03TrackDefinitionValid": true
+  },
+  "visualizationPath": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-runtime-track-import\\results\\H_S04_RUNTIME_OVERLAY_VISUALIZATION.svg",
+  "notes": [
+    "H-S04 uses raw editor/screen coordinates for overlay, so Y points down like UR2D2 images.",
+    "The SVG embeds track_preview.png and overlays vector-sampled .sav features.",
+    "H-S04 does not run vehicle simulation; that remains H-S06."
+  ]
+}

@@ -1,0 +1,2401 @@
+{
+  "kind": "UR2D2RuntimeTrackData",
+  "schemaVersion": "0.1.0",
+  "scenario": "H-S02",
+  "status": "ready-for-h03-route-and-overlay",
+  "generatedAtUtc": "2026-07-29T20:02:39Z",
+  "trackDirectory": "C:\\Users\\jerem\\Documents\\UnityProject\\Automation-LAP\\prototypes\\ur2d2-runtime-track-import\\fixtures\\source\\R00_runtime_track_2",
+  "sourceFiles": {
+    "trackEditorSav": {
+      "path": "track_editor.sav",
+      "sizeBytes": 3655,
+      "sha256": "4483667becaec07722e3d3eddb3eb2a93fd9b117bd2aff7e96666e8781557ab3"
+    },
+    "trackInfoData": {
+      "path": "track_info.data",
+      "sizeBytes": 345,
+      "sha256": "d4c3941e1e0568943383d495b38f8e9ce7330baa80dfbfb1f3535adcd2a126bc"
+    },
+    "imageLayers": {
+      "track.png": {
+        "path": "track.png",
+        "sizeBytes": 4384020,
+        "sha256": "0acb0d0e157835f4b7bc2d471f1c0010330d91aad258086b93685a4b5b95a24c"
+      },
+      "track_preview.png": {
+        "path": "track_preview.png",
+        "sizeBytes": 454654,
+        "sha256": "8bbe6b2a69ff84239fdb3e5b61f5766995f80f86e76c3b71727a475d058aef02"
+      },
+      "grass.png": {
+        "path": "grass.png",
+        "sizeBytes": 298927,
+        "sha256": "79b7f4314d40131d14e7c15aa0dfcceafc9de88170af9c715139530021b444e7"
+      },
+      "gravel.png": {
+        "path": "gravel.png",
+        "sizeBytes": 316747,
+        "sha256": "cd162a57404b8cddb43c68f38bd2f72c78c085df394f009582a67af6269c7865"
+      },
+      "minimap.png": {
+        "path": "minimap.png",
+        "sizeBytes": 59780,
+        "sha256": "dc4a0f6e638ec9feaf91ba7ebaa66737f1d450aa9a9bd0f3ddc1a6cca85e098b"
+      }
+    }
+  },
+  "trackInfo": {
+    "path": "track_info.data",
+    "strings": [
+      "First_Track",
+      "track:2/2796.14",
+      "flag_andorra",
+      "ffffff",
+      "Road Course",
+      "medium",
+      "soft",
+      "clear",
+      "[D.C.o.K] Magmort"
+    ],
+    "status": "present"
+  },
+  "imageLayers": {
+    "track.png": {
+      "path": "track.png",
+      "size": [
+        4096,
+        2048
+      ],
+      "mode": "RGBA",
+      "nonTransparentPixelCount": 8388608,
+      "alphaBbox": [
+        0,
+        0,
+        4096,
+        2048
+      ]
+    },
+    "track_preview.png": {
+      "path": "track_preview.png",
+      "size": [
+        768,
+        384
+      ],
+      "mode": "RGBA",
+      "nonTransparentPixelCount": 294912,
+      "alphaBbox": [
+        0,
+        0,
+        768,
+        384
+      ]
+    },
+    "grass.png": {
+      "path": "grass.png",
+      "size": [
+        4096,
+        2048
+      ],
+      "mode": "RGBA",
+      "nonTransparentPixelCount": 7766457,
+      "alphaBbox": [
+        0,
+        0,
+        4096,
+        2048
+      ]
+    },
+    "gravel.png": {
+      "path": "gravel.png",
+      "size": [
+        4096,
+        2048
+      ],
+      "mode": "RGBA",
+      "nonTransparentPixelCount": 153194,
+      "alphaBbox": [
+        1381,
+        1126,
+        1875,
+        1536
+      ]
+    },
+    "minimap.png": {
+      "path": "minimap.png",
+      "size": [
+        4096,
+        2048
+      ],
+      "mode": "RGBA",
+      "nonTransparentPixelCount": 633113,
+      "alphaBbox": [
+        1272,
+        718,
+        3006,
+        1767
+      ]
+    }
+  },
+  "editorSav": {
+    "path": "track_editor.sav",
+    "sourceSha256": "4483667becaec07722e3d3eddb3eb2a93fd9b117bd2aff7e96666e8781557ab3",
+    "sizeBytes": 3655,
+    "globalCandidates": {
+      "float32At0": 10.0,
+      "float32At0Hypothesis": "global width, scale or editor parameter; value is 10.0 in all fixtures."
+    },
+    "countedFloatArrayRegion": {
+      "startOffset": 77,
+      "startHexOffset": "0x004d",
+      "endOffset": 609,
+      "endHexOffset": "0x0261",
+      "arrayCount": 17
+    },
+    "countedFloatArrayCount": 17,
+    "stringTokens": [
+      {
+        "offset": 8,
+        "hexOffset": "0x0008",
+        "value": "spr_road"
+      },
+      {
+        "offset": 25,
+        "hexOffset": "0x0019",
+        "value": "grass_1"
+      },
+      {
+        "offset": 620,
+        "hexOffset": "0x026c",
+        "value": "spr_sand"
+      },
+      {
+        "offset": 630,
+        "hexOffset": "0x0276",
+        "value": "spr_sand_edge"
+      },
+      {
+        "offset": 1044,
+        "hexOffset": "0x0414",
+        "value": "forrest2"
+      },
+      {
+        "offset": 1053,
+        "hexOffset": "0x041d",
+        "value": "spr_water_edge"
+      },
+      {
+        "offset": 1116,
+        "hexOffset": "0x045c",
+        "value": "forrest2"
+      },
+      {
+        "offset": 1125,
+        "hexOffset": "0x0465",
+        "value": "spr_water_edge"
+      },
+      {
+        "offset": 1188,
+        "hexOffset": "0x04a4",
+        "value": "forrest2"
+      },
+      {
+        "offset": 1197,
+        "hexOffset": "0x04ad",
+        "value": "spr_water_edge"
+      },
+      {
+        "offset": 1752,
+        "hexOffset": "0x06d8",
+        "value": "wall1"
+      },
+      {
+        "offset": 2157,
+        "hexOffset": "0x086d",
+        "value": "spr_checkpoint"
+      },
+      {
+        "offset": 2205,
+        "hexOffset": "0x089d",
+        "value": "Finish"
+      },
+      {
+        "offset": 2216,
+        "hexOffset": "0x08a8",
+        "value": "checkpoint"
+      },
+      {
+        "offset": 2231,
+        "hexOffset": "0x08b7",
+        "value": "spr_checkpoint"
+      },
+      {
+        "offset": 2278,
+        "hexOffset": "0x08e6",
+        "value": "Checkpoint 1"
+      },
+      {
+        "offset": 2294,
+        "hexOffset": "0x08f6",
+        "value": "checkpoint"
+      },
+      {
+        "offset": 2310,
+        "hexOffset": "0x0906",
+        "value": "spr_checkpoint"
+      },
+      {
+        "offset": 2357,
+        "hexOffset": "0x0935",
+        "value": "Checkpoint 2"
+      },
+      {
+        "offset": 2373,
+        "hexOffset": "0x0945",
+        "value": "checkpoint"
+      },
+      {
+        "offset": 2389,
+        "hexOffset": "0x0955",
+        "value": "spr_pit_building_to_right"
+      }
+    ],
+    "stringTokenCounts": {
+      "Checkpoint 1": 1,
+      "Checkpoint 2": 1,
+      "Finish": 1,
+      "checkpoint": 3,
+      "forrest2": 3,
+      "grass_1": 1,
+      "spr_checkpoint": 3,
+      "spr_pit_building_to_right": 1,
+      "spr_road": 1,
+      "spr_sand": 1,
+      "spr_sand_edge": 1,
+      "spr_water_edge": 3,
+      "wall1": 1
+    },
+    "checkpointCandidates": [
+      {
+        "spriteOffset": 2158,
+        "spriteHexOffset": "0x086e",
+        "payloadOffset": 2173,
+        "payloadHexOffset": "0x087d",
+        "label": "Finish",
+        "x": 2239.638916,
+        "y": 1072.0,
+        "layerOrScale": -1.0,
+        "rotationDeg": 270.0,
+        "widthCandidate": 20.0,
+        "heightCandidate": 105.0,
+        "confidence": "medium",
+        "reason": "Exact spr_checkpoint token followed by plausible x/y/rotation/size payload and a nearby label."
+      },
+      {
+        "spriteOffset": 2231,
+        "spriteHexOffset": "0x08b7",
+        "payloadOffset": 2246,
+        "payloadHexOffset": "0x08c6",
+        "label": "Checkpoint 1",
+        "x": 2368.644531,
+        "y": 1712.0,
+        "layerOrScale": -1.0,
+        "rotationDeg": 450.0,
+        "widthCandidate": 20.0,
+        "heightCandidate": 105.0,
+        "confidence": "medium",
+        "reason": "Exact spr_checkpoint token followed by plausible x/y/rotation/size payload and a nearby label."
+      },
+      {
+        "spriteOffset": 2310,
+        "spriteHexOffset": "0x0906",
+        "payloadOffset": 2325,
+        "payloadHexOffset": "0x0915",
+        "label": "Checkpoint 2",
+        "x": 1356.068115,
+        "y": 1629.605835,
+        "layerOrScale": -1.0,
+        "rotationDeg": 377.834503,
+        "widthCandidate": 20.0,
+        "heightCandidate": 105.0,
+        "confidence": "medium",
+        "reason": "Exact spr_checkpoint token followed by plausible x/y/rotation/size payload and a nearby label."
+      }
+    ],
+    "namedObjectCandidates": [
+      {
+        "token": "wall1",
+        "tokenOffset": 1752,
+        "tokenHexOffset": "0x06d8",
+        "confidence": "low",
+        "reason": "Known object/surface token; payload layout still uncertain.",
+        "payloadOffset": 1759,
+        "payloadHexOffset": "0x06df",
+        "x": 0.0,
+        "y": 0.0,
+        "rotationDeg": 0.0,
+        "widthCandidate": 0.0,
+        "heightCandidate": 0.0
+      },
+      {
+        "token": "spr_pit_building_to_right",
+        "tokenOffset": 2389,
+        "tokenHexOffset": "0x0955",
+        "confidence": "low",
+        "reason": "Known object/surface token; payload layout still uncertain.",
+        "payloadOffset": 2415,
+        "payloadHexOffset": "0x096f",
+        "x": 2192.0,
+        "y": 720.0,
+        "rotationDeg": 90.0,
+        "widthCandidate": 1.0,
+        "heightCandidate": 1.0
+      },
+      {
+        "token": "forrest2",
+        "tokenOffset": 1044,
+        "tokenHexOffset": "0x0414",
+        "confidence": "low",
+        "reason": "Known object/surface token; payload layout still uncertain."
+      },
+      {
+        "token": "forrest2",
+        "tokenOffset": 1116,
+        "tokenHexOffset": "0x045c",
+        "confidence": "low",
+        "reason": "Known object/surface token; payload layout still uncertain."
+      },
+      {
+        "token": "forrest2",
+        "tokenOffset": 1188,
+        "tokenHexOffset": "0x04a4",
+        "confidence": "low",
+        "reason": "Known object/surface token; payload layout still uncertain."
+      },
+      {
+        "token": "spr_water_edge",
+        "tokenOffset": 1053,
+        "tokenHexOffset": "0x041d",
+        "confidence": "low",
+        "reason": "Known object/surface token; payload layout still uncertain.",
+        "payloadOffset": 1068,
+        "payloadHexOffset": "0x042c",
+        "x": 1.0,
+        "y": 8.0,
+        "rotationDeg": 0.0,
+        "widthCandidate": 0.0,
+        "heightCandidate": 0.0
+      },
+      {
+        "token": "spr_water_edge",
+        "tokenOffset": 1125,
+        "tokenHexOffset": "0x0465",
+        "confidence": "low",
+        "reason": "Known object/surface token; payload layout still uncertain.",
+        "payloadOffset": 1140,
+        "payloadHexOffset": "0x0474",
+        "x": 1.0,
+        "y": 8.0,
+        "rotationDeg": 0.0,
+        "widthCandidate": 0.0,
+        "heightCandidate": 0.0
+      },
+      {
+        "token": "spr_water_edge",
+        "tokenOffset": 1197,
+        "tokenHexOffset": "0x04ad",
+        "confidence": "low",
+        "reason": "Known object/surface token; payload layout still uncertain.",
+        "payloadOffset": 1213,
+        "payloadHexOffset": "0x04bd",
+        "x": 0.0,
+        "y": 0.0,
+        "rotationDeg": 0.0,
+        "widthCandidate": 0.0,
+        "heightCandidate": 0.0
+      },
+      {
+        "token": "spr_sand",
+        "tokenOffset": 621,
+        "tokenHexOffset": "0x026d",
+        "confidence": "low",
+        "reason": "Known object/surface token; payload layout still uncertain."
+      },
+      {
+        "token": "spr_sand",
+        "tokenOffset": 630,
+        "tokenHexOffset": "0x0276",
+        "confidence": "low",
+        "reason": "Known object/surface token; payload layout still uncertain.",
+        "payloadOffset": 641,
+        "payloadHexOffset": "0x0281",
+        "x": 0.0,
+        "y": 0.0,
+        "rotationDeg": 0.0,
+        "widthCandidate": 0.0,
+        "heightCandidate": 0.0
+      },
+      {
+        "token": "spr_sand_edge",
+        "tokenOffset": 630,
+        "tokenHexOffset": "0x0276",
+        "confidence": "low",
+        "reason": "Known object/surface token; payload layout still uncertain.",
+        "payloadOffset": 645,
+        "payloadHexOffset": "0x0285",
+        "x": 0.0,
+        "y": 0.0,
+        "rotationDeg": 0.0,
+        "widthCandidate": 0.0,
+        "heightCandidate": 0.0
+      }
+    ],
+    "namedObjectTokenCounts": {
+      "forrest2": 3,
+      "spr_pit_building_to_right": 1,
+      "spr_sand": 2,
+      "spr_sand_edge": 1,
+      "spr_water_edge": 3,
+      "wall1": 1
+    },
+    "vectorBlocks": [
+      {
+        "offset": 77,
+        "hexOffset": "0x004d",
+        "endOffset": 289,
+        "endHexOffset": "0x0121",
+        "pointCount": 5,
+        "arrayCount": 8,
+        "closed": true,
+        "lengthEditorUnits": 3392.0,
+        "signedAreaEditorUnits2": 675840.0,
+        "absAreaEditorUnits2": 675840.0,
+        "plausiblePointRatio": 1.0,
+        "bounds": {
+          "minX": 1424.0,
+          "maxX": 2480.0,
+          "minY": 1072.0,
+          "maxY": 1712.0,
+          "spanX": 1056.0,
+          "spanY": 640.0
+        },
+        "firstPoint": {
+          "x": 1424.0,
+          "y": 1072.0
+        },
+        "lastPoint": {
+          "x": 1424.0,
+          "y": 1072.0
+        },
+        "nearbyToken": {
+          "offset": 25,
+          "hexOffset": "0x0019",
+          "value": "grass_1",
+          "distanceToBlock": 52
+        },
+        "tags": [
+          "closed-vector-trace",
+          "coordinate-plausible",
+          "handles-present",
+          "near-token:grass_1",
+          "closed-shape-candidate"
+        ],
+        "points": [
+          {
+            "x": 1424.0,
+            "y": 1072.0
+          },
+          {
+            "x": 2480.0,
+            "y": 1072.0
+          },
+          {
+            "x": 2480.0,
+            "y": 1712.0
+          },
+          {
+            "x": 1424.0,
+            "y": 1712.0
+          },
+          {
+            "x": 1424.0,
+            "y": 1072.0
+          }
+        ],
+        "vectorTraceCandidate": {
+          "label": "line_like_vector_trace",
+          "offset": 77,
+          "hexOffset": "0x004d",
+          "keyCount": 5,
+          "confidence": "medium",
+          "reason": "Line-like counted arrays expose x/y, flags, angle A/B and weight A/B candidates.",
+          "keys": [
+            {
+              "index": 0,
+              "x": 1424.0,
+              "y": 1072.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": -0.0,
+              "angleBDeg": 180.0,
+              "weightA": 130.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 1,
+              "x": 2480.0,
+              "y": 1072.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": -0.0,
+              "angleBDeg": -0.0,
+              "weightA": 130.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 2,
+              "x": 2480.0,
+              "y": 1712.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.0,
+              "angleBDeg": -0.0,
+              "weightA": 128.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 3,
+              "x": 1424.0,
+              "y": 1712.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.0,
+              "angleBDeg": 180.0,
+              "weightA": 130.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 4,
+              "x": 1424.0,
+              "y": 1072.0,
+              "typeOrFlag": 0.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 0.0,
+              "weightA": 0.0,
+              "weightB": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "offset": 349,
+        "hexOffset": "0x015d",
+        "endOffset": 609,
+        "endHexOffset": "0x0261",
+        "pointCount": 20,
+        "arrayCount": 4,
+        "closed": false,
+        "lengthEditorUnits": 1413.011973,
+        "signedAreaEditorUnits2": -153634.041023,
+        "absAreaEditorUnits2": 153634.041023,
+        "plausiblePointRatio": 1.0,
+        "bounds": {
+          "minX": 1306.987915,
+          "maxX": 2204.248291,
+          "minY": 1052.0,
+          "maxY": 1426.178345,
+          "spanX": 897.260376,
+          "spanY": 374.17834500000004
+        },
+        "firstPoint": {
+          "x": 2204.248291,
+          "y": 1092.0
+        },
+        "lastPoint": {
+          "x": 1306.987915,
+          "y": 1426.178345
+        },
+        "nearbyToken": null,
+        "tags": [
+          "open-vector-trace",
+          "coordinate-plausible",
+          "line-candidate"
+        ],
+        "points": [
+          {
+            "x": 2204.248291,
+            "y": 1092.0
+          },
+          {
+            "x": 2160.88916,
+            "y": 1052.0
+          },
+          {
+            "x": 2077.271973,
+            "y": 1092.0
+          },
+          {
+            "x": 2035.885254,
+            "y": 1052.0
+          },
+          {
+            "x": 1952.0,
+            "y": 1092.0
+          },
+          {
+            "x": 1909.946167,
+            "y": 1052.0
+          },
+          {
+            "x": 1826.728027,
+            "y": 1092.0
+          },
+          {
+            "x": 1786.008545,
+            "y": 1052.0
+          },
+          {
+            "x": 1705.082642,
+            "y": 1092.0
+          },
+          {
+            "x": 1663.234009,
+            "y": 1052.0
+          },
+          {
+            "x": 1578.932129,
+            "y": 1092.0
+          },
+          {
+            "x": 1536.993652,
+            "y": 1052.0
+          },
+          {
+            "x": 1454.386719,
+            "y": 1092.0
+          },
+          {
+            "x": 1406.913086,
+            "y": 1054.650269
+          },
+          {
+            "x": 1380.144287,
+            "y": 1146.050537
+          },
+          {
+            "x": 1329.75647,
+            "y": 1173.680176
+          },
+          {
+            "x": 1354.381958,
+            "y": 1260.457153
+          },
+          {
+            "x": 1310.174927,
+            "y": 1299.170654
+          },
+          {
+            "x": 1346.527466,
+            "y": 1383.979492
+          },
+          {
+            "x": 1306.987915,
+            "y": 1426.178345
+          }
+        ],
+        "vectorTraceCandidate": null
+      },
+      {
+        "offset": 656,
+        "hexOffset": "0x0290",
+        "endOffset": 976,
+        "endHexOffset": "0x03d0",
+        "pointCount": 8,
+        "arrayCount": 8,
+        "closed": true,
+        "lengthEditorUnits": 1573.42027,
+        "signedAreaEditorUnits2": -162816.0,
+        "absAreaEditorUnits2": 162816.0,
+        "plausiblePointRatio": 1.0,
+        "bounds": {
+          "minX": 1360.0,
+          "maxX": 1872.0,
+          "minY": 1072.0,
+          "maxY": 1520.0,
+          "spanX": 512.0,
+          "spanY": 448.0
+        },
+        "firstPoint": {
+          "x": 1424.0,
+          "y": 1104.0
+        },
+        "lastPoint": {
+          "x": 1424.0,
+          "y": 1104.0
+        },
+        "nearbyToken": {
+          "offset": 630,
+          "hexOffset": "0x0276",
+          "value": "spr_sand_edge",
+          "distanceToBlock": 26
+        },
+        "tags": [
+          "closed-vector-trace",
+          "coordinate-plausible",
+          "handles-present",
+          "near-token:spr_sand_edge",
+          "closed-shape-candidate"
+        ],
+        "points": [
+          {
+            "x": 1424.0,
+            "y": 1104.0
+          },
+          {
+            "x": 1360.0,
+            "y": 1264.0
+          },
+          {
+            "x": 1360.0,
+            "y": 1456.0
+          },
+          {
+            "x": 1456.0,
+            "y": 1520.0
+          },
+          {
+            "x": 1712.0,
+            "y": 1424.0
+          },
+          {
+            "x": 1872.0,
+            "y": 1168.0
+          },
+          {
+            "x": 1840.0,
+            "y": 1072.0
+          },
+          {
+            "x": 1424.0,
+            "y": 1104.0
+          }
+        ],
+        "vectorTraceCandidate": {
+          "label": "line_like_vector_trace",
+          "offset": 656,
+          "hexOffset": "0x0290",
+          "keyCount": 8,
+          "confidence": "medium",
+          "reason": "Line-like counted arrays expose x/y, flags, angle A/B and weight A/B candidates.",
+          "keys": [
+            {
+              "index": 0,
+              "x": 1424.0,
+              "y": 1104.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 248.198608,
+              "angleBDeg": 68.198608,
+              "weightA": 130.000046,
+              "weightB": 130.000046
+            },
+            {
+              "index": 1,
+              "x": 1360.0,
+              "y": 1264.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 248.198608,
+              "angleBDeg": 90.0,
+              "weightA": 130.000046,
+              "weightB": 130.0
+            },
+            {
+              "index": 2,
+              "x": 1360.0,
+              "y": 1456.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 270.0,
+              "angleBDeg": 180.0,
+              "weightA": 130.0,
+              "weightB": 32.0
+            },
+            {
+              "index": 3,
+              "x": 1456.0,
+              "y": 1520.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": -0.0,
+              "angleBDeg": 206.565033,
+              "weightA": 129.999878,
+              "weightB": 129.999954
+            },
+            {
+              "index": 4,
+              "x": 1712.0,
+              "y": 1424.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 26.56505,
+              "angleBDeg": 270.0,
+              "weightA": 143.108353,
+              "weightB": 96.0
+            },
+            {
+              "index": 5,
+              "x": 1872.0,
+              "y": 1168.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 90.0,
+              "angleBDeg": 315.0,
+              "weightA": 130.0,
+              "weightB": 130.000092
+            },
+            {
+              "index": 6,
+              "x": 1840.0,
+              "y": 1072.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 135.0,
+              "angleBDeg": 68.198593,
+              "weightA": 45.254833,
+              "weightB": 129.999985
+            },
+            {
+              "index": 7,
+              "x": 1424.0,
+              "y": 1104.0,
+              "typeOrFlag": 0.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 0.0,
+              "weightA": 0.0,
+              "weightB": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "offset": 1224,
+        "hexOffset": "0x04c8",
+        "endOffset": 1652,
+        "endHexOffset": "0x0674",
+        "pointCount": 11,
+        "arrayCount": 8,
+        "closed": true,
+        "lengthEditorUnits": 3168.584153,
+        "signedAreaEditorUnits2": 380416.0,
+        "absAreaEditorUnits2": 380416.0,
+        "plausiblePointRatio": 1.0,
+        "bounds": {
+          "minX": 976.0,
+          "maxX": 1904.0,
+          "minY": 304.0,
+          "maxY": 1264.0,
+          "spanX": 928.0,
+          "spanY": 960.0
+        },
+        "firstPoint": {
+          "x": 1488.0,
+          "y": 624.0
+        },
+        "lastPoint": {
+          "x": 1488.0,
+          "y": 624.0
+        },
+        "nearbyToken": {
+          "offset": 1197,
+          "hexOffset": "0x04ad",
+          "value": "spr_water_edge",
+          "distanceToBlock": 27
+        },
+        "tags": [
+          "closed-vector-trace",
+          "coordinate-plausible",
+          "handles-present",
+          "near-token:spr_water_edge",
+          "closed-shape-candidate"
+        ],
+        "points": [
+          {
+            "x": 1488.0,
+            "y": 624.0
+          },
+          {
+            "x": 1296.0,
+            "y": 720.0
+          },
+          {
+            "x": 1264.0,
+            "y": 976.0
+          },
+          {
+            "x": 1168.0,
+            "y": 1264.0
+          },
+          {
+            "x": 976.0,
+            "y": 1136.0
+          },
+          {
+            "x": 976.0,
+            "y": 688.0
+          },
+          {
+            "x": 1168.0,
+            "y": 400.0
+          },
+          {
+            "x": 1584.0,
+            "y": 304.0
+          },
+          {
+            "x": 1904.0,
+            "y": 336.0
+          },
+          {
+            "x": 1904.0,
+            "y": 528.0
+          },
+          {
+            "x": 1488.0,
+            "y": 624.0
+          }
+        ],
+        "vectorTraceCandidate": {
+          "label": "line_like_vector_trace",
+          "offset": 1224,
+          "hexOffset": "0x04c8",
+          "keyCount": 11,
+          "confidence": "medium",
+          "reason": "Line-like counted arrays expose x/y, flags, angle A/B and weight A/B candidates.",
+          "keys": [
+            {
+              "index": 0,
+              "x": 1488.0,
+              "y": 624.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 206.565048,
+              "angleBDeg": 26.56505,
+              "weightA": 129.999985,
+              "weightB": 129.999985
+            },
+            {
+              "index": 1,
+              "x": 1296.0,
+              "y": 720.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 206.565048,
+              "angleBDeg": 82.874977,
+              "weightA": 129.999985,
+              "weightB": 129.999969
+            },
+            {
+              "index": 2,
+              "x": 1264.0,
+              "y": 976.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 262.875031,
+              "angleBDeg": 71.565048,
+              "weightA": 129.999954,
+              "weightB": 130.000031
+            },
+            {
+              "index": 3,
+              "x": 1168.0,
+              "y": 1264.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 251.565048,
+              "angleBDeg": 326.309937,
+              "weightA": 101.192886,
+              "weightB": 129.999939
+            },
+            {
+              "index": 4,
+              "x": 976.0,
+              "y": 1136.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 146.309952,
+              "angleBDeg": 270.0,
+              "weightA": 129.999985,
+              "weightB": 130.0
+            },
+            {
+              "index": 5,
+              "x": 976.0,
+              "y": 688.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 90.0,
+              "angleBDeg": 213.690079,
+              "weightA": 130.0,
+              "weightB": 129.999985
+            },
+            {
+              "index": 6,
+              "x": 1168.0,
+              "y": 400.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 33.690067,
+              "angleBDeg": 180.0,
+              "weightA": 115.37764,
+              "weightB": 128.0
+            },
+            {
+              "index": 7,
+              "x": 1584.0,
+              "y": 304.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": -0.0,
+              "angleBDeg": 174.289398,
+              "weightA": 130.0,
+              "weightB": 130.000015
+            },
+            {
+              "index": 8,
+              "x": 1904.0,
+              "y": 336.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 354.289398,
+              "angleBDeg": 90.0,
+              "weightA": 130.000031,
+              "weightB": 130.0
+            },
+            {
+              "index": 9,
+              "x": 1904.0,
+              "y": 528.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 270.0,
+              "angleBDeg": 26.565098,
+              "weightA": 130.0,
+              "weightB": 130.000031
+            },
+            {
+              "index": 10,
+              "x": 1488.0,
+              "y": 624.0,
+              "typeOrFlag": 0.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 0.0,
+              "weightA": 0.0,
+              "weightB": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "offset": 1766,
+        "hexOffset": "0x06e6",
+        "endOffset": 2086,
+        "endHexOffset": "0x0826",
+        "pointCount": 8,
+        "arrayCount": 8,
+        "closed": false,
+        "lengthEditorUnits": 1434.931816,
+        "signedAreaEditorUnits2": 241664.0,
+        "absAreaEditorUnits2": 241664.0,
+        "plausiblePointRatio": 1.0,
+        "bounds": {
+          "minX": 1520.0,
+          "maxX": 2480.0,
+          "minY": 1136.0,
+          "maxY": 1616.0,
+          "spanX": 960.0,
+          "spanY": 480.0
+        },
+        "firstPoint": {
+          "x": 2416.0,
+          "y": 1136.0
+        },
+        "lastPoint": {
+          "x": 1520.0,
+          "y": 1616.0
+        },
+        "nearbyToken": {
+          "offset": 1752,
+          "hexOffset": "0x06d8",
+          "value": "wall1",
+          "distanceToBlock": 14
+        },
+        "tags": [
+          "open-vector-trace",
+          "coordinate-plausible",
+          "handles-present",
+          "near-token:wall1",
+          "line-candidate"
+        ],
+        "points": [
+          {
+            "x": 2416.0,
+            "y": 1136.0
+          },
+          {
+            "x": 2480.0,
+            "y": 1168.0
+          },
+          {
+            "x": 2480.0,
+            "y": 1328.0
+          },
+          {
+            "x": 2480.0,
+            "y": 1552.0
+          },
+          {
+            "x": 2384.0,
+            "y": 1616.0
+          },
+          {
+            "x": 2064.0,
+            "y": 1616.0
+          },
+          {
+            "x": 1648.0,
+            "y": 1616.0
+          },
+          {
+            "x": 1520.0,
+            "y": 1616.0
+          }
+        ],
+        "vectorTraceCandidate": {
+          "label": "line_like_vector_trace",
+          "offset": 1766,
+          "hexOffset": "0x06e6",
+          "keyCount": 8,
+          "confidence": "medium",
+          "reason": "Line-like counted arrays expose x/y, flags, angle A/B and weight A/B candidates.",
+          "keys": [
+            {
+              "index": 0,
+              "x": 2416.0,
+              "y": 1136.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 180.0,
+              "weightA": 0.0,
+              "weightB": 45.254883
+            },
+            {
+              "index": 1,
+              "x": 2480.0,
+              "y": 1168.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 90.0,
+              "weightA": 0.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 2,
+              "x": 2480.0,
+              "y": 1328.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 270.0,
+              "angleBDeg": 90.0,
+              "weightA": 130.0,
+              "weightB": 96.0
+            },
+            {
+              "index": 3,
+              "x": 2480.0,
+              "y": 1552.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 0.0,
+              "angleBDeg": -0.0,
+              "weightA": 0.0,
+              "weightB": 10.0
+            },
+            {
+              "index": 4,
+              "x": 2384.0,
+              "y": 1616.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.0,
+              "angleBDeg": -0.0,
+              "weightA": 130.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 5,
+              "x": 2064.0,
+              "y": 1616.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.0,
+              "angleBDeg": -0.0,
+              "weightA": 130.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 6,
+              "x": 1648.0,
+              "y": 1616.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.0,
+              "angleBDeg": -0.0,
+              "weightA": 130.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 7,
+              "x": 1520.0,
+              "y": 1616.0,
+              "typeOrFlag": 0.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 0.0,
+              "weightA": 0.0,
+              "weightB": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "offset": 2455,
+        "hexOffset": "0x0997",
+        "endOffset": 2595,
+        "endHexOffset": "0x0a23",
+        "pointCount": 3,
+        "arrayCount": 8,
+        "closed": false,
+        "lengthEditorUnits": 374.861818,
+        "signedAreaEditorUnits2": -13421.036993,
+        "absAreaEditorUnits2": 13421.036993,
+        "plausiblePointRatio": 1.0,
+        "bounds": {
+          "minX": 1359.41687,
+          "maxX": 1565.0,
+          "minY": 826.900024,
+          "maxY": 1094.69104,
+          "spanX": 205.58312999999998,
+          "spanY": 267.7910159999999
+        },
+        "firstPoint": {
+          "x": 1565.0,
+          "y": 826.900024
+        },
+        "lastPoint": {
+          "x": 1359.41687,
+          "y": 1094.69104
+        },
+        "nearbyToken": {
+          "offset": 2389,
+          "hexOffset": "0x0955",
+          "value": "spr_pit_building_to_right",
+          "distanceToBlock": 66
+        },
+        "tags": [
+          "open-vector-trace",
+          "coordinate-plausible",
+          "handles-present",
+          "near-token:spr_pit_building_to_right",
+          "line-candidate"
+        ],
+        "points": [
+          {
+            "x": 1565.0,
+            "y": 826.900024
+          },
+          {
+            "x": 1424.0,
+            "y": 880.0
+          },
+          {
+            "x": 1359.41687,
+            "y": 1094.69104
+          }
+        ],
+        "vectorTraceCandidate": {
+          "label": "line_like_vector_trace",
+          "offset": 2455,
+          "hexOffset": "0x0997",
+          "keyCount": 3,
+          "confidence": "medium",
+          "reason": "Line-like counted arrays expose x/y, flags, angle A/B and weight A/B candidates.",
+          "keys": [
+            {
+              "index": 0,
+              "x": 1565.0,
+              "y": 826.900024,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.0,
+              "angleBDeg": 45.0,
+              "weightA": 50.0,
+              "weightB": 50.000011
+            },
+            {
+              "index": 1,
+              "x": 1424.0,
+              "y": 880.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 225.0,
+              "angleBDeg": 89.389122,
+              "weightA": 45.254833,
+              "weightB": 54.694149
+            },
+            {
+              "index": 2,
+              "x": 1359.41687,
+              "y": 1094.69104,
+              "typeOrFlag": 0.0,
+              "angleADeg": 269.38913,
+              "angleBDeg": 0.0,
+              "weightA": 0.0,
+              "weightB": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "offset": 2627,
+        "hexOffset": "0x0a43",
+        "endOffset": 2839,
+        "endHexOffset": "0x0b17",
+        "pointCount": 5,
+        "arrayCount": 8,
+        "closed": false,
+        "lengthEditorUnits": 924.893942,
+        "signedAreaEditorUnits2": 77990.930413,
+        "absAreaEditorUnits2": 77990.930413,
+        "plausiblePointRatio": 1.0,
+        "bounds": {
+          "minX": 2587.147217,
+          "maxX": 2960.0,
+          "minY": 826.900024,
+          "maxY": 1551.060425,
+          "spanX": 372.8527829999998,
+          "spanY": 724.1604009999999
+        },
+        "firstPoint": {
+          "x": 2819.0,
+          "y": 826.900024
+        },
+        "lastPoint": {
+          "x": 2587.147217,
+          "y": 1551.060425
+        },
+        "nearbyToken": {
+          "offset": 2389,
+          "hexOffset": "0x0955",
+          "value": "spr_pit_building_to_right",
+          "distanceToBlock": 238
+        },
+        "tags": [
+          "open-vector-trace",
+          "coordinate-plausible",
+          "handles-present",
+          "near-token:spr_pit_building_to_right",
+          "line-candidate"
+        ],
+        "points": [
+          {
+            "x": 2819.0,
+            "y": 826.900024
+          },
+          {
+            "x": 2960.0,
+            "y": 912.0
+          },
+          {
+            "x": 2928.0,
+            "y": 1104.0
+          },
+          {
+            "x": 2768.0,
+            "y": 1264.0
+          },
+          {
+            "x": 2587.147217,
+            "y": 1551.060425
+          }
+        ],
+        "vectorTraceCandidate": {
+          "label": "line_like_vector_trace",
+          "offset": 2627,
+          "hexOffset": "0x0a43",
+          "keyCount": 5,
+          "confidence": "medium",
+          "reason": "Line-like counted arrays expose x/y, flags, angle A/B and weight A/B candidates.",
+          "keys": [
+            {
+              "index": 0,
+              "x": 2819.0,
+              "y": 826.900024,
+              "typeOrFlag": 1.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 135.0,
+              "weightA": 50.0,
+              "weightB": 50.000183
+            },
+            {
+              "index": 1,
+              "x": 2960.0,
+              "y": 912.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 315.0,
+              "angleBDeg": 63.435074,
+              "weightA": 45.254833,
+              "weightB": 50.000031
+            },
+            {
+              "index": 2,
+              "x": 2928.0,
+              "y": 1104.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 243.434967,
+              "angleBDeg": 45.000095,
+              "weightA": 71.554176,
+              "weightB": 49.999924
+            },
+            {
+              "index": 3,
+              "x": 2768.0,
+              "y": 1264.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 225.000092,
+              "angleBDeg": 57.788391,
+              "weightA": 49.999924,
+              "weightB": 49.999928
+            },
+            {
+              "index": 4,
+              "x": 2587.147217,
+              "y": 1551.060425,
+              "typeOrFlag": 0.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 0.0,
+              "weightA": 0.0,
+              "weightB": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "offset": 2883,
+        "hexOffset": "0x0b43",
+        "endOffset": 3095,
+        "endHexOffset": "0x0c17",
+        "pointCount": 5,
+        "arrayCount": 8,
+        "closed": true,
+        "lengthEditorUnits": 3392.0,
+        "signedAreaEditorUnits2": 675840.0,
+        "absAreaEditorUnits2": 675840.0,
+        "plausiblePointRatio": 1.0,
+        "bounds": {
+          "minX": 1424.0,
+          "maxX": 2480.0,
+          "minY": 1072.0,
+          "maxY": 1712.0,
+          "spanX": 1056.0,
+          "spanY": 640.0
+        },
+        "firstPoint": {
+          "x": 1424.0,
+          "y": 1072.0
+        },
+        "lastPoint": {
+          "x": 1424.0,
+          "y": 1072.0
+        },
+        "nearbyToken": null,
+        "tags": [
+          "closed-vector-trace",
+          "coordinate-plausible",
+          "handles-present",
+          "closed-shape-candidate"
+        ],
+        "points": [
+          {
+            "x": 1424.0,
+            "y": 1072.0
+          },
+          {
+            "x": 2480.0,
+            "y": 1072.0
+          },
+          {
+            "x": 2480.0,
+            "y": 1712.0
+          },
+          {
+            "x": 1424.0,
+            "y": 1712.0
+          },
+          {
+            "x": 1424.0,
+            "y": 1072.0
+          }
+        ],
+        "vectorTraceCandidate": {
+          "label": "line_like_vector_trace",
+          "offset": 2883,
+          "hexOffset": "0x0b43",
+          "keyCount": 5,
+          "confidence": "medium",
+          "reason": "Line-like counted arrays expose x/y, flags, angle A/B and weight A/B candidates.",
+          "keys": [
+            {
+              "index": 0,
+              "x": 1424.0,
+              "y": 1072.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": -0.0,
+              "angleBDeg": 180.0,
+              "weightA": 130.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 1,
+              "x": 2480.0,
+              "y": 1072.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": -0.0,
+              "angleBDeg": -0.0,
+              "weightA": 130.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 2,
+              "x": 2480.0,
+              "y": 1712.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.0,
+              "angleBDeg": -0.0,
+              "weightA": 128.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 3,
+              "x": 1424.0,
+              "y": 1712.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.0,
+              "angleBDeg": 180.0,
+              "weightA": 130.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 4,
+              "x": 1424.0,
+              "y": 1072.0,
+              "typeOrFlag": 0.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 0.0,
+              "weightA": 0.0,
+              "weightB": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "offset": 3139,
+        "hexOffset": "0x0c43",
+        "endOffset": 3351,
+        "endHexOffset": "0x0d17",
+        "pointCount": 5,
+        "arrayCount": 8,
+        "closed": true,
+        "lengthEditorUnits": 3287.0,
+        "signedAreaEditorUnits2": 620400.0,
+        "absAreaEditorUnits2": 620400.0,
+        "plausiblePointRatio": 1.0,
+        "bounds": {
+          "minX": 1424.0,
+          "maxX": 2480.0,
+          "minY": 1098.25,
+          "maxY": 1685.75,
+          "spanX": 1056.0,
+          "spanY": 587.5
+        },
+        "firstPoint": {
+          "x": 1424.0,
+          "y": 1098.25
+        },
+        "lastPoint": {
+          "x": 1424.0,
+          "y": 1098.25
+        },
+        "nearbyToken": null,
+        "tags": [
+          "closed-vector-trace",
+          "coordinate-plausible",
+          "handles-present",
+          "closed-shape-candidate"
+        ],
+        "points": [
+          {
+            "x": 1424.0,
+            "y": 1098.25
+          },
+          {
+            "x": 2480.0,
+            "y": 1098.25
+          },
+          {
+            "x": 2480.0,
+            "y": 1685.75
+          },
+          {
+            "x": 1424.0,
+            "y": 1685.75
+          },
+          {
+            "x": 1424.0,
+            "y": 1098.25
+          }
+        ],
+        "vectorTraceCandidate": {
+          "label": "line_like_vector_trace",
+          "offset": 3139,
+          "hexOffset": "0x0c43",
+          "keyCount": 5,
+          "confidence": "medium",
+          "reason": "Line-like counted arrays expose x/y, flags, angle A/B and weight A/B candidates.",
+          "keys": [
+            {
+              "index": 0,
+              "x": 1424.0,
+              "y": 1098.25,
+              "typeOrFlag": 1.0,
+              "angleADeg": 359.844299,
+              "angleBDeg": 180.146179,
+              "weightA": 130.0,
+              "weightB": 130.000183
+            },
+            {
+              "index": 1,
+              "x": 2480.0,
+              "y": 1098.25,
+              "typeOrFlag": 1.0,
+              "angleADeg": 0.146162,
+              "angleBDeg": 1.02303,
+              "weightA": 98.00032,
+              "weightB": 98.015625
+            },
+            {
+              "index": 2,
+              "x": 2480.0,
+              "y": 1685.75,
+              "typeOrFlag": 1.0,
+              "angleADeg": 181.023041,
+              "angleBDeg": 0.761896,
+              "weightA": 128.000137,
+              "weightB": 130.000137
+            },
+            {
+              "index": 3,
+              "x": 1424.0,
+              "y": 1685.75,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.761871,
+              "angleBDeg": 179.844299,
+              "weightA": 94.008308,
+              "weightB": 92.000343
+            },
+            {
+              "index": 4,
+              "x": 1424.0,
+              "y": 1098.25,
+              "typeOrFlag": 0.0,
+              "angleADeg": 359.844299,
+              "angleBDeg": 0.0,
+              "weightA": 0.0,
+              "weightB": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "offset": 3395,
+        "hexOffset": "0x0d43",
+        "endOffset": 3607,
+        "endHexOffset": "0x0e17",
+        "pointCount": 5,
+        "arrayCount": 8,
+        "closed": true,
+        "lengthEditorUnits": 3497.0,
+        "signedAreaEditorUnits2": 731280.0,
+        "absAreaEditorUnits2": 731280.0,
+        "plausiblePointRatio": 1.0,
+        "bounds": {
+          "minX": 1424.0,
+          "maxX": 2480.0,
+          "minY": 1045.75,
+          "maxY": 1738.25,
+          "spanX": 1056.0,
+          "spanY": 692.5
+        },
+        "firstPoint": {
+          "x": 1424.0,
+          "y": 1045.75
+        },
+        "lastPoint": {
+          "x": 1424.0,
+          "y": 1045.75
+        },
+        "nearbyToken": null,
+        "tags": [
+          "closed-vector-trace",
+          "coordinate-plausible",
+          "handles-present",
+          "closed-shape-candidate"
+        ],
+        "points": [
+          {
+            "x": 1424.0,
+            "y": 1045.75
+          },
+          {
+            "x": 2480.0,
+            "y": 1045.75
+          },
+          {
+            "x": 2480.0,
+            "y": 1738.25
+          },
+          {
+            "x": 1424.0,
+            "y": 1738.25
+          },
+          {
+            "x": 1424.0,
+            "y": 1045.75
+          }
+        ],
+        "vectorTraceCandidate": {
+          "label": "line_like_vector_trace",
+          "offset": 3395,
+          "hexOffset": "0x0d43",
+          "keyCount": 5,
+          "confidence": "medium",
+          "reason": "Line-like counted arrays expose x/y, flags, angle A/B and weight A/B candidates.",
+          "keys": [
+            {
+              "index": 0,
+              "x": 1424.0,
+              "y": 1045.75,
+              "typeOrFlag": 1.0,
+              "angleADeg": 0.391404,
+              "angleBDeg": 179.610794,
+              "weightA": 129.999985,
+              "weightB": 130.000061
+            },
+            {
+              "index": 1,
+              "x": 2480.0,
+              "y": 1045.75,
+              "typeOrFlag": 1.0,
+              "angleADeg": 359.61084,
+              "angleBDeg": 0.07701,
+              "weightA": 184.004242,
+              "weightB": 186.000168
+            },
+            {
+              "index": 2,
+              "x": 2480.0,
+              "y": 1738.25,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.077057,
+              "angleBDeg": 359.920441,
+              "weightA": 127.99987,
+              "weightB": 129.999893
+            },
+            {
+              "index": 3,
+              "x": 1424.0,
+              "y": 1738.25,
+              "typeOrFlag": 1.0,
+              "angleADeg": 179.920425,
+              "angleBDeg": 180.391403,
+              "weightA": 180.000168,
+              "weightB": 183.004272
+            },
+            {
+              "index": 4,
+              "x": 1424.0,
+              "y": 1045.75,
+              "typeOrFlag": 0.0,
+              "angleADeg": 360.391357,
+              "angleBDeg": 0.0,
+              "weightA": 0.0,
+              "weightB": 0.0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "simulationFeatures": {
+    "track": {
+      "role": "main-track",
+      "confidence": "high",
+      "reason": "Primary road vector trace from the .sav counted-array region.",
+      "offset": 77,
+      "hexOffset": "0x004d",
+      "pointCount": 5,
+      "closed": true,
+      "lengthEditorUnits": 3392.0,
+      "absAreaEditorUnits2": 675840.0,
+      "bounds": {
+        "minX": 1424.0,
+        "maxX": 2480.0,
+        "minY": 1072.0,
+        "maxY": 1712.0,
+        "spanX": 1056.0,
+        "spanY": 640.0
+      },
+      "firstPoint": {
+        "x": 1424.0,
+        "y": 1072.0
+      },
+      "lastPoint": {
+        "x": 1424.0,
+        "y": 1072.0
+      },
+      "nearbyToken": {
+        "offset": 25,
+        "hexOffset": "0x0019",
+        "value": "grass_1",
+        "distanceToBlock": 52
+      },
+      "tags": [
+        "closed-vector-trace",
+        "coordinate-plausible",
+        "handles-present",
+        "near-token:grass_1",
+        "closed-shape-candidate"
+      ],
+      "points": [
+        {
+          "x": 1424.0,
+          "y": 1072.0
+        },
+        {
+          "x": 2480.0,
+          "y": 1072.0
+        },
+        {
+          "x": 2480.0,
+          "y": 1712.0
+        },
+        {
+          "x": 1424.0,
+          "y": 1712.0
+        },
+        {
+          "x": 1424.0,
+          "y": 1072.0
+        }
+      ],
+      "vectorTraceCandidate": {
+        "label": "line_like_vector_trace",
+        "offset": 77,
+        "hexOffset": "0x004d",
+        "keyCount": 5,
+        "confidence": "medium",
+        "reason": "Line-like counted arrays expose x/y, flags, angle A/B and weight A/B candidates.",
+        "keys": [
+          {
+            "index": 0,
+            "x": 1424.0,
+            "y": 1072.0,
+            "typeOrFlag": 1.0,
+            "angleADeg": -0.0,
+            "angleBDeg": 180.0,
+            "weightA": 130.0,
+            "weightB": 130.0
+          },
+          {
+            "index": 1,
+            "x": 2480.0,
+            "y": 1072.0,
+            "typeOrFlag": 1.0,
+            "angleADeg": -0.0,
+            "angleBDeg": -0.0,
+            "weightA": 130.0,
+            "weightB": 130.0
+          },
+          {
+            "index": 2,
+            "x": 2480.0,
+            "y": 1712.0,
+            "typeOrFlag": 1.0,
+            "angleADeg": 180.0,
+            "angleBDeg": -0.0,
+            "weightA": 128.0,
+            "weightB": 130.0
+          },
+          {
+            "index": 3,
+            "x": 1424.0,
+            "y": 1712.0,
+            "typeOrFlag": 1.0,
+            "angleADeg": 180.0,
+            "angleBDeg": 180.0,
+            "weightA": 130.0,
+            "weightB": 130.0
+          },
+          {
+            "index": 4,
+            "x": 1424.0,
+            "y": 1072.0,
+            "typeOrFlag": 0.0,
+            "angleADeg": 0.0,
+            "angleBDeg": 0.0,
+            "weightA": 0.0,
+            "weightB": 0.0
+          }
+        ]
+      }
+    },
+    "pitlaneLanes": [
+      {
+        "role": "pitlane-entry",
+        "confidence": "medium",
+        "reason": "Open vector block following spr_pit_building_to_right; role assigned by order in the .sav.",
+        "offset": 2455,
+        "hexOffset": "0x0997",
+        "pointCount": 3,
+        "closed": false,
+        "lengthEditorUnits": 374.861818,
+        "absAreaEditorUnits2": 13421.036993,
+        "bounds": {
+          "minX": 1359.41687,
+          "maxX": 1565.0,
+          "minY": 826.900024,
+          "maxY": 1094.69104,
+          "spanX": 205.58312999999998,
+          "spanY": 267.7910159999999
+        },
+        "firstPoint": {
+          "x": 1565.0,
+          "y": 826.900024
+        },
+        "lastPoint": {
+          "x": 1359.41687,
+          "y": 1094.69104
+        },
+        "nearbyToken": {
+          "offset": 2389,
+          "hexOffset": "0x0955",
+          "value": "spr_pit_building_to_right",
+          "distanceToBlock": 66
+        },
+        "tags": [
+          "open-vector-trace",
+          "coordinate-plausible",
+          "handles-present",
+          "near-token:spr_pit_building_to_right",
+          "line-candidate"
+        ],
+        "points": [
+          {
+            "x": 1565.0,
+            "y": 826.900024
+          },
+          {
+            "x": 1424.0,
+            "y": 880.0
+          },
+          {
+            "x": 1359.41687,
+            "y": 1094.69104
+          }
+        ],
+        "vectorTraceCandidate": {
+          "label": "line_like_vector_trace",
+          "offset": 2455,
+          "hexOffset": "0x0997",
+          "keyCount": 3,
+          "confidence": "medium",
+          "reason": "Line-like counted arrays expose x/y, flags, angle A/B and weight A/B candidates.",
+          "keys": [
+            {
+              "index": 0,
+              "x": 1565.0,
+              "y": 826.900024,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.0,
+              "angleBDeg": 45.0,
+              "weightA": 50.0,
+              "weightB": 50.000011
+            },
+            {
+              "index": 1,
+              "x": 1424.0,
+              "y": 880.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 225.0,
+              "angleBDeg": 89.389122,
+              "weightA": 45.254833,
+              "weightB": 54.694149
+            },
+            {
+              "index": 2,
+              "x": 1359.41687,
+              "y": 1094.69104,
+              "typeOrFlag": 0.0,
+              "angleADeg": 269.38913,
+              "angleBDeg": 0.0,
+              "weightA": 0.0,
+              "weightB": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "role": "pitlane-exit",
+        "confidence": "medium",
+        "reason": "Open vector block following spr_pit_building_to_right; role assigned by order in the .sav.",
+        "offset": 2627,
+        "hexOffset": "0x0a43",
+        "pointCount": 5,
+        "closed": false,
+        "lengthEditorUnits": 924.893942,
+        "absAreaEditorUnits2": 77990.930413,
+        "bounds": {
+          "minX": 2587.147217,
+          "maxX": 2960.0,
+          "minY": 826.900024,
+          "maxY": 1551.060425,
+          "spanX": 372.8527829999998,
+          "spanY": 724.1604009999999
+        },
+        "firstPoint": {
+          "x": 2819.0,
+          "y": 826.900024
+        },
+        "lastPoint": {
+          "x": 2587.147217,
+          "y": 1551.060425
+        },
+        "nearbyToken": {
+          "offset": 2389,
+          "hexOffset": "0x0955",
+          "value": "spr_pit_building_to_right",
+          "distanceToBlock": 238
+        },
+        "tags": [
+          "open-vector-trace",
+          "coordinate-plausible",
+          "handles-present",
+          "near-token:spr_pit_building_to_right",
+          "line-candidate"
+        ],
+        "points": [
+          {
+            "x": 2819.0,
+            "y": 826.900024
+          },
+          {
+            "x": 2960.0,
+            "y": 912.0
+          },
+          {
+            "x": 2928.0,
+            "y": 1104.0
+          },
+          {
+            "x": 2768.0,
+            "y": 1264.0
+          },
+          {
+            "x": 2587.147217,
+            "y": 1551.060425
+          }
+        ],
+        "vectorTraceCandidate": {
+          "label": "line_like_vector_trace",
+          "offset": 2627,
+          "hexOffset": "0x0a43",
+          "keyCount": 5,
+          "confidence": "medium",
+          "reason": "Line-like counted arrays expose x/y, flags, angle A/B and weight A/B candidates.",
+          "keys": [
+            {
+              "index": 0,
+              "x": 2819.0,
+              "y": 826.900024,
+              "typeOrFlag": 1.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 135.0,
+              "weightA": 50.0,
+              "weightB": 50.000183
+            },
+            {
+              "index": 1,
+              "x": 2960.0,
+              "y": 912.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 315.0,
+              "angleBDeg": 63.435074,
+              "weightA": 45.254833,
+              "weightB": 50.000031
+            },
+            {
+              "index": 2,
+              "x": 2928.0,
+              "y": 1104.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 243.434967,
+              "angleBDeg": 45.000095,
+              "weightA": 71.554176,
+              "weightB": 49.999924
+            },
+            {
+              "index": 3,
+              "x": 2768.0,
+              "y": 1264.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 225.000092,
+              "angleBDeg": 57.788391,
+              "weightA": 49.999924,
+              "weightB": 49.999928
+            },
+            {
+              "index": 4,
+              "x": 2587.147217,
+              "y": 1551.060425,
+              "typeOrFlag": 0.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 0.0,
+              "weightA": 0.0,
+              "weightB": 0.0
+            }
+          ]
+        }
+      }
+    ],
+    "walls": [
+      {
+        "role": "wall",
+        "confidence": "high",
+        "reason": "Vector block located after a wall1 token.",
+        "offset": 1766,
+        "hexOffset": "0x06e6",
+        "pointCount": 8,
+        "closed": false,
+        "lengthEditorUnits": 1434.931816,
+        "absAreaEditorUnits2": 241664.0,
+        "bounds": {
+          "minX": 1520.0,
+          "maxX": 2480.0,
+          "minY": 1136.0,
+          "maxY": 1616.0,
+          "spanX": 960.0,
+          "spanY": 480.0
+        },
+        "firstPoint": {
+          "x": 2416.0,
+          "y": 1136.0
+        },
+        "lastPoint": {
+          "x": 1520.0,
+          "y": 1616.0
+        },
+        "nearbyToken": {
+          "offset": 1752,
+          "hexOffset": "0x06d8",
+          "value": "wall1",
+          "distanceToBlock": 14
+        },
+        "tags": [
+          "open-vector-trace",
+          "coordinate-plausible",
+          "handles-present",
+          "near-token:wall1",
+          "line-candidate"
+        ],
+        "points": [
+          {
+            "x": 2416.0,
+            "y": 1136.0
+          },
+          {
+            "x": 2480.0,
+            "y": 1168.0
+          },
+          {
+            "x": 2480.0,
+            "y": 1328.0
+          },
+          {
+            "x": 2480.0,
+            "y": 1552.0
+          },
+          {
+            "x": 2384.0,
+            "y": 1616.0
+          },
+          {
+            "x": 2064.0,
+            "y": 1616.0
+          },
+          {
+            "x": 1648.0,
+            "y": 1616.0
+          },
+          {
+            "x": 1520.0,
+            "y": 1616.0
+          }
+        ],
+        "vectorTraceCandidate": {
+          "label": "line_like_vector_trace",
+          "offset": 1766,
+          "hexOffset": "0x06e6",
+          "keyCount": 8,
+          "confidence": "medium",
+          "reason": "Line-like counted arrays expose x/y, flags, angle A/B and weight A/B candidates.",
+          "keys": [
+            {
+              "index": 0,
+              "x": 2416.0,
+              "y": 1136.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 180.0,
+              "weightA": 0.0,
+              "weightB": 45.254883
+            },
+            {
+              "index": 1,
+              "x": 2480.0,
+              "y": 1168.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 90.0,
+              "weightA": 0.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 2,
+              "x": 2480.0,
+              "y": 1328.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 270.0,
+              "angleBDeg": 90.0,
+              "weightA": 130.0,
+              "weightB": 96.0
+            },
+            {
+              "index": 3,
+              "x": 2480.0,
+              "y": 1552.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 0.0,
+              "angleBDeg": -0.0,
+              "weightA": 0.0,
+              "weightB": 10.0
+            },
+            {
+              "index": 4,
+              "x": 2384.0,
+              "y": 1616.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.0,
+              "angleBDeg": -0.0,
+              "weightA": 130.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 5,
+              "x": 2064.0,
+              "y": 1616.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.0,
+              "angleBDeg": -0.0,
+              "weightA": 130.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 6,
+              "x": 1648.0,
+              "y": 1616.0,
+              "typeOrFlag": 1.0,
+              "angleADeg": 180.0,
+              "angleBDeg": -0.0,
+              "weightA": 130.0,
+              "weightB": 130.0
+            },
+            {
+              "index": 7,
+              "x": 1520.0,
+              "y": 1616.0,
+              "typeOrFlag": 0.0,
+              "angleADeg": 0.0,
+              "angleBDeg": 0.0,
+              "weightA": 0.0,
+              "weightB": 0.0
+            }
+          ]
+        }
+      }
+    ],
+    "checkpoints": [
+      {
+        "spriteOffset": 2158,
+        "spriteHexOffset": "0x086e",
+        "payloadOffset": 2173,
+        "payloadHexOffset": "0x087d",
+        "label": "Finish",
+        "x": 2239.638916,
+        "y": 1072.0,
+        "layerOrScale": -1.0,
+        "rotationDeg": 270.0,
+        "widthCandidate": 20.0,
+        "heightCandidate": 105.0,
+        "confidence": "medium",
+        "reason": "Exact spr_checkpoint token followed by plausible x/y/rotation/size payload and a nearby label."
+      },
+      {
+        "spriteOffset": 2231,
+        "spriteHexOffset": "0x08b7",
+        "payloadOffset": 2246,
+        "payloadHexOffset": "0x08c6",
+        "label": "Checkpoint 1",
+        "x": 2368.644531,
+        "y": 1712.0,
+        "layerOrScale": -1.0,
+        "rotationDeg": 450.0,
+        "widthCandidate": 20.0,
+        "heightCandidate": 105.0,
+        "confidence": "medium",
+        "reason": "Exact spr_checkpoint token followed by plausible x/y/rotation/size payload and a nearby label."
+      },
+      {
+        "spriteOffset": 2310,
+        "spriteHexOffset": "0x0906",
+        "payloadOffset": 2325,
+        "payloadHexOffset": "0x0915",
+        "label": "Checkpoint 2",
+        "x": 1356.068115,
+        "y": 1629.605835,
+        "layerOrScale": -1.0,
+        "rotationDeg": 377.834503,
+        "widthCandidate": 20.0,
+        "heightCandidate": 105.0,
+        "confidence": "medium",
+        "reason": "Exact spr_checkpoint token followed by plausible x/y/rotation/size payload and a nearby label."
+      }
+    ],
+    "status": {
+      "trackFound": true,
+      "pitlaneLaneCount": 2,
+      "wallCount": 1,
+      "checkpointCount": 3
+    }
+  },
+  "counts": {
+    "vectorBlocks": 10,
+    "closedVectorBlocks": 6,
+    "openVectorBlocks": 4,
+    "checkpoints": 3,
+    "objectCandidates": 11,
+    "relevantEditorTokens": 21,
+    "imageLayersPresent": 5
+  },
+  "guarantees": [
+    "All offsets are byte offsets in the source track_editor.sav.",
+    "Simulation features are read from track_editor.sav, not from track.data.",
+    "The main track, pitlane lanes and walls are exposed as explicit feature candidates.",
+    "track_info.data strings are cleaned as metadata hints only.",
+    "PNG layers are treated as runtime background/raster evidence, not regenerated vector geometry."
+  ],
+  "nonGuarantees": [
+    "H-S02 does not convert editor units to metres.",
+    "H-S02 does not align .sav coordinates to image pixels yet.",
+    "Object payload schemas remain provisional."
+  ]
+}
