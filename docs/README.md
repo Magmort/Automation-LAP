@@ -12,6 +12,11 @@ Cette documentation constitue la mémoire durable d’Automation LAP. Les décis
 - [Rapport consolidé de faisabilité](feasibility/FEASIBILITY_REPORT.md) — décisions, paramètres candidats, risques résiduels et décision de passage au vertical slice.
 - [Modèle de rapport expérimental](feasibility/EXPERIMENT_TEMPLATE.md) — structure commune des protocoles et conclusions.
 
+### Analyse de conception de l’IA pilote
+
+- [Index des architectures candidates](design/ai-driver/README.md) — cadre commun de la phase d’analyse.
+- [AI-CANDIDATE-001 — α-RACER](design/ai-driver/AI-CANDIDATE-001-ALPHA-RACER.md) — analyse du modèle, compatibilité, limites et plan d’étude proposé.
+
 ### Expériences documentées
 
 - [Expérience A — Extraction des données Automation](feasibility/experiments/A-AUTOMATION-EXTRACTION.md)
