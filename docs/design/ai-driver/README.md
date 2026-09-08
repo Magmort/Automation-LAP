@@ -13,6 +13,7 @@ Les documents enregistrent les principes, compatibilités, limites, risques et p
 |---|---|---|---|
 | [AI-CANDIDATE-001](AI-CANDIDATE-001-ALPHA-RACER.md) | α-RACER | Analysé | Référence prometteuse pour la tactique ; adaptation locale et déterministe à étudier avant le ML |
 | [AI-CANDIDATE-002](AI-CANDIDATE-002-RACERAI.md) | RacerAI | Rejeté comme architecture | Apprentissage évolutionnaire retenu pour la calibration, la diversité et les outils |
+| [AI-CANDIDATE-003](AI-CANDIDATE-003-RACELINE-OPTIMIZATION.md) | Raceline-Optimization | Retenu pour expérimentation externe | Prototype hors ligne de racing lines propres aux véhicules ; aucune dépendance de production adoptée |
 
 ## Références structurantes
 
