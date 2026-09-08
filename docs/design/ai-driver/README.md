@@ -14,7 +14,7 @@ Les documents enregistrent les principes, compatibilités, limites, risques et p
 | [AI-CANDIDATE-001](AI-CANDIDATE-001-ALPHA-RACER.md) | α-RACER | Analysé | Référence prometteuse pour la tactique ; adaptation locale et déterministe à étudier avant le ML |
 | [AI-CANDIDATE-002](AI-CANDIDATE-002-RACERAI.md) | RacerAI | Rejeté comme architecture | Apprentissage évolutionnaire retenu pour la calibration, la diversité et les outils |
 | [AI-CANDIDATE-003](AI-CANDIDATE-003-RACELINE-OPTIMIZATION.md) | Raceline-Optimization | Retenu pour expérimentation externe | Prototype hors ligne de racing lines propres aux véhicules ; aucune dépendance de production adoptée |
-| [AI-CANDIDATE-004](AI-CANDIDATE-004-EVOLUTIONARY-F1-RACE-STRATEGY.md) | Evolutionary F1 Race Strategy | Retenu, papier validé | Plans plausibles et proches des propositions Pirelli ; baseline réduite, dispersion et absence d’incertitude/traffic à corriger expérimentalement |
+| [AI-CANDIDATE-004](AI-CANDIDATE-004-EVOLUTIONARY-F1-RACE-STRATEGY.md) | Evolutionary F1 Race Strategy | Retenu, papier validé | Plans plausibles et proches des propositions Pirelli ; baseline réduite, dispersion et absence d’incertitude et de trafic à corriger expérimentalement |
 
 ## Références structurantes
 
