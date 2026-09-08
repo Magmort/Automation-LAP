@@ -16,6 +16,7 @@ Cette documentation constitue la mémoire durable d’Automation LAP. Les décis
 
 - [Index des architectures candidates](design/ai-driver/README.md) — cadre commun de la phase d’analyse.
 - [AI-CANDIDATE-001 — α-RACER](design/ai-driver/AI-CANDIDATE-001-ALPHA-RACER.md) — analyse du modèle, compatibilité, limites et plan d’étude proposé.
+- [AI-CANDIDATE-002 — RacerAI](design/ai-driver/AI-CANDIDATE-002-RACERAI.md) — architecture rejetée ; apprentissage évolutionnaire et apports transversaux retenus.
 
 ### Expériences documentées
 
