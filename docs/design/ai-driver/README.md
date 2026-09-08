@@ -21,6 +21,7 @@ Les documents enregistrent les principes, compatibilités, limites, risques et p
 |---|---|---|---|
 | [AI-REFERENCE-001](AI-REFERENCE-001-GAME-DRIVEN-INTELLIGENCE.md) | Game-Driven Intelligence | Retenue | Architecture hiérarchique hybride et grille performance/qualité/robustesse/praticité |
 | [AI-REFERENCE-002](AI-REFERENCE-002-RACE-DRIVER-MODEL.md) | Race Driver Model | Retenue | Racing line propre au véhicule, profil de vitesse et contrôleur déterministe de référence |
+| [AI-REFERENCE-003](AI-REFERENCE-003-VEHICLE-PHYSICS-INTERFACE.md) | Programming Vehicles in Games | Retenue | Frontière physique–contrôle–IA, états observables et caractérisation GGV automatisée |
 
 ## Grille commune
 
