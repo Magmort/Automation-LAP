@@ -12,6 +12,7 @@ Les documents enregistrent les principes, compatibilités, limites, risques et p
 | Identifiant | Candidat | Statut | Conclusion provisoire |
 |---|---|---|---|
 | [AI-CANDIDATE-001](AI-CANDIDATE-001-ALPHA-RACER.md) | α-RACER | Analysé | Référence prometteuse pour la tactique ; adaptation locale et déterministe à étudier avant le ML |
+| [AI-CANDIDATE-002](AI-CANDIDATE-002-RACERAI.md) | RacerAI | Rejeté comme architecture | Apprentissage évolutionnaire retenu pour la calibration, la diversité et les outils |
 
 ## Grille commune
 
