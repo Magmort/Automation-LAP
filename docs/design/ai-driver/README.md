@@ -19,6 +19,7 @@ Les documents enregistrent les principes, compatibilités, limites, risques et p
 | Identifiant | Référence | Statut | Apport principal |
 |---|---|---|---|
 | [AI-REFERENCE-001](AI-REFERENCE-001-GAME-DRIVEN-INTELLIGENCE.md) | Game-Driven Intelligence | Retenue | Architecture hiérarchique hybride et grille performance/qualité/robustesse/praticité |
+| [AI-REFERENCE-002](AI-REFERENCE-002-RACE-DRIVER-MODEL.md) | Race Driver Model | Retenue | Racing line propre au véhicule, profil de vitesse et contrôleur déterministe de référence |
 
 ## Grille commune
 
