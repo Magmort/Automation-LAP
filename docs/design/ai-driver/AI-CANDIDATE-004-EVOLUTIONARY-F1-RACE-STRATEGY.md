@@ -465,3 +465,179 @@ Il fournit un squelette convaincant pour rechercher des plans de course explicab
 Automation LAP devra cependant remplacer la représentation tour par tour par des stints, isoler le modèle de résultat, introduire l’incertitude et la replanification, puis étendre l’objectif du temps absolu vers la position et le risque.
 
 Aucune dépendance de production ni reprise de code n’est adoptée à ce stade.
+
+
+## 22. Validation par le papier scientifique
+
+Le papier complet associé au dépôt a été analysé séparément. Il confirme le fonctionnement général décrit ci-dessus et précise la portée réelle des résultats.
+
+### 22.1 Protocole publié
+
+Les expériences utilisent :
+
+| Paramètre | Valeur |
+|---|---:|
+| population | 250 |
+| générations | 1 000 |
+| probabilité de mutation | 0,9 |
+| probabilité de crossover | 0,6 |
+| répétitions | 30 par circuit et condition |
+
+Les hyperparamètres ont été choisis empiriquement. Le papier ne fournit ni recherche systématique des hyperparamètres ni ablation complète des opérateurs.
+
+Le taux de mutation élevé et le crossover limité au carburant confirment que la méthode repose surtout sur une exploration mutative avec élitisme et réinjection aléatoire.
+
+### 22.2 Résultats simulés en conditions sèches
+
+Le meilleur résultat parmi 30 exécutions est généralement proche de la baseline publiée :
+
+| Circuit | Écart du meilleur GA à la baseline |
+|---|---:|
+| Bahreïn | -0,003 s |
+| Montréal | -4,479 s |
+| Monza | +0,060 s |
+| Portimão | +0,357 s |
+| Spielberg | +0,220 s |
+| Zandvoort | -0,184 s |
+
+Ces résultats montrent que certaines campagnes trouvent de très bons plans. Ils ne prouvent pas une convergence fiable à chaque exécution.
+
+Les moyennes sont sensiblement moins bonnes et les écarts-types publiés vont approximativement de 1 min 16 s à 2 min 28 s. L’évaluation d’Automation LAP devra donc privilégier médiane, percentiles, taux de succès et dispersion entre graines, plutôt que le seul meilleur résultat.
+
+### 22.3 Baseline réduite
+
+La baseline décrite comme brute-force est explicitement réduite :
+
+- deux arrêts au maximum ;
+- certains choix pneumatiques imposés selon la météo ;
+- espace de recherche volontairement restreint.
+
+Le GA peut la dépasser en trouvant une stratégie à trois arrêts que la baseline n’autorise pas. Cela ne signifie pas qu’il dépasse un optimum exhaustif.
+
+La décision de comparer notre prototype à une véritable recherche exhaustive sur des cas courts est donc confirmée et renforcée.
+
+### 22.4 Conditions météorologiques
+
+Le scénario mixte alterne pluie, sec, pluie puis sec. Il sert à stresser le solveur, mais son déroulement complet est fourni tour par tour à l’algorithme.
+
+Le papier démontre l’adaptation à un scénario complexe connu, pas la robustesse face à une météo incertaine.
+
+La météo autoritative ne devra être accessible qu’aux oracles de test. Le stratège exploité en course recevra une prévision, une confiance et plusieurs scénarios possibles.
+
+### 22.5 Comparaison avec Pirelli
+
+Les données communiquées par Pirelli comprennent principalement :
+
+- le delta de performance des composés ;
+- une dégradation linéaire ;
+- une durée maximale par pneu et circuit.
+
+Ces paramètres restent confidentiels. Les résultats ne sont donc pas entièrement reproductibles.
+
+Faute de données réelles de carburant, les auteurs utilisent des hypothèses simplifiées. Les stratégies sont comparées aux propositions publiques de Pirelli dans la fonction de temps du papier, pas dans une course réelle.
+
+Le résultat probant est que le GA retrouve fréquemment :
+
+- les mêmes structures à un ou deux arrêts ;
+- les mêmes associations de composés ;
+- des fenêtres d’arrêt proches.
+
+Il n’est pas démontré que les quelques gains numériques auraient produit un meilleur résultat réel.
+
+### 22.6 Risques pneumatiques et inventaire
+
+Le papier reconnaît que certains plans numériquement rapides sont peu crédibles :
+
+- deux trains durs neufs peuvent ne pas être disponibles ;
+- certains relais atteignent la durée maximale théorique ;
+- un plan peut exposer à un risque de crevaison.
+
+La contrainte d’inventaire des pneus, bien que discutée, n’est pas implémentée.
+
+Automation LAP doit donc représenter explicitement chaque train disponible :
+
+~~~csharp
+public sealed record TyreInventory(
+    IReadOnlyDictionary<TyreSpecification, IReadOnlyList<TyreSet>> Sets);
+~~~
+
+La faisabilité doit inclure stock, état, allocation et risque, pas seulement composé et âge.
+
+### 22.7 Pénalité dynamique
+
+Le papier compare la pénalité dynamique à un classement sans pénalité sur quatre circuits et dix exécutions. La moyenne publiée est meilleure avec la pénalité.
+
+Cette expérience soutient le maintien temporaire de solutions proches de la faisabilité, mais elle reste limitée :
+
+- peu de campagnes ;
+- quatre circuits ;
+- absence de test statistique ;
+- absence de comparaison avec des opérateurs de réparation.
+
+Pour Automation LAP, les contraintes seront séparées en :
+
+1. contraintes inviolables ;
+2. contraintes réparables pendant la recherche ;
+3. marges de sécurité ;
+4. objectifs optimisables.
+
+### 22.8 Temps de calcul
+
+Les auteurs indiquent que le meilleur minimum est atteint en moins d’une minute sur les données simulées et autour de cinq secondes sur le modèle Pirelli simplifié, avec une implémentation monothread.
+
+Le papier propose comme suites :
+
+- parallélisation ;
+- populations multiples ;
+- migrations ;
+- génotype plus compact ;
+- relance du solveur en course lorsque les hypothèses changent.
+
+Ces résultats rendent la planification hors ligne crédible. Ils ne suffisent pas encore à garantir la replanification d’un peloton de 12 à 20 voitures.
+
+## 23. Ajustements de conception issus du papier
+
+L’analyse du papier ajoute les exigences suivantes :
+
+1. produire un portefeuille de stratégies plutôt qu’un optimum unique ;
+2. regrouper les solutions proches sous forme de fenêtres d’arrêt ;
+3. représenter l’inventaire réel des pneus ;
+4. séparer performance nominale et risque de défaillance ;
+5. mesurer la fiabilité sur plusieurs graines ;
+6. ne pas présenter la baseline réduite comme un optimum ;
+7. traiter la météo connue comme un oracle de test ;
+8. déclencher la replanification lorsque les observations invalident les hypothèses ;
+9. comparer les résultats dans la physique et le trafic réels d’Automation LAP ;
+10. conserver explicitement les hypothèses ayant produit chaque plan.
+
+Un portefeuille candidat pourrait être représenté par :
+
+~~~csharp
+public sealed record StrategyPortfolio(
+    RaceStrategyPlan Primary,
+    IReadOnlyList<RaceStrategyPlan> Alternatives);
+~~~
+
+Les alternatives couvriront au minimum nombre d’arrêts, météo, niveau de dégradation et niveau de risque.
+
+## 24. Verdict consolidé
+
+Le papier confirme le maintien de AI-CANDIDATE-004 avec le statut **retenu pour expérimentation stratégique hors ligne**.
+
+Le niveau de preuve est toutefois borné :
+
+| Question | Conclusion |
+|---|---|
+| produit des plans plausibles | oui |
+| retrouve des structures proches de Pirelli | oui |
+| paraît rapide sur un modèle agrégé | oui |
+| bat un optimum exhaustif | non démontré |
+| gère une météo réellement incertaine | non |
+| optimise la position face au trafic | non |
+| fournit des données réelles reproductibles | non |
+| justifie une expérimentation Automation LAP | oui |
+| justifie une intégration directe | non |
+
+La conclusion centrale est conservée :
+
+> La qualité stratégique dépend d’abord du modèle de résultat, des contraintes et des scénarios. L’algorithme génétique n’est que le moteur de recherche de plans construits sur ces hypothèses.
